@@ -19,28 +19,28 @@ export default function FeaturedVendor() {
                 </h1>
               </div>
               <Separator className="-ml-5 w-[400px] lg:-ml-5" />
-              <div className="flex items-center space-x-6">
+              <div className="flex items-center space-x-11 lg:space-x-6">
                 <img src={ABBIcon} className="w-10" />
                 <h1 className="w-[245px] font-avenirRegular text-[14px]">
                   ABB Analyze powered by Glimpse
                 </h1>
                 <CircleChevronRight className="text-[#1F3E7C]" />
               </div>
-              <div className="flex items-center space-x-6">
+              <div className="flex items-center space-x-11 lg:space-x-6">
                 <img src={KattoufIcon} className="w-10" />
                 <h1 className="w-[245px] font-avenirRegular text-[14px]">
                   Kattouf Consulting Services Inc.
                 </h1>
                 <CircleChevronRight className="text-[#1F3E7C]" />
               </div>
-              <div className="flex items-center space-x-6">
+              <div className="flex items-center space-x-11 lg:space-x-6">
                 <img src={ABBConnectIcon} className="w-10" />
                 <h1 className="w-[245px] font-avenirRegular text-[14px]">
                   ABB Contact Lens (Soft Contacts and Gas Perm)
                 </h1>
                 <CircleChevronRight className="text-[#1F3E7C]" />
               </div>
-              <div className="flex items-center space-x-6">
+              <div className="flex items-center space-x-11 lg:space-x-6">
                 <img src={NorwoodIcon} className="w-10" />
                 <h1 className="w-[245px] font-avenirRegular text-[14px]">
                   Norwood Device & Diagnostics
