@@ -19,23 +19,23 @@ export default function LogoutDialog() {
           <div className="flex items-center justify-between space-x-2 text-[#1C1C1C]">
             {/* Icon */}
             <ProfileIcon />
-            <h1 className="text-[16px] font-avenirRegular">My Profile</h1>
+            <h1 className="font-avenirRegular text-[16px]">My Profile</h1>
           </div>
           <div className="flex items-center justify-between space-x-2 text-[#1C1C1C]">
             {/* Icon */}
             <AdIcon />
-            <h1 className="text-[16px] font-avenirRegular">Refer Member</h1>
+            <h1 className="font-avenirRegular text-[16px]">Refer Member</h1>
           </div>
           <div className="flex items-center justify-between space-x-2 text-[#1C1C1C]">
             {/* Icon */}
             <CallIcon />
-            <h1 className="text-[16px] font-avenirRegular">Contact Us</h1>
+            <h1 className="font-avenirRegular text-[16px]">Contact Us</h1>
           </div>
           <Separator />
           <div className="flex items-center justify-between space-x-2 text-[#B42318]">
             {/* Icon */}
             <LogoutIcon />
-            <h1 className="text-[16px] font-avenirRegular">Logout</h1>
+            <h1 className="font-avenirRegular text-[16px]">Logout</h1>
           </div>
         </div>
       </PopoverContent>

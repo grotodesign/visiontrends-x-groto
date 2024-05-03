@@ -3,18 +3,17 @@ import { Card } from "@/components/ui/card";
 import React from "react";
 import HeroImage from "@/assets/heroImg.png";
 
-export default function Hero() {
+export default function MobileHero() {
   return (
-    <div className="p-5">
-      <Card className="rounded-[20px] bg-gradient-to-b from-[#0072B2] to-[#229EE3]">
-        <div className="flex items-center justify-between">
-          <div className="p-10">
-            <div className="space-y-4 font-avenirBook">
-              <h1 className="text-3xl font-thin text-white">
-                Now get your best deal
+    <div>
+      <Card className="rounded-3xl bg-gradient-to-b from-[#0072B2] to-[#229EE3]">
+      <div className="flex flex-col">
+          <div className="p-5">
+            <div className="space-y-2 font-avenirBook">
+              <h1 className="text-lg font-thin text-white">
+                Now get your best deal only with
               </h1>
-              <p className="text-3xl font-thin text-white">
-                only with{" "}
+              <p className="text-lg font-thin text-white">
                 <span className="font-avenirHeavy font-bold">
                   WALTER OPTICS
                 </span>
@@ -27,9 +26,12 @@ export default function Hero() {
               </Button>
             </div>
           </div>
-          <div>
-            <img src={HeroImage} className="h-[260px] w-[700px]" />
+          <div className="flex justify-end -mt-16">
+            <img src={HeroImage} className="h-[100px]" />
           </div>
+        </div>
+        <div>
+          
         </div>
       </Card>
     </div>

@@ -66,8 +66,8 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
   const getNavItemClasses = (menu) =>
     `flex items-center cursor-pointer hover:bg-blue-50 rounded w-full overflow-hidden whitespace-nowrap ${
       activeMenu && activeMenu.id === menu.id
-        ? "bg-blue-200 hover:bg-blue-200"
-        : "hover:bg-blue-50"
+        ? "bg-[#F0F7FE] hover:bg-[#F0F7FE]"
+        : "hover:bg-[#F0F7FE]"
     }`;
   return (
     <aside
@@ -95,15 +95,15 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
               return (
                 <div className={classes} key={id}>
                   <Link to={link} className="w-full">
-                    <div className="flex h-full w-full items-center bg-white px-2 py-3">
+                    <div className="flex h-full w-full items-center px-2 py-3">
                       <div className="flex w-12 items-center justify-center">
                         {icon}
                       </div>
                       {showFullSidebar && (
                         <span
-                          className={`bg-white text-[14px] font-medium font-avenirRegular ${
+                          className={` font-avenirRegular text-[14px] font-medium ${
                             activeMenu && activeMenu.id === id
-                              ? "text-blue-800"
+                              ? "text-[#1F3E7C]"
                               : "text-gray-400"
                           }`}
                         >
@@ -117,7 +117,9 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
             })}
           </div>
           <div className="my-4 flex flex-col items-start bg-white">
-            <h1 className="bg-white px-6 text-[14px] text-[#989898] font-avenirRegular">Programs</h1>
+            <h1 className="bg-white px-6 font-avenirRegular text-[14px] text-[#989898]">
+              Programs
+            </h1>
             {programItems.map(({ id, label, link, icon }) => {
               const menuItem = { id, label, link, icon };
               const classes = getNavItemClasses(menuItem);
@@ -125,15 +127,15 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
               return (
                 <div className={classes} key={id}>
                   <Link to={link} className="w-full">
-                    <div className="flex h-full w-full items-center bg-white px-2 py-3">
+                    <div className="flex h-full w-full items-center px-2 py-3">
                       <div className="flex w-12 items-center justify-center">
                         {icon}
                       </div>
                       {showFullSidebar && (
                         <span
-                          className={`bg-white text-[14px] font-medium font-avenirRegular ${
+                          className={` font-avenirRegular text-[14px] font-medium ${
                             activeMenu && activeMenu.id === id
-                              ? "text-blue-800"
+                              ? "text-[#1F3E7C]"
                               : "text-gray-400"
                           }`}
                         >
@@ -147,7 +149,9 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
             })}
           </div>
           <div className="my-4 flex flex-col items-start bg-white">
-            <h1 className="bg-white px-6 text-[14px] text-[#989898] font-avenirRegular">Solutions</h1>
+            <h1 className="bg-white px-6 font-avenirRegular text-[14px] text-[#989898]">
+              Solutions
+            </h1>
             {solutionItems.map(({ id, label, link, icon }) => {
               const menuItem = { id, label, link, icon };
               const classes = getNavItemClasses(menuItem);
@@ -155,15 +159,15 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
               return (
                 <div className={classes} key={id}>
                   <Link to={link} className="w-full">
-                    <div className="flex h-full w-full items-center bg-white px-2 py-3">
+                    <div className="flex h-full w-full items-center px-2 py-3">
                       <div className="flex w-12 items-center justify-center">
                         {icon}
                       </div>
                       {showFullSidebar && (
                         <span
-                          className={`bg-white text-[14px] font-medium font-avenirRegular ${
+                          className={` font-avenirRegular text-[14px] font-medium ${
                             activeMenu && activeMenu.id === id
-                              ? "text-blue-800"
+                              ? "text-[#1F3E7C]"
                               : "text-gray-400"
                           }`}
                         >
@@ -178,19 +182,23 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
           </div>
         </div>
         <div className="px-4">
-          <Card className="w-[200px] bg-gradient-to-br from-[#3061C2] to-[#121A29] ">
+          <Card className="w-[200px] bg-gradient-to-br from-[#3061C2] to-[#121A29] rounded-[12px] ">
             <div className="space-y-3 p-5">
               <div>
                 <VTCareIcon />
               </div>
               <div className="space-y-1">
-                <h1 className="text-white font-avenirHeavy text-[16px]">VT Cares</h1>
-                <p className="text-[14px] font-avenirRegular text-[#F1F1F1]">
+                <h1 className="font-avenirHeavy text-[16px] text-white">
+                  VT Cares
+                </h1>
+                <p className="font-avenirRegular text-[14px] text-[#F1F1F1]">
                   Give more patients the comfort they deserve
                 </p>
               </div>
               <div>
-                <Button className="bg-gray-500 px-9 font-avenirHeavy">Donate Now</Button>
+                <Button className="bg-gray-500 px-9 font-avenirHeavy">
+                  Donate Now
+                </Button>
               </div>
             </div>
           </Card>

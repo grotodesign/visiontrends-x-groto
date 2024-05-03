@@ -1,4 +1,4 @@
-import { Bell, ChevronDown, SearchIcon } from "lucide-react";
+import { Bell, SearchIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
@@ -25,7 +25,9 @@ export default function Navbar() {
               <Bell className="w-12 text-[#646464]" />
             </div>
             <div className="">
-              <Button className="font-avenirRegular font-medium">Submit Sales</Button>
+              <Button className="font-avenirRegular font-medium">
+                Submit Sales
+              </Button>
             </div>
             <div className="border-l-2">
               <div className="ml-5 flex items-center space-x-4">
@@ -36,7 +38,9 @@ export default function Navbar() {
                   />
                   <AvatarFallback>CN</AvatarFallback>
                 </Avatar>
-                <h1 className="text-[14px] text-[#1C1C1C] font-avenirRegular font-medium">Mathew Perry</h1>
+                <h1 className="font-avenirRegular text-[14px] font-medium text-[#1C1C1C]">
+                  Mathew Perry
+                </h1>
                 <LogoutDialog />
               </div>
             </div>
