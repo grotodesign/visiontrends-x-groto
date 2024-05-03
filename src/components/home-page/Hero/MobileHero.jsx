@@ -7,7 +7,7 @@ export default function MobileHero() {
   return (
     <div>
       <Card className="rounded-3xl bg-gradient-to-b from-[#0072B2] to-[#229EE3]">
-      <div className="flex flex-col">
+        <div className="flex flex-col">
           <div className="p-5">
             <div className="space-y-2 font-avenirBook">
               <h1 className="text-lg font-thin text-white">
@@ -26,13 +26,11 @@ export default function MobileHero() {
               </Button>
             </div>
           </div>
-          <div className="flex justify-end -mt-16">
+          <div className="-mt-16 flex justify-end">
             <img src={HeroImage} className="h-[100px]" />
           </div>
         </div>
-        <div>
-          
-        </div>
+        <div></div>
       </Card>
     </div>
   );

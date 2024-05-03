@@ -26,7 +26,7 @@ export default function HomePage() {
         <MobileSubNavbar />
       </div>
 
-      <div className="block space-y-2 mt-3 mb-4 lg:mt-0 lg:mb-0 lg:hidden px-5">
+      <div className="mb-4 mt-3 block space-y-2 px-5 lg:mb-0 lg:mt-0 lg:hidden">
         <MobileHero />
       </div>
       <div className="flex items-center justify-between">
@@ -36,13 +36,13 @@ export default function HomePage() {
         <p className="px-5 lg:hidden">View all</p>
       </div>
       <div className="flex flex-col justify-between space-x-6 space-y-6 py-8 lg:flex-row lg:space-y-0 lg:p-5">
-        <div className="grid justify-center gap-5 lg:grid-cols-2 lg:gap-6 px-5 lg:px-0">
+        <div className="grid justify-center gap-5 px-5 lg:grid-cols-2 lg:gap-6 lg:px-0">
           {OfferingsData.map((offering) => (
             <OfferingCard key={offering.id} offering={offering} />
           ))}
         </div>
         <div className="space-y-6 lg:space-y-4">
-          <div className="lg:ml-0 lg:mr-0 px-5 lg:px-0">
+          <div className="px-5 lg:ml-0 lg:mr-0 lg:px-0">
             <PulseCard />
           </div>
           <div className="px-5 lg:px-0">

@@ -8,7 +8,7 @@ import { CircleChevronRight } from "lucide-react";
 
 export default function FeaturedVendor() {
   return (
-    <Card className="w-[445px] -ml-5 lg:w-[400px] lg:ml-0 rounded-[16px]">
+    <Card className="-ml-5 w-[445px] rounded-[16px] lg:ml-0 lg:w-[400px]">
       <div className="p-5">
         <div className="flex items-center">
           <div className="">
@@ -24,28 +24,28 @@ export default function FeaturedVendor() {
                 <h1 className="w-[245px] font-avenirRegular text-[14px]">
                   ABB Analyze powered by Glimpse
                 </h1>
-                <CircleChevronRight />
+                <CircleChevronRight className="text-[#1F3E7C]" />
               </div>
               <div className="flex items-center space-x-6">
                 <img src={KattoufIcon} className="w-10" />
                 <h1 className="w-[245px] font-avenirRegular text-[14px]">
                   Kattouf Consulting Services Inc.
                 </h1>
-                <CircleChevronRight />
+                <CircleChevronRight className="text-[#1F3E7C]" />
               </div>
               <div className="flex items-center space-x-6">
                 <img src={ABBConnectIcon} className="w-10" />
                 <h1 className="w-[245px] font-avenirRegular text-[14px]">
                   ABB Contact Lens (Soft Contacts and Gas Perm)
                 </h1>
-                <CircleChevronRight />
+                <CircleChevronRight className="text-[#1F3E7C]" />
               </div>
               <div className="flex items-center space-x-6">
                 <img src={NorwoodIcon} className="w-10" />
                 <h1 className="w-[245px] font-avenirRegular text-[14px]">
                   Norwood Device & Diagnostics
                 </h1>
-                <CircleChevronRight />
+                <CircleChevronRight className="text-[#1F3E7C]" />
               </div>
             </div>
           </div>

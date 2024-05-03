@@ -4,7 +4,7 @@ import { Card } from "../ui/card";
 export default function OfferingCard({ offering }) {
   console.log(offering);
   return (
-    <Card className="w-[450px] lg:w-[380px] rounded-[16px]">
+    <Card className="rounded-[16px] lg:w-[380px]">
       <div className="space-y-4 p-5">
         <div className="flex items-center space-x-4">
           <div className="rounded-full bg-[#F4F4F4] p-4">
@@ -14,7 +14,7 @@ export default function OfferingCard({ offering }) {
             {offering?.name}
           </h1>
         </div>
-        <p className="lg:w-[300px] font-avenirRegular text-[16px] text-[#989898]">
+        <p className="font-avenirRegular text-[16px] text-[#989898] lg:w-[300px]">
           {offering.description}
         </p>
       </div>

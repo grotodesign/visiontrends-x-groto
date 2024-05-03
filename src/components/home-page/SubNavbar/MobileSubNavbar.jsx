@@ -9,7 +9,10 @@ export default function MobileSubNavbar() {
         <div className="flex text-start font-avenirRegular text-[#1F3E7C]">
           <p className="">
             Deadline to Register for Vision Trends Care Foundation Webinar is
-            Today! <span className="bg-[#FEF5D5] text-[#1F3E7C] font-bold underline underline-offset-2">Register Now</span>
+            Today!{" "}
+            <span className="bg-[#FEF5D5] font-bold text-[#1F3E7C] underline underline-offset-2">
+              Register Now
+            </span>
           </p>
         </div>
       </div>

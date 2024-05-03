@@ -14,6 +14,7 @@ import TeacherIcon from "@/assets/icons/TeacherIcon";
 import { Card } from "../ui/card";
 import VTCareIcon from "@/assets/icons/VTCareIcon";
 import { Button } from "../ui/button";
+import Illustration from "@/assets/icons/Illustration";
 
 const menuItems = [
   { id: 1, label: "Home", icon: <HomeIcon />, link: "/" },
@@ -182,7 +183,7 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
           </div>
         </div>
         <div className="px-4">
-          <Card className="w-[200px] bg-gradient-to-br from-[#3061C2] to-[#121A29] rounded-[12px] ">
+          <Card className="relative w-[200px] rounded-[12px] bg-gradient-to-br from-[#3061C2] to-[#121A29] ">
             <div className="space-y-3 p-5">
               <div>
                 <VTCareIcon />
@@ -200,6 +201,9 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
                   Donate Now
                 </Button>
               </div>
+            </div>
+            <div className="absolute top-0 right-0">
+              <Illustration />
             </div>
           </Card>
         </div>

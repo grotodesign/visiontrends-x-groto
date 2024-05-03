@@ -5,7 +5,7 @@ import React from "react";
 
 export default function PulseCard() {
   return (
-    <Card className="relative h-[200px] -ml-6 rounded-[16px] bg-gradient-to-l from-[#0994D4] to-[#1BACE0] lg:ml-0 lg:mr-0 lg:w-[400px]">
+    <Card className="relative -ml-6 h-[200px] rounded-[16px] bg-gradient-to-l from-[#0994D4] to-[#1BACE0] lg:ml-0 lg:mr-0 lg:w-[400px]">
       <div className="p-5">
         <div className="flex items-center">
           <div className="p-2">
@@ -24,8 +24,8 @@ export default function PulseCard() {
               </Button>
             </div>
           </div>
-          <div className="absolute bottom-0 right-0  rounded-tl-[160px] rounded-r-[16px]">   
-              <img src={VideoIcon} className="w-28 h-24" alt="" />
+          <div className="absolute bottom-0 right-0  rounded-r-[16px] rounded-tl-[160px]">
+            <img src={VideoIcon} className="h-24 w-28" alt="" />
           </div>
         </div>
       </div>
