@@ -8,7 +8,7 @@ import { CircleChevronRight } from "lucide-react";
 
 export default function FeaturedVendor() {
   return (
-    <Card className="w-[445px] -ml-5 lg:w-[400px] lg:ml-0">
+    <Card className="w-[445px] -ml-5 lg:w-[400px] lg:ml-0 rounded-[16px]">
       <div className="p-5">
         <div className="flex items-center">
           <div className="">
