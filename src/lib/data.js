@@ -1,48 +1,49 @@
-import CalendarIcon from "@/assets/icons/CalendarIcon";
-import InsuranceIcon from "@/assets/icons/InsuranceIcon";
-import LabIcon from "@/assets/icons/LabIcon";
-import TeacherIcon from "@/assets/icons/TeacherIcon";
-import VendorIcon from "@/assets/icons/VendorIcon";
+import AnalyticsIcon from "@/assets/icons/AnalyticsIcon";
+import CalendarBlueIcon from "@/assets/icons/CalendarBlueIcon";
+import InsuranceBlueIcon from "@/assets/icons/InsuranceBlueIcon";
+import LabBlueIcon from "@/assets/icons/LabBlueIcon";
+import TeacherBlueIcon from "@/assets/icons/TeacherBlueIcon";
+import VendorBlueIcon from "@/assets/icons/VendorBlueIcon";
 
 export const OfferingsData = [
   {
     id: 1,
-    icon: VendorIcon,
+    icon: VendorBlueIcon,
     name: "Vendor Partners",
     description:
       "Explore our network of trusted vendor partners for your business needs",
   },
   {
     id: 2,
-    icon: CalendarIcon,
+    icon: CalendarBlueIcon,
     name: "Event Calendar",
     description:
       "Stay informed about upcoming industry events and networking opportunities",
   },
   {
     id: 3,
-    icon: TeacherIcon,
+    icon: TeacherBlueIcon,
     name: "Learning Solutions",
     description:
       "Invest in your team's skills with our diverse range of training and programs",
   },
   {
     id: 4,
-    icon: InsuranceIcon,
+    icon: InsuranceBlueIcon,
     name: "Vision Insurance",
     description:
       "Explore our comprehensive range of  insurance plans for your business needs",
   },
   {
     id: 5,
-    icon: LabIcon,
+    icon: LabBlueIcon,
     name: "Lab Solutions",
     description:
       "Discover innovative solutions tailored for manufacturing labs",
   },
   {
     id: 6,
-    icon: LabIcon,
+    icon: AnalyticsIcon,
     name: "Free Business Analytics Software",
     description:
       "Empower Your Business with Glimpse, advanced analytics sade Simple",

@@ -105,7 +105,7 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
                           className={` font-avenirRegular text-[14px] font-medium ${
                             activeMenu && activeMenu.id === id
                               ? "text-[#1F3E7C]"
-                              : "text-gray-400"
+                              : "text-[#646464]"
                           }`}
                         >
                           {label}
@@ -137,7 +137,7 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
                           className={` font-avenirRegular text-[14px] font-medium ${
                             activeMenu && activeMenu.id === id
                               ? "text-[#1F3E7C]"
-                              : "text-gray-400"
+                              : "text-[#646464]"
                           }`}
                         >
                           {label}
@@ -169,7 +169,7 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
                           className={` font-avenirRegular text-[14px] font-medium ${
                             activeMenu && activeMenu.id === id
                               ? "text-[#1F3E7C]"
-                              : "text-gray-400"
+                              : "text-[#646464]"
                           }`}
                         >
                           {label}
@@ -202,7 +202,7 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
                 </Button>
               </div>
             </div>
-            <div className="absolute top-0 right-0">
+            <div className="absolute right-0 top-0">
               <Illustration />
             </div>
           </Card>

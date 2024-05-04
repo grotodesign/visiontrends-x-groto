@@ -20,7 +20,15 @@ module.exports = {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        'xs': "390px",
+      'sm': "640px",
+      'md': "768px",
+      'lg': "1024px",
+      'xl': "1280px",
+      '2xl': "1400px",
+      '3xl': "1440px",
+      '4xl': "1536px",
+      '5xl': "1920px",
       },
     },
     extend: {

@@ -73,3 +73,45 @@
   font-family: "AvenirRegular";
   src: url("./assets/fonts/Avenir_Regular/Avenir-Regular.ttf");
 }
+
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 1497px) {
+  .card {
+    width: 380px;
+  }
+}
+
+@media screen and (min-width: 1523px) {
+  .card {
+    width: 390px;
+  }
+
+  .offeringDesc {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .card {
+    width: 400px;
+  }
+
+  .offeringDesc {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .card {
+    width: 590px;
+  }
+
+  .offeringDesc {
+    width: 500px;
+  }
+}

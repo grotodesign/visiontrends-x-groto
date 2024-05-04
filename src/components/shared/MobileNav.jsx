@@ -94,17 +94,20 @@ export default function MobileNav() {
                   <div className="mt-5">
                     <Card className="p-2">
                       <div className="flex items-center justify-between">
-                      <Avatar className="h-8 w-8">
-                  <AvatarImage
-                    src="https://github.com/shadcn.png"
-                    alt="@shadcn"
-                  />
-                  <AvatarFallback>CN</AvatarFallback>
-                </Avatar>
-                <h1 className="font-avenirRegular text-[14px] font-medium text-[#1C1C1C]">
-                  Mathew Perry
-                </h1>
-               <div className=""> <LogoutDialog /></div>
+                        <Avatar className="h-8 w-8">
+                          <AvatarImage
+                            src="https://github.com/shadcn.png"
+                            alt="@shadcn"
+                          />
+                          <AvatarFallback>CN</AvatarFallback>
+                        </Avatar>
+                        <h1 className="font-avenirRegular text-[14px] font-medium text-[#1C1C1C]">
+                          Mathew Perry
+                        </h1>
+                        <div className="">
+                          {" "}
+                          <LogoutDialog />
+                        </div>
                       </div>
                     </Card>
                   </div>
@@ -125,7 +128,7 @@ export default function MobileNav() {
                                   className={` font-avenirRegular text-[12px] font-medium ${
                                     activeMenu && activeMenu.id === id
                                       ? "text-[#1F3E7C]"
-                                      : "text-gray-400"
+                                      : "text-[#646464]"
                                   }`}
                                 >
                                   {label}
@@ -155,7 +158,7 @@ export default function MobileNav() {
                                   className={` font-avenirRegular text-[12px] font-medium ${
                                     activeMenu && activeMenu.id === id
                                       ? "text-[#1F3E7C]"
-                                      : "text-gray-400"
+                                      : "text-[#646464]"
                                   }`}
                                 >
                                   {label}
@@ -185,7 +188,7 @@ export default function MobileNav() {
                                   className={` font-avenirRegular text-[12px] font-medium ${
                                     activeMenu && activeMenu.id === id
                                       ? "text-[#1F3E7C]"
-                                      : "text-gray-400"
+                                      : "text-[#646464]"
                                   }`}
                                 >
                                   {label}
@@ -217,7 +220,7 @@ export default function MobileNav() {
                           </Button>
                         </div>
                       </div>
-                      <div className="absolute top-0 right-0">
+                      <div className="absolute right-0 top-0">
                         <Illustration />
                       </div>
                     </Card>

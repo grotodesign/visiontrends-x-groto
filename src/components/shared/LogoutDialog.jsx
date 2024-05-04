@@ -14,7 +14,7 @@ export default function LogoutDialog() {
           <ChevronDown />
         </div>
       </PopoverTrigger>
-      <PopoverContent className="mr-44 lg:mr-6 mt-4 w-[220px] lg:w-56">
+      <PopoverContent className="mr-44 mt-4 w-[220px] lg:mr-6 lg:w-56">
         <div className="flex flex-col items-start space-y-6">
           <div className="flex items-center justify-between space-x-2 text-[#1C1C1C]">
             {/* Icon */}
