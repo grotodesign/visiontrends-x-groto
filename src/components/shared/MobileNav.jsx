@@ -76,7 +76,7 @@ export default function MobileNav() {
         : "hover:bg-[#F0F7FE]"
     }`;
   return (
-    <div className="h-30 bg-white shadow-md">
+    <div className="h-30 bg-white shadow-md navbar">
       <div className="p-5">
         <div className="flex items-center justify-between">
           <div>

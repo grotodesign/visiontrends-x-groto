@@ -74,6 +74,208 @@
   src: url("./assets/fonts/Avenir_Regular/Avenir-Regular.ttf");
 }
 
+@media screen and (min-width: 360px) {
+  .navbar{
+    width: 360px;
+  }
+  .subnavbar {
+    width: 360px;
+  }
+  .card-1 {
+    width: 324px;
+  }
+  .offeringContainer {
+    width: 360px;
+  }
+  .card {
+    width: 320px;
+  }
+  .cardArea {
+    margin-left: -130px;
+  }
+  .pulseCard{
+    width: 336px;
+  }
+  .vendorCardArea{
+    width: 335px;
+  }
+  .vendorCardAreaContent {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .navbar{
+    width: 375px;
+  }
+  .subnavbar {
+    width: 380px;
+  }
+  .card-1 {
+    width: 340px;
+  }
+  .offeringContainer {
+    width: 370px;
+  }
+  .card {
+    width: 335px;
+  }
+  .cardArea {
+    margin-left: 0px;
+  }
+  .pulseCard{
+    width: 355px;
+  }
+  .vendorCardArea{
+    width: 335px;
+  }
+  .vendorCardAreaContent {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 390px) {
+  .navbar{
+    width: 390px;
+  }
+  .subnavbar {
+    width: 390px;
+  }
+  .card-1 {
+    width: 350px;
+  }
+  .offeringContainer {
+    width: 390px;
+  }
+  .card {
+    width: 350px;
+  }
+  .cardArea {
+    margin-left: 0px;
+  }
+  .pulseCard{
+    width: 365px;
+  }
+  .vendorCardArea{
+    width: 345px;
+  }
+  .vendorCardAreaContent {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  .navbar{
+    width: 415px;
+  }
+  .subnavbar {
+    width: 415px;
+  }
+  .card-1 {
+    width: 370px;
+  }
+  .offeringContainer {
+    width: 405px;
+  }
+  .card {
+    width: 370px;
+  }
+  .cardArea {
+    margin-left: 0px;
+  }
+  .pulseCard{
+    width: 385px;
+  }
+  .vendorCardArea{
+    width: 365px;
+  }
+  .vendorCardAreaContent {
+    width: 320px;
+  }
+}
+
+
+@media screen and (min-width: 414px) {
+  .navbar{
+    width: 415px;
+  }
+  .subnavbar {
+    width: 415px;
+  }
+  .card-1 {
+    width: 370px;
+  }
+  .offeringContainer {
+    width: 405px;
+  }
+  .card {
+    width: 370px;
+  }
+  .cardArea {
+    margin-left: 0px;
+  }
+  .vendorCardArea{
+    width: 365px;
+  }
+  .vendorCardAreaContent {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 430px) {
+  .navbar{
+    width: 430px;
+  }
+  .subnavbar {
+    width: 430px;
+  }
+  .card-1 {
+    width: 390px;
+  }
+  .offeringContainer {
+    width: 425px;
+  }
+  .card {
+    width: 390px;
+  }
+  .cardArea {
+    margin-left: 0px;
+  }
+  .pulseCard{
+    width: 405px;
+  }
+  .vendorCardArea{
+    width: 380px;
+  }
+  .vendorCardAreaContent {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar{
+    width: 768px;
+  }
+  .subnavbar {
+    width: 768px;
+  }
+  .card-1 {
+    width: 728px;
+  }
+  .offeringContainer {
+    width: 765px;
+  }
+  .card {
+    width: 728px;
+  }
+  .cardArea {
+    margin-left: 0px;
+  }
+  .pulseCard{
+    width: 748px;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .card {
     width: 350px;
