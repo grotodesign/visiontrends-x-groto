@@ -252,30 +252,6 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .navbar{
-    width: 768px;
-  }
-  .subnavbar {
-    width: 768px;
-  }
-  .card-1 {
-    width: 728px;
-  }
-  .offeringContainer {
-    width: 765px;
-  }
-  .card {
-    width: 728px;
-  }
-  .cardArea {
-    margin-left: 0px;
-  }
-  .pulseCard{
-    width: 748px;
-  }
-}
-
 @media screen and (min-width: 1440px) {
   .card {
     width: 350px;
