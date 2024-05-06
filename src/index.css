@@ -45,8 +45,8 @@
   }
 }
 
-.root {
-  background-color: #fbfcfe;
+.body {
+  background-color: #fbfcfe !important;
 }
 
 @font-face {
@@ -75,7 +75,7 @@
 }
 
 @media screen and (min-width: 360px) {
-  .navbar{
+  .navbar {
     width: 360px;
   }
   .subnavbar {
@@ -93,10 +93,10 @@
   .cardArea {
     margin-left: -130px;
   }
-  .pulseCard{
+  .pulseCard {
     width: 336px;
   }
-  .vendorCardArea{
+  .vendorCardArea {
     width: 335px;
   }
   .vendorCardAreaContent {
@@ -105,7 +105,7 @@
 }
 
 @media screen and (min-width: 375px) {
-  .navbar{
+  .navbar {
     width: 375px;
   }
   .subnavbar {
@@ -123,10 +123,10 @@
   .cardArea {
     margin-left: 0px;
   }
-  .pulseCard{
+  .pulseCard {
     width: 355px;
   }
-  .vendorCardArea{
+  .vendorCardArea {
     width: 335px;
   }
   .vendorCardAreaContent {
@@ -135,7 +135,7 @@
 }
 
 @media screen and (min-width: 390px) {
-  .navbar{
+  .navbar {
     width: 390px;
   }
   .subnavbar {
@@ -153,10 +153,10 @@
   .cardArea {
     margin-left: 0px;
   }
-  .pulseCard{
+  .pulseCard {
     width: 365px;
   }
-  .vendorCardArea{
+  .vendorCardArea {
     width: 345px;
   }
   .vendorCardAreaContent {
@@ -165,7 +165,7 @@
 }
 
 @media screen and (min-width: 412px) {
-  .navbar{
+  .navbar {
     width: 415px;
   }
   .subnavbar {
@@ -183,10 +183,10 @@
   .cardArea {
     margin-left: 0px;
   }
-  .pulseCard{
+  .pulseCard {
     width: 385px;
   }
-  .vendorCardArea{
+  .vendorCardArea {
     width: 365px;
   }
   .vendorCardAreaContent {
@@ -194,9 +194,8 @@
   }
 }
 
-
 @media screen and (min-width: 414px) {
-  .navbar{
+  .navbar {
     width: 415px;
   }
   .subnavbar {
@@ -214,7 +213,7 @@
   .cardArea {
     margin-left: 0px;
   }
-  .vendorCardArea{
+  .vendorCardArea {
     width: 365px;
   }
   .vendorCardAreaContent {
@@ -223,7 +222,7 @@
 }
 
 @media screen and (min-width: 430px) {
-  .navbar{
+  .navbar {
     width: 430px;
   }
   .subnavbar {
@@ -241,10 +240,10 @@
   .cardArea {
     margin-left: 0px;
   }
-  .pulseCard{
+  .pulseCard {
     width: 405px;
   }
-  .vendorCardArea{
+  .vendorCardArea {
     width: 380px;
   }
   .vendorCardAreaContent {
@@ -256,11 +255,17 @@
   .card {
     width: 350px;
   }
+  .card-vendor {
+    width: 266px;
+  }
 }
 
 @media screen and (min-width: 1497px) {
   .card {
     width: 380px;
+  }
+  .card-vendor {
+    width: 296px;
   }
 }
 

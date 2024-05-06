@@ -41,7 +41,7 @@ export default function VTCareIcon() {
         opacity="0.9"
         d="M66.5385 61.2781C66.5638 59.5429 52.6745 57.9346 35.5174 57.6853C18.361 57.4361 4.43216 58.6399 4.40677 60.3748C4.38186 62.1096 18.2698 63.7182 35.4264 63.9674C52.5826 64.2169 66.5132 63.0122 66.5385 61.2781Z"
         fill="url(#paint0_radial_1230_4493)"
-        fill-opacity="0.04"
+        fillOpacity="0.04"
       />
       <defs>
         <filter
@@ -51,9 +51,9 @@ export default function VTCareIcon() {
           width="34.8403"
           height="31.2112"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -86,9 +86,9 @@ export default function VTCareIcon() {
           width="69.2651"
           height="26.5934"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -122,10 +122,10 @@ export default function VTCareIcon() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(35.4726 60.8264) rotate(0.831267) scale(31.0776 3.14056)"
         >
-          <stop stop-color="white" />
-          <stop offset="0.1923" stop-color="#CACACA" />
-          <stop offset="0.5918" stop-color="#D7D7D7" />
-          <stop offset="1" stop-color="#F2F2F2" />
+          <stop stopColor="white" />
+          <stop offset="0.1923" stopColor="#CACACA" />
+          <stop offset="0.5918" stopColor="#D7D7D7" />
+          <stop offset="1" stopColor="#F2F2F2" />
         </radialGradient>
       </defs>
     </svg>

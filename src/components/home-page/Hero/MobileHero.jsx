@@ -6,7 +6,7 @@ import HeroImage from "@/assets/heroImg.png";
 export default function MobileHero() {
   return (
     <div>
-      <Card className="rounded-3xl bg-gradient-to-b from-[#0072B2] to-[#229EE3] card-1">
+      <Card className="card-1 rounded-3xl bg-gradient-to-b from-[#0072B2] to-[#229EE3]">
         <div className="flex flex-col">
           <div className="p-5">
             <div className="space-y-2 font-avenirBook">

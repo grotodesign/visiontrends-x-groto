@@ -23,18 +23,33 @@ import MobileVTIcon from "@/assets/icons/MobileVTIcon";
 
 const menuItems = [
   { id: 1, label: "Home", icon: <HomeIcon />, link: "/" },
-  { id: 2, label: "Vendor Partners", icon: <VendorIcon />, link: "/vendor" },
-  { id: 3, label: "Event Calendar", icon: <CalendarIcon />, link: "/event" },
+  {
+    id: 2,
+    label: "Vendor Partners",
+    icon: <VendorIcon />,
+    link: "/vendor-partners",
+  },
+  {
+    id: 3,
+    label: "Event Calendar",
+    icon: <CalendarIcon />,
+    link: "/event-calendar",
+  },
 ];
 
 const programItems = [
-  { id: 4, label: "Practise Builders", icon: <PowerIcon />, link: "/builder" },
-  { id: 5, label: "VSP IOF", icon: <GlassIcon />, link: "/vsp" },
+  {
+    id: 4,
+    label: "Practise Builders",
+    icon: <PowerIcon />,
+    link: "/practise-builder",
+  },
+  { id: 5, label: "VSP IOF", icon: <GlassIcon />, link: "/vsp-iof" },
   {
     id: 6,
     label: "Insurance Profit Pathway",
     icon: <InsuranceIcon />,
-    link: "/insurance",
+    link: "/insurance-profit-pathway",
   },
 ];
 
@@ -76,7 +91,7 @@ export default function MobileNav() {
         : "hover:bg-[#F0F7FE]"
     }`;
   return (
-    <div className="h-30 bg-white shadow-md navbar">
+    <div className="h-30 navbar bg-white shadow-md">
       <div className="p-5">
         <div className="flex items-center justify-between">
           <div>

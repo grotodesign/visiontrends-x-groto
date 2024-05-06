@@ -2,9 +2,9 @@ import React from "react";
 import { Card } from "../ui/card";
 
 export default function OfferingCard({ offering }) {
-  console.log(offering);
+  // console.log(offering);
   return (
-    <Card className="rounded-[16px] card">
+    <Card className="card rounded-[16px]">
       <div className="space-y-4 p-5">
         <div className="flex items-center space-x-4">
           <div className="rounded-full bg-[#F4F4F4] p-4">
@@ -14,7 +14,7 @@ export default function OfferingCard({ offering }) {
             {offering?.name}
           </h1>
         </div>
-        <p className="font-avenirRegular text-[16px] text-[#989898] offeringDesc">
+        <p className="offeringDesc font-avenirRegular text-[16px] text-[#989898]">
           {offering.description}
         </p>
       </div>
