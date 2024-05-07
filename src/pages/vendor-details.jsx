@@ -69,7 +69,7 @@ export default function VendorDetailsPage() {
           </BreadcrumbList>
         </Breadcrumb>
       </div>
-      <div className="flex flex-col justify-between space-x-6 space-y-6  py-3 lg:py-8 lg:flex-row lg:space-y-0 lg:p-5">
+      <div className="flex flex-col justify-between space-x-6 space-y-6  py-3 lg:py-4 lg:flex-row lg:space-y-0 lg:p-5">
         <div>
           <Card className="rounded-[16px] card-vendor-detaiils">
             <div className="space-y-6 p-5">
