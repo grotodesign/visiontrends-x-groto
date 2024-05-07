@@ -74,10 +74,6 @@ export default function MobileNav() {
 
   const activeMenu = menuItems.find((menu) => menu.link === pathname);
 
-  const onMouseOver = () => {
-    setIsCollapsible(!isCollapsible);
-  };
-
   const getNavItemClasses = (menu) =>
     `flex items-center cursor-pointer hover:bg-blue-50 rounded w-full overflow-hidden whitespace-nowrap ${
       activeMenu && activeMenu.id === menu.id
@@ -122,91 +118,97 @@ export default function MobileNav() {
                   </div>
                   <div>
                     <div className="my-4 flex flex-col items-start">
-                      {menuItems.slice(0,3).map(({ id, label, link, icon }) => {
-                        const menuItem = { id, label, link, icon };
-                        const classes = getNavItemClasses(menuItem);
+                      {menuItems
+                        .slice(0, 3)
+                        .map(({ id, label, link, icon }) => {
+                          const menuItem = { id, label, link, icon };
+                          const classes = getNavItemClasses(menuItem);
 
-                        return (
-                          <div className={classes} key={id}>
-                            <Link to={link} className="w-full">
-                              <div className="flex h-full w-full items-center py-3">
-                                <div className="flex w-12 items-center justify-center">
-                                  {icon}
+                          return (
+                            <div className={classes} key={id}>
+                              <Link to={link} className="w-full">
+                                <div className="flex h-full w-full items-center py-3">
+                                  <div className="flex w-12 items-center justify-center">
+                                    {icon}
+                                  </div>
+                                  <span
+                                    className={` font-avenirRegular text-[12px] font-medium ${
+                                      activeMenu && activeMenu.id === id
+                                        ? "text-[#1F3E7C]"
+                                        : "text-[#646464]"
+                                    }`}
+                                  >
+                                    {label}
+                                  </span>
                                 </div>
-                                <span
-                                  className={` font-avenirRegular text-[12px] font-medium ${
-                                    activeMenu && activeMenu.id === id
-                                      ? "text-[#1F3E7C]"
-                                      : "text-[#646464]"
-                                  }`}
-                                >
-                                  {label}
-                                </span>
-                              </div>
-                            </Link>
-                          </div>
-                        );
-                      })}
+                              </Link>
+                            </div>
+                          );
+                        })}
                     </div>
                     <div className="my-4 flex flex-col items-start bg-white">
                       <h1 className="bg-white px-4 font-avenirRegular text-[12px] text-[#989898]">
                         Programs
                       </h1>
-                      {menuItems.slice(3,6).map(({ id, label, link, icon }) => {
-                        const menuItem = { id, label, link, icon };
-                        const classes = getNavItemClasses(menuItem);
+                      {menuItems
+                        .slice(3, 6)
+                        .map(({ id, label, link, icon }) => {
+                          const menuItem = { id, label, link, icon };
+                          const classes = getNavItemClasses(menuItem);
 
-                        return (
-                          <div className={classes} key={id}>
-                            <Link to={link} className="w-full">
-                              <div className="flex h-full w-full items-center py-3">
-                                <div className="flex w-12 items-center justify-center">
-                                  {icon}
+                          return (
+                            <div className={classes} key={id}>
+                              <Link to={link} className="w-full">
+                                <div className="flex h-full w-full items-center py-3">
+                                  <div className="flex w-12 items-center justify-center">
+                                    {icon}
+                                  </div>
+                                  <span
+                                    className={` font-avenirRegular text-[12px] font-medium ${
+                                      activeMenu && activeMenu.id === id
+                                        ? "text-[#1F3E7C]"
+                                        : "text-[#646464]"
+                                    }`}
+                                  >
+                                    {label}
+                                  </span>
                                 </div>
-                                <span
-                                  className={` font-avenirRegular text-[12px] font-medium ${
-                                    activeMenu && activeMenu.id === id
-                                      ? "text-[#1F3E7C]"
-                                      : "text-[#646464]"
-                                  }`}
-                                >
-                                  {label}
-                                </span>
-                              </div>
-                            </Link>
-                          </div>
-                        );
-                      })}
+                              </Link>
+                            </div>
+                          );
+                        })}
                     </div>
                     <div className="my-4 flex flex-col items-start bg-white">
                       <h1 className="bg-white px-4 font-avenirRegular text-[12px] text-[#989898]">
                         Solutions
                       </h1>
-                      {menuItems.slice(6,10).map(({ id, label, link, icon }) => {
-                        const menuItem = { id, label, link, icon };
-                        const classes = getNavItemClasses(menuItem);
+                      {menuItems
+                        .slice(6, 10)
+                        .map(({ id, label, link, icon }) => {
+                          const menuItem = { id, label, link, icon };
+                          const classes = getNavItemClasses(menuItem);
 
-                        return (
-                          <div className={classes} key={id}>
-                            <Link to={link} className="w-full">
-                              <div className="flex h-full w-full items-center py-3">
-                                <div className="flex w-12 items-center justify-center">
-                                  {icon}
+                          return (
+                            <div className={classes} key={id}>
+                              <Link to={link} className="w-full">
+                                <div className="flex h-full w-full items-center py-3">
+                                  <div className="flex w-12 items-center justify-center">
+                                    {icon}
+                                  </div>
+                                  <span
+                                    className={` font-avenirRegular text-[12px] font-medium ${
+                                      activeMenu && activeMenu.id === id
+                                        ? "text-[#1F3E7C]"
+                                        : "text-[#646464]"
+                                    }`}
+                                  >
+                                    {label}
+                                  </span>
                                 </div>
-                                <span
-                                  className={` font-avenirRegular text-[12px] font-medium ${
-                                    activeMenu && activeMenu.id === id
-                                      ? "text-[#1F3E7C]"
-                                      : "text-[#646464]"
-                                  }`}
-                                >
-                                  {label}
-                                </span>
-                              </div>
-                            </Link>
-                          </div>
-                        );
-                      })}
+                              </Link>
+                            </div>
+                          );
+                        })}
                     </div>
                   </div>
                   <div className="">

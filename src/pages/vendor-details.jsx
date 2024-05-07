@@ -40,13 +40,13 @@ export default function VendorDetailsPage() {
       <div className="block lg:hidden">
         <MobileNav />
       </div>
-      <div className="p-5 breadcrumbs-area">
+      <div className="breadcrumbs-area p-5">
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
               <BreadcrumbLink
                 href="/"
-                className="font-avenirRegular text-[12px] lg:text-[14px] text-[#989898]"
+                className="font-avenirRegular text-[12px] text-[#989898] lg:text-[14px]"
               >
                 Home
               </BreadcrumbLink>
@@ -55,27 +55,27 @@ export default function VendorDetailsPage() {
             <BreadcrumbItem>
               <BreadcrumbLink
                 href="/vendor-partners"
-                className="font-avenirRegular text-[12px] lg:text-[14px] text-[#989898]"
+                className="font-avenirRegular text-[12px] text-[#989898] lg:text-[14px]"
               >
                 Vendor Partners
               </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage className="font-avenirRegular text-[12px] lg:text-[14px] font-medium text-[#1F3E7C]">
+              <BreadcrumbPage className="font-avenirRegular text-[12px] font-medium text-[#1F3E7C] lg:text-[14px]">
                 {vendor.vendorName}
               </BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
       </div>
-      <div className="flex flex-col justify-between space-x-6 space-y-6  py-3 lg:py-4 lg:flex-row lg:space-y-0 lg:p-5">
+      <div className="flex flex-col justify-between space-x-6 space-y-6  py-3 lg:flex-row lg:space-y-0 lg:p-5 lg:py-4">
         <div>
-          <Card className="rounded-[16px] card-vendor-detaiils">
+          <Card className="card-vendor-detaiils rounded-[16px]">
             <div className="space-y-6 p-5">
-              <div className="hidden lg:flex items-center justify-between space-x-16">
+              <div className="hidden items-center justify-between space-x-16 lg:flex">
                 <div>
-                  <h1 className="font-avenirHeavy text-[20px] lg:text-[24px] text-[#1F3E7C]">
+                  <h1 className="font-avenirHeavy text-[20px] text-[#1F3E7C] lg:text-[24px]">
                     {vendor.vendorName}
                   </h1>
                   <p className="font-avenirRegular text-[14px] text-[#989898]">
@@ -86,12 +86,12 @@ export default function VendorDetailsPage() {
                   <img src={vendor.vendorLogo} className="w-[136px]" />
                 </div>
               </div>
-              <div className="flex flex-col lg:hidden space-y-4">
-              <div>
+              <div className="flex flex-col space-y-4 lg:hidden">
+                <div>
                   <img src={vendor.vendorLogo} className="w-[136px]" />
                 </div>
                 <div>
-                  <h1 className="font-avenirHeavy text-[20px] lg:text-[24px] text-[#1F3E7C]">
+                  <h1 className="font-avenirHeavy text-[20px] text-[#1F3E7C] lg:text-[24px]">
                     {vendor.vendorName}
                   </h1>
                   <p className="font-avenirRegular text-[14px] text-[#989898]">
@@ -99,36 +99,36 @@ export default function VendorDetailsPage() {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between space-y-2 lg:space-y-0">
+              <div className="flex flex-col space-y-2 lg:flex-row lg:items-center lg:justify-between lg:space-y-0">
                 <div className="flex items-center space-x-2">
-                    <MapPin className="text-[#646464] lg:w-[18px] "/>
-                  <h1 className="font-avenirRegular text-[14px]  lg:text-[16px] font-medium text-[#646464]">
+                  <MapPin className="text-[#646464] lg:w-[18px] " />
+                  <h1 className="font-avenirRegular text-[14px]  font-medium text-[#646464] lg:text-[16px]">
                     {vendor.vendorAddress}
                   </h1>
                 </div>
-                <div className="hidden lg:inline-block h-[20px] w-0.5 self-stretch bg-neutral-100 dark:bg-white/10"></div>
+                <div className="hidden h-[20px] w-0.5 self-stretch bg-neutral-100 dark:bg-white/10 lg:inline-block"></div>
                 <div className="flex items-center space-x-2">
-                    <GlobeIcon />
-                  <h1 className="font-avenirRegular text-[14px]  lg:text-[16px] font-medium text-[#646464]">
+                  <GlobeIcon />
+                  <h1 className="font-avenirRegular text-[14px]  font-medium text-[#646464] lg:text-[16px]">
                     {vendor.vendorWebsite}
                   </h1>
                 </div>
               </div>
               <div className="space-y-8">
                 <div>
-                  <h1 className="font-avenirRegular text-[14px] lg:text-[16px] text-[#989898]">
+                  <h1 className="font-avenirRegular text-[14px] text-[#989898] lg:text-[16px]">
                     {vendor.vendorDescription}
                   </h1>
                 </div>
                 <Separator />
                 <div className="space-y-6">
                   <div className="flex items-center justify-between">
-                  <h1 className="font-avenirRegular text-[16px] font-medium text-[#646464]">
-                    Program Summary
-                  </h1>
-                  <DownloadDialog />
+                    <h1 className="font-avenirRegular text-[16px] font-medium text-[#646464]">
+                      Program Summary
+                    </h1>
+                    <DownloadDialog />
                   </div>
-                  <p className="font-avenirRegular text-[14px] lg:text-[16px] text-[#989898]">
+                  <p className="font-avenirRegular text-[14px] text-[#989898] lg:text-[16px]">
                     {vendor.vendorProgramSummary}
                   </p>
                 </div>
@@ -138,8 +138,10 @@ export default function VendorDetailsPage() {
         </div>
         <div className="space-y-4">
           <div className="space-y-4">
-            <h1 className="text-[#1C1C1C] text-[18px] font-avenirHeavy">Contact Details</h1>
-            <Card className="card-vendor-contact lg:w-[358px] rounded-[16px]">
+            <h1 className="font-avenirHeavy text-[18px] text-[#1C1C1C]">
+              Contact Details
+            </h1>
+            <Card className="card-vendor-contact rounded-[16px] lg:w-[358px]">
               <div className="space-y-4 p-6 lg:p-8">
                 <div className="flex items-center space-x-6">
                   <div>
@@ -179,40 +181,71 @@ export default function VendorDetailsPage() {
             </Card>
           </div>
           <div className="space-y-4">
-            <h1 className="text-[#1C1C1C] text-[18px] font-avenirHeavy">Pricing Details</h1>
-            <Card className="card-vendor-contact lg:w-[358px] rounded-[16px]">
-                <div className="space-y-6 p-6 lg:p-8">
-                    <div className="flex items-center space-x-6">
-                        <div className="space-y-4">
-                            <h1 className="text-[#1C1C1C] text-[18px] font-medium font-avenirRegular">Affiliate Members</h1>
-                            <div className="space-y-1">
-                                <h1 className="text-[#989898] font-avenirRegular text-[14px]"><span className="text-[20px] font-avenirHeavy text-[#1F3E7C]">$675</span> One-time set up fee &</h1>
-                                <h1 className="text-[#989898] font-avenirRegular text-[16px]"><span className="text-[#1C1C1C] font-avenirHeavy">6.5%</span> of insurance receivables collected</h1>
-                            </div>
-                        </div>
+            <h1 className="font-avenirHeavy text-[18px] text-[#1C1C1C]">
+              Pricing Details
+            </h1>
+            <Card className="card-vendor-contact rounded-[16px] lg:w-[358px]">
+              <div className="space-y-6 p-6 lg:p-8">
+                <div className="flex items-center space-x-6">
+                  <div className="space-y-4">
+                    <h1 className="font-avenirRegular text-[18px] font-medium text-[#1C1C1C]">
+                      Affiliate Members
+                    </h1>
+                    <div className="space-y-1">
+                      <h1 className="font-avenirRegular text-[14px] text-[#989898]">
+                        <span className="font-avenirHeavy text-[20px] text-[#1F3E7C]">
+                          $675
+                        </span>{" "}
+                        One-time set up fee &
+                      </h1>
+                      <h1 className="font-avenirRegular text-[16px] text-[#989898]">
+                        <span className="font-avenirHeavy text-[#1C1C1C]">
+                          6.5%
+                        </span>{" "}
+                        of insurance receivables collected
+                      </h1>
                     </div>
-                    <Separator />
-                    <div className="flex items-center space-x-6">
-                        <div className="space-y-6">
-                            <h1 className="text-[#1C1C1C] text-[18px] font-medium font-avenirRegular">Profit+ Members</h1>
-                            <div className="space-y-1">
-                                <h1 className="text-[#989898] font-avenirRegular text-[14px]"><span className="text-[20px] font-avenirHeavy text-[#1F3E7C]">$675</span> One-time set up fee &</h1>
-                                <h1 className="text-[#989898] font-avenirRegular text-[16px]"><span className="text-[#1C1C1C] font-avenirHeavy">6.5%</span> of insurance receivables collected</h1>
-                            </div>
-                            <Button className="bg-[#F0F7FE] rounded-[8px] w-[294px] h-[64px]">
-                                <div className="flex items-center space-x-3">
-                                    <CircleAlert className="w-4 text-[#1F3E7C]" />
-                                    <h1 className="text-[#1F3E7C] font-avenirRegular text-[16px]">Both plans billed monthly</h1>
-                                </div>
-                            </Button>
-                            <div className="w-[286px]">
-                                <p className="text-[#989898] font-avenirRegular text-[14px]">
-                                *Billing Services requires 12-month commitment and authorization to withdraw funds from your banking institution monthly; members will need to provide a 60-day written notice to withdraw from service
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
+                <Separator />
+                <div className="flex items-center space-x-6">
+                  <div className="space-y-6">
+                    <h1 className="font-avenirRegular text-[18px] font-medium text-[#1C1C1C]">
+                      Profit+ Members
+                    </h1>
+                    <div className="space-y-1">
+                      <h1 className="font-avenirRegular text-[14px] text-[#989898]">
+                        <span className="font-avenirHeavy text-[20px] text-[#1F3E7C]">
+                          $675
+                        </span>{" "}
+                        One-time set up fee &
+                      </h1>
+                      <h1 className="font-avenirRegular text-[16px] text-[#989898]">
+                        <span className="font-avenirHeavy text-[#1C1C1C]">
+                          6.5%
+                        </span>{" "}
+                        of insurance receivables collected
+                      </h1>
+                    </div>
+                    <Button className="h-[64px] w-[294px] rounded-[8px] bg-[#F0F7FE]">
+                      <div className="flex items-center space-x-3">
+                        <CircleAlert className="w-4 text-[#1F3E7C]" />
+                        <h1 className="font-avenirRegular text-[16px] text-[#1F3E7C]">
+                          Both plans billed monthly
+                        </h1>
+                      </div>
+                    </Button>
+                    <div className="w-[286px]">
+                      <p className="font-avenirRegular text-[14px] text-[#989898]">
+                        *Billing Services requires 12-month commitment and
+                        authorization to withdraw funds from your banking
+                        institution monthly; members will need to provide a
+                        60-day written notice to withdraw from service
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </Card>
           </div>
         </div>

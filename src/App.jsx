@@ -20,9 +20,12 @@ function App() {
         <Route path="/vendor-partners" element={<VendorPartnersPage />} />
         <Route path="/event-calendar" element={<EventCalendarPage />} />
         <Route path="/vendor-partners/:id" element={<VendorDetailsPage />} />
-        {/* <Route path="/practise-builder" element={<PractiseBuilderPage />} /> */}
+        <Route path="/practise-builder"></Route>
         <Route path="/vsp-iof" element={<IofPage />} />
-        <Route path="/insurance-profit-pathway" element={<InsuranceProfitPathwayPage />} />
+        <Route
+          path="/insurance-profit-pathway"
+          element={<InsuranceProfitPathwayPage />}
+        />
         <Route path="/insurance-solutions" element={<InsurancePage />} />
         <Route path="/lab-solutions" element={<LabsSolutionPage />} />
         <Route path="/merchant-services" element={<MerchantPage />} />

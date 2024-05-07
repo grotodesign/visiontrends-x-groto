@@ -73,8 +73,10 @@ export const VendorPartnersData = [
     id: "2",
     vendorLogo: FourPatientCareImg,
     vendorName: "4PatientCare",
-    vendorDescription: "4PatientCare is the leading ophthalmologist- and optometrist-recommended solution for online scheduling, patient engagement, and marketing campaigns — and the only one dedicated exclusively to the eye care industry.",
-    vendorProgramSummary: "Vision Trends members who are new 4PatientCare customers will receive 10% off our Patient Engagement Platform (up to two providers) plus 33% off installation. Contact jillharder@4patient.care today!",
+    vendorDescription:
+      "4PatientCare is the leading ophthalmologist- and optometrist-recommended solution for online scheduling, patient engagement, and marketing campaigns — and the only one dedicated exclusively to the eye care industry.",
+    vendorProgramSummary:
+      "Vision Trends members who are new 4PatientCare customers will receive 10% off our Patient Engagement Platform (up to two providers) plus 33% off installation. Contact jillharder@4patient.care today!",
     vendorWebsite: "http://www.4patientcare.com",
     isBookedMarked: false,
     vendorAddress: "100 Oceangate Suite 1200 Long Beach CA 90802",
@@ -99,7 +101,8 @@ export const VendorPartnersData = [
     id: "4",
     vendorLogo: BauschLombImg,
     vendorName: "Bausch + Lomb",
-    vendorDescription: "Bausch + Lomb, a division of Bausch Health Companies Inc., (NYSE:BLCO), is solely dedicated to protecting and enhancing the gift of sight for millions of people around the world – from the moment of birth through every phase of life.  Our mission is simple yet powerful: Helping you see better to live better. Our contact lens offerings span the entire spectrum of wearing modalities and include such well-known brand names as ULTRA, BiotrueONEday, INFUSE. Our lens care products include Biotrue and renu brand of chemical disinfectants for soft contact lenses as well as the Boston line of products for cleaning GP contact lenses.",
+    vendorDescription:
+      "Bausch + Lomb, a division of Bausch Health Companies Inc., (NYSE:BLCO), is solely dedicated to protecting and enhancing the gift of sight for millions of people around the world – from the moment of birth through every phase of life.  Our mission is simple yet powerful: Helping you see better to live better. Our contact lens offerings span the entire spectrum of wearing modalities and include such well-known brand names as ULTRA, BiotrueONEday, INFUSE. Our lens care products include Biotrue and renu brand of chemical disinfectants for soft contact lenses as well as the Boston line of products for cleaning GP contact lenses.",
     vendorProgramSummary:
       "Alternative and Plan “B” Eyewear offer 12 unique eyewear collections and are the exclusive North American distributors for Nano Vista, the quintessential children's line, and VerSport, the best premium sports protection line on the market. Our collections are inspired by the world around us and are created to solve problems, drive fashion and at the same time remain affordable and obtainable by all. We have something for everyone from our boutique collection Glacée, to our value priced sunwear collection, One Sun.",
     vendorWebsite: "http://www.bausch.com",
@@ -112,7 +115,8 @@ export const VendorPartnersData = [
     id: "5",
     vendorLogo: BauschLombImg,
     vendorName: "Bausch + Lomb",
-    vendorDescription: "Bausch + Lomb, a division of Bausch Health Companies Inc., (NYSE:BLCO), is solely dedicated to protecting and enhancing the gift of sight for millions of people around the world – from the moment of birth through every phase of life.  Our mission is simple yet powerful: Helping you see better to live better. Our contact lens offerings span the entire spectrum of wearing modalities and include such well-known brand names as ULTRA, BiotrueONEday, INFUSE. Our lens care products include Biotrue and renu brand of chemical disinfectants for soft contact lenses as well as the Boston line of products for cleaning GP contact lenses.",
+    vendorDescription:
+      "Bausch + Lomb, a division of Bausch Health Companies Inc., (NYSE:BLCO), is solely dedicated to protecting and enhancing the gift of sight for millions of people around the world – from the moment of birth through every phase of life.  Our mission is simple yet powerful: Helping you see better to live better. Our contact lens offerings span the entire spectrum of wearing modalities and include such well-known brand names as ULTRA, BiotrueONEday, INFUSE. Our lens care products include Biotrue and renu brand of chemical disinfectants for soft contact lenses as well as the Boston line of products for cleaning GP contact lenses.",
     vendorProgramSummary:
       "Alternative and Plan “B” Eyewear offer 12 unique eyewear collections and are the exclusive North American distributors for Nano Vista, the quintessential children's line, and VerSport, the best premium sports protection line on the market. Our collections are inspired by the world around us and are created to solve problems, drive fashion and at the same time remain affordable and obtainable by all. We have something for everyone from our boutique collection Glacée, to our value priced sunwear collection, One Sun.",
     vendorWebsite: "http://www.bausch.com",
@@ -139,8 +143,10 @@ export const VendorPartnersData = [
     id: "7",
     vendorLogo: FourPatientCareImg,
     vendorName: "4PatientCare",
-    vendorDescription: "4PatientCare is the leading ophthalmologist- and optometrist-recommended solution for online scheduling, patient engagement, and marketing campaigns — and the only one dedicated exclusively to the eye care industry.",
-    vendorProgramSummary: "Vision Trends members who are new 4PatientCare customers will receive 10% off our Patient Engagement Platform (up to two providers) plus 33% off installation. Contact jillharder@4patient.care today!",
+    vendorDescription:
+      "4PatientCare is the leading ophthalmologist- and optometrist-recommended solution for online scheduling, patient engagement, and marketing campaigns — and the only one dedicated exclusively to the eye care industry.",
+    vendorProgramSummary:
+      "Vision Trends members who are new 4PatientCare customers will receive 10% off our Patient Engagement Platform (up to two providers) plus 33% off installation. Contact jillharder@4patient.care today!",
     vendorWebsite: "http://www.4patientcare.com",
     isBookedMarked: false,
     vendorAddress: "100 Oceangate Suite 1200 Long Beach CA 90802",

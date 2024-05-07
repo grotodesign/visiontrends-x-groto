@@ -1,24 +1,24 @@
-import MobileNav from '@/components/shared/MobileNav'
-import Navbar from '@/components/shared/Navbar'
+import MobileNav from "@/components/shared/MobileNav";
+import Navbar from "@/components/shared/Navbar";
 import {
-    Breadcrumb,
-    BreadcrumbItem,
-    BreadcrumbLink,
-    BreadcrumbList,
-    BreadcrumbPage,
-    BreadcrumbSeparator,
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
 export default function LabsSolutionPage() {
   return (
     <div>
-        <div className="hidden lg:block">
-            <Navbar />
-        </div>
-        <div className="block lg:hidden">
-            <MobileNav />
-        </div>
-        <div className="p-5">
+      <div className="hidden lg:block">
+        <Navbar />
+      </div>
+      <div className="block lg:hidden">
+        <MobileNav />
+      </div>
+      <div className="p-5">
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -39,5 +39,5 @@ export default function LabsSolutionPage() {
         </Breadcrumb>
       </div>
     </div>
-  )
+  );
 }
