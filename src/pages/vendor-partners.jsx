@@ -52,7 +52,7 @@ export default function VendorPartnersPage() {
           </BreadcrumbList>
         </Breadcrumb>
       </div>
-      <div className="flex items-center justify-between px-5">
+      <div className="flex vendor-area-1 items-center justify-between px-5">
         <div className="">
           <h1 className="font-avenirHeavy text-[18px] text-[#1C1C1C]">
             Vendor Partners
@@ -75,7 +75,7 @@ export default function VendorPartnersPage() {
         </div>
       </div>
       <div className="mt-5 flex items-center px-5">
-        <div className="flex flex-row space-x-4 lg:items-center">
+        <div className="flex flex-row space-x-4 search-area lg:items-center">
           <div>
             <div className="relative">
               <input

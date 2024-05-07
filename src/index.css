@@ -93,6 +93,14 @@
   .cardArea {
     margin-left: -130px;
   }
+  .card-vendor {
+    width: 320px;
+    margin-left: 85px;
+  }
+
+  .vendor-area-1 {
+    width: 360px;
+  }
   .pulseCard {
     width: 336px;
   }
@@ -123,6 +131,16 @@
   .cardArea {
     margin-left: 0px;
   }
+
+  .card-vendor {
+    width: 330px;
+    margin-left: 0px;
+  }
+
+  .vendor-area-1 {
+    width: 375px;
+  }
+
   .pulseCard {
     width: 355px;
   }
@@ -156,6 +174,12 @@
   .pulseCard {
     width: 365px;
   }
+  .vendor-area-1 {
+    width: 390px;
+  }
+  .card-vendor {
+    width: 352px;
+  }
   .vendorCardArea {
     width: 345px;
   }
@@ -182,6 +206,12 @@
   }
   .cardArea {
     margin-left: 0px;
+  }
+  .vendor-area-1 {
+    width: 415px;
+  }
+  .card-vendor {
+    width: 370px;
   }
   .pulseCard {
     width: 385px;
@@ -213,6 +243,13 @@
   .cardArea {
     margin-left: 0px;
   }
+
+  .vendor-area-1 {
+    width: 415px;
+  }
+  .card-vendor {
+    width: 370px;
+  }
   .vendorCardArea {
     width: 365px;
   }
@@ -243,6 +280,12 @@
   .pulseCard {
     width: 405px;
   }
+  .vendor-area-1 {
+    width: 425px;
+  }
+  .card-vendor {
+    width: 382px;
+  }
   .vendorCardArea {
     width: 380px;
   }
@@ -255,8 +298,12 @@
   .card {
     width: 350px;
   }
+  .vendor-area-1 {
+    width: 100%;
+  }
   .card-vendor {
-    width: 266px;
+    width: 280px;
+    height: 296px;
   }
 }
 
@@ -277,6 +324,10 @@
   .offeringDesc {
     width: 350px;
   }
+
+  .card-vendor {
+    width: 300px;
+  }
 }
 
 @media screen and (min-width: 1536px) {
@@ -287,6 +338,10 @@
   .offeringDesc {
     width: 350px;
   }
+
+  .card-vendor {
+    width: 302px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -296,5 +351,9 @@
 
   .offeringDesc {
     width: 500px;
+  }
+
+  .card-vendor {
+    width: 400px;
   }
 }
