@@ -22,6 +22,7 @@ import VendorPartnersCard from "@/components/shared/VendorPartnersCard";
 import { VendorPartnersData } from "@/lib/data";
 import VendorPartnersBookmarkedCard from "@/components/shared/VendorPartnersBookmarkedCard";
 import FeaturedIllustrationIcon from "@/assets/icons/FeaturedIllustrationIcon";
+import { Link } from "react-router-dom";
 
 export default function VendorPartnersPage() {
   return (
@@ -52,7 +53,7 @@ export default function VendorPartnersPage() {
           </BreadcrumbList>
         </Breadcrumb>
       </div>
-      <div className="flex vendor-area-1 items-center justify-between px-5">
+      <div className="vendor-area-1 flex items-center justify-between px-5">
         <div className="">
           <h1 className="font-avenirHeavy text-[18px] text-[#1C1C1C]">
             Vendor Partners
@@ -75,7 +76,7 @@ export default function VendorPartnersPage() {
         </div>
       </div>
       <div className="mt-5 flex items-center px-5">
-        <div className="flex flex-row space-x-4 search-area lg:items-center">
+        <div className="search-area flex flex-row space-x-4 lg:items-center">
           <div>
             <div className="relative">
               <input
@@ -135,21 +136,23 @@ export default function VendorPartnersPage() {
           {VendorPartnersData.map((vendor) => {
             return (
               <>
-                {vendor.isBookedMarked ? (
-                  <div>
-                    <div className="mr-5 flex justify-end">
-                      <FeaturedIllustrationIcon />
+                <Link to={vendor.id}>
+                  {vendor.isBookedMarked ? (
+                    <div>
+                      <div className="mr-5 flex justify-end">
+                        <FeaturedIllustrationIcon />
+                      </div>
+                      <div className="-mt-8 lg:-mt-8">
+                        <VendorPartnersBookmarkedCard
+                          key={vendor.id}
+                          vendor={vendor}
+                        />
+                      </div>
                     </div>
-                    <div className="-mt-8 lg:-mt-8">
-                      <VendorPartnersBookmarkedCard
-                        key={vendor.id}
-                        vendor={vendor}
-                      />
-                    </div>
-                  </div>
-                ) : (
-                  <VendorPartnersCard key={vendor.id} vendor={vendor} />
-                )}
+                  ) : (
+                    <VendorPartnersCard key={vendor.id} vendor={vendor} />
+                  )}
+                </Link>
               </>
             );
           })}

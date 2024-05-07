@@ -137,6 +137,19 @@
     margin-left: 0px;
   }
 
+  .card-vendor-detaiils{
+    width: 350px;
+    margin-left: 16px;
+  }
+
+  .breadcrumbs-area{
+    width: 400px;
+  }
+
+  .card-vendor-contact {
+    width: 340px;
+  }
+
   .vendor-area-1 {
     width: 375px;
   }
@@ -176,6 +189,9 @@
   }
   .vendor-area-1 {
     width: 390px;
+  }
+  .breadcrumbs-area{
+    width: 450px;
   }
   .card-vendor {
     width: 352px;
@@ -244,6 +260,14 @@
     margin-left: 0px;
   }
 
+  .card-vendor-detaiils{
+    width: 380px;
+  }
+
+  .card-vendor-contact {
+    width: 370px;
+  }
+
   .vendor-area-1 {
     width: 415px;
   }
@@ -277,6 +301,14 @@
   .cardArea {
     margin-left: 0px;
   }
+
+  .card-vendor-detaiils{
+    width: 392px;
+  }
+
+  .card-vendor-contact {
+    width: 382px;
+  }
   .pulseCard {
     width: 405px;
   }
@@ -305,6 +337,14 @@
     width: 280px;
     height: 296px;
   }
+  .card-vendor-detaiils{
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .breadcrumbs-area{
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1497px) {
@@ -313,6 +353,10 @@
   }
   .card-vendor {
     width: 296px;
+  }
+  .card-vendor-detaiils{
+    width: 100%;
+    margin-left: 0px;
   }
 }
 
