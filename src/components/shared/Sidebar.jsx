@@ -30,9 +30,6 @@ const menuItems = [
     icon: <CalendarIcon />,
     link: "/event-calendar",
   },
-];
-
-const programItems = [
   {
     id: 4,
     label: "Practise Builders",
@@ -46,9 +43,6 @@ const programItems = [
     icon: <InsuranceIcon />,
     link: "/insurance-profit-pathway",
   },
-];
-
-const solutionItems = [
   {
     id: 7,
     label: "Insurance Solutions",
@@ -104,7 +98,7 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
         </div>
         <div>
           <div className="my-4 flex flex-col items-start">
-            {menuItems.map(({ id, label, link, icon }) => {
+            {menuItems.slice(0,3).map(({ id, label, link, icon }) => {
               const menuItem = { id, label, link, icon };
               const classes = getNavItemClasses(menuItem);
 
@@ -136,7 +130,7 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
             <h1 className="bg-white px-6 font-avenirRegular text-[14px] text-[#989898]">
               Programs
             </h1>
-            {programItems.map(({ id, label, link, icon }) => {
+            {menuItems.slice(3,6).map(({ id, label, link, icon }) => {
               const menuItem = { id, label, link, icon };
               const classes = getNavItemClasses(menuItem);
 
@@ -168,7 +162,7 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
             <h1 className="bg-white px-6 font-avenirRegular text-[14px] text-[#989898]">
               Solutions
             </h1>
-            {solutionItems.map(({ id, label, link, icon }) => {
+            {menuItems.slice(6,10).map(({ id, label, link, icon }) => {
               const menuItem = { id, label, link, icon };
               const classes = getNavItemClasses(menuItem);
 
