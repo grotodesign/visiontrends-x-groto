@@ -53,7 +53,7 @@ export default function MerchantPage() {
       <div className="card-vsp flex flex-col justify-between space-y-6 py-3  lg:flex-row lg:space-x-6 lg:space-y-0 lg:p-5 lg:py-4">
         <div className="space-y-4">
           <Card className="rounded-[16px]">
-            <div className="space-y-6 px-10 py-[32px]">
+            <div className="space-y-6 p-5 lg:px-10 lg:py-[32px]">
               <div className="flex flex-col space-y-3 lg:flex-row lg:items-center lg:justify-between lg:space-y-0">
                 <h1 className="font-avenirHeavy text-[20px] text-[#1F3E7C] lg:text-[24px]">
                   Merchant Services

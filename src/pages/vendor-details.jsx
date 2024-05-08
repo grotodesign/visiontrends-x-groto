@@ -84,7 +84,7 @@ export default function VendorDetailsPage() {
       <div className="flex flex-col justify-between space-x-6 space-y-6  py-3 lg:flex-row lg:space-y-0 lg:p-5 lg:py-4">
         <div>
           <Card className="card-vendor-detaiils rounded-[16px]">
-            <div className="space-y-6 p-10">
+            <div className="space-y-6 p-5 lg:p-10">
               <div className="hidden items-center justify-between space-x-16 lg:flex">
                 <div>
                   <h1 className="font-avenirHeavy text-[20px] text-[#1F3E7C] lg:text-[24px]">

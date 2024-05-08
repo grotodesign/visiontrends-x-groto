@@ -48,7 +48,7 @@ export default function InsuranceProfitPathwayPage() {
         <div className="space-y-4">
           <div>
             <Card className="rounded-[16px]">
-              <div className="space-y-6 p-10">
+              <div className="space-y-6 p-5 lg:p-10">
                 <div className="flex flex-col space-y-3 lg:flex-row lg:items-center lg:justify-between lg:space-y-0">
                   <h1 className="font-avenirHeavy text-[20px] text-[#1F3E7C] lg:text-[24px]">
                     VT Insurance Profit Pathway
