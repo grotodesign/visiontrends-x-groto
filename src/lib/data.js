@@ -12,6 +12,8 @@ import InsuranceGuideIcon from "@/assets/icons/InsuranceGuideIcon";
 import CredentialingIcon from "@/assets/icons/CredentialingIcon";
 import AdministrationIcon from "@/assets/icons/AdministrationIcon";
 import BillIcon from "@/assets/icons/BillIcon";
+import TraditionalModelIcon from "@/assets/icons/TraditionalModelIcon";
+import SurchargeModelIcon from "@/assets/icons/SurchargeModelIcon";
 
 export const OfferingsData = [
   {
@@ -201,5 +203,22 @@ export const InsuranceSolutionServicesData = [
     name: "Outsourced Billing Services",
     description:
       "Outsource billing to dedicated claims specialists for efficient insurance administration support",
+  },
+];
+
+export const MerchantRateData = [
+  {
+    id: 1,
+    icon: TraditionalModelIcon,
+    name: "Traditional Model",
+    description:
+      "One fixed processing fee, no other transaction or services fees",
+  },
+  {
+    id: 2,
+    icon: SurchargeModelIcon,
+    name: "Surcharge Model",
+    description:
+      "Pass on a portion or the entire credit card merchant service fee to the patient",
   },
 ];

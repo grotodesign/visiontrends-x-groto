@@ -93,6 +93,10 @@
   .card-insurance {
     width: 330px;
   }
+
+  .card-bg {
+    width: 292px;
+  }
   .cardArea {
     margin-left: -130px;
   }
@@ -193,6 +197,9 @@
   .card-1 {
     width: 350px;
   }
+  .card-bg {
+    width: 320px;
+  }
   .offeringContainer {
     width: 390px;
   }
@@ -245,6 +252,9 @@
   }
   .card-1 {
     width: 370px;
+  }
+  .card-bg {
+    width: 392px;
   }
   .offeringContainer {
     width: 405px;
@@ -407,6 +417,13 @@
     width: 280px;
     height: 296px;
   }
+  .card-merchant-area {
+    margin-left: -18px;
+  }
+  .card-rate {
+    width: 361px;
+  }
+
   .card-ipp {
     width: 100%;
     margin-left: 0px;
@@ -437,6 +454,9 @@
     width: 100%;
     margin-left: 0px;
   }
+  .card-rate {
+    width: 401px;
+  }
 }
 
 @media screen and (min-width: 1523px) {
@@ -455,6 +475,10 @@
 
   .card-vendor {
     width: 300px;
+  }
+
+  .card-rate {
+    width: 411px;
   }
 
   .offeringDesc {
@@ -492,6 +516,10 @@
   .card-ip-area {
     width: 100%;
     gap: 30px !important;
+  }
+
+  .card-rate {
+    width: 610px;
   }
 
   .card-vendor {
