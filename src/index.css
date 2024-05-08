@@ -98,6 +98,11 @@
     margin-left: 85px;
   }
 
+  .card-ipp {
+    width: 340px;
+    margin-left: 15px;
+  }
+
   .vendor-area-1 {
     width: 360px;
   }
@@ -190,6 +195,10 @@
   .vendor-area-1 {
     width: 390px;
   }
+  .card-ipp {
+    width: 360px;
+    margin-left: 16px;
+  }
   .breadcrumbs-area {
     width: 450px;
   }
@@ -228,6 +237,10 @@
   }
   .card-vendor {
     width: 370px;
+  }
+  .card-ipp {
+    width: 380px;
+    margin-left: 16px;
   }
   .pulseCard {
     width: 385px;
@@ -309,6 +322,12 @@
   .card-vendor-contact {
     width: 382px;
   }
+
+  .card-ipp {
+    width: 393px;
+    margin-left: 16px;
+  }
+
   .pulseCard {
     width: 405px;
   }
@@ -336,6 +355,10 @@
   .card-vendor {
     width: 280px;
     height: 296px;
+  }
+  .card-ipp {
+    width: 100%;
+    margin-left: 0px;
   }
   .card-vendor-detaiils {
     width: 100%;

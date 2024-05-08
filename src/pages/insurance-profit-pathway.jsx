@@ -41,25 +41,25 @@ export default function InsuranceProfitPathwayPage() {
           </BreadcrumbList>
         </Breadcrumb>
       </div>
-      <div className="flex flex-col justify-between space-x-6 space-y-6  py-3 lg:flex-row lg:space-y-0 lg:p-5 lg:py-4">
+      <div className="card-ipp flex flex-col justify-between space-y-6 py-3  lg:flex-row lg:space-x-6 lg:space-y-0 lg:p-5 lg:py-4">
         <div className="space-y-4">
           <div>
             <Card className="rounded-[16px]">
               <div className="space-y-6 p-5">
-                <div className="flex items-center justify-between">
-                  <h1 className="font-avenirHeavy text-[24px] text-[#1F3E7C]">
+                <div className="flex flex-col space-y-3 lg:flex-row lg:items-center lg:justify-between lg:space-y-0">
+                  <h1 className="font-avenirHeavy text-[20px] text-[#1F3E7C] lg:text-[24px]">
                     VT Insurance Profit Pathway
                   </h1>
                   <Button className="rounded-[8px] bg-[#FEF5D5]">
                     <div className="flex items-center space-x-3">
-                      <h1 className="font-avenirRegular text-[14px] font-medium text-[#1F3E7C]">
+                      <h1 className="font-avenirRegular text-[12px] font-medium text-[#1F3E7C] lg:text-[14px]">
                         INCREASE PROFITS 35% - 50%
                       </h1>
                     </div>
                   </Button>
                 </div>
                 <div>
-                  <p className="font-avenirRegular text-[16px] text-[#989898]">
+                  <p className="font-avenirRegular text-[14px] text-[#989898] lg:text-[16px]">
                     A pathway to profitable insurance jobs is no fairy tale.
                     Vision Trends makes it easy for members to take insurance
                     jobs and turn a profit. Take care of more patients, while
@@ -70,18 +70,18 @@ export default function InsuranceProfitPathwayPage() {
             </Card>
           </div>
           <div className="space-y-4">
-            <h1 className="font-avenirHeavy text-[18px] text-[#1C1C1C]">
+            <h1 className="font-avenirHeavy text-[14px] text-[#1C1C1C] lg:text-[18px]">
               Features -
             </h1>
             <Card className="rounded-[16px]">
               <div className="space-y-6 p-5">
                 <div className="flex items-center justify-between">
-                  <h1 className="font-avenirHeavy text-[16px] text-[#1C1C1C]">
+                  <h1 className="font-avenirHeavy text-[14px] text-[#1C1C1C] lg:text-[16px]">
                     VSP Progressive lens in-office finishing program
                   </h1>
                 </div>
                 <div>
-                  <p className="font-avenirRegular text-[16px] text-[#989898]">
+                  <p className="font-avenirRegular text-[14px] text-[#989898] lg:text-[16px]">
                     Vision Trends members can{" "}
                     <span className="text-[#1C1C1C]">
                       finish progressive lenses in-office
@@ -94,12 +94,12 @@ export default function InsuranceProfitPathwayPage() {
             <Card className="rounded-[16px]">
               <div className="space-y-6 p-5">
                 <div className="flex items-center justify-between">
-                  <h1 className="font-avenirHeavy text-[16px] text-[#1C1C1C]">
+                  <h1 className="font-avenirHeavy text-[14px] text-[#1C1C1C] lg:text-[16px]">
                     Spectra Lab choice with VT preffered fee schedule
                   </h1>
                 </div>
                 <div>
-                  <p className="font-avenirRegular text-[16px] text-[#989898]">
+                  <p className="font-avenirRegular text-[14px] text-[#989898] lg:text-[16px]">
                     Vision Trends has negotiated a higher than average fee
                     schedule. Plus, earn{" "}
                     <span className="text-[#1C1C1C]">
@@ -112,12 +112,12 @@ export default function InsuranceProfitPathwayPage() {
             <Card className="rounded-[16px]">
               <div className="space-y-6 p-5">
                 <div className="flex items-center justify-between">
-                  <h1 className="font-avenirHeavy text-[16px] text-[#1C1C1C]">
+                  <h1 className="font-avenirHeavy text-[14px] text-[#1C1C1C] lg:text-[16px]">
                     Eyemed lab choice
                   </h1>
                 </div>
                 <div>
-                  <p className="w-[430px] font-avenirRegular text-[16px] text-[#989898]">
+                  <p className="font-avenirRegular text-[14px] text-[#989898] lg:w-[430px] lg:text-[16px]">
                     Additional rebates are available when using our exclusive{" "}
                     <span className="text-[#1C1C1C]">VT Lab Solutions.</span>
                   </p>
@@ -127,20 +127,20 @@ export default function InsuranceProfitPathwayPage() {
           </div>
         </div>
         <div className="space-y-4">
-          <div className="space-y-4">
+          <div className="card-contact-ipp space-y-4">
             <h1 className="font-avenirHeavy text-[18px] text-[#1C1C1C]">
               Contact Details
             </h1>
             <Card className="card-vendor-contact rounded-[16px] lg:w-[358px]">
               <div className="space-y-4 p-6 lg:p-8">
                 <div className="flex items-center space-x-6">
-                  <h1 className="font-avenirRegular text-[16px] text-[#1C1C1C]">
+                  <h1 className="font-avenirRegular text-[14px] text-[#1C1C1C] lg:text-[16px]">
                     Get started today. Reach out to us on -
                   </h1>
                 </div>
                 <div className="flex items-center space-x-3">
                   <EmailIcon />
-                  <h1 className="font-avenirRegular text-[16px] font-medium text-[#646464]">
+                  <h1 className="font-avenirRegular text-[14px] font-medium text-[#646464] lg:text-[16px]">
                     www.vtrends.us/eastwest
                   </h1>
                 </div>
@@ -151,7 +151,7 @@ export default function InsuranceProfitPathwayPage() {
             <Card className="card-vendor-contact rounded-[16px] lg:w-[358px]">
               <div className="space-y-4 p-6 lg:p-8">
                 <div className="flex items-center space-x-6">
-                  <p className="font-avenirRegular text-[16px] text-[#989898]">
+                  <p className="font-avenirRegular text-[14px] text-[#989898] lg:text-[16px]">
                     *Increased profitability projections compare each insurance
                     company’s standard lab dispensing fee schedule to the
                     specific VT program (i.e. VSP IOF Program) or opting out of
@@ -160,7 +160,7 @@ export default function InsuranceProfitPathwayPage() {
                   </p>
                 </div>
                 <div className="flex items-center space-x-6">
-                  <p className="font-avenirRegular text-[16px] text-[#989898]">
+                  <p className="font-avenirRegular text-[14px] text-[#989898] lg:text-[16px]">
                     **15 states have passed laws (Lab Choice States) that allow
                     independent providers to opt-out of an insurance or managed
                     vision care company lab requirement as a condition of
