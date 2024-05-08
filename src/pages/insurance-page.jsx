@@ -1,3 +1,4 @@
+import InsuranceCard from "@/components/shared/InsuranceCard";
 import MobileNav from "@/components/shared/MobileNav";
 import Navbar from "@/components/shared/Navbar";
 import {
@@ -8,6 +9,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import { InsuranceSolutionServicesData } from "@/lib/data";
 
 export default function InsurancePage() {
   return (
@@ -48,6 +50,13 @@ export default function InsurancePage() {
             your interest in growing and improving your practice's insurance
             business.
           </p>
+        </div>
+      </div>
+      <div className="flex flex-col justify-between space-x-6 space-y-6 py-8 lg:flex-row lg:space-y-0 lg:p-5">
+        <div className="card-ip-area grid justify-center gap-5 lg:grid-cols-2 lg:gap-6 lg:px-0">
+          {InsuranceSolutionServicesData.map((offering) => (
+            <InsuranceCard key={offering.id} offering={offering} />
+          ))}
         </div>
       </div>
     </div>

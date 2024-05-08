@@ -8,6 +8,10 @@ import ABBOpticalGroupImg from "@/assets/vendor-images/ABBOpticalGroup.png";
 import FourPatientCareImg from "@/assets/vendor-images/4PatientCare.png";
 import KattoufImg from "@/assets/vendor-images/KATTOUF.png";
 import BauschLombImg from "@/assets/vendor-images/BauschLomb.png";
+import InsuranceGuideIcon from "@/assets/icons/InsuranceGuideIcon";
+import CredentialingIcon from "@/assets/icons/CredentialingIcon";
+import AdministrationIcon from "@/assets/icons/AdministrationIcon";
+import BillIcon from "@/assets/icons/BillIcon";
 
 export const OfferingsData = [
   {
@@ -166,5 +170,36 @@ export const VendorPartnersData = [
     vendorAddress: "100 Oceangate Suite 1200 Long Beach CA 90802",
     vendorEmailId: "delder@aaopticalco.com",
     vendorPhoneNumber: "806.773.8007",
+  },
+];
+
+export const InsuranceSolutionServicesData = [
+  {
+    id: 1,
+    icon: InsuranceGuideIcon,
+    name: "Insurance Guide",
+    description:
+      "Streamline insurance processes with our online resource for members' eligibility and claims assistance",
+  },
+  {
+    id: 2,
+    icon: CredentialingIcon,
+    name: "Credentialing",
+    description:
+      "Our team handles credentialing verification for each insurance program, enabling more patient care",
+  },
+  {
+    id: 3,
+    icon: AdministrationIcon,
+    name: "Insurance Administration Training",
+    description:
+      "Equip staff with expertise in verifying eligibility, filing claims, and reconciling EOBs",
+  },
+  {
+    id: 4,
+    icon: BillIcon,
+    name: "Outsourced Billing Services",
+    description:
+      "Outsource billing to dedicated claims specialists for efficient insurance administration support",
   },
 ];

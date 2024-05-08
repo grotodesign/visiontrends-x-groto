@@ -90,6 +90,9 @@
   .card {
     width: 320px;
   }
+  .card-insurance {
+    width: 330px;
+  }
   .cardArea {
     margin-left: -130px;
   }
@@ -138,6 +141,11 @@
   .card {
     width: 335px;
   }
+
+  .card-insurance {
+    width: 346px;
+  }
+
   .cardArea {
     margin-left: 0px;
   }
@@ -247,6 +255,9 @@
   .cardArea {
     margin-left: 0px;
   }
+  .card-insurance {
+    width: 380px;
+  }
   .vendor-area-1 {
     width: 415px;
   }
@@ -335,6 +346,9 @@
   .card {
     width: 390px;
   }
+  .card-insurance {
+    width: 390px;
+  }
   .cardArea {
     margin-left: 0px;
   }
@@ -382,6 +396,10 @@
   .card {
     width: 350px;
   }
+
+  .card-insurance {
+    width: 100%;
+  }
   .vendor-area-1 {
     width: 100%;
   }
@@ -394,7 +412,7 @@
     margin-left: 0px;
   }
 
-  .card-vsp{
+  .card-vsp {
     width: 100%;
     margin-left: 0px;
   }
@@ -430,8 +448,17 @@
     width: 350px;
   }
 
+  .card-ip-area {
+    width: 100%;
+    gap: 25px !important;
+  }
+
   .card-vendor {
     width: 300px;
+  }
+
+  .offeringDesc {
+    width: 100%;
   }
 }
 
@@ -456,6 +483,15 @@
 
   .offeringDesc {
     width: 500px;
+  }
+
+  .card-insurance {
+    width: 100%;
+  }
+
+  .card-ip-area {
+    width: 100%;
+    gap: 30px !important;
   }
 
   .card-vendor {
