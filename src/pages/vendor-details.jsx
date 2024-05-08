@@ -30,7 +30,19 @@ export default function VendorDetailsPage() {
     return <div>Vendor not found</div>;
   }
 
-  console.log(vendor);
+  const handleEmailClick = () => {
+    window.location.href = `mailto:${vendor.vendorEmailId}`;
+  };
+
+  const handlePhoneClick = () => {
+    window.location.href = `tel:${vendor.vendorPhoneNumber}`;
+  };
+
+  const handleWebsiteClick = () => {
+    window.open(vendor.vendorWebsite, "_blank");
+  };
+
+  // console.log(vendor);
 
   return (
     <div>
@@ -72,7 +84,7 @@ export default function VendorDetailsPage() {
       <div className="flex flex-col justify-between space-x-6 space-y-6  py-3 lg:flex-row lg:space-y-0 lg:p-5 lg:py-4">
         <div>
           <Card className="card-vendor-detaiils rounded-[16px]">
-            <div className="space-y-6 p-5">
+            <div className="space-y-6 p-10">
               <div className="hidden items-center justify-between space-x-16 lg:flex">
                 <div>
                   <h1 className="font-avenirHeavy text-[20px] text-[#1F3E7C] lg:text-[24px]">
@@ -109,7 +121,10 @@ export default function VendorDetailsPage() {
                 <div className="hidden h-[20px] w-0.5 self-stretch bg-neutral-100 dark:bg-white/10 lg:inline-block"></div>
                 <div className="flex items-center space-x-2">
                   <GlobeIcon />
-                  <h1 className="font-avenirRegular text-[14px]  font-medium text-[#646464] lg:text-[16px]">
+                  <h1
+                    className="cursor-pointer font-avenirRegular  text-[14px] font-medium text-[#646464] lg:text-[16px]"
+                    onClick={handleWebsiteClick}
+                  >
                     {vendor.vendorWebsite}
                   </h1>
                 </div>
@@ -164,13 +179,19 @@ export default function VendorDetailsPage() {
                 </div>
                 <Separator />
                 <div className="space-y-2">
-                  <div className="flex items-center space-x-3">
+                  <div
+                    className="flex cursor-pointer items-center space-x-3"
+                    onClick={handleEmailClick}
+                  >
                     <img src={EmailIcon} className="w-[20px]" />
                     <h1 className="font-avenirRegular text-[16px] font-medium text-[#646464]">
                       {vendor.vendorEmailId}
                     </h1>
                   </div>
-                  <div className="flex items-center space-x-3">
+                  <div
+                    className="flex cursor-pointer items-center space-x-3"
+                    onClick={handlePhoneClick}
+                  >
                     <img src={CallIcon} className="w-[20px]" />
                     <h1 className="font-avenirRegular text-[16px] font-medium text-[#646464]">
                       {vendor.vendorPhoneNumber}

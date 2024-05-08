@@ -17,6 +17,14 @@ import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 
 export default function IofPage() {
+  const handleEmailClick = () => {
+    window.location.href = `mailto:mtoups@vtrends.us`;
+  };
+
+  const handlePhoneClick = () => {
+    window.location.href = `tel:281-772-5551`;
+  };
+
   return (
     <div>
       <div className="hidden lg:block">
@@ -48,7 +56,7 @@ export default function IofPage() {
       <div className="card-vsp flex flex-col justify-between space-y-6 py-3  lg:flex-row lg:space-x-6 lg:space-y-0 lg:p-5 lg:py-4">
         <div>
           <Card className="rounded-[16px]">
-            <div className="space-y-6 p-5">
+            <div className="space-y-6 p-10">
               <div className="flex flex-col space-y-3 lg:flex-row lg:items-center lg:justify-between lg:space-y-0">
                 <h1 className="font-avenirHeavy text-[20px] text-[#1F3E7C] lg:text-[24px]">
                   VSP In-Office Finishing Pilot Program
@@ -132,15 +140,21 @@ export default function IofPage() {
                 </div>
                 <Separator />
                 <div className="space-y-2">
-                  <div className="flex items-center space-x-3">
+                  <div
+                    className="flex cursor-pointer items-center space-x-3"
+                    onClick={handleEmailClick}
+                  >
                     <img src={EmailIcon} className="w-[20px]" />
                     <h1 className="font-avenirRegular text-[16px] font-medium text-[#646464]">
                       mtoups@vtrends.us
                     </h1>
                   </div>
-                  <div className="flex items-center space-x-3">
+                  <div className="flex cursor-pointer items-center space-x-3">
                     <img src={CallIcon} className="w-[20px]" />
-                    <h1 className="font-avenirRegular text-[16px] font-medium text-[#646464]">
+                    <h1
+                      className="font-avenirRegular text-[16px] font-medium text-[#646464]"
+                      onClick={handlePhoneClick}
+                    >
                       281-772-5551
                     </h1>
                   </div>

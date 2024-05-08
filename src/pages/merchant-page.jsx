@@ -19,6 +19,9 @@ import { Button } from "@/components/ui/button";
 import { CircleAlert } from "lucide-react";
 
 export default function MerchantPage() {
+  const handleEmailClick = () => {
+    window.location.href = `mailto:memberservices@vtrends.us`;
+  };
   return (
     <div>
       <div className="hidden lg:block">
@@ -50,7 +53,7 @@ export default function MerchantPage() {
       <div className="card-vsp flex flex-col justify-between space-y-6 py-3  lg:flex-row lg:space-x-6 lg:space-y-0 lg:p-5 lg:py-4">
         <div className="space-y-4">
           <Card className="rounded-[16px]">
-            <div className="space-y-6 p-5">
+            <div className="space-y-6 px-10 py-[32px]">
               <div className="flex flex-col space-y-3 lg:flex-row lg:items-center lg:justify-between lg:space-y-0">
                 <h1 className="font-avenirHeavy text-[20px] text-[#1F3E7C] lg:text-[24px]">
                   Merchant Services
@@ -118,7 +121,10 @@ export default function MerchantPage() {
                     Join us today. Reach out to us on -
                   </h1>
                 </div>
-                <div className="flex items-center space-x-3">
+                <div
+                  className="flex cursor-pointer items-center space-x-3"
+                  onClick={handleEmailClick}
+                >
                   <img src={EmailIcon} className="w-[20px]" />
                   <h1 className="font-avenirRegular text-[14px] font-medium text-[#646464] lg:text-[16px]">
                     memberservices@vtrends.us
