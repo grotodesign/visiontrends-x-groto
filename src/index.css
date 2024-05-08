@@ -103,6 +103,11 @@
     margin-left: 15px;
   }
 
+  .card-vsp {
+    width: 340px;
+    margin-left: 15px;
+  }
+
   .vendor-area-1 {
     width: 360px;
   }
@@ -199,6 +204,16 @@
     width: 360px;
     margin-left: 16px;
   }
+
+  .card-vsp {
+    width: 360px;
+    margin-left: 16px;
+  }
+
+  .card-vendor-contact {
+    width: 360px;
+  }
+
   .breadcrumbs-area {
     width: 450px;
   }
@@ -242,6 +257,15 @@
     width: 380px;
     margin-left: 16px;
   }
+  .card-vsp {
+    width: 380px;
+    margin-left: 16px;
+  }
+
+  .card-vendor-contact {
+    width: 380px;
+  }
+
   .pulseCard {
     width: 385px;
   }
@@ -278,7 +302,7 @@
   }
 
   .card-vendor-contact {
-    width: 370px;
+    width: 380px;
   }
 
   .vendor-area-1 {
@@ -328,6 +352,15 @@
     margin-left: 16px;
   }
 
+  .card-vsp {
+    width: 393px;
+    margin-left: 16px;
+  }
+
+  .card-vendor-contact {
+    width: 393px;
+  }
+
   .pulseCard {
     width: 405px;
   }
@@ -357,6 +390,11 @@
     height: 296px;
   }
   .card-ipp {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .card-vsp{
     width: 100%;
     margin-left: 0px;
   }

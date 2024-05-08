@@ -45,16 +45,16 @@ export default function IofPage() {
           </BreadcrumbList>
         </Breadcrumb>
       </div>
-      <div className="flex flex-col justify-between space-x-6 space-y-6  py-3 lg:flex-row lg:space-y-0 lg:p-5 lg:py-4">
+      <div className="flex flex-col card-vsp justify-between lg:space-x-6 space-y-6  py-3 lg:flex-row lg:space-y-0 lg:p-5 lg:py-4">
         <div>
           <Card className="rounded-[16px]">
             <div className="space-y-6 p-5">
-              <div className="flex items-center justify-between">
-                <h1 className="font-avenirHeavy text-[24px] text-[#1F3E7C]">
+              <div className="flex flex-col lg:flex-row space-y-3 lg:space-y-0 lg:items-center lg:justify-between">
+                <h1 className="font-avenirHeavy text-[20px] lg:text-[24px] text-[#1F3E7C]">
                   VSP In-Office Finishing Pilot Program
                 </h1>
-                <Button className="rounded-[8px] bg-[#F0F7FE]">
-                  <div className="flex items-center space-x-3">
+                <Button className="w-[154px] lg:w-auto rounded-[8px] bg-[#F0F7FE]">
+                  <div className="flex items-center space-x-2 lg:space-x-3">
                     <StarIcon />
                     <h1 className="font-avenirRegular text-[14px] font-medium text-[#1F3E7C]">
                       Member Exclusive
@@ -63,14 +63,14 @@ export default function IofPage() {
                 </Button>
               </div>
               <div>
-                <p className="font-avenirRegular text-[16px] text-[#989898]">
+                <p className="font-avenirRegular text-[14px] lg:text-[16px] text-[#989898]">
                   Vision Trends and VSP Optics have entered into a new provider
                   arrangement to offer our members a more profitable approach to
                   providing quality eye care and eye wear for eligible patients.{" "}
                 </p>
               </div>
               <div>
-                <p className="font-avenirRegular text-[16px] text-[#989898]">
+                <p className="font-avenirRegular text-[14px] lg:text-[16px] text-[#989898]">
                   This Vision Trends/VSP Progressive Lens IOF Pilot Program is
                   available to{" "}
                   <span className="font-avenirHeavy text-[#1C1C1C]">
@@ -85,7 +85,7 @@ export default function IofPage() {
                   Program Highlights -
                 </h1>
                 <div className="p-5">
-                  <ul className="list-disc space-y-3 font-avenirRegular text-[16px] text-[#989898]">
+                  <ul className="list-disc space-y-3 font-avenirRegular text-[14px] lg:text-[16px] text-[#989898]">
                     <li className="">
                       <span className="font-avenirHeavy text-[#1C1C1C] ">
                         Generate an average 30% increase in PROFIT
