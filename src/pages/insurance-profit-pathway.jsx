@@ -1,4 +1,4 @@
-import EmailIcon from "@/assets/icons/EmailIcon";
+import EmailIcon from "@/assets/email.png";
 import MobileNav from "@/components/shared/MobileNav";
 import Navbar from "@/components/shared/Navbar";
 import {
@@ -139,7 +139,7 @@ export default function InsuranceProfitPathwayPage() {
                   </h1>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <EmailIcon />
+                  <img src={EmailIcon} className="w-[20px]" />
                   <h1 className="font-avenirRegular text-[14px] font-medium text-[#646464] lg:text-[16px]">
                     www.vtrends.us/eastwest
                   </h1>

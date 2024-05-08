@@ -1,5 +1,5 @@
-import CallIcon from "@/assets/icons/CallIcon";
-import EmailIcon from "@/assets/icons/EmailIcon";
+import CallIcon from "@/assets/call.png";
+import EmailIcon from "@/assets/email.png";
 import GlobeIcon from "@/assets/icons/GlobeIcon";
 import DownloadDialog from "@/components/shared/DownloadDialog";
 import MobileNav from "@/components/shared/MobileNav";
@@ -165,13 +165,13 @@ export default function VendorDetailsPage() {
                 <Separator />
                 <div className="space-y-2">
                   <div className="flex items-center space-x-3">
-                    <EmailIcon />
+                    <img src={EmailIcon} className="w-[20px]" />
                     <h1 className="font-avenirRegular text-[16px] font-medium text-[#646464]">
                       {vendor.vendorEmailId}
                     </h1>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <CallIcon />
+                    <img src={CallIcon} className="w-[20px]" />
                     <h1 className="font-avenirRegular text-[16px] font-medium text-[#646464]">
                       {vendor.vendorPhoneNumber}
                     </h1>

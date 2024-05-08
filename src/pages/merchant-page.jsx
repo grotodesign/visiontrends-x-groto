@@ -10,8 +10,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Card } from "@/components/ui/card";
 import CardKnoxImg from "@/assets/cardknox.png";
-import EmailIcon from "@/assets/icons/EmailIcon";
-import CallIcon from "@/assets/icons/CallIcon";
+import EmailIcon from "@/assets/email.png";
 import { Separator } from "@/components/ui/separator";
 import InsuranceCard from "@/components/shared/InsuranceCard";
 import { MerchantRateData } from "@/lib/data";
@@ -120,7 +119,7 @@ export default function MerchantPage() {
                   </h1>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <EmailIcon />
+                  <img src={EmailIcon} className="w-[20px]" />
                   <h1 className="font-avenirRegular text-[14px] font-medium text-[#646464] lg:text-[16px]">
                     memberservices@vtrends.us
                   </h1>

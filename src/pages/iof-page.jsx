@@ -1,5 +1,5 @@
-import CallIcon from "@/assets/icons/CallIcon";
-import EmailIcon from "@/assets/icons/EmailIcon";
+import CallIcon from "@/assets/call.png";
+import EmailIcon from "@/assets/email.png";
 import StarIcon from "@/assets/icons/StarIcon";
 import MobileNav from "@/components/shared/MobileNav";
 import Navbar from "@/components/shared/Navbar";
@@ -133,13 +133,13 @@ export default function IofPage() {
                 <Separator />
                 <div className="space-y-2">
                   <div className="flex items-center space-x-3">
-                    <EmailIcon />
+                    <img src={EmailIcon} className="w-[20px]" />
                     <h1 className="font-avenirRegular text-[16px] font-medium text-[#646464]">
                       mtoups@vtrends.us
                     </h1>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <CallIcon />
+                    <img src={CallIcon} className="w-[20px]" />
                     <h1 className="font-avenirRegular text-[16px] font-medium text-[#646464]">
                       281-772-5551
                     </h1>
