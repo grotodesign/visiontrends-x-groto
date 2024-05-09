@@ -248,7 +248,7 @@ export default function VendorDetailsPage() {
                         of insurance receivables collected
                       </h1>
                     </div>
-                    <Button className="h-[64px] w-[294px] rounded-[8px] bg-[#F0F7FE]">
+                    <Button className="h-[64px] w-[294px] rounded-[8px] bg-[#F0F7FE] hover:bg-[#F0F7FE]">
                       <div className="flex items-center space-x-3">
                         <CircleAlert className="w-4 text-[#1F3E7C]" />
                         <h1 className="font-avenirRegular text-[16px] text-[#1F3E7C]">

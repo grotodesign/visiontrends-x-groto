@@ -410,6 +410,11 @@
   .card-insurance {
     width: 100%;
   }
+
+  .carousel-area {
+    width: 666px;
+    height: 328px;
+  }
   .vendor-area-1 {
     width: 100%;
   }
@@ -454,6 +459,10 @@
     width: 100%;
     margin-left: 0px;
   }
+  .carousel-area {
+    width: 732px;
+    height: 328px;
+  }
   .card-rate {
     width: 401px;
   }
@@ -466,6 +475,11 @@
 
   .offeringDesc {
     width: 350px;
+  }
+
+  .carousel-area {
+    width: 762px;
+    height: 358px;
   }
 
   .card-ip-area {
@@ -507,6 +521,11 @@
 
   .offeringDesc {
     width: 500px;
+  }
+
+  .carousel-area {
+    width: 1162px;
+    height: 458px;
   }
 
   .card-insurance {
