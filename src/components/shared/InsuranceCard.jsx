@@ -6,7 +6,7 @@ export default function InsuranceCard({ offering }) {
     <Card className="card-insurance rounded-[16px]">
       <div className="space-y-4 p-[24px]">
         <div className="flex flex-col space-y-2 lg:flex-row lg:items-center lg:space-x-4 lg:space-y-0">
-          <div className="flex h-[70px] w-[70px] justify-center rounded-full bg-[#F4F4F4] p-4  lg:w-auto lg:p-4">
+          <div className="flex h-[75px] w-[75px] justify-center rounded-full bg-[#F4F4F4] p-4  lg:w-auto lg:p-4">
             <div className="">{offering?.icon && <offering.icon />}</div>
           </div>
           <div className="space-y-1">

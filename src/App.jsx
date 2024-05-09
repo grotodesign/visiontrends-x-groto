@@ -10,6 +10,7 @@ import LearningSolutionPage from "./pages/learning-solution";
 import MerchantPage from "./pages/merchant-page";
 import IofPage from "./pages/iof-page";
 import InsuranceProfitPathwayPage from "./pages/insurance-profit-pathway";
+import Manager360Page from "./pages/manager360-page";
 // import PractiseBuilderPage from "./pages/practise-builder";
 
 function App() {
@@ -30,6 +31,10 @@ function App() {
         <Route path="/lab-solutions" element={<LabsSolutionPage />} />
         <Route path="/merchant-services" element={<MerchantPage />} />
         <Route path="/learning-solutions" element={<LearningSolutionPage />} />
+        <Route
+          path="/learning-solutions/manager-360"
+          element={<Manager360Page />}
+        />
       </Route>
     </Routes>
   );

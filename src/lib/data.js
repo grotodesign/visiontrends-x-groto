@@ -14,6 +14,13 @@ import AdministrationIcon from "@/assets/icons/AdministrationIcon";
 import BillIcon from "@/assets/icons/BillIcon";
 import TraditionalModelIcon from "@/assets/icons/TraditionalModelIcon";
 import SurchargeModelIcon from "@/assets/icons/SurchargeModelIcon";
+import LearningVideoIcon from "@/assets/icons/LearningVideoIcon";
+import FacebookIcon from "@/assets/icons/FacebookIcon";
+import FallForumIcon from "@/assets/icons/FallForumIcon";
+import NoFearIcon from "@/assets/nofear.png";
+import GoldIcon from "@/assets/gold.png";
+import GradIcon from "@/assets/icons/GradIcon";
+import ManagerIcon from "@/assets/icons/ManagerIcon";
 
 export const OfferingsData = [
   {
@@ -220,5 +227,80 @@ export const MerchantRateData = [
     name: "Surcharge Model",
     description:
       "Pass on a portion or the entire credit card merchant service fee to the patient",
+  },
+];
+
+export const LearningSolutionData = [
+  {
+    id: 1,
+    icon: LearningVideoIcon,
+    name: "Pulse on Your Practice",
+    description:
+      "A dedicated platform to stimulate critical thinking on every facet of your practice",
+    isThereNewSesson: false,
+    startingDate: "",
+  },
+  {
+    id: 2,
+    icon: FacebookIcon,
+    name: "Private Facebook Group",
+    description:
+      "Connect with us in our private group! Bring your questions; we've got answers. Join us!",
+    isThereNewSesson: false,
+    startingDate: "",
+  },
+  {
+    id: 3,
+    icon: FallForumIcon,
+    name: "Fall Forum",
+    description:
+      "Consistent, comprehensive training for staff and a simple, measurable solution for practice owners",
+    isThereNewSesson: false,
+    startingDate: "",
+  },
+  {
+    id: 4,
+    icon: NoFearIcon,
+    name: "No Fear, No Limits Podcast",
+    description:
+      "Join us for inspiring stories of optometrists achieving next-level success, conquering fear and limits",
+    isThereNewSesson: false,
+    startingDate: "",
+  },
+  {
+    id: 5,
+    icon: AdministrationIcon,
+    name: "Staff 360",
+    description:
+      "Join us for inspiring stories of optometrists achieving next-level success, conquering fear and limits",
+    isThereNewSesson: false,
+    startingDate: "",
+  },
+  {
+    id: 6,
+    icon: GradIcon,
+    name: "Spring Business Academy",
+    description:
+      "Consistent, comprehensive training for staff and a simple, measurable solution for practice owners",
+    isThereNewSesson: false,
+    startingDate: "",
+  },
+  {
+    id: 7,
+    icon: GoldIcon,
+    name: "Path to the Gold Standard",
+    description:
+      "Virtual coaching with Drs. Kattouf, Toups, and Inns: 4 sessions monthly to elevate your practice",
+    isThereNewSesson: true,
+    startingDate: "May 2023",
+  },
+  {
+    id: 8,
+    icon: ManagerIcon,
+    name: "Manager 360/ Owner 360",
+    description:
+      "12-week live training with Joy Gibb, ABOC, covering essential business tools for increased profitability",
+    isThereNewSesson: true,
+    startingDate: "25 April, 2024",
   },
 ];

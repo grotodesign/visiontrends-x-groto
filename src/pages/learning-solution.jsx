@@ -1,3 +1,5 @@
+import LearningCard from "@/components/shared/LearningCard";
+import LearningSessionCard from "@/components/shared/LearningSessionCard";
 import MobileNav from "@/components/shared/MobileNav";
 import Navbar from "@/components/shared/Navbar";
 import {
@@ -8,6 +10,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import { LearningSolutionData } from "@/lib/data";
 
 export default function LearningSolutionPage() {
   return (
@@ -48,6 +51,21 @@ export default function LearningSolutionPage() {
             Learning Solutions. Our platform ensures engaging, consistent
             learning.
           </p>
+        </div>
+      </div>
+      <div className="flex flex-col justify-between space-x-6 space-y-6 py-8 lg:flex-row lg:space-y-0 lg:p-5">
+        <div className="card-ip-area grid justify-center gap-5 lg:grid-cols-2 lg:gap-6 lg:px-0">
+          {LearningSolutionData.map((offering) => {
+            return (
+              <>
+                {offering.isThereNewSesson ? (
+                  <LearningSessionCard key={offering.id} offering={offering} />
+                ) : (
+                  <LearningCard key={offering.id} offering={offering} />
+                )}
+              </>
+            );
+          })}
         </div>
       </div>
     </div>

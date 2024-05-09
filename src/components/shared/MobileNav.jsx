@@ -81,7 +81,7 @@ export default function MobileNav() {
         : "hover:bg-[#F0F7FE]"
     }`;
   return (
-    <div className="h-30 navbar bg-white shadow-md">
+    <div className="h-30 navbar border-b-2 border-[#EEEEEE] bg-white">
       <div className="p-5">
         <div className="flex items-center justify-between">
           <div>
@@ -246,7 +246,7 @@ export default function MobileNav() {
             </div>
             <div>
               <Button className="font-avenirRegular font-medium">
-                Submit Sales
+                Sales Submission
               </Button>
             </div>
           </div>

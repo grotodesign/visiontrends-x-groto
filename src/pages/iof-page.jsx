@@ -71,14 +71,14 @@ export default function IofPage() {
                 </Button>
               </div>
               <div>
-                <p className="font-avenirRegular text-[14px] text-[#989898] lg:text-[16px]">
+                <p className="font-avenirRegular text-[14px] font-thin text-[#989898] lg:text-[16px]">
                   Vision Trends and VSP Optics have entered into a new provider
                   arrangement to offer our members a more profitable approach to
                   providing quality eye care and eye wear for eligible patients.{" "}
                 </p>
               </div>
               <div>
-                <p className="font-avenirRegular text-[14px] text-[#989898] lg:text-[16px]">
+                <p className="font-avenirRegular text-[14px] font-thin text-[#989898] lg:text-[16px]">
                   This Vision Trends/VSP Progressive Lens IOF Pilot Program is
                   available to{" "}
                   <span className="font-avenirHeavy text-[#1C1C1C]">
@@ -93,7 +93,7 @@ export default function IofPage() {
                   Program Highlights -
                 </h1>
                 <div className="p-5">
-                  <ul className="list-disc space-y-3 font-avenirRegular text-[14px] text-[#989898] lg:text-[16px]">
+                  <ul className="list-disc space-y-3 font-avenirRegular text-[14px] font-thin text-[#989898] lg:text-[16px]">
                     <li className="">
                       <span className="font-avenirHeavy text-[#1C1C1C] ">
                         Generate an average 30% increase in PROFIT

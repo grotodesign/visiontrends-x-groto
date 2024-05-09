@@ -6,7 +6,7 @@ import LogoutDialog from "./LogoutDialog";
 
 export default function Navbar() {
   return (
-    <div className="h-30 bg-white shadow-md">
+    <div className="h-30 border-b-2 border-[#EEEEEE] bg-white">
       <div className="p-5">
         <div className="flex justify-between">
           <div>
@@ -26,7 +26,7 @@ export default function Navbar() {
             </div>
             <div className="">
               <Button className="font-avenirRegular font-medium">
-                Submit Sales
+                Sales Submission
               </Button>
             </div>
             <div className="border-l-2">

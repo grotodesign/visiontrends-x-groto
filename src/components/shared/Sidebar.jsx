@@ -206,7 +206,7 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
                 </p>
               </div>
               <div>
-                <Button className="bg-gray-500 px-9 font-avenirHeavy">
+                <Button className="bg-[#374E7D] px-9 font-avenirHeavy">
                   Donate Now
                 </Button>
               </div>
