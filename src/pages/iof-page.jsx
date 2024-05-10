@@ -61,7 +61,7 @@ export default function IofPage() {
                 <h1 className="font-avenirHeavy text-[20px] text-[#1F3E7C] lg:text-[24px]">
                   VSP In-Office Finishing Pilot Program
                 </h1>
-                <Button className="w-[154px] rounded-[8px] bg-[#F0F7FE] lg:w-auto">
+                <Button className="w-[154px] rounded-[8px] bg-[#F0F7FE] hover:bg-[#F0F7FE] lg:w-auto">
                   <div className="flex items-center space-x-2 lg:space-x-3">
                     <StarIcon />
                     <h1 className="font-avenirRegular text-[14px] font-medium text-[#1F3E7C]">

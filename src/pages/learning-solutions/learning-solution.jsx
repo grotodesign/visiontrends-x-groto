@@ -11,6 +11,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { LearningSolutionData } from "@/lib/data";
+import { useNavigate } from "react-router-dom";
 
 export default function LearningSolutionPage() {
   return (
@@ -35,7 +36,7 @@ export default function LearningSolutionPage() {
             <BreadcrumbSeparator />
             <BreadcrumbItem>
               <BreadcrumbPage className="font-avenirRegular text-[14px] font-medium text-[#1F3E7C]">
-                Lab Solutions
+                Learning Solutions
               </BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>

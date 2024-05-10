@@ -1,9 +1,32 @@
 import React from "react";
 import { Card } from "../ui/card";
+import { useNavigate } from "react-router-dom";
+
+const offeringUrls = {
+  "Manager 360/ Owner 360": "/learning-solutions/manager-360",
+  "Path to the Gold Standard": "/learning-solutions/path-to-the-gold",
+  "Spring Business Academy": "/learning-solutions/spring-business-academy",
+  "Staff 360": "/learning-solutions/staff-360",
+  "No Fear, No Limits Podcast": "/learning-solutions/no-fear",
+  "Fall Forum": "/learning-solutions/fall-forum",
+  "Private Facebook Group": "/learning-solutions/facebook-group",
+  "Pulse on Your Practice": "/learning-solutions/pulse-on-your-practice",
+};
 
 export default function LearningCard({ offering }) {
+  const navigate = useNavigate();
+
+  const handleCardClick = () => {
+    const url = offeringUrls[offering.name];
+    if (url) {
+      navigate(url);
+    }
+  };
   return (
-    <Card className="card-insurance rounded-[16px]">
+    <Card
+      className="card-insurance cursor-pointer rounded-[16px]"
+      onClick={handleCardClick}
+    >
       <div className="space-y-4 p-[24px]">
         <div className="flex flex-col space-y-2 lg:flex-row lg:items-center lg:space-x-4 lg:space-y-0">
           {offering?.icon && (

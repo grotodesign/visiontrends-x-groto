@@ -90,6 +90,12 @@
   .card {
     width: 320px;
   }
+  .card-sbap {
+    width: 310px;
+  }
+  .card-sbap-text {
+    width: 100px;
+  }
   .card-insurance {
     width: 330px;
   }
@@ -432,6 +438,11 @@
   .card-ipp {
     width: 100%;
     margin-left: 0px;
+  }
+
+  .card-sbap {
+    width: 1056px;
+    height: 64px;
   }
 
   .card-vsp {
