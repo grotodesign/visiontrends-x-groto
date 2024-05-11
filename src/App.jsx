@@ -4,7 +4,7 @@ import HomePage from "./pages/home";
 import VendorPartnersPage from "./pages/vendor-partners";
 import EventCalendarPage from "./pages/event-calendar";
 import VendorDetailsPage from "./pages/vendor-details";
-import InsurancePage from "./pages/insurance-page";
+import InsurancePage from "./pages/insurance-page/insurance-page";
 import LabsSolutionPage from "./pages/labs-solution";
 import LearningSolutionPage from "./pages/learning-solutions/learning-solution";
 import MerchantPage from "./pages/merchant-page";
@@ -18,6 +18,11 @@ import NoFearPage from "./pages/learning-solutions/nofear-page";
 import Staff360Page from "./pages/learning-solutions/staff360-page";
 import FallForumPage from "./pages/learning-solutions/fallforum-page";
 import PathToGoldPage from "./pages/learning-solutions/pathtogold-page";
+import InsuranceGuidePage from "./pages/insurance-page/insuranceguide-page";
+import InsuranceDetailPage from "./pages/insurance-page/insurance-detail-page";
+import CredentialingPage from "./pages/insurance-page/credentialing-page";
+import OutsourcedPage from "./pages/insurance-page/outsourced-page";
+import InsuranceAdministrationPage from "./pages/insurance-page/insurance-administration-page";
 // import PractiseBuilderPage from "./pages/practise-builder";
 
 function App() {
@@ -35,6 +40,26 @@ function App() {
           element={<InsuranceProfitPathwayPage />}
         />
         <Route path="/insurance-solutions" element={<InsurancePage />} />
+        <Route
+          path="/insurance-solutions/insurance-guide"
+          element={<InsuranceGuidePage />}
+        />
+        <Route
+          path="/insurance-solutions/insurance-guide/:id"
+          element={<InsuranceDetailPage />}
+        />
+        <Route
+          path="/insurance-solutions/credentialing"
+          element={<CredentialingPage />}
+        />
+        <Route
+          path="/insurance-solutions/insurance-administration-training"
+          element={<InsuranceAdministrationPage />}
+        />
+        <Route
+          path="/insurance-solutions/outsourced-billing-services"
+          element={<OutsourcedPage />}
+        />
         <Route path="/lab-solutions" element={<LabsSolutionPage />} />
         <Route path="/merchant-services" element={<MerchantPage />} />
         <Route path="/learning-solutions" element={<LearningSolutionPage />} />

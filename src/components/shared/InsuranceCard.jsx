@@ -1,9 +1,30 @@
 import React from "react";
 import { Card } from "../ui/card";
+import { useNavigate } from "react-router-dom";
+
+const offeringUrls = {
+  "Insurance Guide": "/insurance-solutions/insurance-guide",
+  Credentialing: "/insurance-solutions/credentialing",
+  "Insurance Administration Training":
+    "/insurance-solutions/insurance-administration-training",
+  "Outsourced Billing Services":
+    "/insurance-solutions/outsourced-billing-services",
+};
 
 export default function InsuranceCard({ offering }) {
+  const navigate = useNavigate();
+
+  const handleCardClick = () => {
+    const url = offeringUrls[offering.name];
+    if (url) {
+      navigate(url);
+    }
+  };
   return (
-    <Card className="card-insurance rounded-[16px]">
+    <Card
+      className="card-insurance cursor-pointer rounded-[16px]"
+      onClick={handleCardClick}
+    >
       <div className="space-y-4 p-[24px]">
         <div className="flex flex-col space-y-2 lg:flex-row lg:items-center lg:space-x-4 lg:space-y-0">
           <div className="flex h-[75px] w-[75px] justify-center rounded-full bg-[#F4F4F4] p-4  lg:w-auto lg:p-4">

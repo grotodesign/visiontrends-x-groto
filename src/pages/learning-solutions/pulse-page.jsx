@@ -91,8 +91,8 @@ export default function PulsePage() {
         </div>
       </div>
       <div className="card-vsp flex flex-col  space-y-6 py-3  lg:flex-row lg:space-x-6 lg:space-y-0 lg:p-5 lg:py-4">
-        <div>
-          <video className="h-full w-full rounded-[16px]" controls>
+        <div className="">
+          <video className="video-area h-full w-full" controls>
             <source
               src="https://docs.material-tailwind.com/demo.mp4"
               type="video/mp4"

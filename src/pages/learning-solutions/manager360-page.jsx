@@ -183,7 +183,7 @@ export default function Manager360Page() {
             <Card className=" rounded-[16px] lg:w-[358px]">
               <div className="flex items-center space-x-4 p-[24px]">
                 <div className="flex items-center">
-                  <Avatar className="h-[64px] w-[64px]">
+                  <Avatar className="h-[48px] w-[48px]">
                     <AvatarImage
                       src="https://github.com/shadcn.png"
                       alt="@shadcn"

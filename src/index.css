@@ -121,6 +121,16 @@
     margin-left: 15px;
   }
 
+  .insurance-guide {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .video-area {
+    border-radius: 16px;
+  }
+
   .vendor-area-1 {
     width: 360px;
   }
@@ -413,6 +423,10 @@
     width: 350px;
   }
 
+  .video-area {
+    border-radius: 16px;
+  }
+
   .card-insurance {
     width: 100%;
   }
@@ -421,6 +435,14 @@
     width: 666px;
     height: 328px;
   }
+
+  .insurance-guide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+  }
+
   .vendor-area-1 {
     width: 100%;
   }
@@ -474,6 +496,9 @@
     width: 732px;
     height: 328px;
   }
+  .insurance-guide {
+    gap: 160px;
+  }
   .card-rate {
     width: 401px;
   }
@@ -491,6 +516,10 @@
   .carousel-area {
     width: 762px;
     height: 358px;
+  }
+
+  .insurance-guide {
+    gap: 190px;
   }
 
   .card-ip-area {
@@ -520,6 +549,10 @@
     width: 350px;
   }
 
+  .insurance-guide {
+    gap: 195px;
+  }
+
   .card-vendor {
     width: 302px;
   }
@@ -532,6 +565,10 @@
 
   .offeringDesc {
     width: 500px;
+  }
+
+  .insurance-guide {
+    gap: 590px;
   }
 
   .carousel-area {

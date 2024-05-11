@@ -9,16 +9,16 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
 import CallIcon from "@/assets/call.png";
 import EmailIcon from "@/assets/email.png";
+import { Separator } from "@/components/ui/separator";
 import { CircleAlert } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
-export default function Staff360Page() {
+export default function InsuranceAdministrationPage() {
   const handleEmailClick = () => {
-    window.location.href = `mailto:education@vtrends.us`;
+    window.location.href = `mailto:ajetton@vtrends.us`;
   };
 
   const handlePhoneClick = () => {
@@ -46,16 +46,16 @@ export default function Staff360Page() {
             <BreadcrumbSeparator />
             <BreadcrumbItem>
               <BreadcrumbLink
-                href="/learning-solutions"
+                href="/insurance-solutions"
                 className="font-avenirRegular text-[14px] text-[#989898]"
               >
-                Learning Solution
+                Insurance Solutions
               </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
               <BreadcrumbPage className="font-avenirRegular text-[14px] font-medium text-[#1F3E7C]">
-                Staff 360
+                Insurance Administration Training
               </BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
@@ -67,56 +67,53 @@ export default function Staff360Page() {
             <div className="space-y-6 p-5 lg:px-10 lg:py-[32px]">
               <div className="flex flex-col space-y-3 lg:flex-row lg:items-center lg:justify-between lg:space-y-0">
                 <h1 className="font-avenirHeavy text-[20px] text-[#1F3E7C] lg:text-[24px]">
-                  Staff 360
+                  Insurance Administration Training
                 </h1>
               </div>
               <div>
                 <p className="font-avenirRegular text-[14px] font-thin text-[#989898] lg:text-[16px] ">
-                  Our intuitive platform ensures easy staff learning and
-                  progress tracking for practice owners. From telephone
-                  etiquette to opticianry basics, our courses cover all practice
-                  essentials. Elevate your team's skills with ABO certified
-                  courses at our Spring Business Academy and Fall Forum
+                  Many practices just need additional knowledge and expertise to
+                  manage their insurance billing processes. Or maybe they have a
+                  new staff member that needs to be trained in the complexities
+                  of verifying eligibility, filing, tracking claims and
+                  reconciling EOBs.
+                </p>
+              </div>
+              <div>
+                <p className="font-avenirRegular text-[14px] font-thin text-[#989898] lg:text-[16px] ">
+                  Vision Trends offers two solutions to support its members’
+                  insurance training goals. We will contact you in advance to
+                  determine the training topics and prepare an action plan to
+                  maximize the session.
                 </p>
               </div>
               <Separator />
               <div className="space-y-4">
                 <h1 className="font-avenirRegular text-[16px] font-medium text-[#646464]">
-                  Our training includes -
+                  In-House Training includes -
                 </h1>
-                <div className="p-5">
-                  <ul className="list-disc space-y-3 font-avenirRegular text-[14px]  font-thin text-[#989898] lg:text-[16px]">
-                    <li>Developing and retaining staff,</li>
-                    <li>Empowering staff with self-directed training,</li>
-                    <li>Tracking and measuring staff progress,</li>
-                    <li>Improving patient experience and profitability</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="">
-                <div className="rounded-[8px] bg-[#F0F7FE] p-5 hover:bg-[#F0F7FE]">
-                  <div className="flex space-x-3">
-                    <CircleAlert className="w-12 text-[#1F3E7C] lg:w-4" />
-                    <h1 className="font-avenirRegular text-[14px] font-thin   text-[#1F3E7C] lg:text-[16px]">
-                      VT Lab Solutions owners ordering{" "}
-                      <span className="font-avenirHeavy text-[18px]">
-                        $3000/quarter
-                      </span>{" "}
-                      receive the staff training program for free
-                    </h1>
-                  </div>
+                <div>
+                  <p className="font-avenirRegular text-[14px] font-thin text-[#989898] lg:text-[16px] ">
+                    We will host up to two staff members at our Vision Trends
+                    Administration Office spending one full business day
+                    tackling tricky issues you and your staff have experienced
+                    so you’re better prepared going forward.
+                  </p>
                 </div>
               </div>
               <Separator />
               <div className="space-y-4">
                 <h1 className="font-avenirRegular text-[16px] font-medium text-[#646464]">
-                  Why staff training -
+                  Onsite Training includes -
                 </h1>
                 <div className="p-5">
-                  <ul className="list-disc space-y-3 font-avenirRegular text-[14px] text-[#989898] lg:text-[16px]">
-                    <li>Cost Savings through Retention,</li>
-                    <li>Higher patient satisfaction</li>
-                    <li>More confident and higher productive staff</li>
+                  <ul className="list-disc space-y-3 font-avenirRegular text-[14px]  font-thin text-[#989898] lg:text-[16px]">
+                    <li>comprehensive needs assessment</li>
+                    <li>identifying and documenting staff roles</li>
+                    <li>review and develop billing procedures</li>
+                    <li>train billing staff</li>
+                    <li>create operations guide</li>
+                    <li>post visit follow-up calls</li>
                   </ul>
                 </div>
               </div>
@@ -145,7 +142,7 @@ export default function Staff360Page() {
                       Ali Jetton
                     </h1>
                     <p className="font-avenirRegular text-[14px] text-[#989898]">
-                      Training Representative
+                      Insurance Solutions Director
                     </p>
                   </div>
                 </div>
@@ -157,7 +154,7 @@ export default function Staff360Page() {
                   >
                     <img src={EmailIcon} className="w-[20px]" />
                     <h1 className="font-avenirRegular text-[16px] font-medium text-[#646464]">
-                      education@vtrends.us
+                      ajetton@vtrends.us
                     </h1>
                   </div>
                   <div className="flex cursor-pointer items-center space-x-3">
@@ -182,14 +179,23 @@ export default function Staff360Page() {
                 <div className="flex items-center space-x-6">
                   <div className="space-y-4">
                     <h1 className="font-avenirRegular text-[18px] font-medium text-[#1C1C1C]">
-                      Affiliate Members
+                      In-House Training
                     </h1>
-                    <div className="space-y-1">
+                    <div className="flex items-center justify-between space-y-1">
                       <h1 className="font-avenirRegular text-[14px] text-[#989898]">
                         <span className="font-avenirHeavy text-[20px] text-[#1F3E7C]">
-                          $595
+                          $400
                         </span>{" "}
-                        for all courses
+                        /day
+                      </h1>
+                      <h1 className="font-avenirRegular text-[14px] text-[#989898]">
+                        (Approx. 7 hours)
+                      </h1>
+                    </div>
+                    <div className="space-y-1">
+                      <h1 className="font-avenirRegular text-[14px] text-[#989898]">
+                        Member practice pays all staff travel expenses to be
+                        agreed to prior to engagement
                       </h1>
                     </div>
                   </div>
@@ -198,24 +204,21 @@ export default function Staff360Page() {
                 <div className="flex items-center space-x-6">
                   <div className="space-y-6">
                     <h1 className="font-avenirRegular text-[18px] font-medium text-[#1C1C1C]">
-                      Profit+ Members
+                      Onsite Training
                     </h1>
-                    <div className="space-y-1">
+                    <div className="flex items-center justify-between space-y-1">
                       <h1 className="font-avenirRegular text-[14px] text-[#989898]">
                         <span className="font-avenirHeavy text-[20px] text-[#1F3E7C]">
-                          $895
+                          $685
                         </span>{" "}
-                        for all courses
+                        /day
                       </h1>
                     </div>
-                    <Button className="h-[64px] w-[294px] rounded-[8px] bg-[#F0F7FE] hover:bg-[#F0F7FE]">
-                      <div className="flex items-center space-x-3">
-                        <CircleAlert className="w-4 text-[#1F3E7C]" />
-                        <h1 className="font-avenirRegular text-[16px] text-[#1F3E7C]">
-                          Both plans billed yearly
-                        </h1>
-                      </div>
-                    </Button>
+                    <div className="space-y-1">
+                      <h1 className="font-avenirRegular text-[14px] text-[#989898]">
+                        Per VT Employee + Travelling & Lodging expenses
+                      </h1>
+                    </div>
                   </div>
                 </div>
               </div>

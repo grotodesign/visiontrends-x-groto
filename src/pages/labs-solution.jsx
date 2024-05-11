@@ -212,7 +212,7 @@ export default function LabsSolutionPage() {
                 <div className="space-y-4">
                   <div className="flex items-center space-x-6">
                     <div>
-                      <Avatar className="h-8 w-8">
+                      <Avatar className="h-[48px] w-[48px]">
                         <AvatarImage
                           src="https://github.com/shadcn.png"
                           alt="@shadcn"
@@ -231,7 +231,7 @@ export default function LabsSolutionPage() {
                   </div>
                   <div className="flex items-center space-x-6">
                     <div>
-                      <Avatar className="h-8 w-8">
+                      <Avatar className="h-[48px] w-[48px]">
                         <AvatarImage
                           src="https://github.com/shadcn.png"
                           alt="@shadcn"
@@ -250,7 +250,7 @@ export default function LabsSolutionPage() {
                   </div>
                   <div className="flex items-center space-x-6">
                     <div>
-                      <Avatar className="h-8 w-8">
+                      <Avatar className="h-[48px] w-[48px]">
                         <AvatarImage
                           src="https://github.com/shadcn.png"
                           alt="@shadcn"
@@ -269,7 +269,7 @@ export default function LabsSolutionPage() {
                   </div>
                   <div className="flex items-center space-x-6">
                     <div>
-                      <Avatar className="h-8 w-8">
+                      <Avatar className="h-[48px] w-[48px]">
                         <AvatarImage
                           src="https://github.com/shadcn.png"
                           alt="@shadcn"

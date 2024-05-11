@@ -9,16 +9,16 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
 import CallIcon from "@/assets/call.png";
 import EmailIcon from "@/assets/email.png";
+import { Separator } from "@/components/ui/separator";
 import { CircleAlert } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
-export default function Staff360Page() {
+export default function OutsourcedPage() {
   const handleEmailClick = () => {
-    window.location.href = `mailto:education@vtrends.us`;
+    window.location.href = `mailto:ajetton@vtrends.us`;
   };
 
   const handlePhoneClick = () => {
@@ -46,16 +46,16 @@ export default function Staff360Page() {
             <BreadcrumbSeparator />
             <BreadcrumbItem>
               <BreadcrumbLink
-                href="/learning-solutions"
+                href="/insurance-solutions"
                 className="font-avenirRegular text-[14px] text-[#989898]"
               >
-                Learning Solution
+                Insurance Solutions
               </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
               <BreadcrumbPage className="font-avenirRegular text-[14px] font-medium text-[#1F3E7C]">
-                Staff 360
+                Outsourced Billing Services
               </BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
@@ -67,29 +67,61 @@ export default function Staff360Page() {
             <div className="space-y-6 p-5 lg:px-10 lg:py-[32px]">
               <div className="flex flex-col space-y-3 lg:flex-row lg:items-center lg:justify-between lg:space-y-0">
                 <h1 className="font-avenirHeavy text-[20px] text-[#1F3E7C] lg:text-[24px]">
-                  Staff 360
+                  Outsourced Billing Services
                 </h1>
               </div>
               <div>
                 <p className="font-avenirRegular text-[14px] font-thin text-[#989898] lg:text-[16px] ">
-                  Our intuitive platform ensures easy staff learning and
-                  progress tracking for practice owners. From telephone
-                  etiquette to opticianry basics, our courses cover all practice
-                  essentials. Elevate your team's skills with ABO certified
-                  courses at our Spring Business Academy and Fall Forum
+                  Vision Trends will administer vision and / or medical
+                  insurance claims billing for members interested in outsourcing
+                  these services. 
+                </p>
+              </div>
+              <div>
+                <p className="font-avenirRegular text-[14px] font-thin text-[#1C1C1C] lg:text-[16px] ">
+                  Your practice will be assigned a dedicated Vision Trends
+                  claims billing specialist.
                 </p>
               </div>
               <Separator />
               <div className="space-y-4">
                 <h1 className="font-avenirRegular text-[16px] font-medium text-[#646464]">
-                  Our training includes -
+                  Our Service includes -
                 </h1>
                 <div className="p-5">
                   <ul className="list-disc space-y-3 font-avenirRegular text-[14px]  font-thin text-[#989898] lg:text-[16px]">
-                    <li>Developing and retaining staff,</li>
-                    <li>Empowering staff with self-directed training,</li>
-                    <li>Tracking and measuring staff progress,</li>
-                    <li>Improving patient experience and profitability</li>
+                    <li>
+                      Assess current billing practices and outstanding insurance
+                      claims
+                    </li>
+                    <li>
+                      Establish operating procedures between Vision Trends and
+                      practice(s)
+                    </li>
+                    <li>Submitting medical/vision claims</li>
+                    <li>
+                      Ongoing claims maintenance to ensure timely claims
+                      submittal
+                    </li>
+                    <li>Posting claims payments</li>
+                    <li>Managing claims denials and appeals</li>
+                    <li>
+                      Provide monthly reconciliation and reporting, including:
+                    </li>
+                    <div className="ml-10 space-y-3">
+                      <li>Monthly Receivables Report</li>
+                      <li>Practice Management Report</li>
+                      <li>Insurance Claims Aging Report</li>
+                      <li>Detailed Claims Status Report (+90 days)</li>
+                    </div>
+                    <li>
+                      Status Meetings (weekly, bi-weekly, monthly as mutually
+                      agreed)
+                    </li>
+                    <li>
+                      Working with practice to identify and resolve common
+                      payment / denial issues
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -98,26 +130,11 @@ export default function Staff360Page() {
                   <div className="flex space-x-3">
                     <CircleAlert className="w-12 text-[#1F3E7C] lg:w-4" />
                     <h1 className="font-avenirRegular text-[14px] font-thin   text-[#1F3E7C] lg:text-[16px]">
-                      VT Lab Solutions owners ordering{" "}
-                      <span className="font-avenirHeavy text-[18px]">
-                        $3000/quarter
-                      </span>{" "}
-                      receive the staff training program for free
+                      As of January 2020, billing services available to members
+                      using Crystal PM, Eyefinity | OfficeMate and Revolution
+                      practice management systems.
                     </h1>
                   </div>
-                </div>
-              </div>
-              <Separator />
-              <div className="space-y-4">
-                <h1 className="font-avenirRegular text-[16px] font-medium text-[#646464]">
-                  Why staff training -
-                </h1>
-                <div className="p-5">
-                  <ul className="list-disc space-y-3 font-avenirRegular text-[14px] text-[#989898] lg:text-[16px]">
-                    <li>Cost Savings through Retention,</li>
-                    <li>Higher patient satisfaction</li>
-                    <li>More confident and higher productive staff</li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -145,7 +162,7 @@ export default function Staff360Page() {
                       Ali Jetton
                     </h1>
                     <p className="font-avenirRegular text-[14px] text-[#989898]">
-                      Training Representative
+                      Insurance Solutions Director
                     </p>
                   </div>
                 </div>
@@ -157,7 +174,7 @@ export default function Staff360Page() {
                   >
                     <img src={EmailIcon} className="w-[20px]" />
                     <h1 className="font-avenirRegular text-[16px] font-medium text-[#646464]">
-                      education@vtrends.us
+                      ajetton@vtrends.us
                     </h1>
                   </div>
                   <div className="flex cursor-pointer items-center space-x-3">
@@ -187,9 +204,15 @@ export default function Staff360Page() {
                     <div className="space-y-1">
                       <h1 className="font-avenirRegular text-[14px] text-[#989898]">
                         <span className="font-avenirHeavy text-[20px] text-[#1F3E7C]">
-                          $595
+                          $675
                         </span>{" "}
-                        for all courses
+                        One-time set up fee &
+                      </h1>
+                      <h1 className="font-avenirRegular text-[16px] text-[#989898]">
+                        <span className="font-avenirHeavy text-[#1C1C1C]">
+                          6.5%
+                        </span>{" "}
+                        of insurance receivables collected
                       </h1>
                     </div>
                   </div>
@@ -203,19 +226,33 @@ export default function Staff360Page() {
                     <div className="space-y-1">
                       <h1 className="font-avenirRegular text-[14px] text-[#989898]">
                         <span className="font-avenirHeavy text-[20px] text-[#1F3E7C]">
-                          $895
+                          $675
                         </span>{" "}
-                        for all courses
+                        One-time set up fee &
+                      </h1>
+                      <h1 className="font-avenirRegular text-[16px] text-[#989898]">
+                        <span className="font-avenirHeavy text-[#1C1C1C]">
+                          6.5%
+                        </span>{" "}
+                        of insurance receivables collected
                       </h1>
                     </div>
                     <Button className="h-[64px] w-[294px] rounded-[8px] bg-[#F0F7FE] hover:bg-[#F0F7FE]">
                       <div className="flex items-center space-x-3">
                         <CircleAlert className="w-4 text-[#1F3E7C]" />
                         <h1 className="font-avenirRegular text-[16px] text-[#1F3E7C]">
-                          Both plans billed yearly
+                          Both plans billed monthly
                         </h1>
                       </div>
                     </Button>
+                    <div className="w-[286px]">
+                      <p className="font-avenirRegular text-[14px] text-[#989898]">
+                        *Billing Services requires 12-month commitment and
+                        authorization to withdraw funds from your banking
+                        institution monthly; members will need to provide a
+                        60-day written notice to withdraw from service
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>

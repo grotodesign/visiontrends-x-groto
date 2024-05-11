@@ -21,6 +21,7 @@ import NoFearIcon from "@/assets/nofear.png";
 import GoldIcon from "@/assets/gold.png";
 import GradIcon from "@/assets/icons/GradIcon";
 import ManagerIcon from "@/assets/icons/ManagerIcon";
+import AmeriGroupIcon from "@/assets/insurance-guides/amerigroup.png";
 
 export const OfferingsData = [
   {
@@ -302,5 +303,62 @@ export const LearningSolutionData = [
       "12-week live training with Joy Gibb, ABOC, covering essential business tools for increased profitability",
     isThereNewSesson: true,
     startingDate: "25 April, 2024",
+  },
+];
+
+export const InsuranceProgram = [
+  {
+    id: 1,
+    icon: AmeriGroupIcon,
+    name: "Amerigroup",
+    email: "delder@aaopticalco.com",
+    phone: "806.773.8007",
+    website: "http://www.amerigroup.com",
+    attachmentFile: [
+      {
+        id: 1,
+        attachedFileName: "AMERIGROUP-Cover-Sheet-1.pdf",
+      },
+      {
+        id: 2,
+        attachedFileName: "AMERIGROUP-PreCert-Request-Form.pdf",
+      },
+    ],
+  },
+  {
+    id: 2,
+    icon: AmeriGroupIcon,
+    name: "Amerigroup",
+    email: "delder@aaopticalco.com",
+    phone: "806.773.8007",
+    website: "http://www.amerigroup.com",
+    attachmentFile: [
+      {
+        id: 1,
+        attachedFileName: "AMERIGROUP-Cover-Sheet-1.pdf",
+      },
+      {
+        id: 2,
+        attachedFileName: "AMERIGROUP-PreCert-Request-Form.pdf",
+      },
+    ],
+  },
+  {
+    id: 3,
+    icon: AmeriGroupIcon,
+    name: "Amerigroup",
+    email: "delder@aaopticalco.com",
+    phone: "806.773.8007",
+    website: "http://www.amerigroup.com",
+    attachmentFile: [
+      {
+        id: 1,
+        attachedFileName: "AMERIGROUP-Cover-Sheet-1.pdf",
+      },
+      {
+        id: 2,
+        attachedFileName: "AMERIGROUP-PreCert-Request-Form.pdf",
+      },
+    ],
   },
 ];
