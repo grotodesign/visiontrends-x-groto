@@ -20,6 +20,12 @@ import Illustration from "@/assets/icons/Illustration";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import LogoutDialog from "./LogoutDialog";
 import MobileVTIcon from "@/assets/icons/MobileVTIcon";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../ui/accordion";
 
 const menuItems = [
   { id: 1, label: "Home", icon: <HomeIcon />, link: "/" },
@@ -40,29 +46,39 @@ const menuItems = [
     label: "Practise Builders",
     icon: <PowerIcon />,
     link: "/practise-builder",
+    submenu: [
+      { id: 5, label: "Lensquote", link: "/practise-builder/lensquote" },
+      { id: 6, label: "ABB Analyze", link: "/practise-builder/abb-analyze" },
+      { id: 7, label: "EyeCarePro", link: "/practise-builder/eyecarepro" },
+      {
+        id: 8,
+        label: "iDefend Theft Protection",
+        link: "/practise-builder/idefend",
+      },
+    ],
   },
-  { id: 5, label: "VSP IOF", icon: <GlassIcon />, link: "/vsp-iof" },
+  { id: 9, label: "VSP IOF", icon: <GlassIcon />, link: "/vsp-iof" },
   {
-    id: 6,
+    id: 10,
     label: "Insurance Profit Pathway",
     icon: <InsuranceIcon />,
     link: "/insurance-profit-pathway",
   },
   {
-    id: 7,
+    id: 11,
     label: "Insurance Solutions",
     icon: <InsuranceSolIcon />,
     link: "/insurance-solutions",
   },
-  { id: 8, label: "Lab Solutions", icon: <LabIcon />, link: "/lab-solutions" },
+  { id: 12, label: "Lab Solutions", icon: <LabIcon />, link: "/lab-solutions" },
   {
-    id: 9,
+    id: 13,
     label: "Merchant Services",
     icon: <BankIcon />,
     link: "/merchant-services",
   },
   {
-    id: 10,
+    id: 14,
     label: "Learning Solutions",
     icon: <TeacherIcon />,
     link: "/learning-solutions",
@@ -152,27 +168,75 @@ export default function MobileNav() {
                       </h1>
                       {menuItems
                         .slice(3, 6)
-                        .map(({ id, label, link, icon }) => {
+                        .map(({ id, label, link, icon, submenu }) => {
                           const menuItem = { id, label, link, icon };
                           const classes = getNavItemClasses(menuItem);
 
                           return (
                             <div className={classes} key={id}>
                               <Link to={link} className="w-full">
-                                <div className="flex h-full w-full items-center py-3">
-                                  <div className="flex w-12 items-center justify-center">
-                                    {icon}
+                                {label === "Practise Builders" ? (
+                                  <Accordion type="single" collapsible>
+                                    <AccordionItem value={label}>
+                                      <AccordionTrigger>
+                                        <div>
+                                          <div className="flex h-full w-full items-center px-2 py-3">
+                                            <div className="flex w-12 items-center justify-center">
+                                              {icon}
+                                            </div>
+                                            <span
+                                              className={`font-avenirRegular text-[14px] font-medium ${
+                                                activeMenu &&
+                                                activeMenu.id === id
+                                                  ? "text-[#1F3E7C]"
+                                                  : "text-[#646464]"
+                                              }`}
+                                            >
+                                              {label}
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </AccordionTrigger>
+                                      <AccordionContent>
+                                        <div className="flex h-full w-full flex-col px-2 py-3">
+                                          {submenu?.map((submenuItem) => (
+                                            <div
+                                              key={submenuItem.id}
+                                              className={`px-4 py-3 font-avenirRegular text-[14px] font-medium ${
+                                                activeMenu &&
+                                                activeMenu.id === id
+                                                  ? "text-[#1F3E7C]"
+                                                  : "text-[#646464]"
+                                              }`}
+                                            >
+                                              <Link
+                                                to={submenuItem.link}
+                                                className="w-full"
+                                              >
+                                                {submenuItem.label}
+                                              </Link>
+                                            </div>
+                                          ))}
+                                        </div>
+                                      </AccordionContent>
+                                    </AccordionItem>
+                                  </Accordion>
+                                ) : (
+                                  <div className="flex h-full w-full items-center px-2 py-3">
+                                    <div className="flex w-12 items-center justify-center">
+                                      {icon}
+                                    </div>
+                                    <span
+                                      className={` font-avenirRegular text-[14px] font-medium ${
+                                        activeMenu && activeMenu.id === id
+                                          ? "text-[#1F3E7C]"
+                                          : "text-[#646464]"
+                                      }`}
+                                    >
+                                      {label}
+                                    </span>
                                   </div>
-                                  <span
-                                    className={` font-avenirRegular text-[12px] font-medium ${
-                                      activeMenu && activeMenu.id === id
-                                        ? "text-[#1F3E7C]"
-                                        : "text-[#646464]"
-                                    }`}
-                                  >
-                                    {label}
-                                  </span>
-                                </div>
+                                )}
                               </Link>
                             </div>
                           );

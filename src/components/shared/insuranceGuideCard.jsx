@@ -7,7 +7,7 @@ export default function InsuranceGuideCard({ offering }) {
       <div className="space-y-4 p-[24px]">
         <div className="flex flex-col space-y-2 lg:flex-row lg:items-center lg:space-x-4 lg:space-y-0">
           {offering?.icon && (
-            <div className="flex justify-center rounded-full p-4  lg:h-auto lg:w-auto lg:p-4">
+            <div className="flex rounded-full p-4 lg:h-auto  lg:w-auto lg:justify-center lg:p-4">
               <div className="">
                 {typeof offering.icon === "string" ? (
                   <img

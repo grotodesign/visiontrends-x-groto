@@ -23,6 +23,10 @@ import InsuranceDetailPage from "./pages/insurance-page/insurance-detail-page";
 import CredentialingPage from "./pages/insurance-page/credentialing-page";
 import OutsourcedPage from "./pages/insurance-page/outsourced-page";
 import InsuranceAdministrationPage from "./pages/insurance-page/insurance-administration-page";
+import AbbAnalyzePage from "./pages/practise-builder-page/abb-analyze-page";
+import LensquotePage from "./pages/practise-builder-page/lensquote-page";
+import EyeCareProPage from "./pages/practise-builder-page/eyecarepro-page";
+import IDefendPage from "./pages/practise-builder-page/idefend-page";
 // import PractiseBuilderPage from "./pages/practise-builder";
 
 function App() {
@@ -33,7 +37,21 @@ function App() {
         <Route path="/vendor-partners" element={<VendorPartnersPage />} />
         <Route path="/event-calendar" element={<EventCalendarPage />} />
         <Route path="/vendor-partners/:id" element={<VendorDetailsPage />} />
-        <Route path="/practise-builder"></Route>
+        <Route path="/practise-builder">
+          <Route
+            path="/practise-builder/abb-analyze"
+            element={<AbbAnalyzePage />}
+          />
+          <Route
+            path="/practise-builder/lensquote"
+            element={<LensquotePage />}
+          />
+          <Route
+            path="/practise-builder/eyecarepro"
+            element={<EyeCareProPage />}
+          />
+          <Route path="/practise-builder/idefend" element={<IDefendPage />} />
+        </Route>
         <Route path="/vsp-iof" element={<IofPage />} />
         <Route
           path="/insurance-profit-pathway"
