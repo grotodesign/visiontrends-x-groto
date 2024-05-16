@@ -423,6 +423,33 @@
     width: 350px;
   }
 
+  .form-area {
+    width: 317px;
+  }
+
+  .form-area-1 {
+    width: 512px;
+  }
+
+  .form-area-2 {
+    width: 160px;
+  }
+
+  .form-area-3 {
+    width: 272px;
+  }
+  .form-area-4 {
+    width: 560px;
+  }
+
+  .form-area-5 {
+    width: 248px;
+  }
+
+  .form-area-6 {
+    width: 175px;
+  }
+
   .video-area {
     border-radius: 16px;
   }

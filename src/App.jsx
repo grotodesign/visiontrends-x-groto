@@ -27,6 +27,9 @@ import AbbAnalyzePage from "./pages/practise-builder-page/abb-analyze-page";
 import LensquotePage from "./pages/practise-builder-page/lensquote-page";
 import EyeCareProPage from "./pages/practise-builder-page/eyecarepro-page";
 import IDefendPage from "./pages/practise-builder-page/idefend-page";
+import ReferPage from "./pages/user-profile-area-page/refer-page";
+import ContactUsPage from "./pages/user-profile-area-page/contact-us-page";
+import UserProfilePage from "./pages/user-profile-area-page/user-profile-page";
 // import PractiseBuilderPage from "./pages/practise-builder";
 
 function App() {
@@ -34,6 +37,9 @@ function App() {
     <Routes>
       <Route path="/" element={<ProtectedLayout />}>
         <Route path="" element={<HomePage />} />
+        <Route path="/refer" element={<ReferPage />} />
+        <Route path="/contact-us" element={<ContactUsPage />} />
+        <Route path="/my-profile" element={<UserProfilePage />} />
         <Route path="/vendor-partners" element={<VendorPartnersPage />} />
         <Route path="/event-calendar" element={<EventCalendarPage />} />
         <Route path="/vendor-partners/:id" element={<VendorDetailsPage />} />

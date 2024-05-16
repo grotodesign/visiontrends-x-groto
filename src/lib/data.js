@@ -22,6 +22,13 @@ import GoldIcon from "@/assets/gold.png";
 import GradIcon from "@/assets/icons/GradIcon";
 import ManagerIcon from "@/assets/icons/ManagerIcon";
 import AmeriGroupIcon from "@/assets/insurance-guides/amerigroup.png";
+import MichaelPic from "@/assets/team/michael.png";
+import DouglasPic from "@/assets/team/douglas.png";
+import TroyPic from "@/assets/team/troy.png";
+import AndrewPic from "@/assets/team/andrew.png";
+import ErinPic from "@/assets/team/erin.png";
+import AliPic from "@/assets/team/ali.png";
+import NoUserPic from "@/assets/team/noimage.png";
 
 export const OfferingsData = [
   {
@@ -360,5 +367,72 @@ export const InsuranceProgram = [
         attachedFileName: "AMERIGROUP-PreCert-Request-Form.pdf",
       },
     ],
+  },
+];
+
+export const TeamMemberData = [
+  {
+    id: 1,
+    name: "Michael Toups, OD",
+    profilePic: MichaelPic,
+    designation: "President and Co-founder",
+    email: "",
+    phone: "",
+  },
+  {
+    id: 2,
+    name: "Douglas Inns, OD",
+    profilePic: DouglasPic,
+    designation: "Vice President and Co-founder",
+    email: "",
+    phone: "",
+  },
+  {
+    id: 3,
+    name: "Troy Hall",
+    profilePic: TroyPic,
+    designation: "Chief Operating Officer",
+    email: "",
+    phone: "",
+  },
+  {
+    id: 4,
+    name: "Andrew Howorth",
+    profilePic: AndrewPic,
+    designation: "National Sales Director",
+    email: "",
+    phone: "",
+  },
+  {
+    id: 5,
+    name: "Erin Toups",
+    profilePic: ErinPic,
+    designation: "National Sales Director",
+    email: "",
+    phone: "",
+  },
+  {
+    id: 6,
+    name: "Ali Jetton",
+    profilePic: AliPic,
+    designation: "Practice Relations Manager",
+    email: "",
+    phone: "",
+  },
+  {
+    id: 7,
+    name: "Kyle Toups",
+    profilePic: NoUserPic,
+    designation: "Business Operations Director",
+    email: "",
+    phone: "",
+  },
+  {
+    id: 8,
+    name: "Leah Borders",
+    profilePic: NoUserPic,
+    designation: "Accounting Manager",
+    email: "",
+    phone: "",
   },
 ];
