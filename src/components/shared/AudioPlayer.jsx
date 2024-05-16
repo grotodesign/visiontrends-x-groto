@@ -1,12 +1,7 @@
-import {
-  ChevronLeft,
-  ChevronRight,
-  DownloadIcon,
-  Pause,
-  Play,
-  Share2,
-} from "lucide-react";
+import { DownloadIcon, Share2 } from "lucide-react";
 import React, { useState, useRef, useEffect } from "react";
+import { FaPlay } from "react-icons/fa";
+import { FaPause } from "react-icons/fa6";
 
 import AudioBack from "@/assets/audioback.png";
 import AudioForward from "@/assets/audioforward.png";
@@ -115,7 +110,11 @@ export default function AudioPlayer() {
             onClick={togglePlayPause}
             className="rounded-full bg-[#F4F4F4] p-[10px] lg:p-[20px]"
           >
-            {isPlaying ? <Pause /> : <Play className="text-[#1F3E7C]" />}
+            {isPlaying ? (
+              <FaPause className="text-[#1F3E7C]" />
+            ) : (
+              <FaPlay className="text-[#1F3E7C]" />
+            )}
           </button>
           <button className="w-[32px] lg:w-[40px]" onClick={forwardTen}>
             <img src={AudioForward} alt="Forward 10 seconds" />
