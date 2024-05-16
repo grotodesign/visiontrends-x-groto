@@ -1,6 +1,7 @@
 import MobileNav from "@/components/shared/MobileNav";
 import Navbar from "@/components/shared/Navbar";
 import VideoPlaylistCard from "@/components/shared/VideoPlaylistCard";
+import PlaylistImage from "@/assets/playlist.png";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -10,6 +11,8 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Card } from "@/components/ui/card";
+import { DownloadIcon, Share2 } from "lucide-react";
+import AudioPlayer from "@/components/shared/AudioPlayer";
 
 export default function NoFearPage() {
   return (
@@ -72,13 +75,42 @@ export default function NoFearPage() {
           </Card>
         </div>
       </div>
-      {/* <div className="card-vsp flex flex-col  space-y-6 py-3  lg:flex-row lg:space-x-6 lg:space-y-0 lg:p-5 lg:py-4">
+      <div className="px-5">
+        <h1 className="font-avenirHeavy text-[16px] text-[#1C1C1C] lg:text-[18px]">
+          Latest Podcasts
+        </h1>
+      </div>
+      <div className="card-vsp flex flex-col  space-y-6 py-3  lg:flex-row lg:space-x-6 lg:space-y-0 lg:p-5 lg:py-4">
         <div>
-        <Card className=" rounded-[16px]">
-          <div className="space-y-6 p-5 lg:p-10">
-            <h1>Hello</h1>
-          </div>
-        </Card>
+          <Card className=" rounded-[16px]">
+            <div className="space-y-6 p-5 lg:p-10">
+              <div className="flex items-center justify-between">
+                <div className="">
+                  <div className="flex flex-row space-x-4 space-y-2 lg:flex-row lg:items-center lg:space-y-0">
+                    <img
+                      src={PlaylistImage}
+                      className="h-[48px] w-[71px] lg:w-[74.48px]"
+                    />
+                    <div>
+                      <h1 className="font-avenirHeavy text-[14px] font-semibold text-[#1C1C1C] lg:text-[16px]">
+                        No Fear, No Limits
+                      </h1>
+                      <div className="flex items-center font-avenirRegular text-[12px] text-[#646464] lg:text-[14px]">
+                        <p>Drs. Michael Toups and Douglas Inns</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="hidden items-center space-x-4 lg:flex">
+                  <DownloadIcon className="h-[24px] w-[24px] text-[#646464]" />
+                  <Share2 className="h-[20px] w-[20px] text-[#646464]" />
+                </div>
+              </div>
+              <div className="">
+                <AudioPlayer />
+              </div>
+            </div>
+          </Card>
         </div>
         <div className="space-y-4">
           <div className="card-contact-ipp space-y-4">
@@ -103,7 +135,7 @@ export default function NoFearPage() {
             </Card>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }

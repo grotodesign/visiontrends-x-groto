@@ -7,7 +7,7 @@ export default function VideoPlaylistCard() {
   return (
     <Card className="cursor-pointer rounded-[8px] py-4">
       <div className="px-[16px] py-[4px]">
-        <div className="flex flex-row space-y-2 lg:flex-row lg:items-center lg:space-x-4 lg:space-y-0">
+        <div className="flex flex-row items-center space-x-6 space-y-2 lg:flex-row lg:items-center lg:space-x-4 lg:space-y-0">
           <h1 className="font-avenirRegular text-[14px] font-thin text-[#646464]">
             1
           </h1>

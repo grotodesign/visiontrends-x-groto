@@ -93,6 +93,10 @@
   .card-sbap {
     width: 310px;
   }
+
+  .player {
+    width: 295px;
+  }
   .card-sbap-text {
     width: 100px;
   }
@@ -213,6 +217,9 @@
   .card-1 {
     width: 350px;
   }
+  .player {
+    width: 318px;
+  }
   .card-bg {
     width: 320px;
   }
@@ -274,6 +281,10 @@
   }
   .offeringContainer {
     width: 405px;
+  }
+
+  .player {
+    width: 338px;
   }
   .card {
     width: 370px;
@@ -374,6 +385,9 @@
   }
   .card-insurance {
     width: 390px;
+  }
+  .player {
+    width: 350px;
   }
   .cardArea {
     margin-left: 0px;
@@ -498,6 +512,10 @@
     width: 100%;
     margin-left: 0px;
   }
+
+  .player {
+    width: 445px;
+  }
   .card-vendor-detaiils {
     width: 100%;
     margin-left: 0px;
@@ -526,6 +544,9 @@
   .insurance-guide {
     gap: 160px;
   }
+  .player {
+    width: 505px;
+  }
   .card-rate {
     width: 401px;
   }
@@ -547,6 +568,9 @@
 
   .insurance-guide {
     gap: 190px;
+  }
+  .player {
+    width: 530px;
   }
 
   .card-ip-area {
@@ -576,6 +600,10 @@
     width: 350px;
   }
 
+  .player {
+    width: 540px;
+  }
+
   .insurance-guide {
     gap: 195px;
   }
@@ -603,6 +631,10 @@
     height: 458px;
   }
 
+  .player {
+    width: 930px;
+  }
+
   .card-insurance {
     width: 100%;
   }
@@ -619,4 +651,104 @@
   .card-vendor {
     width: 400px;
   }
+}
+
+.progressBar {
+  --bar-bg: rgba(182, 182, 182, 0.24);
+  --seek-before-width: 0;
+  --seek-before-color: #1f3e7c;
+  --knobby: #1f3e7c;
+  --selectedKnobby: #1f3e7c;
+
+  appearance: none;
+  background: var(--bar-bg);
+  border-radius: 10px;
+  position: relative;
+  height: 4px;
+  outline: none;
+}
+
+/* progress bar - safari */
+.progressBar::-webkit-slider-runnable-track {
+  background: var(--bar-bg);
+  border-radius: 10px;
+  position: relative;
+  height: 4px;
+  outline: none;
+}
+
+/* progress bar - firefox */
+.progressBar::-moz-range-track {
+  background: var(--bar-bg);
+  border-radius: 10px;
+  position: relative;
+  height: 4px;
+  outline: none;
+}
+
+.progressBar::-moz-focus-outer {
+  border: 0;
+}
+
+/* progress bar - chrome and safari */
+.progressBar::before {
+  content: "";
+  height: 4px;
+  width: var(--seek-before-width);
+  background-color: var(--seek-before-color);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* progress bar - firefox */
+.progressBar::-moz-range-progress {
+  background-color: var(--seek-before-color);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 4px;
+}
+
+/* knobby - chrome and safari */
+.progressBar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--knobby);
+  cursor: pointer;
+  position: relative;
+  margin: -4px 0 0 0;
+  z-index: 3;
+  box-sizing: border-box;
+}
+
+/* knobby while dragging - chrome and safari */
+.progressBar:active::-webkit-slider-thumb {
+  transform: scale(1.2);
+  background: var(--selectedKnobby);
+}
+
+/* knobby - firefox */
+.progressBar::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: transparent;
+  background-color: var(--knobby);
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+  box-sizing: border-box;
+}
+
+/* knobby while dragging - firefox */
+.progressBar:active::-moz-range-thumb {
+  transform: scale(1.2);
+  background: var(--selectedKnobby);
 }
