@@ -42,11 +42,8 @@
   }
   body {
     @apply bg-background text-foreground;
+    background-color: #fbfcfe;
   }
-}
-
-.body {
-  background-color: #fbfcfe !important;
 }
 
 @font-face {

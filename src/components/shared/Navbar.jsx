@@ -3,6 +3,7 @@ import React from "react";
 import { Button } from "../ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import LogoutDialog from "./LogoutDialog";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -15,7 +16,7 @@ export default function Navbar() {
                 type="text"
                 placeholder="Search anything...."
                 value=""
-                className="focus:outline-buttonprimary w-[500px] rounded-xl border border-gray-300 py-3 pl-10 font-avenirRegular text-[16px]"
+                className="focus:outline-buttonprimary w-[500px] rounded-[8px] border border-gray-300 py-3 pl-10 font-avenirRegular text-[16px]"
               />
               <SearchIcon className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 transform text-gray-400 lg:left-3" />
             </div>
@@ -24,11 +25,11 @@ export default function Navbar() {
             <div className="border-r-2">
               <Bell className="w-12 text-[#646464]" />
             </div>
-            <div className="">
+            <Link to="/sales-submission" className="">
               <Button className="font-avenirRegular font-medium">
                 Sales Submission
               </Button>
-            </div>
+            </Link>
             <div className="border-l-2">
               <div className="ml-5 flex items-center space-x-4">
                 <Avatar className="h-8 w-8">

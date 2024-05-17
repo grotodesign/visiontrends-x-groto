@@ -30,6 +30,7 @@ import IDefendPage from "./pages/practise-builder-page/idefend-page";
 import ReferPage from "./pages/user-profile-area-page/refer-page";
 import ContactUsPage from "./pages/user-profile-area-page/contact-us-page";
 import UserProfilePage from "./pages/user-profile-area-page/user-profile-page";
+import SalesSubmissionPage from "./pages/sales-submission";
 // import PractiseBuilderPage from "./pages/practise-builder";
 
 function App() {
@@ -84,6 +85,7 @@ function App() {
           path="/insurance-solutions/outsourced-billing-services"
           element={<OutsourcedPage />}
         />
+        <Route path="/sales-submission" element={<SalesSubmissionPage />} />
         <Route path="/lab-solutions" element={<LabsSolutionPage />} />
         <Route path="/merchant-services" element={<MerchantPage />} />
         <Route path="/learning-solutions" element={<LearningSolutionPage />} />

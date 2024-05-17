@@ -35,6 +35,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { CircleAlert } from "lucide-react";
+import PasswordDialog from "@/components/shared/PasswordDialog";
 
 export default function UserProfilePage() {
   const [profileImage, setProfileImage] = useState(null);
@@ -54,7 +55,7 @@ export default function UserProfilePage() {
   });
   const [activeTab, setActiveTab] = useState("personal");
   const formSchema = z.object({
-    username: z.string().nonempty("Username is required"),
+    username: z.string(),
     firstname: z.string().nonempty("First Name is required"),
     lastname: z.string().nonempty("Last Name is required"),
     nickname: z.string().nonempty("Nick Name is required"),
@@ -370,8 +371,9 @@ export default function UserProfilePage() {
                                   </FormLabel>
                                   <FormControl>
                                     <Input
-                                      placeholder="Enter Username"
-                                      {...field}
+                                      className="cursor-pointer border-none bg-[#F4F4F4] outline-none"
+                                      placeholder="harpreet.singh@toptal.com"
+                                      readOnly
                                     />
                                   </FormControl>
                                   <FormMessage />
@@ -529,9 +531,7 @@ export default function UserProfilePage() {
                                     <FormLabel className="font-avenirRegular text-[16px] font-medium text-[#646464]">
                                       Password
                                     </FormLabel>
-                                    <FormLabel className="font-avenirRegular text-[16px] font-medium text-[#1F3E7C]">
-                                      Edit
-                                    </FormLabel>
+                                    <PasswordDialog passwordText="Password" />
                                   </div>
                                   <FormControl>
                                     <Input placeholder="********" {...field} />
@@ -567,9 +567,7 @@ export default function UserProfilePage() {
                                     <FormLabel className="font-avenirRegular text-[16px] font-medium text-[#646464]">
                                       Account Password
                                     </FormLabel>
-                                    <FormLabel className="font-avenirRegular text-[16px] font-medium text-[#1F3E7C]">
-                                      Edit
-                                    </FormLabel>
+                                    <PasswordDialog passwordText="Account Password" />
                                   </div>
                                   <FormControl>
                                     <Input placeholder="********" {...field} />
