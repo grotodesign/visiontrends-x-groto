@@ -436,3 +436,49 @@ export const TeamMemberData = [
     phone: "",
   },
 ];
+
+/**
+ * @typedef {Object} ISalesSubmissionTableRow
+ * @property {string} month
+ * @property {string} grosssales
+ * @property {string} netsales
+ * @property {string} amountdue
+ * @property {string} status
+ * @property {string} action
+ */
+
+/** @type {ISalesSubmissionTableRow[]} */
+export const mockSalesSubmissionTableData = [
+  {
+    month: ["January"],
+    grosssales: ["$ 52,717.76"],
+    netsales: ["$ 50,000"],
+    amountdue: ["$ 102.1"],
+    status: ["Submitted"],
+    action: ["Submitted"],
+  },
+  {
+    month: ["February"],
+    grosssales: ["$ 52,717.76"],
+    netsales: ["$ 50,000"],
+    amountdue: ["$ 7.8"],
+    status: ["Submitted"],
+    action: ["Submitted"],
+  },
+  {
+    month: ["March"],
+    grosssales: ["$ 52,717.76"],
+    netsales: ["$ 50,000"],
+    amountdue: ["$ -424"],
+    status: ["Pending"],
+    action: ["Pending"],
+  },
+  {
+    month: ["April"],
+    grosssales: ["$ 0.00"],
+    netsales: ["$ 0.00"],
+    amountdue: ["$ 0.00"],
+    status: ["Pending"],
+    action: ["Pending"],
+  },
+];
