@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import ProtectedLayout from "./components/ProtectedLayout";
 import HomePage from "./pages/home";
 import VendorPartnersPage from "./pages/vendor-partners";
-import EventCalendarPage from "./pages/event-calendar";
+import EventCalendarPage from "./pages/event-page/event-calendar";
 import VendorDetailsPage from "./pages/vendor-details";
 import InsurancePage from "./pages/insurance-page/insurance-page";
 import LabsSolutionPage from "./pages/labs-solution";

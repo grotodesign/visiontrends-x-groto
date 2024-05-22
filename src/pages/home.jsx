@@ -30,13 +30,13 @@ export default function HomePage() {
         <MobileHero />
       </div>
       <div className="offeringContainer flex items-center justify-between">
-        <h1 className="px-5 font-avenirHeavy text-[20px] lg:px-5">
+        <h1 className="px-5 font-avenirHeavy text-[20px] lg:px-[32px]">
           Our Offerings
         </h1>
         <p className="px-5 lg:hidden">View all</p>
       </div>
-      <div className="flex flex-col justify-between space-x-6 space-y-6 py-8 lg:flex-row lg:space-y-0 lg:p-5">
-        <div className="cardArea grid justify-center gap-5 lg:grid-cols-2 lg:gap-6 lg:px-0">
+      <div className="flex flex-col justify-between space-x-[24px] space-y-[24px] py-8 lg:flex-row lg:space-y-0 lg:p-[24px]">
+        <div className="cardArea grid justify-center gap-5 lg:grid-cols-2 lg:gap-[24px] lg:px-0">
           {OfferingsData.map((offering) => (
             <OfferingCard key={offering.id} offering={offering} />
           ))}

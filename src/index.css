@@ -431,7 +431,7 @@
 
 @media screen and (min-width: 1440px) {
   .card {
-    width: 350px;
+    width: 359.5px;
   }
 
   .form-area {
@@ -443,6 +443,10 @@
   }
 
   .form-area-2 {
+    width: 160px;
+  }
+
+  .eventDateCard {
     width: 160px;
   }
 

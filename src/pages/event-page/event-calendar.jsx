@@ -9,11 +9,20 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import { mockEventHappinigData } from "@/lib/data";
 import { SearchIcon } from "lucide-react";
-import { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import NoEventPage from "./no-event-page";
+import EventHappeningPage from "./event-happing-page";
 
 export default function EventCalendarPage() {
   const [activeTab, setActiveTab] = useState("month");
+  const [activeMonth, setActiveMonth] = useState(new Date().getMonth());
+
+  // useEffect to update activeMonth whenever the component mounts or the current month changes
+  useEffect(() => {
+    setActiveMonth(new Date().getMonth());
+  }, []);
 
   const monthRef = useRef(null);
   const weekRef = useRef(null);
@@ -25,10 +34,38 @@ export default function EventCalendarPage() {
     }
   };
 
+  console.log("Month -->", activeMonth);
+
   const tabClasses = (tab) =>
     `flex items-center cursor-pointer ${
       activeTab === tab ? "bg-[#F0F7FE] text-[#1F3E7C]" : "text-[#646464]"
     } hover:bg-[#F0F7FE] rounded-[8px] overflow-hidden whitespace-nowrap px-[12px] py-[8px] `;
+
+  const handleMonthChange = (newDate) => {
+    setActiveMonth(newDate.month());
+  };
+
+  // Helper function to convert numeric month to month name
+  const getMonthName = (monthNumber) => {
+    const months = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+    return months[monthNumber]; // Month numbers are zero-based in the array
+  };
+
+  const activeMonthName = getMonthName(activeMonth);
+
   return (
     <div>
       <div className="hidden lg:block">
@@ -81,7 +118,7 @@ export default function EventCalendarPage() {
             </div>
           </div>
           <div className="relative">
-            <Calendar />
+            <Calendar onMonthChange={handleMonthChange} />
           </div>
           <div className="h-[48px] w-[216px] rounded-[8px] bg-white">
             <div
@@ -134,6 +171,31 @@ export default function EventCalendarPage() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="mt-5 px-5">
+        {/* Map through events and render EventHappingPage if conditions are met */}
+        {mockEventHappinigData.map((eventNow) => {
+          // Check if event month matches the active month name and if there are events
+          if (
+            eventNow.month.toLowerCase() === activeMonthName.toLowerCase() &&
+            eventNow.isEventThere
+          ) {
+            return (
+              <React.Fragment key={eventNow.id}>
+                <EventHappeningPage eventData={eventNow} />
+              </React.Fragment>
+            );
+          }
+
+          return null; // Return null if the event month doesn't match the active month
+        })}
+
+        {/* Check if there are no events in the active month */}
+        {!mockEventHappinigData.some(
+          (eventNow) =>
+            eventNow.month.toLowerCase() === activeMonthName.toLowerCase() &&
+            eventNow.isEventThere,
+        ) && <NoEventPage eventData={activeMonthName} />}
       </div>
     </div>
   );

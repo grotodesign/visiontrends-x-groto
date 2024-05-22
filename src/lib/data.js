@@ -482,3 +482,418 @@ export const mockSalesSubmissionTableData = [
     action: ["Pending"],
   },
 ];
+
+export const mockEventHappinigData = [
+  {
+    id: 1,
+    month: "January",
+    isEventThere: true,
+    eventDetails: [
+      {
+        id: 1,
+        eventName: "Spring Business Academy 2024",
+        eventDescription:
+          "Our 2024 Spring Business Academy will take place April 26-27, 2024 at The Woodlands Resort in The Woodlands, TX. The schedule is currently in the planning stages and as always...",
+        eventDate: "24",
+        eventMonth: "Jan",
+        eventPlace: "The Woodlands Resort and Conference Center",
+        eventAddress:
+          "2301 N. Millbend Drive, The Woodlands, TX, TX, United States",
+        eventStartDateTime: "Jan 26, 8:00 am",
+        eventEndDateTime: "Jan 27, 8:00 am ",
+        eventContactNumber: "806.773.8007",
+      },
+      {
+        id: 2,
+        eventName: "Annual Member Meeting",
+        eventDescription:
+          "Our 2024 Spring Business Academy will take place April 26-27, 2024 at The Woodlands Resort in The Woodlands, TX. The schedule is currently in the planning stages and as always...",
+        eventDate: "29",
+        eventMonth: "Jan",
+        eventPlace: "The Woodlands Resort and Conference Center",
+        eventAddress:
+          "2301 N. Millbend Drive, The Woodlands, TX, TX, United States",
+        eventStartDateTime: "Jan 26, 8:00 am",
+        eventEndDateTime: "Jan 27, 8:00 am ",
+        eventContactNumber: "806.773.8007",
+      },
+    ],
+  },
+  {
+    id: 2,
+    month: "February",
+    isEventThere: true,
+    eventDetails: [
+      {
+        id: 1,
+        eventName: "Spring Business Academy 2024",
+        eventDescription:
+          "Our 2024 Spring Business Academy will take place April 26-27, 2024 at The Woodlands Resort in The Woodlands, TX. The schedule is currently in the planning stages and as always...",
+        eventDate: "24",
+        eventMonth: "Feb",
+        eventPlace: "The Woodlands Resort and Conference Center",
+        eventAddress:
+          "2301 N. Millbend Drive, The Woodlands, TX, TX, United States",
+        eventStartDateTime: "Feb 26, 8:00 am",
+        eventEndDateTime: "Feb 27, 8:00 am ",
+        eventContactNumber: "806.773.8007",
+      },
+      {
+        id: 2,
+        eventName: "Annual Member Meeting",
+        eventDescription:
+          "Our 2024 Spring Business Academy will take place April 26-27, 2024 at The Woodlands Resort in The Woodlands, TX. The schedule is currently in the planning stages and as always...",
+        eventDate: "29",
+        eventMonth: "Feb",
+        eventPlace: "The Woodlands Resort and Conference Center",
+        eventAddress:
+          "2301 N. Millbend Drive, The Woodlands, TX, TX, United States",
+        eventStartDateTime: "Feb 26, 8:00 am",
+        eventEndDateTime: "Feb 27, 8:00 am ",
+        eventContactNumber: "806.773.8007",
+      },
+    ],
+  },
+  {
+    id: 3,
+    month: "March",
+    isEventThere: false,
+    eventDetails: [
+      {
+        id: 1,
+        eventName: "Spring Business Academy 2024",
+        eventDescription:
+          "Our 2024 Spring Business Academy will take place April 26-27, 2024 at The Woodlands Resort in The Woodlands, TX. The schedule is currently in the planning stages and as always...",
+        eventDate: "24",
+        eventMonth: "Mar",
+        eventPlace: "The Woodlands Resort and Conference Center",
+        eventAddress:
+          "2301 N. Millbend Drive, The Woodlands, TX, TX, United States",
+        eventStartDateTime: "Jan 26, 8:00 am",
+        eventEndDateTime: "Jan 27, 8:00 am ",
+        eventContactNumber: "806.773.8007",
+      },
+      {
+        id: 2,
+        eventName: "Annual Member Meeting",
+        eventDescription:
+          "Our 2024 Spring Business Academy will take place April 26-27, 2024 at The Woodlands Resort in The Woodlands, TX. The schedule is currently in the planning stages and as always...",
+        eventDate: "29",
+        eventMonth: "Mar",
+        eventPlace: "The Woodlands Resort and Conference Center",
+        eventAddress:
+          "2301 N. Millbend Drive, The Woodlands, TX, TX, United States",
+        eventStartDateTime: "Jan 26, 8:00 am",
+        eventEndDateTime: "Jan 27, 8:00 am ",
+        eventContactNumber: "806.773.8007",
+      },
+    ],
+  },
+  {
+    id: 4,
+    month: "April",
+    isEventThere: false,
+    eventDetails: [
+      {
+        id: 1,
+        eventName: "Spring Business Academy 2024",
+        eventDescription:
+          "Our 2024 Spring Business Academy will take place April 26-27, 2024 at The Woodlands Resort in The Woodlands, TX. The schedule is currently in the planning stages and as always...",
+        eventDate: "24",
+        eventMonth: "Apr",
+        eventPlace: "The Woodlands Resort and Conference Center",
+        eventAddress:
+          "2301 N. Millbend Drive, The Woodlands, TX, TX, United States",
+        eventStartDateTime: "Jan 26, 8:00 am",
+        eventEndDateTime: "Jan 27, 8:00 am ",
+        eventContactNumber: "806.773.8007",
+      },
+      {
+        id: 2,
+        eventName: "Annual Member Meeting",
+        eventDescription:
+          "Our 2024 Spring Business Academy will take place April 26-27, 2024 at The Woodlands Resort in The Woodlands, TX. The schedule is currently in the planning stages and as always...",
+        eventDate: "29",
+        eventMonth: "Apr",
+        eventPlace: "The Woodlands Resort and Conference Center",
+        eventAddress:
+          "2301 N. Millbend Drive, The Woodlands, TX, TX, United States",
+        eventStartDateTime: "Jan 26, 8:00 am",
+        eventEndDateTime: "Jan 27, 8:00 am ",
+        eventContactNumber: "806.773.8007",
+      },
+    ],
+  },
+  {
+    id: 5,
+    month: "May",
+    isEventThere: true,
+    eventDetails: [
+      {
+        id: 1,
+        eventName: "Spring Business Academy 2024",
+        eventDescription:
+          "Our 2024 Spring Business Academy will take place April 26-27, 2024 at The Woodlands Resort in The Woodlands, TX. The schedule is currently in the planning stages and as always...",
+        eventDate: "24",
+        eventMonth: "May",
+        eventPlace: "The Woodlands Resort and Conference Center",
+        eventAddress:
+          "2301 N. Millbend Drive, The Woodlands, TX, TX, United States",
+        eventStartDateTime: "May 26, 8:00 am",
+        eventEndDateTime: "May 27, 8:00 am ",
+        eventContactNumber: "806.773.8007",
+      },
+      {
+        id: 2,
+        eventName: "Annual Member Meeting",
+        eventDescription:
+          "Our 2024 Spring Business Academy will take place April 26-27, 2024 at The Woodlands Resort in The Woodlands, TX. The schedule is currently in the planning stages and as always...",
+        eventDate: "29",
+        eventMonth: "May",
+        eventPlace: "The Woodlands Resort and Conference Center",
+        eventAddress:
+          "2301 N. Millbend Drive, The Woodlands, TX, TX, United States",
+        eventStartDateTime: "May 26, 8:00 am",
+        eventEndDateTime: "May 27, 8:00 am ",
+        eventContactNumber: "806.773.8007",
+      },
+    ],
+  },
+  {
+    id: 6,
+    month: "June",
+    isEventThere: true,
+    eventDetails: [
+      {
+        id: 1,
+        eventName: "Spring Business Academy 2024",
+        eventDescription:
+          "Our 2024 Spring Business Academy will take place April 26-27, 2024 at The Woodlands Resort in The Woodlands, TX. The schedule is currently in the planning stages and as always...",
+        eventDate: "24",
+        eventMonth: "June",
+        eventPlace: "The Woodlands Resort and Conference Center",
+        eventAddress:
+          "2301 N. Millbend Drive, The Woodlands, TX, TX, United States",
+        eventStartDateTime: "June 26, 8:00 am",
+        eventEndDateTime: "June 27, 8:00 am ",
+        eventContactNumber: "806.773.8007",
+      },
+      {
+        id: 2,
+        eventName: "Annual Member Meeting",
+        eventDescription:
+          "Our 2024 Spring Business Academy will take place April 26-27, 2024 at The Woodlands Resort in The Woodlands, TX. The schedule is currently in the planning stages and as always...",
+        eventDate: "29",
+        eventMonth: "June",
+        eventPlace: "The Woodlands Resort and Conference Center",
+        eventAddress:
+          "2301 N. Millbend Drive, The Woodlands, TX, TX, United States",
+        eventStartDateTime: "June 26, 8:00 am",
+        eventEndDateTime: "June  27, 8:00 am ",
+        eventContactNumber: "806.773.8007",
+      },
+    ],
+  },
+  {
+    id: 7,
+    month: "July",
+    isEventThere: false,
+    eventDetails: [
+      {
+        id: 1,
+        eventName: "Spring Business Academy 2024",
+        eventDescription:
+          "Our 2024 Spring Business Academy will take place April 26-27, 2024 at The Woodlands Resort in The Woodlands, TX. The schedule is currently in the planning stages and as always...",
+        eventDate: "24",
+        eventMonth: "Jul",
+        eventPlace: "The Woodlands Resort and Conference Center",
+        eventAddress:
+          "2301 N. Millbend Drive, The Woodlands, TX, TX, United States",
+        eventStartDateTime: "Jan 26, 8:00 am",
+        eventEndDateTime: "Jan 27, 8:00 am ",
+        eventContactNumber: "806.773.8007",
+      },
+      {
+        id: 2,
+        eventName: "Annual Member Meeting",
+        eventDescription:
+          "Our 2024 Spring Business Academy will take place April 26-27, 2024 at The Woodlands Resort in The Woodlands, TX. The schedule is currently in the planning stages and as always...",
+        eventDate: "29",
+        eventMonth: "Jul",
+        eventPlace: "The Woodlands Resort and Conference Center",
+        eventAddress:
+          "2301 N. Millbend Drive, The Woodlands, TX, TX, United States",
+        eventStartDateTime: "Jan 26, 8:00 am",
+        eventEndDateTime: "Jan 27, 8:00 am ",
+        eventContactNumber: "806.773.8007",
+      },
+    ],
+  },
+  {
+    id: 8,
+    month: "August",
+    isEventThere: false,
+    eventDetails: [
+      {
+        id: 1,
+        eventName: "Spring Business Academy 2024",
+        eventDescription:
+          "Our 2024 Spring Business Academy will take place April 26-27, 2024 at The Woodlands Resort in The Woodlands, TX. The schedule is currently in the planning stages and as always...",
+        eventDate: "24",
+        eventMonth: "Aug",
+        eventPlace: "The Woodlands Resort and Conference Center",
+        eventAddress:
+          "2301 N. Millbend Drive, The Woodlands, TX, TX, United States",
+        eventStartDateTime: "Jan 26, 8:00 am",
+        eventEndDateTime: "Jan 27, 8:00 am ",
+        eventContactNumber: "806.773.8007",
+      },
+      {
+        id: 2,
+        eventName: "Annual Member Meeting",
+        eventDescription:
+          "Our 2024 Spring Business Academy will take place April 26-27, 2024 at The Woodlands Resort in The Woodlands, TX. The schedule is currently in the planning stages and as always...",
+        eventDate: "29",
+        eventMonth: "Aug",
+        eventPlace: "The Woodlands Resort and Conference Center",
+        eventAddress:
+          "2301 N. Millbend Drive, The Woodlands, TX, TX, United States",
+        eventStartDateTime: "Jan 26, 8:00 am",
+        eventEndDateTime: "Jan 27, 8:00 am ",
+        eventContactNumber: "806.773.8007",
+      },
+    ],
+  },
+  {
+    id: 9,
+    month: "September",
+    isEventThere: true,
+    eventDetails: [
+      {
+        id: 1,
+        eventName: "Fall Leadership Summit 2024",
+        eventDescription:
+          "Join us for the 2024 Fall Leadership Summit on September 10-12, 2024 at the Hilton Downtown in Austin, TX. Network with industry leaders and gain insights into the latest trends.",
+        eventDate: "10",
+        eventMonth: "Sep",
+        eventPlace: "Hilton Downtown Austin",
+        eventAddress: "500 E 4th St, Austin, TX, United States",
+        eventStartDateTime: "Sep 10, 9:00 am",
+        eventEndDateTime: "Sep 12, 5:00 pm",
+        eventContactNumber: "512.555.1234",
+      },
+      {
+        id: 2,
+        eventName: "Tech Innovators Conference",
+        eventDescription:
+          "The Tech Innovators Conference will take place on September 24-26, 2024 at the Moscone Center in San Francisco, CA. Explore the latest advancements in technology.",
+        eventDate: "24",
+        eventMonth: "Sep",
+        eventPlace: "Moscone Center",
+        eventAddress: "747 Howard St, San Francisco, CA, United States",
+        eventStartDateTime: "Sep 24, 8:00 am",
+        eventEndDateTime: "Sep 26, 6:00 pm",
+        eventContactNumber: "415.555.9876",
+      },
+    ],
+  },
+  {
+    id: 10,
+    month: "October",
+    isEventThere: true,
+    eventDetails: [
+      {
+        id: 1,
+        eventName: "Marketing World 2024",
+        eventDescription:
+          "Marketing World 2024 will be held on October 15-17, 2024 at the McCormick Place in Chicago, IL. Discover new strategies and connect with marketing professionals.",
+        eventDate: "15",
+        eventMonth: "Oct",
+        eventPlace: "McCormick Place",
+        eventAddress: "2301 S King Dr, Chicago, IL, United States",
+        eventStartDateTime: "Oct 15, 9:00 am",
+        eventEndDateTime: "Oct 17, 5:00 pm",
+        eventContactNumber: "312.555.4567",
+      },
+      {
+        id: 2,
+        eventName: "Global Finance Summit",
+        eventDescription:
+          "Attend the Global Finance Summit on October 28-30, 2024 at the New York Marriott Marquis. Gain insights from top financial experts and network with industry leaders.",
+        eventDate: "28",
+        eventMonth: "Oct",
+        eventPlace: "New York Marriott Marquis",
+        eventAddress: "1535 Broadway, New York, NY, United States",
+        eventStartDateTime: "Oct 28, 8:00 am",
+        eventEndDateTime: "Oct 30, 6:00 pm",
+        eventContactNumber: "212.555.7890",
+      },
+    ],
+  },
+  {
+    id: 11,
+    month: "November",
+    isEventThere: true,
+    eventDetails: [
+      {
+        id: 1,
+        eventName: "Healthcare Innovation Expo 2024",
+        eventDescription:
+          "Join us at the Healthcare Innovation Expo on November 5-7, 2024 at the Orange County Convention Center in Orlando, FL. Learn about the latest in healthcare technology.",
+        eventDate: "05",
+        eventMonth: "Nov",
+        eventPlace: "Orange County Convention Center",
+        eventAddress: "9800 International Dr, Orlando, FL, United States",
+        eventStartDateTime: "Nov 5, 8:00 am",
+        eventEndDateTime: "Nov 7, 5:00 pm",
+        eventContactNumber: "407.555.1234",
+      },
+      {
+        id: 2,
+        eventName: "Sustainable Energy Conference",
+        eventDescription:
+          "The Sustainable Energy Conference will be held on November 18-20, 2024 at the San Diego Convention Center. Explore advancements in renewable energy.",
+        eventDate: "18",
+        eventMonth: "Nov",
+        eventPlace: "San Diego Convention Center",
+        eventAddress: "111 W Harbor Dr, San Diego, CA, United States",
+        eventStartDateTime: "Nov 18, 9:00 am",
+        eventEndDateTime: "Nov 20, 6:00 pm",
+        eventContactNumber: "619.555.6789",
+      },
+    ],
+  },
+  {
+    id: 12,
+    month: "December",
+    isEventThere: true,
+    eventDetails: [
+      {
+        id: 1,
+        eventName: "Year-End Gala 2024",
+        eventDescription:
+          "Celebrate the end of the year with us at the Year-End Gala on December 12, 2024 at the Ritz-Carlton in Los Angeles, CA. Enjoy a night of entertainment and networking.",
+        eventDate: "12",
+        eventMonth: "Dec",
+        eventPlace: "Ritz-Carlton Los Angeles",
+        eventAddress: "900 W Olympic Blvd, Los Angeles, CA, United States",
+        eventStartDateTime: "Dec 12, 7:00 pm",
+        eventEndDateTime: "Dec 12, 11:00 pm",
+        eventContactNumber: "213.555.2468",
+      },
+      {
+        id: 2,
+        eventName: "Innovation Awards 2024",
+        eventDescription:
+          "The Innovation Awards 2024 will take place on December 20, 2024 at the Grand Hyatt in Seattle, WA. Recognize the best in innovation and technology.",
+        eventDate: "20",
+        eventMonth: "Dec",
+        eventPlace: "Grand Hyatt Seattle",
+        eventAddress: "721 Pine St, Seattle, WA, United States",
+        eventStartDateTime: "Dec 20, 6:00 pm",
+        eventEndDateTime: "Dec 20, 10:00 pm",
+        eventContactNumber: "206.555.1357",
+      },
+    ],
+  },
+];

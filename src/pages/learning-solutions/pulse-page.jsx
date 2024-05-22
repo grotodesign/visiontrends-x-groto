@@ -91,7 +91,7 @@ export default function PulsePage() {
         </div>
       </div>
       <div className="card-vsp flex flex-col  space-y-6 py-3  lg:flex-row lg:space-x-6 lg:space-y-0 lg:p-5 lg:py-4">
-        <div className="">
+        {/* <div className="">
           <video className="video-area h-full w-full" controls>
             <source
               src="https://docs.material-tailwind.com/demo.mp4"
@@ -99,7 +99,18 @@ export default function PulsePage() {
             />
             Your browser does not support the video tag.
           </video>
+          
+        </div> */}
+        <div className="w-full">
+          <iframe
+            src="https://vimeo.com/showcase/8096214/embed"
+            allowFullScreen
+            frameBorder="0"
+            className="video-area h-full w-full"
+            style={{ width: "100%", height: "100%" }}
+          ></iframe>
         </div>
+
         <div className="space-y-4">
           <div className="card-contact-ipp space-y-4">
             <Card className="card-vendor-contact rounded-[16px] lg:w-[395px]">

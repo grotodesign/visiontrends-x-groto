@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <div className="h-30 border-b-2 border-[#EEEEEE] bg-white">
-      <div className="p-5">
+    <div className="h-[104px] border-b-2 border-[#EEEEEE] bg-white">
+      <div className="p-[32px]">
         <div className="flex justify-between">
           <div>
             <div className="relative">
@@ -16,7 +16,7 @@ export default function Navbar() {
                 type="text"
                 placeholder="Search anything...."
                 value=""
-                className="focus:outline-buttonprimary w-[500px] rounded-[8px] border border-gray-300 py-3 pl-10 font-avenirRegular text-[16px]"
+                className="focus:outline-buttonprimary h-[40px] w-[400px] rounded-[8px] border border-gray-300 py-3 pl-10 font-avenirRegular text-[16px]"
               />
               <SearchIcon className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 transform text-gray-400 lg:left-3" />
             </div>
