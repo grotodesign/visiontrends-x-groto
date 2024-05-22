@@ -6,7 +6,7 @@ export default function SubNavbar() {
     <div className="">
       <div className="flex h-[46px] items-center justify-center space-x-2 bg-[#FEF5D5] px-5 py-3 text-center">
         <CircleAlert className="w-4 bg-[#FEF5D5]" />{" "}
-        <div className="flex items-center space-x-3 bg-[#FEF5D5] font-avenirRegular text-[#1F3E7C]">
+        <div className="flex items-center space-x-3 bg-[#FEF5D5] font-avenirRegular text-[14px] text-[#1F3E7C]">
           <p>
             Deadline to Register for Vision Trends Care Foundation Webinar is
             Today!{" "}

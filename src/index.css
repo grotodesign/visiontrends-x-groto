@@ -431,7 +431,7 @@
 
 @media screen and (min-width: 1440px) {
   .card {
-    width: 359.5px;
+    width: 350px;
   }
 
   .form-area {
@@ -455,6 +455,10 @@
   }
   .form-area-4 {
     width: 560px;
+  }
+
+  .pulseCard {
+    width: 200px !important;
   }
 
   .form-area-5 {
