@@ -31,7 +31,7 @@ export default function LabsSolutionPage() {
       <div className="block lg:hidden">
         <MobileNav />
       </div>
-      <div className="p-5">
+      <div className="p-5 lg:px-[32px] lg:pt-[28px]">
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -51,7 +51,7 @@ export default function LabsSolutionPage() {
           </BreadcrumbList>
         </Breadcrumb>
       </div>
-      <div className="card-ipp flex flex-col justify-between space-y-6 py-3  lg:flex-row lg:space-x-6 lg:space-y-0 lg:p-5 lg:py-4">
+      <div className="card-ipp flex flex-col justify-between space-y-6 py-3  lg:flex-row lg:space-x-6 lg:space-y-0 lg:px-[32px]">
         <div className="space-y-4">
           <div>
             <Card className="rounded-[16px]">

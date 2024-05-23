@@ -46,7 +46,7 @@ export default function InsuranceDetailPage() {
       <div className="block lg:hidden">
         <MobileNav />
       </div>
-      <div className="breadcrumbs-area p-5">
+      <div className="breadcrumbs-area p-5 lg:px-[32px] lg:pt-[28px]">
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -84,7 +84,7 @@ export default function InsuranceDetailPage() {
           </BreadcrumbList>
         </Breadcrumb>
       </div>
-      <div className="card-vsp flex flex-col justify-between space-y-6 py-3  lg:flex-row lg:space-x-6 lg:space-y-0 lg:p-5 lg:py-4">
+      <div className="card-vsp flex flex-col justify-between space-y-6 py-3  lg:flex-row lg:space-x-6 lg:space-y-0 lg:px-[32px]">
         <div>
           <Card className="rounded-[16px] lg:w-[1136px]">
             <div className="space-y-6 p-5 lg:p-10">
@@ -128,7 +128,7 @@ export default function InsuranceDetailPage() {
           </Card>
         </div>
       </div>
-      <div className="card-vsp flex flex-col justify-between space-y-6 p-5">
+      <div className="card-vsp flex flex-col justify-between space-y-6 p-5 lg:px-[32px]">
         <h1>Attachment</h1>
         <div>
           <Card className="rounded-[16px] lg:w-[1136px]">

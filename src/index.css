@@ -431,7 +431,11 @@
 
 @media screen and (min-width: 1440px) {
   .card {
-    width: 350px;
+    width: 340px;
+  }
+
+  .card-area-layout {
+    max-width: 1136px;
   }
 
   .form-area {
@@ -486,14 +490,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 100px;
+    gap: 80px;
   }
 
   .vendor-area-1 {
     width: 100%;
   }
   .card-vendor {
-    width: 280px;
+    width: 266px;
     height: 296px;
   }
   .card-merchant-area {
@@ -533,10 +537,10 @@
 
 @media screen and (min-width: 1497px) {
   .card {
-    width: 380px;
+    width: 370px;
   }
   .card-vendor {
-    width: 296px;
+    width: 276px;
   }
   .card-vendor-detaiils {
     width: 100%;
@@ -547,7 +551,7 @@
     height: 328px;
   }
   .insurance-guide {
-    gap: 160px;
+    gap: 140px;
   }
   .player {
     width: 505px;
@@ -559,7 +563,7 @@
 
 @media screen and (min-width: 1523px) {
   .card {
-    width: 390px;
+    width: 384px;
   }
 
   .offeringDesc {
@@ -572,7 +576,7 @@
   }
 
   .insurance-guide {
-    gap: 190px;
+    gap: 170px;
   }
   .player {
     width: 530px;
@@ -584,7 +588,7 @@
   }
 
   .card-vendor {
-    width: 300px;
+    width: 282px;
   }
 
   .card-rate {
@@ -597,9 +601,9 @@
 }
 
 @media screen and (min-width: 1536px) {
-  .card {
+  /* .card {
     width: 400px;
-  }
+  } */
 
   .offeringDesc {
     width: 350px;
@@ -610,11 +614,11 @@
   }
 
   .insurance-guide {
-    gap: 195px;
+    gap: 234px;
   }
 
   .card-vendor {
-    width: 302px;
+    width: 286px;
   }
 }
 
@@ -624,13 +628,13 @@
   }
 
   .card-vendor {
-    width: 370px;
+    width: 356px;
   }
 }
 
 @media screen and (min-width: 1920px) {
   .card {
-    width: 590px;
+    width: 580px;
   }
 
   .offeringDesc {
@@ -638,7 +642,7 @@
   }
 
   .insurance-guide {
-    gap: 590px;
+    gap: 565px;
   }
 
   .carousel-area {
@@ -664,7 +668,7 @@
   }
 
   .card-vendor {
-    width: 400px;
+    width: 382px;
   }
 }
 

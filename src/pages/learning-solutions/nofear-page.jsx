@@ -23,7 +23,7 @@ export default function NoFearPage() {
       <div className="block lg:hidden">
         <MobileNav />
       </div>
-      <div className="p-5">
+      <div className="p-5 lg:px-[32px] lg:pt-[28px]">
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -52,7 +52,7 @@ export default function NoFearPage() {
           </BreadcrumbList>
         </Breadcrumb>
       </div>
-      <div className="card-vsp flex flex-col justify-between space-y-6 py-3  lg:flex-row lg:space-x-6 lg:space-y-0 lg:p-5 lg:py-4">
+      <div className="card-vsp flex flex-col justify-between space-y-6 py-3  lg:flex-row lg:space-x-6 lg:space-y-0 lg:px-[32px]">
         <div>
           <Card className="rounded-[16px]">
             <div className="space-y-6 p-5 lg:p-10">
@@ -75,12 +75,12 @@ export default function NoFearPage() {
           </Card>
         </div>
       </div>
-      <div className="px-5">
+      <div className="px-[32px]">
         <h1 className="font-avenirHeavy text-[16px] text-[#1C1C1C] lg:text-[18px]">
           Latest Podcasts
         </h1>
       </div>
-      <div className="card-vsp flex flex-col  space-y-6 py-3  lg:flex-row lg:space-x-6 lg:space-y-0 lg:p-5 lg:py-4">
+      <div className="card-vsp flex flex-col  space-y-6 py-3  lg:flex-row lg:space-x-6 lg:space-y-0 lg:px-[32px]">
         <div>
           <Card className=" rounded-[16px]">
             <div className="space-y-6 p-5 lg:p-10">

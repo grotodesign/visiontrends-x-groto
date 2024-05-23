@@ -33,7 +33,7 @@ export default function VendorPartnersPage() {
       <div className="block lg:hidden">
         <MobileNav />
       </div>
-      <div className="p-5">
+      <div className="p-5 lg:px-[32px] lg:pt-[28px]">
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -53,7 +53,7 @@ export default function VendorPartnersPage() {
           </BreadcrumbList>
         </Breadcrumb>
       </div>
-      <div className="vendor-area-1 flex items-center justify-between px-5">
+      <div className="vendor-area-1 flex items-center justify-between px-5 lg:px-[32px]">
         <div className="">
           <h1 className="font-avenirHeavy text-[18px] text-[#1C1C1C]">
             Vendor Partners
@@ -75,7 +75,7 @@ export default function VendorPartnersPage() {
           </Button>
         </div>
       </div>
-      <div className="mt-5 flex items-center px-5">
+      <div className="mt-5 flex items-center px-5 lg:px-[32px]">
         <div className="search-area flex flex-row space-x-4 lg:items-center">
           <div>
             <div className="relative">
@@ -131,8 +131,8 @@ export default function VendorPartnersPage() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-between space-x-6 space-y-6 py-8 lg:flex-row lg:space-y-0 lg:p-5">
-        <div className="cardArea grid justify-center gap-6 lg:grid-cols-4 lg:gap-2 lg:px-0">
+      <div className="flex flex-col justify-between space-x-6 space-y-6 py-8 lg:flex-row lg:space-y-0 lg:px-[32px]">
+        <div className="cardArea grid justify-center gap-6 lg:grid-cols-4 lg:gap-[24px] lg:px-0">
           {VendorPartnersData.map((vendor) => {
             return (
               <>

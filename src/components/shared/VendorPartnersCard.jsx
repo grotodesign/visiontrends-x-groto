@@ -5,7 +5,6 @@ import CallIcon from "@/assets/icons/CallIcon";
 import EmailIcon from "@/assets/icons/EmailIcon";
 
 export default function VendorPartnersCard({ vendor }) {
-  console.log(vendor);
   return (
     <Card className="card-vendor rounded-[16px] bg-white">
       <div className="space-y-6 px-5 py-5">

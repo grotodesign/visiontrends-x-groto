@@ -95,6 +95,13 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
         ? "bg-[#F0F7FE] hover:bg-[#F0F7FE]"
         : "hover:bg-[#F0F7FE]"
     }`;
+
+  const getPracticeItemClasses = (menu) =>
+    `flex items-center cursor-pointer rounded w-full overflow-hidden whitespace-nowrap ${
+      activeMenu && activeMenu.id === menu.id
+        ? "bg-white"
+        : "hover:bg-[#F0F7FE]"
+    }`;
   return (
     <aside
       id="app-sidebar"
@@ -112,8 +119,8 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
             <Logo />
           </div>
         </div>
-        <div>
-          <div className="my-4 flex flex-col items-start">
+        <div className="space-y-[32px]">
+          <div className="my-[24px] flex flex-col items-start">
             {menuItems.slice(0, 3).map(({ id, label, link, icon }) => {
               const menuItem = { id, label, link, icon };
               const classes = getNavItemClasses(menuItem);
@@ -142,8 +149,8 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
               );
             })}
           </div>
-          <div className="my-4 flex flex-col items-start bg-white">
-            <h1 className="bg-white px-6 font-avenirRegular text-[14px] text-[#989898]">
+          <div className="my-[24px] flex flex-col items-start bg-white">
+            <h1 className="mb-[8px] bg-white px-6 font-avenirRegular text-[14px] text-[#989898]">
               Programs
             </h1>
             {menuItems.slice(3, 6).map(({ id, label, link, icon, submenu }) => {
@@ -177,11 +184,11 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
                             </div>
                           </AccordionTrigger>
                           <AccordionContent>
-                            <div className="flex h-full w-full flex-col px-2 py-3">
+                            <div className="flex h-full w-full flex-col">
                               {submenu?.map((submenuItem) => (
                                 <div
                                   key={submenuItem.id}
-                                  className={`px-4 py-3 font-avenirRegular text-[14px] font-medium ${
+                                  className={` h-[46px] py-[12px] pl-[56px] pr-[8px] font-avenirRegular text-[14px] font-medium ${
                                     activeMenu && activeMenu.id === id
                                       ? "text-[#1F3E7C]"
                                       : "text-[#646464]"
@@ -222,8 +229,8 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
               );
             })}
           </div>
-          <div className="my-4 flex flex-col items-start bg-white">
-            <h1 className="bg-white px-6 font-avenirRegular text-[14px] text-[#989898]">
+          <div className="my-[24px] flex flex-col items-start bg-white">
+            <h1 className="mb-[8px] bg-white px-6 font-avenirRegular text-[14px] text-[#989898]">
               Solutions
             </h1>
             {menuItems.slice(6, 10).map(({ id, label, link, icon }) => {
@@ -255,7 +262,7 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
             })}
           </div>
         </div>
-        <div className="px-4">
+        <div className="mt-[84px] px-[20px]">
           <Card className="relative w-[200px] rounded-[12px] bg-gradient-to-br from-[#3061C2] to-[#121A29] ">
             <div className="space-y-3 p-5">
               <div>

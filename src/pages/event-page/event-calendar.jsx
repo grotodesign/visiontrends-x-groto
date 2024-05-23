@@ -74,7 +74,7 @@ export default function EventCalendarPage() {
       <div className="block lg:hidden">
         <MobileNav />
       </div>
-      <div className="p-5">
+      <div className="p-5 lg:px-[32px] lg:pt-[28px]">
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -94,7 +94,7 @@ export default function EventCalendarPage() {
           </BreadcrumbList>
         </Breadcrumb>
       </div>
-      <div className="flex items-center justify-between px-5">
+      <div className="flex items-center justify-between px-5 lg:px-[32px]">
         <div className="">
           <h1 className="font-avenirHeavy text-[18px] text-[#1C1C1C]">
             Event Calendar
@@ -104,7 +104,7 @@ export default function EventCalendarPage() {
           </p>
         </div>
       </div>
-      <div className="mt-5 px-5">
+      <div className="mt-5 px-5 lg:px-[32px]">
         <div className="flex items-center justify-between">
           <div>
             <div className="relative">
@@ -172,7 +172,7 @@ export default function EventCalendarPage() {
           </div>
         </div>
       </div>
-      <div className="mt-5 px-5">
+      <div className="mt-5 px-5 lg:px-[32px]">
         {/* Map through events and render EventHappingPage if conditions are met */}
         {mockEventHappinigData.map((eventNow) => {
           // Check if event month matches the active month name and if there are events

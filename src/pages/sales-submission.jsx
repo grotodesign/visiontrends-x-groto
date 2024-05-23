@@ -30,7 +30,7 @@ export default function SalesSubmissionPage() {
       <div className="block lg:hidden">
         <MobileNav />
       </div>
-      <div className="p-5">
+      <div className="p-5 lg:px-[32px] lg:pt-[28px]">
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -50,7 +50,7 @@ export default function SalesSubmissionPage() {
           </BreadcrumbList>
         </Breadcrumb>
       </div>
-      <div className="px-5">
+      <div className="px-5 lg:px-[32px]">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
           <h1 className="font-avenirHeavy text-[18px] text-[#1C1C1C]">
             Sales Submission
@@ -106,7 +106,7 @@ export default function SalesSubmissionPage() {
           </div>
         </div>
       </div>
-      <div className="mt-5 px-5">
+      <div className="mt-5 px-5 lg:px-[32px]">
         <SalesSubmissionMockData />
         <div className="rounded-b-[8px] bg-[#FEF5D5] p-[10px] text-center">
           <div className="flex items-center justify-center space-x-2 font-avenirRegular text-[14px] font-thin text-[#1F3E7C]">
