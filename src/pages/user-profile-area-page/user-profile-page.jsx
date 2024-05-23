@@ -129,7 +129,7 @@ export default function UserProfilePage() {
       <div className="block lg:hidden">
         <MobileNav />
       </div>
-      <div className="p-5">
+      <div className="p-5 lg:px-[32px] lg:pt-[28px]">
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -149,12 +149,12 @@ export default function UserProfilePage() {
           </BreadcrumbList>
         </Breadcrumb>
       </div>
-      <div className="px-5">
+      <div className="px-5 lg:px-[32px]">
         <h1 className="font-avenirHeavy text-[24px] text-[#1F3E7C]">
           My Profile
         </h1>
       </div>
-      <div className="card-ipp flex flex-col justify-between py-3 lg:flex-row lg:space-x-6 lg:space-y-0 lg:p-5 lg:py-4">
+      <div className="card-ipp flex flex-col justify-between py-3 lg:flex-row lg:space-x-6 lg:space-y-0 lg:px-[32px]">
         <div className="space-y-4">
           <Card className="hidden w-[280px] rounded-[16px] lg:block">
             <div

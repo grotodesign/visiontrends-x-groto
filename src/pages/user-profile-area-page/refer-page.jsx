@@ -70,7 +70,7 @@ export default function ReferPage() {
       <div className="block lg:hidden">
         <MobileNav />
       </div>
-      <div className="p-5">
+      <div className="p-5 lg:px-[32px] lg:pt-[28px]">
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -90,12 +90,12 @@ export default function ReferPage() {
           </BreadcrumbList>
         </Breadcrumb>
       </div>
-      <div className="px-5">
+      <div className="px-5 lg:px-[32px]">
         <h1 className="font-avenirHeavy text-[24px] text-[#1F3E7C]">
           Refer a New Member, Earn $500
         </h1>
       </div>
-      <div className="card-ipp flex flex-col-reverse justify-between  py-3  lg:flex-row lg:space-x-6 lg:space-y-0 lg:p-5 lg:py-4 ">
+      <div className="card-ipp flex flex-col-reverse justify-between  py-3  lg:flex-row lg:space-x-6 lg:space-y-0 lg:px-[32px] ">
         <div className="mt-5 space-y-4 lg:mt-0">
           <Card className="rounded-[16px]">
             <div className="space-y-6 p-5 lg:p-10">
