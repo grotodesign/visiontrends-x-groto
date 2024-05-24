@@ -29,7 +29,7 @@ export function SalesSubmissionMockData() {
               {headerGroup.headers.map((header) => (
                 <TableHead
                   key={header.id}
-                  className="h-16 w-[189px] border py-2 text-left"
+                  className="h-16 w-[189.3px] border py-2 text-left"
                 >
                   {header.isPlaceholder
                     ? null

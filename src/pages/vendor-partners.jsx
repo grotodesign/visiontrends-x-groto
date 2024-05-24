@@ -1,6 +1,6 @@
 import MobileNav from "@/components/shared/MobileNav";
 import Navbar from "@/components/shared/Navbar";
-import React from "react";
+import React, { useState } from "react";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -25,6 +25,7 @@ import FeaturedIllustrationIcon from "@/assets/icons/FeaturedIllustrationIcon";
 import { Link } from "react-router-dom";
 
 export default function VendorPartnersPage() {
+  const [searchValue, setSearchValue] = useState("");
   return (
     <div>
       <div className="hidden lg:block">
@@ -82,7 +83,8 @@ export default function VendorPartnersPage() {
               <input
                 type="text"
                 placeholder="Search Vendor"
-                value=""
+                value={searchValue}
+                onChange={(e) => setSearchValue(e.target.value)}
                 className="focus:outline-buttonprimary h-[32px] w-[185px] rounded-[8px] border border-gray-300 py-3 pl-10 font-avenirRegular text-[16px] lg:h-[40px] lg:w-[400px]"
               />
               <SearchIcon className="absolute left-3 top-1/2 h-[14.5px] w-[14.5px] -translate-y-1/2 transform text-[#B6B6B6] lg:left-3" />
