@@ -20,8 +20,10 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { AlertCircle, SearchIcon } from "lucide-react";
+import { useState } from "react";
 
 export default function SalesSubmissionPage() {
+  const [searchValue, setSearchValue] = useState("");
   return (
     <div>
       <div className="hidden lg:block">
@@ -61,7 +63,8 @@ export default function SalesSubmissionPage() {
                 <input
                   type="text"
                   placeholder="Search"
-                  value=""
+                  value={searchValue}
+                  onChange={(e) => setSearchValue(e.target.value)}
                   className="focus:outline-buttonprimary rounded-[8px] border border-gray-300 py-2 pl-10 font-avenirRegular text-[16px] lg:w-[500px]"
                 />
                 <SearchIcon className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 transform text-gray-400 lg:left-3" />
