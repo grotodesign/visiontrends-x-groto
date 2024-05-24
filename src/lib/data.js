@@ -643,20 +643,6 @@ export const mockEventHappinigData = [
         eventEndDateTime: "May 27, 8:00 am ",
         eventContactNumber: "806.773.8007",
       },
-      {
-        id: 2,
-        eventName: "Annual Member Meeting",
-        eventDescription:
-          "Our 2024 Spring Business Academy will take place April 26-27, 2024 at The Woodlands Resort in The Woodlands, TX. The schedule is currently in the planning stages and as always...",
-        eventDate: "29",
-        eventMonth: "May",
-        eventPlace: "The Woodlands Resort and Conference Center",
-        eventAddress:
-          "2301 N. Millbend Drive, The Woodlands, TX, TX, United States",
-        eventStartDateTime: "May 26, 8:00 am",
-        eventEndDateTime: "May 27, 8:00 am ",
-        eventContactNumber: "806.773.8007",
-      },
     ],
   },
   {

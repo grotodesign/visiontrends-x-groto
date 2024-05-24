@@ -138,7 +138,7 @@ export default function VendorPartnersPage() {
               <>
                 <Link to={vendor.id}>
                   {vendor.isBookedMarked ? (
-                    <div>
+                    <div key={vendor.id}>
                       <div className="mr-5 flex justify-end">
                         <FeaturedIllustrationIcon />
                       </div>

@@ -30,8 +30,8 @@ export default function FeaturedIllustrationIcon() {
           y2="7.28216"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.150701" stop-color="#121A29" />
-          <stop offset="0.986782" stop-color="#3061C2" />
+          <stop offset="0.150701" stopColor="#121A29" />
+          <stop offset="0.986782" stopColor="#3061C2" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_743_15101"
@@ -41,8 +41,8 @@ export default function FeaturedIllustrationIcon() {
           y2="31.4529"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#3061C2" />
-          <stop offset="1" stop-color="#121A29" />
+          <stop stopColor="#3061C2" />
+          <stop offset="1" stopColor="#121A29" />
         </linearGradient>
       </defs>
     </svg>

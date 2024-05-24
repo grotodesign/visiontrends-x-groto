@@ -5,6 +5,7 @@ import KattoufIcon from "@/assets/kattouf.png";
 import ABBConnectIcon from "@/assets/ABBContact.png";
 import NorwoodIcon from "@/assets/Norwood.png";
 import { CircleChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function FeaturedVendor() {
   return (
@@ -19,34 +20,46 @@ export default function FeaturedVendor() {
                 </h1>
               </div>
               <Separator className="vendorCardArea -ml-5 w-[400px] lg:-ml-5" />
-              <div className="vendorCardAreaContent flex items-center space-x-2 lg:space-x-6">
+              <Link
+                to="/vendor-partners/glimpse-live-llc/"
+                className="vendorCardAreaContent flex items-center space-x-2 lg:space-x-6"
+              >
                 <img src={ABBIcon} className="w-10" />
                 <h1 className="w-[245px] font-avenirRegular text-[14px]">
                   ABB Analyze powered by Glimpse
                 </h1>
                 <CircleChevronRight className="text-[#1F3E7C]" />
-              </div>
-              <div className="vendorCardAreaContent flex items-center space-x-2 lg:space-x-6">
+              </Link>
+              <Link
+                to="/vendor-partners/kattouf-consulting-services-inc/"
+                className="vendorCardAreaContent flex items-center space-x-2 lg:space-x-6"
+              >
                 <img src={KattoufIcon} className="w-10" />
                 <h1 className="w-[245px] font-avenirRegular text-[14px]">
                   Kattouf Consulting Services Inc.
                 </h1>
                 <CircleChevronRight className="text-[#1F3E7C]" />
-              </div>
-              <div className="vendorCardAreaContent flex items-center space-x-2 lg:space-x-6">
+              </Link>
+              <Link
+                to="/vendor-partners/abb-contact-lens"
+                className="vendorCardAreaContent flex items-center space-x-2 lg:space-x-6"
+              >
                 <img src={ABBConnectIcon} className="w-10" />
                 <h1 className="w-[245px] font-avenirRegular text-[14px]">
                   ABB Contact Lens (Soft Contacts and Gas Perm)
                 </h1>
                 <CircleChevronRight className="text-[#1F3E7C]" />
-              </div>
-              <div className="vendorCardAreaContent flex items-center space-x-2 lg:space-x-6">
+              </Link>
+              <Link
+                to="/vendor-partners/norwood"
+                className="vendorCardAreaContent flex items-center space-x-2 lg:space-x-6"
+              >
                 <img src={NorwoodIcon} className="w-10" />
                 <h1 className="w-[245px] font-avenirRegular text-[14px]">
                   Norwood Device & Diagnostics
                 </h1>
                 <CircleChevronRight className="text-[#1F3E7C]" />
-              </div>
+              </Link>
             </div>
           </div>
         </div>

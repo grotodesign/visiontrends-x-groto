@@ -30,7 +30,7 @@ export default function EventCard({ eventDetails }) {
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
                 <MapPin className="w-[20px] text-[#646464]" />
-                <div className="items-cente flex space-x-2 text-[16px]">
+                <div className="flex items-center space-x-2 text-[16px]">
                   <h1 className="font-avenirRegular font-medium text-[#646464]">
                     {eventDetails.eventPlace}
                   </h1>
@@ -41,7 +41,7 @@ export default function EventCard({ eventDetails }) {
               </div>
               <div className="flex items-center space-x-2">
                 <Clock4 className="w-[20px] text-[#646464]" />
-                <div className="items-cente flex space-x-2 font-avenirRegular font-medium text-[#646464]">
+                <div className="flex items-center space-x-2 font-avenirRegular font-medium text-[#646464]">
                   <h1>{eventDetails.eventStartDateTime}</h1>
                   <p>-</p>
                   <h1>{eventDetails.eventEndDateTime}</h1>

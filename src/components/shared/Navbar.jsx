@@ -1,11 +1,21 @@
 import { Bell, SearchIcon } from "lucide-react";
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "../ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import LogoutDialog from "./LogoutDialog";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
+  const [searchValue, setSearchValue] = useState("");
+  const navigate = useNavigate();
+
+  const handleSearchKeyPress = (event) => {
+    if (event.key === "Enter") {
+      // If Enter key is pressed, navigate to the search results page
+      navigate(`/search?q=${searchValue}`);
+    }
+  };
+
   return (
     <div className="h-[104px] border-b-2 border-[#EEEEEE] bg-white">
       <div className="p-[32px]">
@@ -15,7 +25,9 @@ export default function Navbar() {
               <input
                 type="text"
                 placeholder="Search anything...."
-                value=""
+                value={searchValue}
+                onChange={(e) => setSearchValue(e.target.value)}
+                onKeyPress={handleSearchKeyPress}
                 className="focus:outline-buttonprimary h-[40px] w-[400px] rounded-[8px] border border-gray-300 py-3 pl-10 font-avenirRegular text-[16px]"
               />
               <SearchIcon className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 transform text-gray-400 lg:left-3" />

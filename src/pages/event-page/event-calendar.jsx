@@ -14,9 +14,11 @@ import { SearchIcon } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
 import NoEventPage from "./no-event-page";
 import EventHappeningPage from "./event-happing-page";
+import { Link } from "react-router-dom";
 
 export default function EventCalendarPage() {
   const [activeTab, setActiveTab] = useState("month");
+  const [searchValue, setSearchValue] = useState("");
   const [activeMonth, setActiveMonth] = useState(new Date().getMonth());
 
   // useEffect to update activeMonth whenever the component mounts or the current month changes
@@ -34,7 +36,7 @@ export default function EventCalendarPage() {
     }
   };
 
-  console.log("Month -->", activeMonth);
+  // console.log("Month -->", activeMonth);
 
   const tabClasses = (tab) =>
     `flex items-center cursor-pointer ${
@@ -111,7 +113,8 @@ export default function EventCalendarPage() {
               <input
                 type="text"
                 placeholder="Search"
-                value=""
+                value={searchValue}
+                onChange={(e) => setSearchValue(e.target.value)}
                 className="focus:outline-buttonprimary w-[400px] rounded-[8px] border border-gray-300 py-2 pl-10 font-avenirRegular text-[16px]"
               />
               <SearchIcon className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 transform text-gray-400 lg:left-3" />
@@ -175,6 +178,7 @@ export default function EventCalendarPage() {
       <div className="mt-5 px-5 lg:px-[32px]">
         {/* Map through events and render EventHappingPage if conditions are met */}
         {mockEventHappinigData.map((eventNow) => {
+          // console.log("Data --->", eventNow.id);
           // Check if event month matches the active month name and if there are events
           if (
             eventNow.month.toLowerCase() === activeMonthName.toLowerCase() &&
@@ -182,7 +186,9 @@ export default function EventCalendarPage() {
           ) {
             return (
               <React.Fragment key={eventNow.id}>
-                <EventHappeningPage eventData={eventNow} />
+                <Link to={`/event-calendar/${eventNow.id}`}>
+                  <EventHappeningPage eventData={eventNow} />
+                </Link>
               </React.Fragment>
             );
           }

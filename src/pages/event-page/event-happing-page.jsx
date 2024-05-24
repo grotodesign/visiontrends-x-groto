@@ -2,8 +2,8 @@ import EventCard from "@/components/shared/EventCard";
 import React from "react";
 
 export default function EventHappeningPage({ eventData }) {
-  console.log(eventData);
-  console.log(eventData);
+  // console.log(eventData);
+  // console.log(eventData);
   return (
     <div className="space-y-4">
       <div className="flex items-center justify-between">

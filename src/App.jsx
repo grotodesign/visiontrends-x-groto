@@ -31,6 +31,12 @@ import ReferPage from "./pages/user-profile-area-page/refer-page";
 import ContactUsPage from "./pages/user-profile-area-page/contact-us-page";
 import UserProfilePage from "./pages/user-profile-area-page/user-profile-page";
 import SalesSubmissionPage from "./pages/sales-submission";
+import EventDetailPage from "./pages/event-page/event-detail";
+import SearchResultsPage from "./pages/search-result-page";
+import AbbAnalyzePoweredPage from "./pages/featured-vendors-pages/abb-analyze-powered-page";
+import KattoufPage from "./pages/featured-vendors-pages/kattouf-page";
+import AbbContactLensPage from "./pages/featured-vendors-pages/abb-contact-lens-page";
+import NorwoodPage from "./pages/featured-vendors-pages/norwood-page";
 // import PractiseBuilderPage from "./pages/practise-builder";
 
 function App() {
@@ -38,12 +44,27 @@ function App() {
     <Routes>
       <Route path="/" element={<ProtectedLayout />}>
         <Route path="" element={<HomePage />} />
+        <Route
+          path="/vendor-partners/glimpse-live-llc/"
+          element={<AbbAnalyzePoweredPage />}
+        />
+        <Route
+          path="/vendor-partners/kattouf-consulting-services-inc/"
+          element={<KattoufPage />}
+        />
+        <Route
+          path="/vendor-partners/abb-contact-lens"
+          element={<AbbContactLensPage />}
+        />
+        <Route path="/vendor-partners/norwood" element={<NorwoodPage />} />
         <Route path="/refer" element={<ReferPage />} />
         <Route path="/contact-us" element={<ContactUsPage />} />
         <Route path="/my-profile" element={<UserProfilePage />} />
         <Route path="/vendor-partners" element={<VendorPartnersPage />} />
         <Route path="/event-calendar" element={<EventCalendarPage />} />
+        <Route path="/event-calendar/:id" element={<EventDetailPage />} />
         <Route path="/vendor-partners/:id" element={<VendorDetailsPage />} />
+        <Route path="/search" element={<SearchResultsPage />} />
         <Route path="/practise-builder">
           <Route
             path="/practise-builder/abb-analyze"
