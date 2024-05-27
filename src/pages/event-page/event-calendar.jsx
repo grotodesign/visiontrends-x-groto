@@ -16,31 +16,14 @@ import NoEventPage from "./no-event-page";
 import EventHappeningPage from "./event-happing-page";
 import { Link } from "react-router-dom";
 
-const getWeekNumber = (date) => {
-  const firstDayOfYear = new Date(date.getFullYear(), 0, 1);
-  const pastDaysOfYear = (date.getTime() - firstDayOfYear.getTime()) / 86400000;
-  return Math.ceil((pastDaysOfYear + firstDayOfYear.getDay() + 1) / 7);
-};
-
-const formatDate = (date) => {
-  const year = date.getFullYear();
-  const month = String(date.getMonth() + 1).padStart(2, "0");
-  const day = String(date.getDate()).padStart(2, "0");
-  return `${year}-${month}-${day}`;
-};
-
 export default function EventCalendarPage() {
   const [activeTab, setActiveTab] = useState("month");
   const [searchValue, setSearchValue] = useState("");
   const [activeMonth, setActiveMonth] = useState(new Date().getMonth());
-  const [activeWeek, setActiveWeek] = useState(getWeekNumber(new Date()));
-  const [activeDay, setActiveDay] = useState(formatDate(new Date()));
 
   // useEffect to update activeMonth whenever the component mounts or the current month changes
   useEffect(() => {
     setActiveMonth(new Date().getMonth());
-    setActiveWeek(getWeekNumber(new Date()));
-    setActiveDay(formatDate(new Date()));
   }, []);
 
   const monthRef = useRef(null);
@@ -62,8 +45,6 @@ export default function EventCalendarPage() {
 
   const handleMonthChange = (newDate) => {
     setActiveMonth(newDate.month());
-    setActiveWeek(getWeekNumber(newDate));
-    setActiveDay(formatDate(newDate));
   };
 
   // Helper function to convert numeric month to month name
@@ -85,37 +66,7 @@ export default function EventCalendarPage() {
     return months[monthNumber]; // Month numbers are zero-based in the array
   };
 
-  // const activeMonthName = getMonthName(activeMonth);
-
-  const activeMonthName = new Intl.DateTimeFormat("en-US", {
-    month: "long",
-  }).format(new Date(activeMonth));
-
-  const filterEvents = () => {
-    switch (activeTab) {
-      case "month":
-        return mockEventHappinigData.filter(
-          (event) =>
-            event.month.toLowerCase() === activeMonthName.toLowerCase() &&
-            event.isEventThere,
-        );
-      case "week":
-        return mockEventHappinigData.filter((event) =>
-          event.eventDetails.some(
-            (detail) =>
-              getWeekNumber(new Date(detail.eventDate)) === activeWeek,
-          ),
-        );
-      case "day":
-        return mockEventHappinigData.filter((event) =>
-          event.eventDetails.some((detail) => detail.eventDate === activeDay),
-        );
-      default:
-        return [];
-    }
-  };
-
-  const events = filterEvents();
+  const activeMonthName = getMonthName(activeMonth);
 
   return (
     <div>
@@ -156,7 +107,7 @@ export default function EventCalendarPage() {
         </div>
       </div>
       <div className="mt-5 px-5 lg:px-[32px]">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
           <div>
             <div className="relative">
               <input
@@ -164,15 +115,15 @@ export default function EventCalendarPage() {
                 placeholder="Search"
                 value={searchValue}
                 onChange={(e) => setSearchValue(e.target.value)}
-                className="focus:outline-buttonprimary w-[400px] rounded-[8px] border border-gray-300 py-2 pl-10 font-avenirRegular text-[16px]"
+                className="focus:outline-buttonprimary w-[340px] rounded-[8px] border border-gray-300 py-2 pl-10 font-avenirRegular text-[16px] lg:w-[400px]"
               />
               <SearchIcon className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 transform text-gray-400 lg:left-3" />
             </div>
           </div>
-          <div className="relative">
+          <div className="hidden lg:flex">
             <Calendar onMonthChange={handleMonthChange} />
           </div>
-          <div className="h-[48px] w-[216px] rounded-[8px] bg-white">
+          <div className="hidden h-[48px] w-[216px] rounded-[8px] bg-white lg:flex">
             <div
               className="flex items-start"
               aria-label="Tabs"
@@ -222,20 +173,90 @@ export default function EventCalendarPage() {
               </div>
             </div>
           </div>
+          <div className="mt-5 flex items-center space-x-[40px] lg:hidden">
+            <div className="w-[100px]">
+              <Calendar onMonthChange={handleMonthChange} />
+            </div>
+            <div className=" h-[48px] w-[216px] rounded-[8px] bg-white">
+              <div
+                className="flex items-start"
+                aria-label="Tabs"
+                role="tablist"
+                data-hs-tabs-vertical="false"
+              >
+                <div className="flex h-full w-full  items-center space-x-1 px-2 py-1">
+                  <button
+                    className={tabClasses("month")}
+                    id="vertical-tab-with-border-item-1"
+                    onClick={() => {
+                      setActiveTab("month");
+                      scrollToSection(monthRef);
+                    }}
+                    role="tab"
+                  >
+                    <h1 className="font-avenirRegular text-[16px] font-medium">
+                      Month
+                    </h1>
+                  </button>
+                  <button
+                    className={tabClasses("week")}
+                    id="vertical-tab-with-border-item-2"
+                    onClick={() => {
+                      setActiveTab("week");
+                      scrollToSection(weekRef);
+                    }}
+                    role="tab"
+                  >
+                    <h1 className="font-avenirRegular text-[16px] font-medium">
+                      Week
+                    </h1>
+                  </button>
+                  <button
+                    className={tabClasses("day")}
+                    id="vertical-tab-with-border-item-3"
+                    onClick={() => {
+                      setActiveTab("day");
+                      scrollToSection(dayRef);
+                    }}
+                    role="tab"
+                  >
+                    <h1 className="font-avenirRegular text-[16px] font-medium">
+                      Day
+                    </h1>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="mt-5 px-5 lg:px-[32px]">
-        {events.length > 0 ? (
-          events.map((eventNow) => (
-            <React.Fragment key={eventNow.id}>
-              <Link to={`/event-calendar/${eventNow.id}`}>
-                <EventHappeningPage eventData={eventNow} />
-              </Link>
-            </React.Fragment>
-          ))
-        ) : (
-          <NoEventPage />
-        )}
+        {/* Map through events and render EventHappingPage if conditions are met */}
+        {mockEventHappinigData.map((eventNow) => {
+          // console.log("Data --->", eventNow.id);
+          // Check if event month matches the active month name and if there are events
+          if (
+            eventNow.month.toLowerCase() === activeMonthName.toLowerCase() &&
+            eventNow.isEventThere
+          ) {
+            return (
+              <React.Fragment key={eventNow.id}>
+                <Link to={`/event-calendar/${eventNow.id}`}>
+                  <EventHappeningPage eventData={eventNow} />
+                </Link>
+              </React.Fragment>
+            );
+          }
+
+          return null; // Return null if the event month doesn't match the active month
+        })}
+
+        {/* Check if there are no events in the active month */}
+        {!mockEventHappinigData.some(
+          (eventNow) =>
+            eventNow.month.toLowerCase() === activeMonthName.toLowerCase() &&
+            eventNow.isEventThere,
+        ) && <NoEventPage eventData={activeMonthName} />}
       </div>
     </div>
   );

@@ -20,14 +20,14 @@ export default function Calendar({ onMonthChange }) {
 
   return (
     <div className="relative">
-      <div className="flex items-center justify-between space-x-6 p-4">
+      <div className="flex items-center justify-between  lg:space-x-6 lg:p-4">
         <button onClick={handlePrevMonth}>
           <ChevronLeft className="h-4 w-4 text-[#646464]" />
         </button>
-        <div className="cursor-pointer font-avenirHeavy text-[20px] text-[#1C1C1C]">
+        <div className="w-[100px] cursor-pointer font-avenirHeavy text-[12px] text-[#1C1C1C] lg:w-auto lg:text-[20px]">
           {currentDate.format("MMMM, YYYY")}
         </div>
-        <button onClick={handleNextMonth}>
+        <button onClick={handleNextMonth} className="">
           <ChevronRight className="h-4 w-4 text-[#646464]" />
         </button>
       </div>
