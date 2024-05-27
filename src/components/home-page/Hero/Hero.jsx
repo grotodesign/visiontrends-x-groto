@@ -30,7 +30,7 @@ export default function Hero() {
             </div>
           </div>
           <div>
-            <img src={HeroImage} className="h-[235px]" />
+            <img src={HeroImage} className="image-area" />
           </div>
         </div>
       </Card>

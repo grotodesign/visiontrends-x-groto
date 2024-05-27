@@ -88,7 +88,7 @@ export default function EyeCareProPage() {
                 <div className="flex items-center space-x-2">
                   <GlobeIcon />
                   <h1
-                    className="cursor-pointer font-avenirRegular  text-[14px] font-medium text-[#646464] lg:text-[16px]"
+                    className="cursor-pointer font-avenirRegular  text-[14px] font-medium text-[#646464] lg:text-[14px]"
                     onClick={handleWebsiteClick}
                   >
                     http://www.eyecarepro.net

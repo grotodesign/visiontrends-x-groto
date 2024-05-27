@@ -92,7 +92,7 @@ export default function LensquotePage() {
               <div className="flex flex-col space-y-2 lg:flex-row lg:items-center lg:space-x-4 lg:space-y-0">
                 <div className="flex items-center space-x-2">
                   <MapPin className="text-[#646464] lg:w-[18px] " />
-                  <h1 className="font-avenirRegular text-[14px]  font-medium text-[#646464] lg:text-[16px]">
+                  <h1 className="font-avenirRegular text-[14px]  font-medium text-[#646464] lg:text-[14px]">
                     980 North Main St Bluffton IN 46714
                   </h1>
                 </div>
@@ -100,7 +100,7 @@ export default function LensquotePage() {
                 <div className="flex items-center space-x-2">
                   <GlobeIcon />
                   <h1
-                    className="cursor-pointer font-avenirRegular  text-[14px] font-medium text-[#646464] lg:text-[16px]"
+                    className="cursor-pointer font-avenirRegular  text-[14px] font-medium text-[#646464] lg:text-[14px]"
                     onClick={handleWebsiteClick}
                   >
                     https://lensquote.net/vision-trends/

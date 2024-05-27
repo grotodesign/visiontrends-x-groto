@@ -9,7 +9,7 @@ export default function FacebookIcon() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_726_6316)">
+      <g clipPath="url(#clip0_726_6316)">
         <path
           d="M22 44C34.1503 44 44 34.1503 44 22C44 9.84974 34.1503 0 22 0C9.84974 0 0 9.84974 0 22C0 34.1503 9.84974 44 22 44Z"
           fill="#27AAE1"

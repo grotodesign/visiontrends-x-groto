@@ -446,6 +446,10 @@
     width: 512px;
   }
 
+  .image-area {
+    height: 235px;
+  }
+
   .form-area-2 {
     width: 160px;
   }
@@ -541,6 +545,10 @@
   }
   .card-vendor {
     width: 276px;
+  }
+
+  .image-area {
+    height: 233px;
   }
   .card-vendor-detaiils {
     width: 100%;
@@ -643,6 +651,10 @@
 
   .insurance-guide {
     gap: 565px;
+  }
+
+  .image-area {
+    width: 960px;
   }
 
   .carousel-area {

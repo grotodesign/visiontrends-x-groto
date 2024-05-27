@@ -16,14 +16,31 @@ import NoEventPage from "./no-event-page";
 import EventHappeningPage from "./event-happing-page";
 import { Link } from "react-router-dom";
 
+const getWeekNumber = (date) => {
+  const firstDayOfYear = new Date(date.getFullYear(), 0, 1);
+  const pastDaysOfYear = (date.getTime() - firstDayOfYear.getTime()) / 86400000;
+  return Math.ceil((pastDaysOfYear + firstDayOfYear.getDay() + 1) / 7);
+};
+
+const formatDate = (date) => {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+};
+
 export default function EventCalendarPage() {
   const [activeTab, setActiveTab] = useState("month");
   const [searchValue, setSearchValue] = useState("");
   const [activeMonth, setActiveMonth] = useState(new Date().getMonth());
+  const [activeWeek, setActiveWeek] = useState(getWeekNumber(new Date()));
+  const [activeDay, setActiveDay] = useState(formatDate(new Date()));
 
   // useEffect to update activeMonth whenever the component mounts or the current month changes
   useEffect(() => {
     setActiveMonth(new Date().getMonth());
+    setActiveWeek(getWeekNumber(new Date()));
+    setActiveDay(formatDate(new Date()));
   }, []);
 
   const monthRef = useRef(null);
@@ -45,6 +62,8 @@ export default function EventCalendarPage() {
 
   const handleMonthChange = (newDate) => {
     setActiveMonth(newDate.month());
+    setActiveWeek(getWeekNumber(newDate));
+    setActiveDay(formatDate(newDate));
   };
 
   // Helper function to convert numeric month to month name
@@ -66,7 +85,37 @@ export default function EventCalendarPage() {
     return months[monthNumber]; // Month numbers are zero-based in the array
   };
 
-  const activeMonthName = getMonthName(activeMonth);
+  // const activeMonthName = getMonthName(activeMonth);
+
+  const activeMonthName = new Intl.DateTimeFormat("en-US", {
+    month: "long",
+  }).format(new Date(activeMonth));
+
+  const filterEvents = () => {
+    switch (activeTab) {
+      case "month":
+        return mockEventHappinigData.filter(
+          (event) =>
+            event.month.toLowerCase() === activeMonthName.toLowerCase() &&
+            event.isEventThere,
+        );
+      case "week":
+        return mockEventHappinigData.filter((event) =>
+          event.eventDetails.some(
+            (detail) =>
+              getWeekNumber(new Date(detail.eventDate)) === activeWeek,
+          ),
+        );
+      case "day":
+        return mockEventHappinigData.filter((event) =>
+          event.eventDetails.some((detail) => detail.eventDate === activeDay),
+        );
+      default:
+        return [];
+    }
+  };
+
+  const events = filterEvents();
 
   return (
     <div>
@@ -176,32 +225,17 @@ export default function EventCalendarPage() {
         </div>
       </div>
       <div className="mt-5 px-5 lg:px-[32px]">
-        {/* Map through events and render EventHappingPage if conditions are met */}
-        {mockEventHappinigData.map((eventNow) => {
-          // console.log("Data --->", eventNow.id);
-          // Check if event month matches the active month name and if there are events
-          if (
-            eventNow.month.toLowerCase() === activeMonthName.toLowerCase() &&
-            eventNow.isEventThere
-          ) {
-            return (
-              <React.Fragment key={eventNow.id}>
-                <Link to={`/event-calendar/${eventNow.id}`}>
-                  <EventHappeningPage eventData={eventNow} />
-                </Link>
-              </React.Fragment>
-            );
-          }
-
-          return null; // Return null if the event month doesn't match the active month
-        })}
-
-        {/* Check if there are no events in the active month */}
-        {!mockEventHappinigData.some(
-          (eventNow) =>
-            eventNow.month.toLowerCase() === activeMonthName.toLowerCase() &&
-            eventNow.isEventThere,
-        ) && <NoEventPage eventData={activeMonthName} />}
+        {events.length > 0 ? (
+          events.map((eventNow) => (
+            <React.Fragment key={eventNow.id}>
+              <Link to={`/event-calendar/${eventNow.id}`}>
+                <EventHappeningPage eventData={eventNow} />
+              </Link>
+            </React.Fragment>
+          ))
+        ) : (
+          <NoEventPage />
+        )}
       </div>
     </div>
   );
