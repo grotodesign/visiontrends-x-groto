@@ -26,6 +26,14 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Card } from "@/components/ui/card";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function ReferPage() {
   const formSchema = z.object({
@@ -119,7 +127,18 @@ export default function ReferPage() {
                                 Salutation
                               </FormLabel>
                               <FormControl>
-                                <Input placeholder="Mr" {...field} />
+                                <Select>
+                                  <SelectTrigger className="h-[40px]">
+                                    <SelectValue placeholder="Mr" />
+                                  </SelectTrigger>
+                                  <SelectContent>
+                                    <SelectGroup>
+                                      <SelectItem value="Mr">Mr</SelectItem>
+                                      <SelectItem value="Mrs">Mrs</SelectItem>
+                                      <SelectItem value="Dr">Dr</SelectItem>
+                                    </SelectGroup>
+                                  </SelectContent>
+                                </Select>
                               </FormControl>
                               <FormMessage />
                             </FormItem>

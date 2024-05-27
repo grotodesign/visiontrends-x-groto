@@ -433,6 +433,454 @@
   }
 }
 
+@media screen and (min-width: 930px) {
+  .card {
+    width: 100px;
+  }
+
+  .card-area-layout {
+    max-width: 1136px;
+  }
+
+  .form-area {
+    width: 317px;
+  }
+
+  .form-area-1 {
+    width: 512px;
+  }
+  .image-area {
+    height: 235px;
+    width: 660px;
+  }
+
+  .form-area-2 {
+    width: 160px;
+  }
+
+  .eventDateCard {
+    width: 160px;
+  }
+
+  .form-area-3 {
+    width: 272px;
+  }
+  .form-area-4 {
+    width: 560px;
+  }
+
+  .pulseCard {
+    width: 80px;
+  }
+
+  .form-area-5 {
+    width: 248px;
+  }
+
+  .form-area-6 {
+    width: 175px;
+  }
+
+  .video-area {
+    border-radius: 16px;
+  }
+
+  .card-insurance {
+    width: 100%;
+  }
+
+  .carousel-area {
+    width: 666px;
+    height: 328px;
+  }
+
+  .insurance-guide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .vendor-area-1 {
+    width: 100%;
+  }
+  .card-vendor {
+    width: 220px;
+    height: 296px;
+  }
+
+  .card-merchant-area {
+    margin-left: -18px;
+  }
+  .card-rate {
+    width: 361px;
+  }
+
+  .card-ipp {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .card-sbap {
+    width: 1056px;
+    height: 64px;
+  }
+
+  .card-vsp {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .player {
+    width: 445px;
+  }
+
+  .card-vendor-detaiils {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .breadcrumbs-area {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1030px) {
+  .card {
+    width: 190px;
+  }
+
+  .card-area-layout {
+    max-width: 1136px;
+  }
+
+  .form-area {
+    width: 317px;
+  }
+
+  .form-area-1 {
+    width: 512px;
+  }
+  .image-area {
+    height: 235px;
+    width: 660px;
+  }
+
+  .form-area-2 {
+    width: 160px;
+  }
+
+  .eventDateCard {
+    width: 160px;
+  }
+
+  .form-area-3 {
+    width: 272px;
+  }
+  .form-area-4 {
+    width: 560px;
+  }
+
+  .pulseCard {
+    width: 80px;
+  }
+
+  .form-area-5 {
+    width: 248px;
+  }
+
+  .form-area-6 {
+    width: 175px;
+  }
+
+  .video-area {
+    border-radius: 16px;
+  }
+
+  .card-insurance {
+    width: 100%;
+  }
+
+  .carousel-area {
+    width: 666px;
+    height: 328px;
+  }
+
+  .insurance-guide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .vendor-area-1 {
+    width: 100%;
+  }
+  .card-vendor {
+    width: 220px;
+    height: 296px;
+  }
+
+  .card-merchant-area {
+    margin-left: -18px;
+  }
+  .card-rate {
+    width: 361px;
+  }
+
+  .card-ipp {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .card-sbap {
+    width: 1056px;
+    height: 64px;
+  }
+
+  .card-vsp {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .player {
+    width: 445px;
+  }
+
+  .card-vendor-detaiils {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .breadcrumbs-area {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1130px) {
+  .card {
+    width: 200px;
+  }
+
+  .card-area-layout {
+    max-width: 1136px;
+  }
+
+  .form-area {
+    width: 317px;
+  }
+
+  .form-area-1 {
+    width: 512px;
+  }
+  .image-area {
+    height: 235px;
+    width: 660px;
+  }
+
+  .form-area-2 {
+    width: 160px;
+  }
+
+  .eventDateCard {
+    width: 160px;
+  }
+
+  .form-area-3 {
+    width: 272px;
+  }
+  .form-area-4 {
+    width: 560px;
+  }
+
+  .pulseCard {
+    width: 80px;
+  }
+
+  .form-area-5 {
+    width: 248px;
+  }
+
+  .form-area-6 {
+    width: 175px;
+  }
+
+  .video-area {
+    border-radius: 16px;
+  }
+
+  .card-insurance {
+    width: 100%;
+  }
+
+  .carousel-area {
+    width: 666px;
+    height: 328px;
+  }
+
+  .insurance-guide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .vendor-area-1 {
+    width: 100%;
+  }
+  .card-vendor {
+    width: 220px;
+    height: 296px;
+  }
+
+  .card-merchant-area {
+    margin-left: -18px;
+  }
+  .card-rate {
+    width: 361px;
+  }
+
+  .card-ipp {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .card-sbap {
+    width: 1056px;
+    height: 64px;
+  }
+
+  .card-vsp {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .player {
+    width: 445px;
+  }
+
+  .card-vendor-detaiils {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .breadcrumbs-area {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .card {
+    width: 200px;
+  }
+
+  .card-area-layout {
+    max-width: 1136px;
+  }
+
+  .form-area {
+    width: 317px;
+  }
+
+  .form-area-1 {
+    width: 512px;
+  }
+  .image-area {
+    height: 235px;
+    width: 660px;
+  }
+
+  .form-area-2 {
+    width: 160px;
+  }
+
+  .eventDateCard {
+    width: 160px;
+  }
+
+  .form-area-3 {
+    width: 272px;
+  }
+  .form-area-4 {
+    width: 560px;
+  }
+
+  .pulseCard {
+    width: 80px;
+  }
+
+  .form-area-5 {
+    width: 248px;
+  }
+
+  .form-area-6 {
+    width: 175px;
+  }
+
+  .video-area {
+    border-radius: 16px;
+  }
+
+  .card-insurance {
+    width: 100%;
+  }
+
+  .carousel-area {
+    width: 666px;
+    height: 328px;
+  }
+
+  .insurance-guide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .vendor-area-1 {
+    width: 100%;
+  }
+  .card-vendor {
+    width: 220px;
+    height: 296px;
+  }
+
+  .card-merchant-area {
+    margin-left: -18px;
+  }
+  .card-rate {
+    width: 361px;
+  }
+
+  .card-ipp {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .card-sbap {
+    width: 1056px;
+    height: 64px;
+  }
+
+  .card-vsp {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .player {
+    width: 445px;
+  }
+
+  .card-vendor-detaiils {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .breadcrumbs-area {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 1230px) {
   .card {
     width: 240px;

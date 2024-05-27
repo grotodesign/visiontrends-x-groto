@@ -7,14 +7,28 @@ import { Link, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const [searchValue, setSearchValue] = useState("");
+  const [showSuggestions, setShowSuggestions] = useState(false);
   const navigate = useNavigate();
 
   const handleSearchKeyPress = (event) => {
     if (event.key === "Enter") {
-      // If Enter key is pressed, navigate to the search results page
-      navigate(`/search?q=${searchValue}`);
+      event.preventDefault();
+      setShowSuggestions(true);
     }
   };
+
+  const handleSuggestionClick = (suggestion) => {
+    setSearchValue(suggestion);
+    setShowSuggestions(false);
+  };
+
+  const handleInputChange = (e) => {
+    const value = e.target.value;
+    setSearchValue(value);
+    setShowSuggestions(value !== ""); // Show suggestions if input is not empty
+  };
+
+  const suggestions = ["Vendor Page", "Event", "Merchant Service"]; // Replace with your actual suggestions
 
   return (
     <div className="h-[104px] border-b-2 border-[#EEEEEE] bg-white">
@@ -26,11 +40,24 @@ export default function Navbar() {
                 type="text"
                 placeholder="Search anything...."
                 value={searchValue}
-                onChange={(e) => setSearchValue(e.target.value)}
+                onChange={handleInputChange}
                 onKeyPress={handleSearchKeyPress}
                 className="focus:outline-buttonprimary h-[40px] w-[400px] rounded-[8px] border border-gray-300 py-3 pl-10 font-avenirRegular text-[16px]"
               />
               <SearchIcon className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 transform text-gray-400 lg:left-3" />
+              {showSuggestions && (
+                <div className="absolute left-0 z-10 mt-2 w-[400px] rounded-[8px] border border-gray-300 bg-white shadow-lg">
+                  {suggestions.map((suggestion, index) => (
+                    <div
+                      key={index}
+                      className="cursor-pointer p-2 font-avenirRegular text-[14px] hover:bg-gray-100"
+                      onClick={() => handleSuggestionClick(suggestion)}
+                    >
+                      {suggestion}
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
           <div className="flex items-center justify-between space-x-5">

@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import ProtectedLayout from "./components/ProtectedLayout";
 import HomePage from "./pages/home";
 import VendorPartnersPage from "./pages/vendor-partners";
@@ -65,21 +65,6 @@ function App() {
         <Route path="/event-calendar/:id" element={<EventDetailPage />} />
         <Route path="/vendor-partners/:id" element={<VendorDetailsPage />} />
         <Route path="/search" element={<SearchResultsPage />} />
-        <Route path="/practise-builder">
-          <Route
-            path="/practise-builder/abb-analyze"
-            element={<AbbAnalyzePage />}
-          />
-          <Route
-            path="/practise-builder/lensquote"
-            element={<LensquotePage />}
-          />
-          <Route
-            path="/practise-builder/eyecarepro"
-            element={<EyeCareProPage />}
-          />
-          <Route path="/practise-builder/idefend" element={<IDefendPage />} />
-        </Route>
         <Route path="/vsp-iof" element={<IofPage />} />
         <Route
           path="/insurance-profit-pathway"
@@ -139,6 +124,22 @@ function App() {
           path="/learning-solutions/spring-business-academy"
           element={<SpringBusinessAcademyPage />}
         />
+      </Route>
+      <Route path="/practise-builder" element={<ProtectedLayout />}>
+        <Route
+          path=""
+          element={<Navigate to="/practise-builder/lensquote" replace />}
+        />
+        <Route
+          path="/practise-builder/abb-analyze"
+          element={<AbbAnalyzePage />}
+        />
+        <Route path="/practise-builder/lensquote" element={<LensquotePage />} />
+        <Route
+          path="/practise-builder/eyecarepro"
+          element={<EyeCareProPage />}
+        />
+        <Route path="/practise-builder/idefend" element={<IDefendPage />} />
       </Route>
     </Routes>
   );
