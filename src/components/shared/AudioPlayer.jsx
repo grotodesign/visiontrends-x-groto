@@ -18,9 +18,13 @@ export default function AudioPlayer() {
   const animationRef = useRef(); // reference the animation
 
   useEffect(() => {
-    const seconds = Math.floor(audioPlayer.current.duration);
-    setDuration(seconds);
-    progressBar.current.max = seconds;
+    if (audioPlayer.current) {
+      const seconds = Math.floor(audioPlayer.current.duration);
+      if (!isNaN(seconds)) {
+        setDuration(seconds);
+        progressBar.current.max = seconds;
+      }
+    }
   }, [audioPlayer?.current?.loadedmetadata, audioPlayer?.current?.readyState]);
 
   const calculateTime = (secs) => {
@@ -44,32 +48,42 @@ export default function AudioPlayer() {
   };
 
   const whilePlaying = () => {
-    progressBar.current.value = audioPlayer.current.currentTime;
-    changePlayerCurrentTime();
-    animationRef.current = requestAnimationFrame(whilePlaying);
+    if (progressBar.current && audioPlayer.current) {
+      progressBar.current.value = audioPlayer.current.currentTime;
+      changePlayerCurrentTime();
+      animationRef.current = requestAnimationFrame(whilePlaying);
+    }
   };
 
   const changeRange = () => {
-    audioPlayer.current.currentTime = progressBar.current.value;
-    changePlayerCurrentTime();
+    if (audioPlayer.current && progressBar.current) {
+      audioPlayer.current.currentTime = progressBar.current.value;
+      changePlayerCurrentTime();
+    }
   };
 
   const changePlayerCurrentTime = () => {
-    progressBar.current.style.setProperty(
-      "--seek-before-width",
-      `${(progressBar.current.value / duration) * 100}%`,
-    );
-    setCurrentTime(progressBar.current.value);
+    if (progressBar.current) {
+      progressBar.current.style.setProperty(
+        "--seek-before-width",
+        `${(progressBar.current.value / duration) * 100}%`,
+      );
+      setCurrentTime(progressBar.current.value);
+    }
   };
 
   const backTen = () => {
-    progressBar.current.value = Number(progressBar.current.value - 10);
-    changeRange();
+    if (progressBar.current) {
+      progressBar.current.value = Math.max(0, Number(progressBar.current.value - 10));
+      changeRange();
+    }
   };
 
   const forwardTen = () => {
-    progressBar.current.value = Number(progressBar.current.value + 10);
-    changeRange();
+    if (progressBar.current) {
+      progressBar.current.value = Math.min(duration, Number(progressBar.current.value + 10));
+      changeRange();
+    }
   };
 
   return (
@@ -93,7 +107,7 @@ export default function AudioPlayer() {
 
         <div className="flex w-full justify-between font-avenirRegular text-[12px] font-medium text-[#989898]">
           <div className="">{calculateTime(currentTime)}</div>
-          <div>{duration && !isNaN(duration) && calculateTime(duration)}</div>
+          <div>{duration && !isNaN(duration) ? calculateTime(duration) : "00:00"}</div>
         </div>
       </div>
 
