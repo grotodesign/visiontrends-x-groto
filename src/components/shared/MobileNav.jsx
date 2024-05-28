@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { AlignJustify, Bell } from "lucide-react";
+import { AlignJustify, Bell, ChevronDown, ChevronUp } from "lucide-react";
 import { Button } from "../ui/button";
 import Logo from "./Logo";
 import HomeIcon from "@/assets/icons/HomeIcon";
@@ -89,6 +89,18 @@ export default function MobileNav() {
   const { pathname } = useLocation();
 
   const activeMenu = menuItems.find((menu) => menu.link === pathname);
+  const [isCollapsible, setIsCollapsible] = useState(false);
+  const [showDashboardSubMenu, setShowDashboardSubMenu] = useState(false);
+
+  const [showSaleSubMenu, setShowSaleSubMenu] = useState(false);
+
+  const onMouseOver = () => {
+    setIsCollapsible(!isCollapsible);
+  };
+
+  const toggleDashboardSubMenu = () => {
+    setShowDashboardSubMenu(!showDashboardSubMenu);
+  };
 
   const getNavItemClasses = (menu) =>
     `flex items-center cursor-pointer hover:bg-blue-50 rounded w-full overflow-hidden whitespace-nowrap ${
@@ -96,6 +108,10 @@ export default function MobileNav() {
         ? "bg-[#F0F7FE] hover:bg-[#F0F7FE]"
         : "hover:bg-[#F0F7FE]"
     }`;
+
+  const toggleSaleSubMenu = () => {
+    setShowSaleSubMenu(!showSaleSubMenu);
+  };
   return (
     <div className="h-30 navbar border-b-2 border-[#EEEEEE] bg-white">
       <div className="p-5">
@@ -175,54 +191,16 @@ export default function MobileNav() {
                           return (
                             <div className={classes} key={id}>
                               <Link to={link} className="w-full">
-                                {label === "Practise Builders" ? (
-                                  <Accordion type="single" collapsible>
-                                    <AccordionItem value={label}>
-                                      <AccordionTrigger>
-                                        <div>
-                                          <div className="flex h-full w-full items-center px-2 py-3">
-                                            <div className="flex w-12 items-center justify-center">
-                                              {icon}
-                                            </div>
-                                            <span
-                                              className={`font-avenirRegular text-[14px] font-medium ${
-                                                activeMenu &&
-                                                activeMenu.id === id
-                                                  ? "text-[#1F3E7C]"
-                                                  : "text-[#646464]"
-                                              }`}
-                                            >
-                                              {label}
-                                            </span>
-                                          </div>
-                                        </div>
-                                      </AccordionTrigger>
-                                      <AccordionContent>
-                                        <div className="flex h-full w-full flex-col px-2 py-3">
-                                          {submenu?.map((submenuItem) => (
-                                            <div
-                                              key={submenuItem.id}
-                                              className={`px-4 py-3 font-avenirRegular text-[14px] font-medium ${
-                                                activeMenu &&
-                                                activeMenu.id === id
-                                                  ? "text-[#1F3E7C]"
-                                                  : "text-[#646464]"
-                                              }`}
-                                            >
-                                              <Link
-                                                to={submenuItem.link}
-                                                className="w-full"
-                                              >
-                                                {submenuItem.label}
-                                              </Link>
-                                            </div>
-                                          ))}
-                                        </div>
-                                      </AccordionContent>
-                                    </AccordionItem>
-                                  </Accordion>
-                                ) : (
-                                  <div className="flex h-full w-full items-center px-2 py-3">
+                                <div
+                                  className="flex h-full w-full items-center px-2 py-3"
+                                  onClick={() =>
+                                    submenu &&
+                                    (label === "Practise Builders"
+                                      ? toggleDashboardSubMenu()
+                                      : toggleSaleSubMenu())
+                                  }
+                                >
+                                  <div className="flex">
                                     <div className="flex w-12 items-center justify-center">
                                       {icon}
                                     </div>
@@ -235,6 +213,42 @@ export default function MobileNav() {
                                     >
                                       {label}
                                     </span>
+                                  </div>
+                                  {submenu && (
+                                    <div
+                                      className={` ml-2 ${
+                                        activeMenu && activeMenu.id === id
+                                          ? "text-[#1F3E7C]"
+                                          : "text-[#646464]"
+                                      }`}
+                                      onClick={() =>
+                                        submenu && toggleSaleSubMenu()
+                                      }
+                                    >
+                                      {showSaleSubMenu ? (
+                                        <ChevronUp className="w-[16px]" />
+                                      ) : (
+                                        <ChevronDown className="w-[16px]" />
+                                      )}
+                                    </div>
+                                  )}
+                                </div>
+                                {submenu && showSaleSubMenu && (
+                                  <div className="pb-2 pl-10">
+                                    {" "}
+                                    {submenu.map(({ id, label, link }) => (
+                                      <Link
+                                        to={link}
+                                        className={`block py-2 pl-4 font-avenirRegular text-[14px] font-medium  ${
+                                          activeMenu && activeMenu.id === id
+                                            ? "text-[#1F3E7C]"
+                                            : "text-[#646464]"
+                                        }`}
+                                        key={id}
+                                      >
+                                        {label}
+                                      </Link>
+                                    ))}
                                   </div>
                                 )}
                               </Link>

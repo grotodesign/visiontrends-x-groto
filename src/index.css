@@ -43,6 +43,7 @@
   body {
     @apply bg-background text-foreground;
     background-color: #fbfcfe;
+    overflow-x: hidden;
   }
 }
 
@@ -433,6 +434,146 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .navbar {
+    width: 768px;
+  }
+  .subnavbar {
+    width: 768px;
+  }
+  .card-1 {
+    width: 730px;
+  }
+  .offeringContainer {
+    width: 765px;
+  }
+  .card {
+    width: 730px;
+  }
+  .card-insurance {
+    width: 730px;
+  }
+  .player {
+    width: 680px;
+  }
+  .cardArea {
+    margin-left: 0px;
+  }
+
+  .card-vendor-detaiils {
+    width: 730px;
+  }
+
+  .card-vendor-contact {
+    width: 730px;
+  }
+
+  .card-ipp {
+    width: 730px;
+    margin-left: 16px;
+  }
+
+  .card-vsp {
+    width: 730px;
+    margin-left: 16px;
+  }
+
+  .card-vendor-contact {
+    width: 730px;
+  }
+
+  .pulseCard {
+    width: 745px;
+  }
+  .vendor-area-1 {
+    width: 766px;
+  }
+  .card-vendor {
+    width: 730px;
+  }
+  .vendorCardArea {
+    width: 730px;
+  }
+  .card-rate {
+    width: 730px;
+  }
+  .vendorCardAreaContent {
+    width: 650px !important;
+  }
+}
+
+@media screen and (min-width: 810px) {
+  .navbar {
+    width: 810px;
+  }
+  .subnavbar {
+    width: 810px;
+  }
+  .card-1 {
+    width: 772px;
+  }
+  .offeringContainer {
+    width: 802px;
+  }
+  .card {
+    width: 772px;
+  }
+  .card-insurance {
+    width: 772px;
+  }
+  .player {
+    width: 720px;
+  }
+  .cardArea {
+    margin-left: 0px;
+  }
+
+  .card-vendor-detaiils {
+    width: 772px;
+  }
+
+  .card-vendor-contact {
+    width: 772px;
+  }
+
+  .card-ipp {
+    width: 772px;
+    margin-left: 16px;
+  }
+
+  .card-vsp {
+    width: 772px;
+    margin-left: 16px;
+  }
+
+  .card-vendor-contact {
+    width: 772px;
+  }
+
+  .search-area {
+    width: 700px;
+  }
+
+  .pulseCard {
+    width: 795px;
+  }
+  .vendor-area-1 {
+    width: 805px;
+  }
+  .card-vendor {
+    width: 782px;
+  }
+  .card-rate {
+    width: 772px;
+  }
+  .vendorCardArea {
+    width: 770px;
+  }
+  .vendorCardAreaContent {
+    width: 650px !important;
+  }
+}
+
 @media screen and (min-width: 930px) {
   .card {
     width: 100px;
@@ -694,7 +835,7 @@
   }
 
   .pulseCard {
-    width: 80px;
+    width: 80px !important;
   }
 
   .form-area-5 {
@@ -771,7 +912,7 @@
 
 @media screen and (min-width: 1150px) {
   .card {
-    width: 200px;
+    width: 340px;
   }
 
   .card-area-layout {

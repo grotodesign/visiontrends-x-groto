@@ -20,7 +20,7 @@ export default function ThankYouDrawer({ month }) {
         </Button>
       </DrawerTrigger>
       <DrawerContent
-        className="max-w-[520px] bg-[#F4F4F4] p-0"
+        className="bg-[#F4F4F4] p-0 lg:max-w-[520px]"
         onClick={() => window.location.reload()}
       >
         <DrawerHeader className="-mt-5 flex items-center justify-between">

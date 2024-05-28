@@ -21,7 +21,7 @@ export function SalesSubmissionMockData() {
     getCoreRowModel: getCoreRowModel(),
   });
   return (
-    <div className="flex w-[350px] grow flex-col overflow-hidden lg:w-full">
+    <div className="flex w-[350px] grow flex-col overflow-hidden md:w-full">
       <Table className="h-full rounded-[8px] border bg-white">
         <TableHeader className="border bg-[#F9FAFB]">
           {table.getHeaderGroups().map((headerGroup) => (

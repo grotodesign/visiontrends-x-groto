@@ -13,7 +13,7 @@ export default function VendorPartnersBookmarkedCard({ vendor }) {
             <img src={vendor.vendorLogo} className="w-[119px]" />
           </div>
           <div className="space-y-2">
-            <div className="w-[220px]">
+            <div className="lg:w-[220px]">
               <h1 className="font-avenirHeavy text-[14px] text-[#1C1C1C]">
                 {vendor.vendorName}
               </h1>

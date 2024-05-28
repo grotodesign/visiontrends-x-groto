@@ -115,7 +115,7 @@ export default function EventCalendarPage() {
                 placeholder="Search"
                 value={searchValue}
                 onChange={(e) => setSearchValue(e.target.value)}
-                className="focus:outline-buttonprimary w-[340px] rounded-[8px] border border-gray-300 py-2 pl-10 font-avenirRegular text-[16px] lg:w-[400px]"
+                className="focus:outline-buttonprimary w-[340px] rounded-[8px] border border-gray-300 py-2 pl-10 font-avenirRegular text-[16px] md:w-[730px] lg:w-[400px]"
               />
               <SearchIcon className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 transform text-gray-400 lg:left-3" />
             </div>
@@ -173,7 +173,7 @@ export default function EventCalendarPage() {
               </div>
             </div>
           </div>
-          <div className="mt-5 flex items-center space-x-[40px] lg:hidden">
+          <div className="mt-5 flex items-center space-x-[40px] md:justify-between lg:hidden">
             <div className="w-[100px]">
               <Calendar onMonthChange={handleMonthChange} />
             </div>

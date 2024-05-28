@@ -6,15 +6,27 @@ import { Toaster } from "./ui/toaster";
 export default function ProtectedLayout() {
   const [showFullSidebar, setShowFullSidebar] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
+  const [isTablet, setIsTablet] = useState(false);
 
   useEffect(() => {
+    const isIpad =
+      /iPad|Macintosh/.test(navigator.userAgent) && "ontouchend" in document;
+
     const handleResize = () => {
-      setShowFullSidebar(window.innerWidth > 768);
-      setIsMobile(window.innerWidth <= 768);
+      const width = window.innerWidth;
+      if (isIpad) {
+        setIsMobile(true);
+        setIsTablet(false);
+        setShowFullSidebar(false);
+      } else {
+        setShowFullSidebar(width > 1024);
+        setIsMobile(width <= 768);
+        setIsTablet(width > 768 && width <= 1024);
+      }
     };
 
     window.addEventListener("resize", handleResize);
-    handleResize();
+    handleResize(); // Initial check
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
@@ -27,19 +39,18 @@ export default function ProtectedLayout() {
 
   return (
     <div className="flex h-fit w-full flex-row">
-      {showFullSidebar && (
+      {!isMobile && (showFullSidebar || isTablet) && (
         <Sidebar
           showFullSidebar={showFullSidebar}
           sidebarWidthInPixels={sidebarWidthInPixels}
           toggleSidebarWidth={toggleSidebarWidth}
         />
       )}
-      {showFullSidebar && (
+      {!isMobile && (showFullSidebar || isTablet) && (
         <div
           style={{
-            // using calc in tailwind classname was not working reliably
-            width: `calc(100% - ${sidebarWidthInPixels}px)`,
-            marginLeft: `${sidebarWidthInPixels}px`,
+            width: isTablet ? "100%" : `calc(100% - ${sidebarWidthInPixels}px)`,
+            marginLeft: isTablet ? "0" : `${sidebarWidthInPixels}px`,
           }}
           className="flex flex-col"
         >
@@ -48,7 +59,7 @@ export default function ProtectedLayout() {
         </div>
       )}
       {isMobile && (
-        <div>
+        <div className="flex w-full flex-col">
           <Outlet />
           <Toaster />
         </div>

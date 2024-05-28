@@ -71,7 +71,7 @@ export default function AddSalesDrawer({ month }) {
                   placeholder="$ Enter monthly gross sales"
                   value={monthlyGross}
                   onChange={(e) => setMontlyGross(e.target.value)}
-                  className="mt-1 block w-[330px] rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-[#1F3E7C] focus:outline-none focus:ring-[#1F3E7C] sm:text-sm"
+                  className="mt-1 block w-[330px] rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-[#1F3E7C] focus:outline-none focus:ring-[#1F3E7C] sm:text-sm md:w-[725px]"
                   required
                 />
               </div>
@@ -95,7 +95,7 @@ export default function AddSalesDrawer({ month }) {
                   placeholder="$ Enter collected sales tax"
                   value={collectedSalesTax}
                   onChange={(e) => setCollectedSalesTax(e.target.value)}
-                  className="mt-1 block w-[330px] rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-[#1F3E7C] focus:outline-none focus:ring-[#1F3E7C] sm:text-sm"
+                  className="mt-1 block w-[330px] rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-[#1F3E7C] focus:outline-none focus:ring-[#1F3E7C] sm:text-sm md:w-[725px]"
                   required
                 />
               </div>
@@ -120,7 +120,7 @@ export default function AddSalesDrawer({ month }) {
                   placeholder="$ Enter company check refund"
                   value={companyCheckRefund}
                   onChange={(e) => setCompanyCheckRefund(e.target.value)}
-                  className="mt-1 block w-[330px] rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-[#1F3E7C] focus:outline-none focus:ring-[#1F3E7C] sm:text-sm"
+                  className="mt-1 block w-[330px] rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-[#1F3E7C] focus:outline-none focus:ring-[#1F3E7C] sm:text-sm md:w-[725px]"
                   required
                 />
               </div>
@@ -145,7 +145,7 @@ export default function AddSalesDrawer({ month }) {
                   placeholder="$ Enter credit charges"
                   value={creditCharges}
                   onChange={(e) => setCreditCharges(e.target.value)}
-                  className="mt-1 block w-[330px] rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-[#1F3E7C] focus:outline-none focus:ring-[#1F3E7C] sm:text-sm"
+                  className="mt-1 block w-[330px] rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-[#1F3E7C] focus:outline-none focus:ring-[#1F3E7C] sm:text-sm md:w-[725px]"
                   required
                 />
               </div>

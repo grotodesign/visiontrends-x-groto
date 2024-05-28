@@ -24,7 +24,7 @@ export default function CalculatedSalesDrawer({ month }) {
           Calculate Amount Due
         </Button>
       </DrawerTrigger>
-      <DrawerContent className="max-w-[520px] bg-[#F4F4F4] p-0">
+      <DrawerContent className="bg-[#F4F4F4] p-0 lg:max-w-[520px]">
         <DrawerHeader className="-mt-5 flex items-center justify-between">
           <DrawerTitle className="flex items-center space-x-2 font-avenirHeavy text-[18px] text-[#1C1C1C]">
             <div className="rounded-full bg-white px-4 py-3">

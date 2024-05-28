@@ -52,7 +52,7 @@ export default function VendorDetailsPage() {
       <div className="block lg:hidden">
         <MobileNav />
       </div>
-      <div className="breadcrumbs-area p-5 lg:px-[32px] lg:pt-[28px]">
+      <div className="lg:breadcrumbs-area p-5 lg:px-[32px] lg:pt-[28px]">
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -256,7 +256,7 @@ export default function VendorDetailsPage() {
                         </h1>
                       </div>
                     </Button>
-                    <div className="w-[286px]">
+                    <div className="lg:w-[286px]">
                       <p className="font-avenirRegular text-[14px] text-[#989898]">
                         *Billing Services requires 12-month commitment and
                         authorization to withdraw funds from your banking
