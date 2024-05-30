@@ -93,7 +93,7 @@ export default function InsuranceDetailPage() {
                   <h1 className="font-avenirHeavy text-[20px] text-[#1F3E7C] lg:text-[24px]">
                     Amerigroup
                   </h1>
-                  <h1 className="font-avenirRegular text-[16px] font-medium text-[#646464]">
+                  <h1 className="font-avenirRegular text-[16px] font-thin text-[#989898]">
                     Category : Insurance Solution
                   </h1>
                 </div>
@@ -114,6 +114,7 @@ export default function InsuranceDetailPage() {
                     http://www.amerigroup.com
                   </h1>
                 </div>
+                <div className="inline-block h-[20px] min-h-[1em] w-0.5 self-stretch bg-[#E5E5E5]"></div>
                 <div className="flex cursor-pointer items-center space-x-3">
                   <img src={CallIcon} className="w-[20px]" />
                   <h1
@@ -140,6 +141,7 @@ export default function InsuranceDetailPage() {
                     AMERIGROUP-Cover-Sheet-1.pdf
                   </h1>
                 </div>
+                <div className="inline-block h-[20px] min-h-[1em] w-0.5 self-stretch bg-[#E5E5E5]"></div>
                 <div className="flex cursor-pointer items-center space-x-2 text-[#1F3E7C]">
                   <Download />
                   <h1 className="font-avenirRegular text-[16px] font-medium">

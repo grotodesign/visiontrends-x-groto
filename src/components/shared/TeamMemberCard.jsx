@@ -5,9 +5,9 @@ import EmailIcon from "@/assets/email.png";
 export default function TeamMemberCard({ team }) {
   return (
     <div className="space-y-4">
-      <div className="flex h-[148px] w-[165px] rounded-[12px] bg-[#F0F7FE] lg:h-[196px] lg:w-[223px]">
-        <div className="lg:px-[4px] lg:py-[20px]">
-          <img src={team.profilePic} className="" />
+      <div className="flex rounded-[12px] bg-[#F0F7FE] ">
+        <div className="mt-[26px]">
+          <img src={team.profilePic} className="lg:w-[224px]" />
         </div>
       </div>
       <div className="space-y-2 text-center">

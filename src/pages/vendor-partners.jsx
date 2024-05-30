@@ -66,7 +66,7 @@ export default function VendorPartnersPage() {
             Maximize Profit with Tailored Partners for Profitability
           </p>
         </div>
-        <div>
+        <Link to="/contact-us">
           <Button className="rounded-[8px] border border-[#1F3E7C] bg-[#F0F7FE] hover:bg-[#F0F7FE]">
             <div className="flex items-center space-x-1 font-avenirRegular text-[14px] font-medium text-[#1F3E7C]">
               <h1 className="hidden lg:block">Refer a Vendor</h1>
@@ -74,7 +74,7 @@ export default function VendorPartnersPage() {
               <MoveUpRight className="w-[16px]" />
             </div>
           </Button>
-        </div>
+        </Link>
       </div>
       <div className="mt-5 flex items-center px-5 lg:px-[32px]">
         <div className="search-area flex flex-row space-x-4 lg:items-center">

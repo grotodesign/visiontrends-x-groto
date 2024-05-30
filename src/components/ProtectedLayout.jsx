@@ -19,9 +19,9 @@ export default function ProtectedLayout() {
         setIsTablet(false);
         setShowFullSidebar(false);
       } else {
-        setShowFullSidebar(width > 1024);
         setIsMobile(width <= 768);
         setIsTablet(width > 768 && width <= 1024);
+        setShowFullSidebar(width > 1024);
       }
     };
 
@@ -39,31 +39,26 @@ export default function ProtectedLayout() {
 
   return (
     <div className="flex h-fit w-full flex-row">
-      {!isMobile && (showFullSidebar || isTablet) && (
+      {!isMobile && !isTablet && (
         <Sidebar
           showFullSidebar={showFullSidebar}
           sidebarWidthInPixels={sidebarWidthInPixels}
           toggleSidebarWidth={toggleSidebarWidth}
         />
       )}
-      {!isMobile && (showFullSidebar || isTablet) && (
-        <div
-          style={{
-            width: isTablet ? "100%" : `calc(100% - ${sidebarWidthInPixels}px)`,
-            marginLeft: isTablet ? "0" : `${sidebarWidthInPixels}px`,
-          }}
-          className="flex flex-col"
-        >
-          <Outlet />
-          <Toaster />
-        </div>
-      )}
-      {isMobile && (
-        <div className="flex w-full flex-col">
-          <Outlet />
-          <Toaster />
-        </div>
-      )}
+      <div
+        style={{
+          width:
+            isMobile || isTablet
+              ? "100%"
+              : `calc(100% - ${sidebarWidthInPixels}px)`,
+          marginLeft: isMobile || isTablet ? "0" : `${sidebarWidthInPixels}px`,
+        }}
+        className="flex flex-col"
+      >
+        <Outlet />
+        <Toaster />
+      </div>
     </div>
   );
 }

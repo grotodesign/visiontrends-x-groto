@@ -61,7 +61,10 @@ export default function OutsourcedPage() {
           </BreadcrumbList>
         </Breadcrumb>
       </div>
-      <div className="card-ipp flex flex-col justify-between space-y-6 py-3  lg:flex-row lg:space-x-6 lg:space-y-0 lg:px-[32px] ">
+      <div
+        className="card-ipp flex flex-col justify-between space-y-6 py-3  lg:flex-row lg:space-x-6 lg:space-y-0 lg:px-[32px]
+       "
+      >
         <div className="space-y-4">
           <Card className="rounded-[16px]">
             <div className="space-y-6 p-5 lg:px-10 lg:py-[32px]">
@@ -146,7 +149,7 @@ export default function OutsourcedPage() {
               Contact Details
             </h1>
             <Card className="card-vendor-contact rounded-[16px] lg:w-[358px]">
-              <div className="space-y-4 p-6 lg:p-8">
+              <div className="space-y-[24px] p-6 lg:p-8">
                 <div className="flex items-center space-x-6">
                   <div>
                     <Avatar className="h-[48px] w-[48px]">
@@ -167,7 +170,7 @@ export default function OutsourcedPage() {
                   </div>
                 </div>
                 <Separator />
-                <div className="space-y-2">
+                <div className="space-y-[24px]">
                   <div
                     className="flex cursor-pointer items-center space-x-3"
                     onClick={handleEmailClick}

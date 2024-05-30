@@ -52,7 +52,7 @@ const menuItems = [
       { id: 7, label: "EyeCarePro", link: "/practise-builder/eyecarepro" },
       {
         id: 8,
-        label: "iDefend Theft Protection",
+        label: "iDefend Business",
         link: "/practise-builder/idefend",
       },
     ],

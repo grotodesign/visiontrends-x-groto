@@ -65,7 +65,7 @@ export default function SalesSubmissionPage() {
                   placeholder="Search"
                   value={searchValue}
                   onChange={(e) => setSearchValue(e.target.value)}
-                  className="focus:outline-buttonprimary rounded-[8px] border border-gray-300 py-2 pl-10 font-avenirRegular text-[16px] md:w-[500px]"
+                  className="focus:outline-buttonprimary rounded-[8px] border border-gray-300 py-2 pl-10 font-avenirRegular text-[16px] md:w-[400px]"
                 />
                 <SearchIcon className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 transform text-gray-400 lg:left-3" />
               </div>

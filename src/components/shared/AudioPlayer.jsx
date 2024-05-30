@@ -74,14 +74,20 @@ export default function AudioPlayer() {
 
   const backTen = () => {
     if (progressBar.current) {
-      progressBar.current.value = Math.max(0, Number(progressBar.current.value - 10));
+      progressBar.current.value = Math.max(
+        0,
+        Number(progressBar.current.value - 10),
+      );
       changeRange();
     }
   };
 
   const forwardTen = () => {
     if (progressBar.current) {
-      progressBar.current.value = Math.min(duration, Number(progressBar.current.value + 10));
+      progressBar.current.value = Math.min(
+        duration,
+        Number(progressBar.current.value + 10),
+      );
       changeRange();
     }
   };
@@ -107,7 +113,9 @@ export default function AudioPlayer() {
 
         <div className="flex w-full justify-between font-avenirRegular text-[12px] font-medium text-[#989898]">
           <div className="">{calculateTime(currentTime)}</div>
-          <div>{duration && !isNaN(duration) ? calculateTime(duration) : "00:00"}</div>
+          <div>
+            {duration && !isNaN(duration) ? calculateTime(duration) : "00:00"}
+          </div>
         </div>
       </div>
 

@@ -62,11 +62,15 @@ export default function IofPage() {
                   VSP In-Office Finishing Pilot Program
                 </h1>
                 <Button className="w-[154px] rounded-[8px] bg-[#F0F7FE] hover:bg-[#F0F7FE] lg:w-auto">
-                  <div className="flex items-center space-x-2 lg:space-x-3">
-                    <StarIcon />
-                    <h1 className="font-avenirRegular text-[14px] font-medium text-[#1F3E7C]">
-                      Member Exclusive
-                    </h1>
+                  <div className="flex items-center space-x-[8px]">
+                    <div>
+                      <StarIcon />
+                    </div>
+                    <div>
+                      <h1 className="font-avenirRegular text-[14px] font-medium text-[#1F3E7C] lg:mt-1">
+                        Member Exclusive
+                      </h1>
+                    </div>
                   </div>
                 </Button>
               </div>
@@ -118,7 +122,7 @@ export default function IofPage() {
               Contact Details
             </h1>
             <Card className="card-vendor-contact rounded-[16px] lg:w-[358px]">
-              <div className="space-y-4 p-6 lg:p-8">
+              <div className="space-y-[24px] p-6 lg:p-8">
                 <div className="flex items-center space-x-6">
                   <div>
                     <Avatar className="h-[48px] w-[48px]">
@@ -139,7 +143,7 @@ export default function IofPage() {
                   </div>
                 </div>
                 <Separator />
-                <div className="space-y-2">
+                <div className="space-y-[24px]">
                   <div
                     className="flex cursor-pointer items-center space-x-3"
                     onClick={handleEmailClick}

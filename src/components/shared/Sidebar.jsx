@@ -48,7 +48,7 @@ const menuItems = [
       { id: 7, label: "EyeCarePro", link: "/practise-builder/eyecarepro" },
       {
         id: 8,
-        label: "iDefend Theft Protection",
+        label: "iDefend Business",
         link: "/practise-builder/idefend",
       },
     ],
@@ -120,11 +120,14 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
       onMouseLeave={onMouseOver}
     >
       <div className="flex flex-col bg-white">
-        <div className="relative flex items-center justify-between bg-white">
+        <Link
+          to="/"
+          className="relative flex items-center justify-between bg-white"
+        >
           <div className="flex items-center gap-4 bg-white px-4">
             <Logo />
           </div>
-        </div>
+        </Link>
         <div className="space-y-[32px]">
           <div className="my-[24px] flex flex-col items-start">
             {menuItems.slice(0, 3).map(({ id, label, link, icon }) => {

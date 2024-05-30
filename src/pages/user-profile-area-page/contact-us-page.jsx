@@ -73,7 +73,7 @@ export default function ContactUsPage() {
             </h1>
             <Card className="card-vendor-contact rounded-[16px] lg:w-[358px]">
               <div className="space-y-4 p-6 lg:p-8">
-                <div className="space-y-2">
+                <div className="space-y-[25px]">
                   <div className="flex cursor-pointer space-x-3">
                     <MapPin className="text-[#646464] lg:w-[20px] " />
                     <h1 className="font-avenirRegular text-[16px] font-medium text-[#646464]">

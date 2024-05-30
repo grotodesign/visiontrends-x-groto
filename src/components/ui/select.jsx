@@ -3,6 +3,7 @@ import * as SelectPrimitive from "@radix-ui/react-select";
 import { Check, ChevronDown, ChevronUp } from "lucide-react";
 
 import { cn } from "@/lib/utils";
+import { ScrollArea } from "./scroll-area";
 
 const Select = SelectPrimitive.Root;
 
@@ -15,7 +16,7 @@ const SelectTrigger = React.forwardRef(
     <SelectPrimitive.Trigger
       ref={ref}
       className={cn(
-        "flex h-48 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1",
+        "flex h-48 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 font-avenirRegular text-[16px] text-sm text-[#B6B6B6] placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1",
         className,
       )}
       {...props}
@@ -81,10 +82,10 @@ const SelectContent = React.forwardRef(
           className={cn(
             "p-1",
             position === "popper" &&
-              "h-[var(--radix-select-trigger-height)] w-full min-w-[var(--radix-select-trigger-width)]",
+              "h-[var(--radix-select-trigger-height)] w-full min-w-[var(--radix-select-trigger-width)] font-avenirRegular text-[16px] text-[#1C1C1C]",
           )}
         >
-          {children}
+          <ScrollArea className="h-96">{children}</ScrollArea>
         </SelectPrimitive.Viewport>
         {/* <SelectScrollDownButton /> */}
       </SelectPrimitive.Content>

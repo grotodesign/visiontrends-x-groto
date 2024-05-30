@@ -534,7 +534,11 @@ export default function UserProfilePage() {
                                     <PasswordDialog passwordText="Password" />
                                   </div>
                                   <FormControl>
-                                    <Input placeholder="********" {...field} />
+                                    <Input
+                                      placeholder="********"
+                                      {...field}
+                                      readOnly
+                                    />
                                   </FormControl>
                                   <FormMessage />
                                 </FormItem>
@@ -570,7 +574,11 @@ export default function UserProfilePage() {
                                     <PasswordDialog passwordText="Account Password" />
                                   </div>
                                   <FormControl>
-                                    <Input placeholder="********" {...field} />
+                                    <Input
+                                      placeholder="********"
+                                      {...field}
+                                      readOnly
+                                    />
                                   </FormControl>
                                   <FormMessage />
                                   <div className="flex space-x-[8px]">

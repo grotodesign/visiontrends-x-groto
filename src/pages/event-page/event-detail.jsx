@@ -104,7 +104,7 @@ export default function EventDetailPage() {
                 </p>
               </div>
               <div className="flex items-center space-x-[12px]">
-                <Button className="flex w-[160px] rounded-[8px] border border-[#1F3E7C] bg-transparent text-[#1F3E7C] lg:hidden">
+                <Button className="flex w-[160px] rounded-[8px] border border-[#1F3E7C] bg-transparent text-[#1F3E7C] hover:bg-transparent lg:hidden">
                   <div className="flex items-center space-x-2 lg:space-x-3">
                     <div className="flex items-center space-x-[2px] font-avenirRegular text-[14px] font-medium">
                       <h1>Add to Calendar</h1>

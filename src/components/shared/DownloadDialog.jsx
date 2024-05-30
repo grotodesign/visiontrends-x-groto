@@ -12,7 +12,7 @@ export default function DownloadDialog() {
           variant="outline"
           className="border-[#1F3E7C] font-avenirRegular text-[#1C1C1C]"
         >
-          Download Now
+          Download Programs
         </Button>
       </PopoverTrigger>
       <PopoverContent className="mr-44 mt-4 w-[220px] rounded-[12px] lg:mr-[85px] lg:w-[226px]">

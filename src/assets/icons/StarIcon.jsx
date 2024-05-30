@@ -3,7 +3,7 @@ import React from "react";
 export default function StarIcon() {
   return (
     <svg
-      width="14"
+      width="15"
       height="15"
       viewBox="0 0 14 15"
       fill="none"

@@ -124,7 +124,7 @@ export default function EyeCareProPage() {
                     variant="outline"
                     className="border-[#1F3E7C] font-avenirRegular text-[#1C1C1C]"
                   >
-                    Download Now
+                    Download Programs
                   </Button>
                 </div>
                 <div>
@@ -146,7 +146,7 @@ export default function EyeCareProPage() {
                   <p className="font-avenirRegular text-[14px] text-[#989898] lg:text-[16px]">
                     Simply {" "}
                     <span
-                      className="cursor-pointer"
+                      className="cursor-pointer underline underline-offset-2"
                       onClick={handleWebsiteClick}
                     >
                       click here 
@@ -166,7 +166,7 @@ export default function EyeCareProPage() {
               Contact Details
             </h1>
             <Card className="card-vendor-contact rounded-[16px] lg:w-[358px]">
-              <div className="space-y-4 p-6 lg:p-8">
+              <div className="space-y-[24px] p-6 lg:p-8">
                 <div className="flex items-center space-x-6">
                   <div>
                     <Avatar className="h-[48px] w-[48px]">
@@ -187,7 +187,7 @@ export default function EyeCareProPage() {
                   </div>
                 </div>
                 <Separator />
-                <div className="space-y-2">
+                <div className="space-y-[24px]">
                   <div
                     className="flex cursor-pointer items-center space-x-3"
                     onClick={handleEmailClick}

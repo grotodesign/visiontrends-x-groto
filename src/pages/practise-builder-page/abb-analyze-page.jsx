@@ -261,7 +261,7 @@ export default function AbbAnalyzePage() {
               Schedule a free demo or sign up today!
             </h1>
             <Card className="card-vendor-contact rounded-[16px] lg:w-[358px]">
-              <div className="space-y-4 p-6 lg:p-8">
+              <div className="space-y-[24px] p-6 lg:p-8">
                 <div className="flex items-center space-x-6">
                   <div>
                     <Avatar className="h-[48px] w-[48px]">
@@ -282,7 +282,7 @@ export default function AbbAnalyzePage() {
                   </div>
                 </div>
                 <Separator />
-                <div className="space-y-2">
+                <div className="space-y-[24px]">
                   <div
                     className="flex cursor-pointer items-center space-x-3"
                     onClick={handleEmailClick}

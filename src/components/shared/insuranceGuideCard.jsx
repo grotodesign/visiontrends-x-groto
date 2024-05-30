@@ -29,7 +29,7 @@ export default function InsuranceGuideCard({ offering }) {
               <p className="offeringDesc font-avenirRegular text-[12px]  text-[#989898] lg:text-[14px]">
                 {offering?.email}
               </p>
-
+              <div className="inline-block h-[20px] min-h-[1em] w-0.5 self-stretch bg-[#E5E5E5]"></div>
               <p className="offeringDesc font-avenirRegular text-[12px] text-[#989898] lg:text-[14px]">
                 {offering?.phone}
               </p>
