@@ -84,7 +84,19 @@ const menuItems = [
 export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
   const { pathname } = useLocation();
 
-  const activeMenu = menuItems.find((menu) => menu.link === pathname);
+  const findActiveMenu = (items, path) => {
+    for (const item of items) {
+      if (item.link === path) return item;
+      if (item.submenu) {
+        const activeSubItem = findActiveMenu(item.submenu, path);
+        if (activeSubItem) return activeSubItem;
+      }
+    }
+    return null;
+  };
+
+  const activeMenu = findActiveMenu(menuItems, pathname);
+
   const [isCollapsible, setIsCollapsible] = useState(false);
   const [showDashboardSubMenu, setShowDashboardSubMenu] = useState(false);
 
@@ -219,7 +231,7 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
                             to={link}
                             className={`block py-2 pl-4 font-avenirRegular text-[14px] font-medium  ${
                               activeMenu && activeMenu.id === id
-                                ? "text-[#1F3E7C]"
+                                ? "rounded-[8px] bg-[#F0F7FE] py-[12px] pl-[16px] pr-[8px] text-[#1F3E7C]"
                                 : "text-[#646464]"
                             }`}
                             key={id}

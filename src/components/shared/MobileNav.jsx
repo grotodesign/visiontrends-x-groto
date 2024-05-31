@@ -100,6 +100,8 @@ export default function MobileNav() {
 
   const toggleDashboardSubMenu = () => {
     setShowDashboardSubMenu(!showDashboardSubMenu);
+    // Optionally, you can navigate to the first submenu item here
+    // history.push('/practise-builder/lensquote');
   };
 
   const getNavItemClasses = (menu) =>
@@ -112,6 +114,7 @@ export default function MobileNav() {
   const toggleSaleSubMenu = () => {
     setShowSaleSubMenu(!showSaleSubMenu);
   };
+
   return (
     <div className="h-30 navbar border-b-2 border-[#EEEEEE] bg-white">
       <div className="p-5">

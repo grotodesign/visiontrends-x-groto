@@ -35,7 +35,7 @@ export default function HomePage() {
         </h1>
         <p className="px-5 lg:hidden">View all</p>
       </div>
-      <div className="lg:pl-[5px] lg:pr-[10px]"> 
+      <div className="lg:pl-[5px] lg:pr-[10px]">
         <div className="flex flex-col justify-between space-x-[24px] space-y-[24px] py-8 lg:flex-row lg:space-y-0 lg:p-[24px]">
           <div className="cardArea grid justify-center gap-5 lg:grid-cols-2 lg:gap-[24px] lg:px-0">
             {OfferingsData.map((offering) => (
