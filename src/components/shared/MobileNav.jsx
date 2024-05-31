@@ -126,11 +126,14 @@ export default function MobileNav() {
               </SheetTrigger>
               <SheetContent side="left" className="w-[260px] p-5">
                 <div className="flex flex-col">
-                  <div className="relative flex items-center justify-between bg-white">
+                  <Link
+                    to="/"
+                    className="relative flex items-center justify-between bg-white"
+                  >
                     <div className="flex items-center gap-4 bg-white">
                       <Logo />
                     </div>
-                  </div>
+                  </Link>
                   <div className="mt-5">
                     <Card className="p-2">
                       <div className="flex items-center justify-between">
