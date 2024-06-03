@@ -29,6 +29,10 @@ import AndrewPic from "@/assets/team/andrew.png";
 import ErinPic from "@/assets/team/erin.png";
 import AliPic from "@/assets/team/ali.png";
 import NoUserPic from "@/assets/team/noimage.png";
+import LensquoteIcon from "@/assets/lensquote.png";
+import AbbAnalyzeIcon from "@/assets/abbanalyze.png";
+import EyeCareProIcon from "@/assets/eyecarepro.png";
+import IDefendIcon from "@/assets/iDefend.png";
 
 export const OfferingsData = [
   {
@@ -218,6 +222,37 @@ export const InsuranceSolutionServicesData = [
     name: "Outsourced Billing Services",
     description:
       "Outsource billing to dedicated claims specialists for efficient insurance administration support",
+  },
+];
+
+export const PracticeBuilderServiceData = [
+  {
+    id: 1,
+    icon: LensquoteIcon,
+    name: "Lensquote",
+    description:
+      "Lensquote is an in-office app that flips the script, showing your patients in seconds that you can offer them better pricing, options, and value.",
+  },
+  {
+    id: 2,
+    icon: AbbAnalyzeIcon,
+    name: "ABB Analyze",
+    description:
+      "Vision Trends pays the monthly subscription for all active Affiliate and Profit+ members who select ABB Analyze business analytics software as part of their membership",
+  },
+  {
+    id: 3,
+    icon: EyeCareProIcon,
+    name: "EyeCarePro",
+    description:
+      "EyeCarePro is the industry leader in marketing for eye care. With over 1800 clients, we are constantly evolving to meet the needs of practices as the industry changes.",
+  },
+  {
+    id: 4,
+    icon: IDefendIcon,
+    name: "iDefend Business",
+    description:
+      "Protect your business credit, reputation, privacy, and money with the industry’s first andonly business identity theft protection program.",
   },
 ];
 

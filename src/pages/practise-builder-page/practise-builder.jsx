@@ -1,5 +1,6 @@
 import MobileNav from "@/components/shared/MobileNav";
 import Navbar from "@/components/shared/Navbar";
+import PracticeBuilderCard from "@/components/shared/PracticeBuilderCard";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -8,6 +9,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import { PracticeBuilderServiceData } from "@/lib/data";
 
 export default function PractiseBuilderPage() {
   return (
@@ -39,13 +41,17 @@ export default function PractiseBuilderPage() {
         </Breadcrumb>
       </div>
       <div className="flex items-center justify-between px-5">
-        <div className="">
-          <h1 className="font-avenirHeavy text-[18px] text-[#1C1C1C]">
+        <div className="space-y-2">
+          <h1 className="font-avenirHeavy text-[24px] text-[#1F3E7C]">
             Practise Builder
           </h1>
-          <p className="font-avenirRegular text-[14px] font-medium text-[#989898]">
-            Maximize Profit with Tailored Partners for Profitability
-          </p>
+        </div>
+      </div>
+      <div className="flex flex-col justify-between space-x-6 space-y-6 py-8 lg:flex-row lg:space-y-0 lg:px-[32px]">
+        <div className="card-ip-area grid justify-center gap-5 lg:grid-cols-2 lg:gap-6 lg:px-0">
+          {PracticeBuilderServiceData.map((offering) => (
+            <PracticeBuilderCard key={offering.id} offering={offering} />
+          ))}
         </div>
       </div>
     </div>

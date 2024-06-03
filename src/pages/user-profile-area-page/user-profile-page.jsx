@@ -31,14 +31,14 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 import { CircleAlert } from "lucide-react";
 import PasswordDialog from "@/components/shared/PasswordDialog";
 
 export default function UserProfilePage() {
   const [profileImage, setProfileImage] = useState(null);
+  const [errors, setErrors] = useState({});
+  const [successMessage, setSuccessMessage] = useState("");
 
   const { getRootProps, getInputProps, open } = useDropzone({
     accept: "image/*",
@@ -99,11 +99,17 @@ export default function UserProfilePage() {
     },
   });
 
-  function onSubmit(values) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    console.log(values);
-  }
+  const onSubmit = async (values) => {
+    try {
+      // Simulate form submission (replace with actual API call)
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      setSuccessMessage("Profile updated successfully");
+      setErrors({});
+    } catch (error) {
+      setErrors({ submit: "Failed to update profile" });
+      setSuccessMessage("");
+    }
+  };
 
   const personalInfoRef = useRef(null);
   const contactInfoRef = useRef(null);
@@ -313,6 +319,21 @@ export default function UserProfilePage() {
                       className="space-y-10"
                       onSubmit={form.handleSubmit(onSubmit)}
                     >
+                      {Object.keys(errors).length > 0 && (
+                        <div className="mb-4 rounded border border-red-400 bg-red-100 p-4 text-red-700">
+                          <ul>
+                            {Object.values(errors).map((error, index) => (
+                              <li key={index}>{error}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+
+                      {successMessage && (
+                        <div className="mb-4 rounded border border-green-400 bg-green-100 p-4 text-green-700">
+                          {successMessage}
+                        </div>
+                      )}
                       <div ref={personalInfoRef}>
                         <h2 className="font-avenirHeavy text-[18px] text-[#1C1C1C]">
                           Personal Information

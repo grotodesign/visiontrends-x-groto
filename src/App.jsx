@@ -1,9 +1,9 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import ProtectedLayout from "./components/ProtectedLayout";
 import HomePage from "./pages/home";
-import VendorPartnersPage from "./pages/vendor-partners";
+import VendorPartnersPage from "./pages/vendor-page/vendor-partners";
 import EventCalendarPage from "./pages/event-page/event-calendar";
-import VendorDetailsPage from "./pages/vendor-details";
+import VendorDetailsPage from "./pages/vendor-page/vendor-details";
 import InsurancePage from "./pages/insurance-page/insurance-page";
 import LabsSolutionPage from "./pages/labs-solution";
 import LearningSolutionPage from "./pages/learning-solutions/learning-solution";
@@ -32,18 +32,24 @@ import ContactUsPage from "./pages/user-profile-area-page/contact-us-page";
 import UserProfilePage from "./pages/user-profile-area-page/user-profile-page";
 import SalesSubmissionPage from "./pages/sales-submission";
 import EventDetailPage from "./pages/event-page/event-detail";
-import SearchResultsPage from "./pages/search-result-page";
 import AbbAnalyzePoweredPage from "./pages/featured-vendors-pages/abb-analyze-powered-page";
 import KattoufPage from "./pages/featured-vendors-pages/kattouf-page";
 import AbbContactLensPage from "./pages/featured-vendors-pages/abb-contact-lens-page";
 import NorwoodPage from "./pages/featured-vendors-pages/norwood-page";
-// import PractiseBuilderPage from "./pages/practise-builder";
+import PractiseBuilderPage from "./pages/practise-builder-page/practise-builder";
+// import PractiseBuilderPage from "./pages/practise-builder"; // Duplicate import removed
 
 function App() {
   return (
     <Routes>
+      {/* Main route structure with ProtectedLayout wrapper */}
       <Route path="/" element={<ProtectedLayout />}>
+        {/* Default home page */}
         <Route path="" element={<HomePage />} />
+
+        {/* Vendor Partners routes */}
+        <Route path="/vendor-partners" element={<VendorPartnersPage />} />
+        <Route path="/vendor-partners/:id" element={<VendorDetailsPage />} />
         <Route
           path="/vendor-partners/glimpse-live-llc/"
           element={<AbbAnalyzePoweredPage />}
@@ -57,19 +63,17 @@ function App() {
           element={<AbbContactLensPage />}
         />
         <Route path="/vendor-partners/norwood" element={<NorwoodPage />} />
+
+        {/* User profile and contact routes */}
         <Route path="/refer" element={<ReferPage />} />
         <Route path="/contact-us" element={<ContactUsPage />} />
         <Route path="/my-profile" element={<UserProfilePage />} />
-        <Route path="/vendor-partners" element={<VendorPartnersPage />} />
+
+        {/* Event calendar and detail routes */}
         <Route path="/event-calendar" element={<EventCalendarPage />} />
         <Route path="/event-calendar/:id" element={<EventDetailPage />} />
-        <Route path="/vendor-partners/:id" element={<VendorDetailsPage />} />
-        <Route path="/search" element={<SearchResultsPage />} />
-        <Route path="/vsp-iof" element={<IofPage />} />
-        <Route
-          path="/insurance-profit-pathway"
-          element={<InsuranceProfitPathwayPage />}
-        />
+
+        {/* Insurance related routes */}
         <Route path="/insurance-solutions" element={<InsurancePage />} />
         <Route
           path="/insurance-solutions/insurance-guide"
@@ -91,9 +95,20 @@ function App() {
           path="/insurance-solutions/outsourced-billing-services"
           element={<OutsourcedPage />}
         />
+        <Route
+          path="/insurance-profit-pathway"
+          element={<InsuranceProfitPathwayPage />}
+        />
+
+        {/* Sales submission route */}
         <Route path="/sales-submission" element={<SalesSubmissionPage />} />
+
+        {/* Other service routes */}
         <Route path="/lab-solutions" element={<LabsSolutionPage />} />
         <Route path="/merchant-services" element={<MerchantPage />} />
+        <Route path="/vsp-iof" element={<IofPage />} />
+
+        {/* Learning solutions routes */}
         <Route path="/learning-solutions" element={<LearningSolutionPage />} />
         <Route
           path="/learning-solutions/pulse-on-your-practice"
@@ -125,11 +140,13 @@ function App() {
           element={<SpringBusinessAcademyPage />}
         />
       </Route>
+
+      {/* Practise builder routes with ProtectedLayout wrapper */}
       <Route path="/practise-builder" element={<ProtectedLayout />}>
-        <Route
-          path=""
-          element={<Navigate to="/practise-builder/lensquote" replace />}
-        />
+        {/* Default practise builder page */}
+        <Route path="" element={<PractiseBuilderPage />} />
+
+        {/* Specific practise builder services */}
         <Route
           path="/practise-builder/abb-analyze"
           element={<AbbAnalyzePage />}

@@ -36,6 +36,9 @@ import {
 } from "@/components/ui/select";
 
 export default function ReferPage() {
+  const [errors, setErrors] = useState({});
+  const [successMessage, setSuccessMessage] = useState("");
+
   const formSchema = z.object({
     salutation: z.string().nonempty("Salutation is required"),
     firstname: z.string().nonempty("First Name is required"),
@@ -65,11 +68,17 @@ export default function ReferPage() {
     },
   });
 
-  function onSubmit(values) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    console.log(values);
-  }
+  const onSubmit = async (values) => {
+    try {
+      // Simulate form submission (replace with actual API call)
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      setSuccessMessage("Refer successfully");
+      setErrors({});
+    } catch (error) {
+      setErrors({ submit: "Failed to refer" });
+      setSuccessMessage("");
+    }
+  };
   return (
     <div>
       <div className="hidden lg:block">
@@ -116,6 +125,21 @@ export default function ReferPage() {
                     onSubmit={form.handleSubmit(onSubmit)}
                     className="space-y-6"
                   >
+                    {Object.keys(errors).length > 0 && (
+                      <div className="mb-4 rounded border border-red-400 bg-red-100 p-4 text-red-700">
+                        <ul>
+                          {Object.values(errors).map((error, index) => (
+                            <li key={index}>{error}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {successMessage && (
+                      <div className="mb-4 rounded border border-green-400 bg-green-100 p-4 text-green-700">
+                        {successMessage}
+                      </div>
+                    )}
                     <div className="flex flex-col space-y-4 lg:flex-row lg:items-center lg:space-x-4 lg:space-y-0">
                       <div>
                         <FormField

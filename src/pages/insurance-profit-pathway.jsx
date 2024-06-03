@@ -13,14 +13,17 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
 export default function InsuranceProfitPathwayPage() {
+  // Function to handle email click, redirecting to the specified email address
   const handleEmailClick = () => {
     window.location.href = `mailto:www.vtrends.us/eastwest`;
   };
   return (
     <div>
+      {/* Navigation for larger screens */}
       <div className="hidden lg:block">
         <Navbar />
       </div>
+      {/* Navigation for smaller screens */}
       <div className="block lg:hidden">
         <MobileNav />
       </div>

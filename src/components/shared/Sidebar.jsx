@@ -23,6 +23,7 @@ import {
 } from "../ui/accordion";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
+// Menu items with links and icons
 const menuItems = [
   { id: 1, label: "Home", icon: <HomeIcon />, link: "/" },
   {
@@ -84,6 +85,7 @@ const menuItems = [
 export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
   const { pathname } = useLocation();
 
+  // Find the active menu item based on the current path
   const findActiveMenu = (items, path) => {
     for (const item of items) {
       if (item.link === path) return item;
@@ -97,29 +99,34 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
 
   const activeMenu = findActiveMenu(menuItems, pathname);
 
+  // State to manage the collapsible state of the sidebar
   const [isCollapsible, setIsCollapsible] = useState(false);
-  const [showDashboardSubMenu, setShowDashboardSubMenu] = useState(false);
 
+  // State to manage the visibility of submenu items
+  const [showDashboardSubMenu, setShowDashboardSubMenu] = useState(false);
   const [showSaleSubMenu, setShowSaleSubMenu] = useState(false);
 
+  // Toggle the collapsible state of the sidebar on mouse events
   const onMouseOver = () => {
     setIsCollapsible(!isCollapsible);
   };
 
+  // Toggle submenu visibility
   const toggleDashboardSubMenu = () => {
     setShowDashboardSubMenu(!showDashboardSubMenu);
   };
 
+  const toggleSaleSubMenu = () => {
+    setShowSaleSubMenu(!showSaleSubMenu);
+  };
+
+  // Get classes for the navigation items
   const getNavItemClasses = (menu) =>
     `flex items-center cursor-pointer hover:bg-blue-50 rounded w-full overflow-hidden whitespace-nowrap ${
       activeMenu && activeMenu.id === menu.id
         ? "bg-[#F0F7FE] hover:bg-[#F0F7FE]"
         : "hover:bg-[#F0F7FE]"
     }`;
-
-  const toggleSaleSubMenu = () => {
-    setShowSaleSubMenu(!showSaleSubMenu);
-  };
   return (
     <aside
       id="app-sidebar"
@@ -132,6 +139,7 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
       onMouseLeave={onMouseOver}
     >
       <div className="flex flex-col bg-white">
+        {/* Logo Section */}
         <Link
           to="/"
           className="relative flex items-center justify-between bg-white"
@@ -141,6 +149,7 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
           </div>
         </Link>
         <div className="space-y-[32px]">
+          {/* Main Menu Items */}
           <div className="my-[24px] flex flex-col items-start">
             {menuItems.slice(0, 3).map(({ id, label, link, icon }) => {
               const menuItem = { id, label, link, icon };
@@ -170,6 +179,7 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
               );
             })}
           </div>
+          {/* Programs Section */}
           <div className="my-[24px] flex flex-col items-start bg-white">
             <h1 className="mb-[8px] bg-white px-6 font-avenirRegular text-[14px] text-[#989898]">
               Programs
@@ -246,6 +256,7 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
               );
             })}
           </div>
+          {/* Solutions Section */}
           <div className="my-[24px] flex flex-col items-start bg-white">
             <h1 className="mb-[8px] bg-white px-6 font-avenirRegular text-[14px] text-[#989898]">
               Solutions
@@ -279,6 +290,7 @@ export default function Sidebar({ showFullSidebar, sidebarWidthInPixels }) {
             })}
           </div>
         </div>
+        {/* VT Cares Card */}
         <div className="mt-[84px] px-[20px]">
           <Card className="relative w-[200px] rounded-[12px] bg-gradient-to-br from-[#3061C2] to-[#121A29] ">
             <div className="space-y-3 p-5">

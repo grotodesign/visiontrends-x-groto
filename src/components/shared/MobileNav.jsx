@@ -27,6 +27,7 @@ import {
   AccordionTrigger,
 } from "../ui/accordion";
 
+// Define the menu items for the navigation
 const menuItems = [
   { id: 1, label: "Home", icon: <HomeIcon />, link: "/" },
   {
@@ -88,22 +89,33 @@ const menuItems = [
 export default function MobileNav() {
   const { pathname } = useLocation();
 
+  // Find the active menu item based on the current path
   const activeMenu = menuItems.find((menu) => menu.link === pathname);
-  const [isCollapsible, setIsCollapsible] = useState(false);
-  const [showDashboardSubMenu, setShowDashboardSubMenu] = useState(false);
 
+  // State to manage the collapsible state of the sidebar
+  const [isCollapsible, setIsCollapsible] = useState(false);
+
+  // State to manage the visibility of submenu items
+  const [showDashboardSubMenu, setShowDashboardSubMenu] = useState(false);
   const [showSaleSubMenu, setShowSaleSubMenu] = useState(false);
 
+  // Toggle the collapsible state of the sidebar on mouse events
   const onMouseOver = () => {
     setIsCollapsible(!isCollapsible);
   };
 
+  // Toggle submenu visibility
   const toggleDashboardSubMenu = () => {
     setShowDashboardSubMenu(!showDashboardSubMenu);
     // Optionally, you can navigate to the first submenu item here
     // history.push('/practise-builder/lensquote');
   };
 
+  const toggleSaleSubMenu = () => {
+    setShowSaleSubMenu(!showSaleSubMenu);
+  };
+
+  // Get classes for the navigation items
   const getNavItemClasses = (menu) =>
     `flex items-center cursor-pointer hover:bg-blue-50 rounded w-full overflow-hidden whitespace-nowrap ${
       activeMenu && activeMenu.id === menu.id
@@ -111,14 +123,11 @@ export default function MobileNav() {
         : "hover:bg-[#F0F7FE]"
     }`;
 
-  const toggleSaleSubMenu = () => {
-    setShowSaleSubMenu(!showSaleSubMenu);
-  };
-
   return (
     <div className="h-30 navbar border-b-2 border-[#EEEEEE] bg-white">
       <div className="p-5">
         <div className="flex items-center justify-between">
+          {/* Sidebar Toggle Button */}
           <div>
             <Sheet>
               <SheetTrigger>
@@ -134,6 +143,7 @@ export default function MobileNav() {
                       <Logo />
                     </div>
                   </Link>
+                  {/* User Info Card */}
                   <div className="mt-5">
                     <Card className="p-2">
                       <div className="flex items-center justify-between">
@@ -154,6 +164,7 @@ export default function MobileNav() {
                       </div>
                     </Card>
                   </div>
+                  {/* Main Menu Items */}
                   <div>
                     <div className="my-4 flex flex-col items-start">
                       {menuItems
@@ -184,6 +195,7 @@ export default function MobileNav() {
                           );
                         })}
                     </div>
+                    {/* Programs Section */}
                     <div className="my-4 flex flex-col items-start bg-white">
                       <h1 className="bg-white px-4 font-avenirRegular text-[12px] text-[#989898]">
                         Programs
@@ -211,7 +223,7 @@ export default function MobileNav() {
                                       {icon}
                                     </div>
                                     <span
-                                      className={` font-avenirRegular text-[14px] font-medium ${
+                                      className={` font-avenirRegular text-[12px] font-medium ${
                                         activeMenu && activeMenu.id === id
                                           ? "text-[#1F3E7C]"
                                           : "text-[#646464]"
@@ -239,6 +251,7 @@ export default function MobileNav() {
                                     </div>
                                   )}
                                 </div>
+                                {/* Submenu Items */}
                                 {submenu && showSaleSubMenu && (
                                   <div className="pb-2 pl-10">
                                     {" "}
@@ -262,6 +275,7 @@ export default function MobileNav() {
                           );
                         })}
                     </div>
+                    {/* Solutions Section */}
                     <div className="my-4 flex flex-col items-start bg-white">
                       <h1 className="bg-white px-4 font-avenirRegular text-[12px] text-[#989898]">
                         Solutions
@@ -295,6 +309,7 @@ export default function MobileNav() {
                         })}
                     </div>
                   </div>
+                  {/* VT Cares Card */}
                   <div className="">
                     <Card className="relative w-[224px] rounded-[12px] bg-gradient-to-br from-[#3061C2] to-[#121A29] ">
                       <div className="space-y-1 p-5">
