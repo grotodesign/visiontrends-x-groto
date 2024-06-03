@@ -144,16 +144,16 @@ export default function EyeCareProPage() {
                 </div>
                 <div>
                   <p className="font-avenirRegular text-[14px] text-[#989898] lg:text-[16px]">
-                    Simply {" "}
+                    Simply
                     <span
                       className="cursor-pointer underline underline-offset-2"
                       onClick={handleWebsiteClick}
                     >
-                      click here 
-                    </span>{" "}
+                      click here
+                    </span>
                     and provide a meeting date and time, and an EyeCarePro
                     representative with contact you and start the process of
-                    bringing your practice online.
+                    bringing your practice online.
                   </p>
                 </div>
               </div>
