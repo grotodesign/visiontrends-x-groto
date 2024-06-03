@@ -50,7 +50,7 @@ export default function MerchantPage() {
           </BreadcrumbList>
         </Breadcrumb>
       </div>
-      <div className="card-vsp flex flex-col justify-between space-y-6 py-3  lg:flex-row lg:space-x-6 lg:space-y-0 lg:px-[32px]">
+      <div className="card-vsp flex flex-col justify-between space-y-6 py-3  lg:px-[32px] xl:flex-row xl:space-x-6 xl:space-y-0">
         <div className="space-y-4">
           <Card className="rounded-[16px]">
             <div className="space-y-6 p-5 lg:px-10 lg:py-[32px]">
@@ -101,7 +101,7 @@ export default function MerchantPage() {
               Two rate option available -
             </h1>
             <div className="flex flex-col justify-between space-x-6 space-y-6 py-8 lg:flex-row lg:space-y-0 lg:p-5">
-              <div className="card-merchant-area grid justify-center gap-5 lg:grid-cols-2 lg:gap-6 lg:px-0">
+              <div className="card-merchant-area grid justify-center gap-5 lg:grid-cols-2 lg:gap-6 xl:px-0">
                 {MerchantRateData.map((offering) => (
                   <RateCard key={offering.id} offering={offering} />
                 ))}

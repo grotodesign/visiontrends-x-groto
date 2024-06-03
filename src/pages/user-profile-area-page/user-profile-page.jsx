@@ -160,9 +160,9 @@ export default function UserProfilePage() {
           My Profile
         </h1>
       </div>
-      <div className="card-ipp flex flex-col justify-between py-3 lg:flex-row lg:space-x-6 lg:space-y-0 lg:px-[32px]">
+      <div className="card-ipp flex flex-col justify-between py-3 lg:px-[32px] xl:flex-row xl:space-x-6 xl:space-y-0">
         <div className="space-y-4">
-          <Card className="hidden w-[280px] rounded-[16px] lg:block">
+          <Card className="hidden w-[280px] rounded-[16px] xl:block">
             <div
               className="flex flex-col items-start pb-[24px] pl-[16px] pr-[16px] pt-[16px]"
               aria-label="Tabs"
@@ -225,13 +225,13 @@ export default function UserProfilePage() {
               </div>
             </div>
           </Card>
-          <div className="inline-block lg:hidden">
+          <div className="inline-block xl:hidden">
             <Carousel
               opts={{
                 align: "start",
                 dragFree: true,
               }}
-              className="w-full max-w-sm"
+              className="w-full max-w-sm overflow-scroll"
               aria-label="Tabs"
               role="tablist"
               data-hs-tabs-vertical="false"

@@ -63,7 +63,7 @@ export default function InsuranceGuidePage() {
           </p>
         </div>
       </div>
-      <div className="card-ipp flex flex-col justify-between space-y-6 py-3 lg:mt-[40px]  lg:flex-row lg:space-x-6 lg:space-y-0 lg:px-[32px] ">
+      <div className="card-ipp flex flex-col justify-between space-y-6 py-3 lg:mt-[40px]  lg:px-[32px] xl:flex-row xl:space-x-6 xl:space-y-0 ">
         <div className="space-y-4">
           <Card className="rounded-[16px]">
             <div className="space-y-[36px] p-[24px] lg:px-[32px]">

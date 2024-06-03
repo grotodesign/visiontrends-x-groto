@@ -47,7 +47,7 @@ export default function InsuranceProfitPathwayPage() {
           </BreadcrumbList>
         </Breadcrumb>
       </div>
-      <div className="card-ipp flex flex-col justify-between space-y-6 py-3  lg:flex-row lg:space-x-6 lg:space-y-0 lg:px-[32px]">
+      <div className="card-ipp flex flex-col justify-between space-y-6 py-3  lg:px-[32px] xl:flex-row xl:space-x-6 xl:space-y-0">
         <div className="space-y-[32px]">
           <div>
             <Card className="rounded-[16px]">

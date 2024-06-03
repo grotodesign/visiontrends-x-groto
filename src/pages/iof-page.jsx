@@ -53,7 +53,7 @@ export default function IofPage() {
           </BreadcrumbList>
         </Breadcrumb>
       </div>
-      <div className="card-vsp flex flex-col justify-between space-y-6 py-3  lg:flex-row lg:space-x-6 lg:space-y-0 lg:px-[32px]">
+      <div className="card-vsp flex flex-col justify-between space-y-6 py-3  lg:px-[32px] xl:flex-row xl:space-x-6 xl:space-y-0">
         <div>
           <Card className="rounded-[16px]">
             <div className="space-y-6 p-5 lg:p-10">

@@ -19,7 +19,7 @@ export default function FeaturedVendor() {
                   Featured Vendors
                 </h1>
               </div>
-              <Separator className="vendorCardArea -ml-5 w-[400px] lg:-ml-5" />
+              <Separator className="vendorCardArea -ml-5 lg:-ml-5 xl:w-[400px]" />
               <Link
                 to="/vendor-partners/glimpse-live-llc/"
                 className="vendorCardAreaContent flex items-center space-x-2 md:space-x-[182px] lg:space-x-6"

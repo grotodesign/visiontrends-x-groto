@@ -113,8 +113,8 @@ export default function ReferPage() {
           Refer a New Member, Earn $500
         </h1>
       </div>
-      <div className="card-ipp flex flex-col-reverse justify-between  py-3  lg:flex-row lg:space-x-6 lg:space-y-0 lg:px-[32px] ">
-        <div className="mt-5 space-y-4 lg:mt-0">
+      <div className="card-ipp flex flex-col-reverse justify-between  py-3  lg:px-[32px] xl:flex-row xl:space-x-6 xl:space-y-0 ">
+        <div className="mt-5 space-y-4 lg:mt-5 xl:mt-0">
           <Card className="rounded-[16px]">
             <div className="space-y-6 p-5 lg:p-10">
               <div>
@@ -360,7 +360,7 @@ export default function ReferPage() {
             <h1 className="hidden font-avenirHeavy text-[18px] text-[#1C1C1C] lg:flex">
               How referral works ?
             </h1>
-            <Card className="rounded-[16px] lg:w-[358px]">
+            <Card className="rounded-[16px] xl:w-[358px]">
               <h1 className="flex p-[22px] font-avenirHeavy text-[18px] text-[#1C1C1C] lg:hidden">
                 How referral works ?
               </h1>

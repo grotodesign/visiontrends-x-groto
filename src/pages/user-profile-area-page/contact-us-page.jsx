@@ -58,9 +58,9 @@ export default function ContactUsPage() {
           Meet the Vision Trends Team
         </h1>
       </div>
-      <div className="card-ipp flex flex-col-reverse justify-between space-y-6 py-3  lg:flex-row lg:space-x-6 lg:space-y-0 lg:px-[32px] ">
+      <div className="card-ipp flex flex-col-reverse justify-between space-y-6 py-3  lg:px-[32px] xl:flex-row xl:space-x-6 xl:space-y-0 ">
         <div className="space-y-4">
-          <div className="mt-6 grid grid-cols-2 gap-4 lg:mt-0 lg:grid-cols-3 lg:gap-14">
+          <div className="mt-6 grid grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-14 xl:mt-0">
             {TeamMemberData.map((team) => (
               <TeamMemberCard key={team.id} team={team} />
             ))}

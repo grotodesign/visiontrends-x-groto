@@ -131,7 +131,7 @@ export default function EventDetailPage() {
       </div>
       <div className="card-vsp flex flex-col justify-between space-y-6 py-3  lg:flex-row lg:space-x-6 lg:space-y-0 lg:px-[32px]">
         <div>
-          <Card className="rounded-[16px] lg:w-[1120px]">
+          <Card className="rounded-[16px] xl:w-[1120px]">
             <div className="space-y-6 p-5 lg:p-10">
               <div className="space-y-4">
                 <div className="flex items-center space-x-2">

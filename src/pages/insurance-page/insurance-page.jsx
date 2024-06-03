@@ -52,7 +52,7 @@ export default function InsurancePage() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col justify-between space-x-6 space-y-6 py-8 lg:flex-row lg:space-y-0 lg:px-[32px]">
+      <div className="flex flex-col justify-between space-x-6 space-y-6 py-8 lg:px-[32px] xl:flex-row xl:space-y-0">
         <div className="card-ip-area grid justify-center gap-5 lg:grid-cols-2 lg:gap-6 lg:px-0">
           {InsuranceSolutionServicesData.map((offering) => (
             <InsuranceCard key={offering.id} offering={offering} />
