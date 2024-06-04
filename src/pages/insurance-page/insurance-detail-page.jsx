@@ -88,8 +88,8 @@ export default function InsuranceDetailPage() {
         <div>
           <Card className="rounded-[16px] lg:w-[770px] xl:w-[1136px]">
             <div className="space-y-6 p-5 lg:p-10">
-              <div className="flex flex-col space-y-3 lg:flex-row lg:items-center lg:justify-between lg:space-y-0">
-                <div>
+              <div className="flex flex-col-reverse space-y-3 lg:flex-row lg:items-center lg:justify-between lg:space-y-0">
+                <div className="mt-[16px] space-y-[12px] lg:mt-0 xl:space-x-[8px]">
                   <h1 className="font-avenirHeavy text-[20px] text-[#1F3E7C] lg:text-[24px]">
                     Amerigroup
                   </h1>
@@ -99,7 +99,10 @@ export default function InsuranceDetailPage() {
                 </div>
                 <div className="lg:w-auto">
                   <div className="">
-                    <img src={AmeriGroupIcon} className="w-[186.16px]" />
+                    <img
+                      src={AmeriGroupIcon}
+                      className="w-[103.42px] xl:w-[186.16px]"
+                    />
                   </div>
                 </div>
               </div>
@@ -129,22 +132,22 @@ export default function InsuranceDetailPage() {
           </Card>
         </div>
       </div>
-      <div className="card-vsp flex flex-col justify-between space-y-6 p-5 lg:px-[32px]">
+      <div className="card-vsp flex flex-col justify-between space-y-6  lg:px-[32px]">
         <h1>Attachment</h1>
         <div>
           <Card className="rounded-[16px] xl:w-[1136px]">
             <div className="space-y-6 p-5 lg:p-10">
-              <div className="flex flex-col space-y-[24px] lg:flex-row lg:items-center xl:space-x-6">
+              <div className="flex flex-col space-y-[24px] xl:flex-row xl:items-center xl:space-x-6 xl:space-y-0">
                 <div className="flex cursor-pointer items-center space-x-2 text-[#1F3E7C]">
-                  <Download />
-                  <h1 className="font-avenirRegular text-[16px] font-medium">
+                  <Download className="w-[13.33px]" />
+                  <h1 className="font-avenirRegular text-[14px] font-medium xl:text-[16px]">
                     AMERIGROUP-Cover-Sheet-1.pdf
                   </h1>
                 </div>
                 <div className="hidden h-[20px] min-h-[1em] w-0.5 self-stretch bg-[#E5E5E5] xl:inline-block"></div>
                 <div className="flex cursor-pointer items-center space-x-2 text-[#1F3E7C]">
-                  <Download />
-                  <h1 className="font-avenirRegular text-[16px] font-medium">
+                  <Download className="w-[13.33px]" />
+                  <h1 className="font-avenirRegular text-[14px] font-medium xl:text-[16px]">
                     AMERIGROUP-PreCert-Request-Form.pdf
                   </h1>
                 </div>

@@ -312,7 +312,7 @@ export default function UserProfilePage() {
         <div className="flex-1 space-y-4">
           <ScrollArea className="h-screen">
             <Card className="rounded-[16px]">
-              <div className="px-[40px] py-[32px]">
+              <div className="px-[20px] py-[20px] xl:px-[40px] xl:py-[32px]">
                 <Form {...form}>
                   <>
                     <form

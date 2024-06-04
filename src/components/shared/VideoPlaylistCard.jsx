@@ -13,10 +13,10 @@ export default function VideoPlaylistCard() {
           </h1>
           <img src={PlaylistImage} className="h-[48px] w-[74.48px]" />
           <div>
-            <h1 className="font-avenirHeavy text-[16px] font-semibold text-[#1C1C1C]">
+            <h1 className="font-avenirHeavy text-[12px] font-semibold text-[#1C1C1C] lg:text-[16px]">
               POYP Staff Discount
             </h1>
-            <div className="flex items-center font-avenirRegular text-[14px] text-[#646464]">
+            <div className="flex items-center font-avenirRegular text-[12px] text-[#646464] lg:text-[14px]">
               <p>05:32 min</p>
               <Dot />
               <p>25 views</p>

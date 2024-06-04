@@ -9,13 +9,13 @@ import { Link } from "react-router-dom";
 
 export default function LogoutDialog() {
   return (
-    <Popover>
+    <Popover className="">
       <PopoverTrigger asChild>
         <div className="cursor-pointer">
           <ChevronDown />
         </div>
       </PopoverTrigger>
-      <PopoverContent className="mr-44 mt-4 w-[220px] lg:mr-6 lg:w-56">
+      <PopoverContent className="mr-[135px] mt-4 w-[220px] lg:w-56 xl:mr-6">
         <div className="flex flex-col items-start space-y-6">
           <Link to="/my-profile">
             <div className="flex items-center justify-between space-x-2 text-[#1C1C1C]">

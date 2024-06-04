@@ -54,12 +54,15 @@ export default function MerchantPage() {
         <div className="space-y-4">
           <Card className="rounded-[16px]">
             <div className="space-y-6 p-5 lg:px-10 lg:py-[32px]">
-              <div className="flex flex-col space-y-3 lg:flex-row lg:items-center lg:justify-between lg:space-y-0">
+              <div className="flex flex-row items-center justify-between space-y-0">
                 <h1 className="font-avenirHeavy text-[20px] text-[#1F3E7C] lg:text-[24px]">
                   Merchant Services
                 </h1>
                 <div>
-                  <img src={CardKnoxImg} className="h-[48px] w-[200.11px]" />
+                  <img
+                    src={CardKnoxImg}
+                    className="h-[24px] w-[100.06px] xl:h-[48px] xl:w-[200.11px]"
+                  />
                 </div>
               </div>
               <div>

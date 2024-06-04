@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import FeaturedIllustrationIcon from "@/assets/icons/FeaturedIllustrationIcon";
 import FeaturedVendor from "@/components/home-page/FeaturedVendor/FeaturedVendor";
 import Hero from "@/components/home-page/Hero/Hero";
@@ -10,8 +10,20 @@ import MobileNav from "@/components/shared/MobileNav";
 import Navbar from "@/components/shared/Navbar";
 import OfferingCard from "@/components/shared/OfferingCard";
 import { OfferingsData } from "@/lib/data";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 export default function HomePage() {
+  const [showAllOfferings, setShowAllOfferings] = useState(false);
+  const [showVendor, setShowVendor] = useState(false);
+
+  const handleToggle = () => {
+    setShowVendor(!showVendor);
+  };
+
+  const handleViewAllClick = () => {
+    setShowAllOfferings(!showAllOfferings);
+  };
+
   return (
     <div className="">
       {/* Desktop Navbar and SubNavbar */}
@@ -39,14 +51,28 @@ export default function HomePage() {
         <h1 className="px-5 font-avenirHeavy text-[20px] lg:px-[32px]">
           Our Offerings
         </h1>
-        <p className="px-5 lg:hidden">View all</p>
+        <p
+          className="cursor-pointer px-5 lg:hidden"
+          onClick={handleViewAllClick}
+        >
+          {showAllOfferings ? "Hide all" : "View all"}
+        </p>
       </div>
 
       {/* Offerings and Side Cards Section */}
       <div className="lg:pl-[5px] lg:pr-[10px]">
-        <div className="flex flex-col justify-between space-x-[24px] space-y-[24px] py-8 lg:flex-row lg:space-y-0 lg:p-[24px]">
+        <div className="flex flex-col justify-between space-x-[24px] space-y-[24px] py-8 lg:flex-row lg:space-x-0 lg:space-y-0 lg:p-[24px]">
           {/* Offerings Cards */}
-          <div className="xl:cardArea grid justify-center gap-5 lg:px-0 xl:grid-cols-2 xl:gap-[24px]">
+          <div className=" cardArea grid justify-center gap-[24px] lg:hidden  lg:px-0">
+            {OfferingsData.slice(
+              0,
+              showAllOfferings ? OfferingsData.length : 1,
+            ).map((offering) => (
+              <OfferingCard key={offering.id} offering={offering} />
+            ))}
+          </div>
+
+          <div className="xl:cardArea hidden lg:grid lg:justify-center lg:gap-[24px] lg:px-0 xl:grid-cols-2">
             {OfferingsData.map((offering) => (
               <OfferingCard key={offering.id} offering={offering} />
             ))}

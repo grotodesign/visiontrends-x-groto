@@ -35,6 +35,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useState } from "react";
+import VTHowReferDropdown from "@/components/shared/VTHowReferDropdown";
 
 export default function ReferPage() {
   const [errors, setErrors] = useState({});
@@ -118,7 +119,9 @@ export default function ReferPage() {
           <Card className="rounded-[16px]">
             <div className="space-y-6 p-5 lg:p-10">
               <div>
-                <h1>Referral Details</h1>
+                <h1 className="font-avenirHeavy text-[18px] text-[#1C1C1C]">
+                  Referral Details
+                </h1>
               </div>
               <div>
                 <Form {...form}>
@@ -355,7 +358,7 @@ export default function ReferPage() {
             </div>
           </Card>
         </div>
-        <div className="space-y-4">
+        <div className="hidden space-y-4 lg:block">
           <div className="space-y-4">
             <h1 className="hidden font-avenirHeavy text-[18px] text-[#1C1C1C] lg:flex">
               How referral works ?
@@ -413,6 +416,9 @@ export default function ReferPage() {
               </div>
             </Card>
           </div>
+        </div>
+        <div className="block lg:hidden">
+          <VTHowReferDropdown />
         </div>
       </div>
     </div>

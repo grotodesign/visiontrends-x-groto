@@ -22,7 +22,7 @@ export default function FeaturedVendor() {
               <Separator className="vendorCardArea -ml-5 lg:-ml-5 xl:w-[400px]" />
               <Link
                 to="/vendor-partners/glimpse-live-llc/"
-                className="vendorCardAreaContent flex items-center space-x-2 md:space-x-[182px] lg:space-x-6"
+                className="vendorCardAreaContent flex items-center space-x-[20px] md:space-x-[182px] lg:space-x-6"
               >
                 <img src={ABBIcon} className="w-10" />
                 <h1 className="font-avenirRegular text-[14px] lg:w-[245px]">
@@ -32,7 +32,7 @@ export default function FeaturedVendor() {
               </Link>
               <Link
                 to="/vendor-partners/kattouf-consulting-services-inc/"
-                className="vendorCardAreaContent flex items-center space-x-2 md:space-x-[190px] lg:space-x-6"
+                className="vendorCardAreaContent flex items-center space-x-[28px] md:space-x-[190px] lg:space-x-6"
               >
                 <img src={KattoufIcon} className="w-10" />
                 <h1 className="font-avenirRegular text-[14px] lg:w-[245px]">
@@ -42,7 +42,7 @@ export default function FeaturedVendor() {
               </Link>
               <Link
                 to="/vendor-partners/abb-contact-lens"
-                className="vendorCardAreaContent flex items-center space-x-2 md:space-x-[138px] lg:space-x-6"
+                className="vendorCardAreaContent flex items-center space-x-[2px] md:space-x-[138px] lg:space-x-6"
               >
                 <img src={ABBConnectIcon} className="w-10" />
                 <h1 className="font-avenirRegular text-[14px] lg:w-[245px]">
@@ -52,7 +52,7 @@ export default function FeaturedVendor() {
               </Link>
               <Link
                 to="/vendor-partners/norwood"
-                className="vendorCardAreaContent flex items-center space-x-2 md:space-x-[190px] lg:space-x-6"
+                className="vendorCardAreaContent flex items-center space-x-[30px] md:space-x-[190px] lg:space-x-6"
               >
                 <img src={NorwoodIcon} className="w-10" />
                 <h1 className="font-avenirRegular text-[14px] lg:w-[245px]">

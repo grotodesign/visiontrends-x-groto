@@ -4,6 +4,7 @@ import GlobeIcon from "@/assets/icons/GlobeIcon";
 import DownloadDialog from "@/components/shared/DownloadDialog";
 import MobileNav from "@/components/shared/MobileNav";
 import Navbar from "@/components/shared/Navbar";
+import ReadMore from "@/components/shared/ReadMore";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   Breadcrumb,
@@ -132,7 +133,7 @@ export default function VendorDetailsPage() {
               <div className="space-y-8">
                 <div>
                   <h1 className="font-avenirRegular text-[14px] text-[#989898] lg:text-[16px]">
-                    {vendor.vendorDescription}
+                    <ReadMore>{vendor.vendorDescription}</ReadMore>
                   </h1>
                 </div>
                 <Separator />

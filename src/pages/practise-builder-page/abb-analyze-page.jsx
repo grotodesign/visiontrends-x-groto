@@ -104,10 +104,10 @@ export default function AbbAnalyzePage() {
                     <TableHeader>
                       <TableRow className="lg:h-[64px]">
                         <TableHead className="w-[160px] border border-[#E5E5E5]"></TableHead>
-                        <TableHead className="border border-[#E5E5E5] text-center">
+                        <TableHead className="border border-[#E5E5E5] text-center font-avenirRegular font-medium text-[#1C1C1C] lg:text-[16px]">
                           VT Member
                         </TableHead>
-                        <TableHead className="border border-[#E5E5E5] text-center">
+                        <TableHead className="border border-[#E5E5E5] text-center font-avenirRegular font-medium text-[#1C1C1C] lg:text-[16px]">
                           Retail
                         </TableHead>
                       </TableRow>
@@ -180,32 +180,32 @@ export default function AbbAnalyzePage() {
                     <TableHeader>
                       <TableRow className="lg:h-[64px]">
                         <TableHead className=" border border-[#E5E5E5]"></TableHead>
-                        <TableHead className="border border-[#E5E5E5] text-center">
+                        <TableHead className="border border-[#E5E5E5] text-center font-avenirRegular text-[8px] font-medium text-[#1C1C1C]">
                           VT Member
                         </TableHead>
-                        <TableHead className="border border-[#E5E5E5] text-center">
+                        <TableHead className="border border-[#E5E5E5] text-center font-avenirRegular text-[8px] font-medium text-[#1C1C1C]">
                           Retail
                         </TableHead>
                       </TableRow>
                     </TableHeader>
                     <TableBody>
                       <TableRow className="border border-[#E5E5E5] text-center">
-                        <TableCell className="border border-[#E5E5E5] text-center font-avenirRegular text-[14px] font-medium text-[#1C1C1C] lg:text-[16px]">
+                        <TableCell className="border border-[#E5E5E5] text-center font-avenirRegular text-[12px] font-medium text-[#1C1C1C] lg:text-[16px]">
                           Monthly Fees
                         </TableCell>
-                        <TableCell className="border border-[#E5E5E5] text-center font-avenirHeavy text-[14px] text-[#1F3E7C] lg:text-[16px]">
+                        <TableCell className="border border-[#E5E5E5] text-center font-avenirHeavy text-[12px] text-[#1F3E7C] lg:text-[16px]">
                           Free
                         </TableCell>
                         <TableCell className="border border-[#E5E5E5] text-center">
-                          <div className="space-y-2 text-[10px] text-[#646464] lg:text-[14px]">
+                          <div className="space-y-2 text-[6px] text-[#646464] lg:text-[14px]">
                             <h1>
-                              <span className="font-avenirHeavy text-[14px] text-[#1F3E7C] lg:text-[16px]">
+                              <span className="font-avenirHeavy text-[12px] text-[#1F3E7C] lg:text-[16px]">
                                 $65
                               </span>{" "}
                               /mo. Single Office
                             </h1>
                             <h1>
-                              <span className="font-avenirHeavy text-[14px] text-[#1F3E7C] lg:text-[16px]">
+                              <span className="font-avenirHeavy text-[12px] text-[#1F3E7C] lg:text-[16px]">
                                 $85
                               </span>{" "}
                               /mo. Multi Office
@@ -214,22 +214,22 @@ export default function AbbAnalyzePage() {
                         </TableCell>
                       </TableRow>
                       <TableRow className="border border-[#E5E5E5] text-center">
-                        <TableCell className="border border-[#E5E5E5] text-center font-avenirRegular text-[14px] font-medium text-[#1C1C1C] lg:text-[16px]">
+                        <TableCell className="border border-[#E5E5E5] text-center font-avenirRegular text-[12px] font-medium text-[#1C1C1C] lg:text-[16px]">
                           Yearly Fees
                         </TableCell>
-                        <TableCell className="border border-[#E5E5E5] text-center font-avenirHeavy text-[14px] text-[#1F3E7C] lg:text-[16px]">
+                        <TableCell className="border border-[#E5E5E5] text-center font-avenirHeavy text-[12px] text-[#1F3E7C] lg:text-[16px]">
                           Free
                         </TableCell>
                         <TableCell className="border border-[#E5E5E5] text-center">
-                          <div className="space-y-2 text-[10px] text-[#646464] lg:text-[14px]">
+                          <div className="space-y-2 text-[6px] text-[#646464] lg:text-[14px]">
                             <h1>
-                              <span className="font-avenirHeavy text-[14px] text-[#1F3E7C] lg:text-[16px]">
+                              <span className="font-avenirHeavy text-[12px] text-[#1F3E7C] lg:text-[16px]">
                                 $65
                               </span>{" "}
                               /mo. Single Office
                             </h1>
                             <h1>
-                              <span className="lg:text-[16px]] font-avenirHeavy text-[14px] text-[#1F3E7C]">
+                              <span className="lg:text-[16px]] font-avenirHeavy text-[12px] text-[#1F3E7C]">
                                 $85
                               </span>{" "}
                               /mo. Multi Office
@@ -238,13 +238,13 @@ export default function AbbAnalyzePage() {
                         </TableCell>
                       </TableRow>
                       <TableRow className="border border-[#E5E5E5] text-center">
-                        <TableCell className="border border-[#E5E5E5] text-center font-avenirRegular text-[14px] font-medium text-[#1C1C1C] lg:text-[16px]">
+                        <TableCell className="border border-[#E5E5E5] text-center font-avenirRegular text-[12px] font-medium text-[#1C1C1C] lg:text-[16px]">
                           Set-up Fees
                         </TableCell>
-                        <TableCell className="border border-[#E5E5E5] text-center font-avenirHeavy text-[14px] text-[#1F3E7C] lg:text-[16px]">
+                        <TableCell className="border border-[#E5E5E5] text-center font-avenirHeavy text-[12px] text-[#1F3E7C] lg:text-[16px]">
                           Free
                         </TableCell>
-                        <TableCell className="border border-[#E5E5E5] text-center font-avenirHeavy text-[14px] text-[#1F3E7C] lg:text-[16px]">
+                        <TableCell className="border border-[#E5E5E5] text-center font-avenirHeavy text-[12px] text-[#1F3E7C] lg:text-[16px]">
                           Free
                         </TableCell>
                       </TableRow>

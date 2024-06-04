@@ -16,6 +16,7 @@ import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import EyeCareProIcon from "@/assets/eyecarepro.png";
 import { Button } from "@/components/ui/button";
+import ReadMore from "@/components/shared/ReadMore";
 
 export default function EyeCareProPage() {
   const handleEmailClick = () => {
@@ -97,21 +98,24 @@ export default function EyeCareProPage() {
               </div>
               <div>
                 <p className="font-avenirRegular text-[14px] text-[#989898] lg:text-[16px]">
-                  EyeCarePro is the industry leader in marketing for eye care.
-                  With over 1800 clients, we are constantly evolving to meet the
-                  needs of practices as the industry changes. We continuously
-                  develop the most advanced marketing strategies, customized to
-                  fit the needs of every different kind of practice out there,
-                  from single-doctor community practices to multi-location urban
-                  powerhouses. From general eyecare to the most advanced
-                  optometric and ophthalmic procedures and therapies now
-                  available, our general and specialized services are uniquely
-                  positioned to fit the needs of your practice. We’re a
-                  people-driven company, which lies at the very core of the
-                  values we provide. Your will receive easily accessible and
-                  lightning-fast support, a dedicated team of designers and SEO
-                  analysts, and talented optometry marketing experts work
-                  alongside you to ensure continued and sustained growth.
+                  <ReadMore>
+                    EyeCarePro is the industry leader in marketing for eye care.
+                    With over 1800 clients, we are constantly evolving to meet
+                    the needs of practices as the industry changes. We
+                    continuously develop the most advanced marketing strategies,
+                    customized to fit the needs of every different kind of
+                    practice out there, from single-doctor community practices
+                    to multi-location urban powerhouses. From general eyecare to
+                    the most advanced optometric and ophthalmic procedures and
+                    therapies now available, our general and specialized
+                    services are uniquely positioned to fit the needs of your
+                    practice. We’re a people-driven company, which lies at the
+                    very core of the values we provide. Your will receive easily
+                    accessible and lightning-fast support, a dedicated team of
+                    designers and SEO analysts, and talented optometry marketing
+                    experts work alongside you to ensure continued and sustained
+                    growth.
+                  </ReadMore>
                 </p>
               </div>
               <Separator />
@@ -144,13 +148,13 @@ export default function EyeCareProPage() {
                 </div>
                 <div>
                   <p className="font-avenirRegular text-[14px] text-[#989898] lg:text-[16px]">
-                    Simply
+                    Simply{" "}
                     <span
                       className="cursor-pointer underline underline-offset-2"
                       onClick={handleWebsiteClick}
                     >
                       click here
-                    </span>
+                    </span>{" "}
                     and provide a meeting date and time, and an EyeCarePro
                     representative with contact you and start the process of
                     bringing your practice online.

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import dayjs from "dayjs";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function Calendar({ onDateChange, view }) {
   const [currentDate, setCurrentDate] = useState(dayjs());
@@ -60,12 +60,15 @@ export default function Calendar({ onDateChange, view }) {
 
   return (
     <div className="relative">
-      <div className="flex items-center justify-between lg:space-x-6 lg:p-4">
+      <div className="flex w-[135px] items-center justify-between lg:w-[300px] lg:space-x-6 lg:p-4">
         <button onClick={handlePrev}>
           <ChevronLeft className="h-4 w-4 text-[#646464]" />
         </button>
-        <div className="w-[100px] cursor-pointer font-avenirHeavy text-[12px] text-[#1C1C1C] lg:w-auto lg:text-[20px]">
-          {getTitle()}
+        <div className="flex cursor-pointer items-center space-x-2 font-avenirHeavy  text-[#1C1C1C] lg:w-auto lg:text-[20px]">
+          <h1 className="text-[14px]">{getTitle()}</h1>
+          <div className="rounded-full bg-[#FFFFFF] p-[5px]">
+            <ChevronDown className="h-[12px] w-[12px]" />
+          </div>
         </div>
         <button onClick={handleNext} className="">
           <ChevronRight className="h-4 w-4 text-[#646464]" />

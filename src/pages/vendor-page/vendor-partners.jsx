@@ -85,7 +85,7 @@ export default function VendorPartnersPage() {
                 placeholder="Search Vendor"
                 value={searchValue}
                 onChange={(e) => setSearchValue(e.target.value)}
-                className="focus:outline-buttonprimary h-[32px] w-[185px] rounded-[8px] border border-gray-300 py-3 pl-10 font-avenirRegular text-[16px] md:w-[550px] lg:h-[40px] lg:w-[400px]"
+                className="focus:outline-buttonprimary h-[32px] w-[175px] rounded-[8px] border border-gray-300 py-3 pl-10 font-avenirRegular text-[16px] md:w-[550px] lg:h-[40px] lg:w-[400px]"
               />
               <SearchIcon className="absolute left-3 top-1/2 h-[14.5px] w-[14.5px] -translate-y-1/2 transform text-[#B6B6B6] lg:left-3" />
             </div>

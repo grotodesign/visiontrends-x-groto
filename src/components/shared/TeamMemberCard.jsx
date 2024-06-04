@@ -7,7 +7,10 @@ export default function TeamMemberCard({ team }) {
     <div className="space-y-4">
       <div className="flex rounded-[12px] bg-[#F0F7FE] ">
         <div className="mt-[26px]">
-          <img src={team.profilePic} className="lg:w-[224px]" />
+          <img
+            src={team.profilePic}
+            className="h-[146px] lg:h-auto lg:w-[224px]"
+          />
         </div>
       </div>
       <div className="space-y-2 text-center">
@@ -15,13 +18,13 @@ export default function TeamMemberCard({ team }) {
           <h1 className="font-avenirHeavy text-[16px] text-[#1C1C1C]">
             {team.name}
           </h1>
-          <h1 className="font-avenirRegular text-[14px] text-[#989898]">
+          <h1 className="font-avenirRegular text-[10px] text-[#989898]">
             {team.designation}
           </h1>
         </div>
         <div className="flex items-center justify-center space-x-4">
           <img src={EmailIcon} className="w-[20px]" />
-          <img src={CallIcon} className="w-[20px]" />
+          <img src={CallIcon} className="w-[16px]" />
         </div>
       </div>
     </div>

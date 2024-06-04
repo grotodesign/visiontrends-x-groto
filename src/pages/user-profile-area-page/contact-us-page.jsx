@@ -16,6 +16,7 @@ import GlobeIcon from "@/assets/icons/GlobeIcon";
 import { MapPin } from "lucide-react";
 import TeamMemberCard from "@/components/shared/TeamMemberCard";
 import { TeamMemberData } from "@/lib/data";
+import VTContactDetailsDropdown from "@/components/shared/VTContactDetailsDropdown";
 
 export default function ContactUsPage() {
   const handleEmailClick = () => {
@@ -66,7 +67,7 @@ export default function ContactUsPage() {
             ))}
           </div>
         </div>
-        <div className="space-y-4">
+        <div className="hidden space-y-4 lg:block">
           <div className="card-contact-ipp space-y-4">
             <h1 className="px-1 font-avenirHeavy text-[18px] text-[#1C1C1C] lg:px-0">
               VT Contact Details
@@ -102,6 +103,9 @@ export default function ContactUsPage() {
               </div>
             </Card>
           </div>
+        </div>
+        <div className="block lg:hidden">
+          <VTContactDetailsDropdown />
         </div>
       </div>
     </div>

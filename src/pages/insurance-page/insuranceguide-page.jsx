@@ -1,5 +1,6 @@
 import MobileNav from "@/components/shared/MobileNav";
 import Navbar from "@/components/shared/Navbar";
+import VTKnowInsuranceDropdown from "@/components/shared/VTKnowInsuranceDropdown";
 import InsuranceGuideCard from "@/components/shared/insuranceGuideCard";
 import {
   Breadcrumb,
@@ -63,8 +64,8 @@ export default function InsuranceGuidePage() {
           </p>
         </div>
       </div>
-      <div className="card-ipp flex flex-col justify-between space-y-6 py-3 lg:mt-[40px]  lg:px-[32px] xl:flex-row xl:space-x-6 xl:space-y-0 ">
-        <div className="space-y-4">
+      <div className="card-ipp flex flex-col-reverse justify-between space-y-6 py-3 lg:mt-[40px]  lg:px-[32px] xl:flex-row xl:space-x-6 xl:space-y-0 ">
+        <div className="mt-[20px] space-y-4 lg:mt-0">
           <Card className="rounded-[16px]">
             <div className="space-y-[36px] p-[24px] lg:px-[32px]">
               <div className="insurance-guide">
@@ -105,7 +106,7 @@ export default function InsuranceGuidePage() {
             </div>
           </Card>
         </div>
-        <div className="space-y-4">
+        <div className="hidden space-y-4 lg:block">
           <div className="card-contact-ipp space-y-4">
             <Card className="card-vendor-contact rounded-[16px] lg:w-[358px]">
               <div className="space-y-4 p-6 lg:p-8">
@@ -150,6 +151,9 @@ export default function InsuranceGuidePage() {
               </div>
             </Card>
           </div>
+        </div>
+        <div className="block lg:hidden">
+          <VTKnowInsuranceDropdown />
         </div>
       </div>
     </div>
