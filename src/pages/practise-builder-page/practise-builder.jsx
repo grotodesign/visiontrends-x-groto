@@ -48,7 +48,7 @@ export default function PractiseBuilderPage() {
         </div>
       </div>
       <div className="flex flex-col justify-between space-x-6 space-y-6 py-8 lg:flex-row lg:space-y-0 lg:px-[32px]">
-        <div className="card-ip-area grid justify-center gap-5 lg:grid-cols-2 lg:gap-6 lg:px-0">
+        <div className="card-ip-area grid justify-center gap-5 lg:px-0 xl:grid-cols-2 xl:gap-6">
           {PracticeBuilderServiceData.map((offering) => (
             <PracticeBuilderCard key={offering.id} offering={offering} />
           ))}

@@ -113,7 +113,7 @@ export default function Manager360Page() {
             <h1 className="font-avenirHeavy text-[18px] text-[#1C1C1C]">
               Register Now
             </h1>
-            <Card className="rounded-[16px] lg:w-[358px]">
+            <Card className="rounded-[16px] xl:w-[358px]">
               <div className="flex space-x-6 p-[24px]">
                 <div className="flex items-center">
                   <img src={QRImg} className="h-[84px] w-[84px]" />
@@ -136,7 +136,7 @@ export default function Manager360Page() {
             <h1 className="font-avenirHeavy text-[18px] text-[#1C1C1C]">
               Pricing Details
             </h1>
-            <Card className=" rounded-[16px] lg:w-[358px]">
+            <Card className=" rounded-[16px] xl:w-[358px]">
               <div className="space-y-6 p-6 lg:p-8">
                 <div className="space-y-2">
                   <h1 className="font-avenirRegular text-[18px] font-medium text-[#1C1C1C]">
@@ -180,7 +180,7 @@ export default function Manager360Page() {
             <h1 className="font-avenirHeavy text-[18px] text-[#1C1C1C]">
               Meet Your Instructor
             </h1>
-            <Card className=" rounded-[16px] lg:w-[358px]">
+            <Card className=" rounded-[16px] xl:w-[358px]">
               <div className="flex items-center space-x-4 p-[24px]">
                 <div className="flex items-center">
                   <Avatar className="h-[48px] w-[48px]">

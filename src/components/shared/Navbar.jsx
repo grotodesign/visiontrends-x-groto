@@ -42,7 +42,7 @@ export default function Navbar() {
                 value={searchValue}
                 onChange={handleInputChange}
                 onKeyPress={handleSearchKeyPress}
-                className="focus:outline-buttonprimary h-[40px] w-[400px] rounded-[8px] border border-gray-300 py-3 pl-10 font-avenirRegular text-[16px]"
+                className="focus:outline-buttonprimary h-[40px] rounded-[8px] border border-gray-300 py-3 pl-10 font-avenirRegular text-[16px] xl:w-[400px]"
               />
               <SearchIcon className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 transform text-gray-400 lg:left-3" />
               {showSuggestions && (

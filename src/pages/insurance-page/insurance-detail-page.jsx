@@ -86,7 +86,7 @@ export default function InsuranceDetailPage() {
       </div>
       <div className="card-vsp flex flex-col justify-between space-y-6 py-3  lg:flex-row lg:space-x-6 lg:space-y-0 lg:px-[32px]">
         <div>
-          <Card className="rounded-[16px] lg:w-[1136px]">
+          <Card className="rounded-[16px] lg:w-[770px] xl:w-[1136px]">
             <div className="space-y-6 p-5 lg:p-10">
               <div className="flex flex-col space-y-3 lg:flex-row lg:items-center lg:justify-between lg:space-y-0">
                 <div>
@@ -104,7 +104,7 @@ export default function InsuranceDetailPage() {
                 </div>
               </div>
               <Separator />
-              <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-5">
+              <div className="flex flex-col space-y-4 lg:flex-row lg:items-center lg:space-x-5 xl:space-y-0">
                 <div
                   className="flex cursor-pointer items-center space-x-3"
                   onClick={handleWebsiteClick}
@@ -114,7 +114,7 @@ export default function InsuranceDetailPage() {
                     http://www.amerigroup.com
                   </h1>
                 </div>
-                <div className="inline-block h-[20px] min-h-[1em] w-0.5 self-stretch bg-[#E5E5E5]"></div>
+                <div className="hidden h-[20px] min-h-[1em] w-0.5 self-stretch bg-[#E5E5E5] xl:inline-block"></div>
                 <div className="flex cursor-pointer items-center space-x-3">
                   <img src={CallIcon} className="w-[20px]" />
                   <h1
@@ -132,16 +132,16 @@ export default function InsuranceDetailPage() {
       <div className="card-vsp flex flex-col justify-between space-y-6 p-5 lg:px-[32px]">
         <h1>Attachment</h1>
         <div>
-          <Card className="rounded-[16px] lg:w-[1136px]">
+          <Card className="rounded-[16px] xl:w-[1136px]">
             <div className="space-y-6 p-5 lg:p-10">
-              <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-6">
+              <div className="flex flex-col space-y-[24px] lg:flex-row lg:items-center xl:space-x-6">
                 <div className="flex cursor-pointer items-center space-x-2 text-[#1F3E7C]">
                   <Download />
                   <h1 className="font-avenirRegular text-[16px] font-medium">
                     AMERIGROUP-Cover-Sheet-1.pdf
                   </h1>
                 </div>
-                <div className="inline-block h-[20px] min-h-[1em] w-0.5 self-stretch bg-[#E5E5E5]"></div>
+                <div className="hidden h-[20px] min-h-[1em] w-0.5 self-stretch bg-[#E5E5E5] xl:inline-block"></div>
                 <div className="flex cursor-pointer items-center space-x-2 text-[#1F3E7C]">
                   <Download />
                   <h1 className="font-avenirRegular text-[16px] font-medium">

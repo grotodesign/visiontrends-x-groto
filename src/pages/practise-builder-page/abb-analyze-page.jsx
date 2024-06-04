@@ -260,7 +260,7 @@ export default function AbbAnalyzePage() {
             <h1 className="font-avenirHeavy text-[18px] text-[#1C1C1C]">
               Schedule a free demo or sign up today!
             </h1>
-            <Card className="card-vendor-contact rounded-[16px] lg:w-[358px]">
+            <Card className="card-vendor-contact rounded-[16px] xl:w-[358px]">
               <div className="space-y-[24px] p-6 lg:p-8">
                 <div className="flex items-center space-x-6">
                   <div>
@@ -309,7 +309,7 @@ export default function AbbAnalyzePage() {
             <h1 className="font-avenirHeavy text-[18px] text-[#1C1C1C]">
               Meet Your Instructor
             </h1>
-            <Card className=" rounded-[16px] lg:w-[358px]">
+            <Card className=" rounded-[16px] xl:w-[358px]">
               <div className="flex items-center space-x-4 p-[24px]">
                 <div className="flex items-center">
                   <Avatar className="h-[48px] w-[48px]">
