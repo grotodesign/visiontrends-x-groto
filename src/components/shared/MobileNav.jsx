@@ -343,11 +343,11 @@ export default function MobileNav() {
             <div className="border-r-2">
               <Bell className="w-12 text-[#646464]" />
             </div>
-            <div>
+            <Link to="/sales-submission">
               <Button className="font-avenirRegular font-medium">
                 Sales Submission
               </Button>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
