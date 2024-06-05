@@ -27,7 +27,7 @@ export default function MobileHero() {
             </div>
           </div>
           <div className="-mt-16 flex justify-end">
-            <img src={HeroImage} className="h-[100px]" />
+            <img src={HeroImage} className="h-[70px]" />
           </div>
         </div>
         <div></div>
