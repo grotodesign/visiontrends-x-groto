@@ -7,7 +7,7 @@ import EmailIcon from "@/assets/icons/EmailIcon";
 export default function VendorPartnersBookmarkedCard({ vendor }) {
   return (
     <>
-      <Card className="card-vendor rounded-[16px] bg-gradient-to-t from-[#F6F9FF] to-[#EDF3FF]">
+      <Card className="card-vendor rounded-[16px] bg-gradient-to-tr from-[#F6F9FF] to-[#EDF3FF]">
         <div className="space-y-6 px-5 py-5">
           <div className="">
             <img src={vendor.vendorLogo} className="w-[119px]" />

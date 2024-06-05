@@ -1215,7 +1215,15 @@
 
 @media screen and (min-width: 930px) {
   .card {
-    width: 100px;
+    width: 900px;
+  }
+
+  .navbar {
+    width: 930px;
+  }
+
+  .subnavbar {
+    width: 930px;
   }
 
   .card-area-layout {
@@ -1250,7 +1258,7 @@
   }
 
   .pulseCard {
-    width: 80px;
+    width: 910px;
   }
 
   .form-area-5 {
@@ -1306,6 +1314,14 @@
     height: 64px;
   }
 
+  .vendorCardArea {
+    width: 890px;
+  }
+
+  .card-1 {
+    width: 900px;
+  }
+
   .card-vsp {
     width: 100%;
     margin-left: 0px;
@@ -1320,12 +1336,155 @@
     margin-left: 0px;
   }
 
+  .offeringContainer {
+    width: 935px;
+  }
+
   .breadcrumbs-area {
     width: 100%;
   }
 }
 
-@media screen and (min-width: 985px) {
+@media screen and (min-width: 940px) {
+  .card {
+    width: 100px;
+  }
+
+  .navbar {
+    width: 950px;
+  }
+
+  .subnavbar {
+    width: 950px;
+  }
+
+  .card-1 {
+    width: 910px;
+  }
+
+  .card-area-layout {
+    max-width: 1136px;
+  }
+
+  .offeringContainer {
+    width: 945px;
+  }
+  .card {
+    width: 910px;
+  }
+
+  .form-area {
+    width: 317px;
+  }
+
+  .form-area-1 {
+    width: 512px;
+  }
+  .image-area {
+    height: 235px;
+    width: 660px;
+  }
+
+  .form-area-2 {
+    width: 160px;
+  }
+
+  .eventDateCard {
+    width: 160px;
+  }
+
+  .form-area-3 {
+    width: 272px;
+  }
+  .form-area-4 {
+    width: 560px;
+  }
+
+  .pulseCard {
+    width: 925px;
+  }
+
+  .form-area-5 {
+    width: 248px;
+  }
+
+  .form-area-6 {
+    width: 175px;
+  }
+
+  .video-area {
+    border-radius: 16px;
+  }
+
+  .card-insurance {
+    width: 930px;
+  }
+
+  .carousel-area {
+    width: 666px;
+    height: 328px;
+  }
+
+  .insurance-guide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .vendor-area-1 {
+    width: 100%;
+  }
+  .card-vendor {
+    width: 940px;
+    height: 296px;
+  }
+
+  .card-merchant-area {
+    margin-left: -18px;
+  }
+  .card-rate {
+    width: 930px;
+  }
+
+  .card-ipp {
+    width: 930px;
+    margin-left: 20px;
+  }
+
+  .vendorCardArea {
+    width: 900px;
+  }
+
+  .card-sbap {
+    width: 1056px;
+    height: 64px;
+  }
+
+  .card-vsp {
+    width: 930px;
+    margin-left: 20px;
+  }
+
+  .player {
+    width: 445px;
+  }
+
+  .card-vendor-detaiils {
+    width: 930px;
+    margin-left: 20px;
+  }
+
+  .card-vendor-contact {
+    width: 930px;
+  }
+
+  .breadcrumbs-area {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 970px) {
   .card {
     width: 100px;
   }
@@ -1744,7 +1903,8 @@
 
 @media screen and (min-width: 1020px) {
   .card {
-    width: 280px;
+    width: 300px;
+    margin-right: 10px;
   }
   .card-vendor {
     width: 345px;
@@ -2018,7 +2178,7 @@
 
 @media screen and (min-width: 1093px) {
   .card {
-    width: 170px;
+    width: 350px;
   }
   .card-vendor {
     width: 375px;
@@ -2273,7 +2433,7 @@
 
 @media screen and (min-width: 1150px) {
   .card {
-    width: 200px;
+    width: 400px;
   }
 
   .card-area-layout {
@@ -2497,7 +2657,7 @@
 
 @media screen and (min-width: 1200px) {
   .card {
-    width: 240px;
+    width: 460px;
   }
 
   .card-area-layout {
@@ -2716,6 +2876,36 @@
 
   .breadcrumbs-area {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .card {
+    width: 520px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .card {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  .card {
+    width: 290px;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .card {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .card {
+    width: 330px;
   }
 }
 
