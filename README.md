@@ -44,3 +44,35 @@ If the credentials are not set, then please follow the following steps.
 - After installation is complete, to run the project type command "npm run dev"
 - This will spin up the code and open it in your default browser.
 ```
+
+## File Structure
+
+The project directory is organized as follows:
+
+```
+visiontrends-x-groto/
+│
+├── api/                            # Backend API routes
+│
+├── assets/                         # Static assets such as images, fonts, etc.
+│
+├── components/                     # Reusable components
+│   ├── home-page/                  # Components specific to the home page
+│   ├── sales-submission-table/     # Components for sales submission table
+│   ├── shared/                     # Shared components used across different parts of the application
+│   └── ui/                         # UI components like buttons, inputs, etc.
+│
+├── lib/                            # Utility functions and libraries
+│   ├── data.js                     # Mock database for whole website
+│   ├── utils.js                    # utils
+│
+├── pages/                          # Page components corresponding to different routes
+│
+├── public/                         # Publicly accessible files like favicon, etc.
+│
+├── .gitignore                      # Git ignore file
+│
+├── package.json                    # npm package configuration
+│
+├── README.md                       # Project documentation
+```
