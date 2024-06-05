@@ -133,7 +133,7 @@ export default function MobileNav() {
               <SheetTrigger>
                 <AlignJustify className="cursor-pointer" />
               </SheetTrigger>
-              <SheetContent side="left" className="w-[260px] p-5">
+              <SheetContent side="left" className="w-[260px] p-5 overflow-y-auto">
                 <div className="flex flex-col">
                   <Link
                     to="/"
