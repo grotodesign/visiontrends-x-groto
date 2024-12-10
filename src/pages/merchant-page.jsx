@@ -23,6 +23,7 @@ import {
 } from "@/components/ui/table";
 import { CircleAlert } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function MerchantPage() {
   const handleEmailClick = () => {
@@ -32,17 +33,17 @@ export default function MerchantPage() {
   const [activeTab, setActiveTab] = useState("monthly");
 
   const monthlyData = [
-    { program: "Cold Start Office", programdescription:"(includes group contract & 1 owner doctor)", programsubdetail:"Cold Start: Additional Doctors (added at the same time)", affiliate: "$220", affiliate2:"$90", profitPlus: "$90", profitPlus2:"$130" },
-    { program: "Established Office", programdescription:"", programsubdetail:"Established Office: Additional Doctors(added at the same time)", programsetup:"Setup Fee (one time, per office)", affiliate: "$150", affiliate2:"$70", profitPlus: "$75", profitPlus2:"$130", setupAffiliate:"$100", setupProfit:"$200" },
-    { program: "Established Office - Credentialing Maintenance", programdescription:"", programsubdetail:"a la carte adding a NEW plan", programsubdetail1:"a la carte additional doctors (added at the same time)", programsetup:"Annual Maintenance Fee (one time, per office)", affiliate: "$150", affiliate2:"$125", affiliate3:"$25", profitPlus: "$75", profitPlus2:"$225", profitPlus3:"$75", setupAffiliate:"$50", setupProfit:"$100" },
-    { program: "Established Office a la carte(per enrolment application)",programdescription:"", programsubdetail:"a la carte Additional Doctors(added at the same time)", programsetup:"Annual Maintenance Fee (one time, per office)", affiliate: "$150",affiliate2:"$50", setupAffiliate:"$50", profitPlus: "$75", profitPlus2:"$100", setupProfit:"$100" },
+    { program: "Cold Start Office", programdescription:"(includes group contract & 1 owner doctor)", programsubdetail:"Cold Start: Additional Doctors (added at the same time)", affiliate: "$220", affiliate2:"$90", profitPlus: "$90", profitPlus2:"$130" ,link: "/merchant-services/program-details" },
+    { program: "Established Office", programdescription:"", programsubdetail:"Established Office: Additional Doctors(added at the same time)", programsetup:"Setup Fee (one time, per office)", affiliate: "$150", affiliate2:"$70", profitPlus: "$75", profitPlus2:"$130", setupAffiliate:"$100", setupProfit:"$200",link: "/merchant-services/program-details" },
+    { program: "Established Office - Credentialing Maintenance", programdescription:"", programsubdetail:"a la carte adding a NEW plan", programsubdetail1:"a la carte additional doctors (added at the same time)", programsetup:"Annual Maintenance Fee (one time, per office)", affiliate: "$150", affiliate2:"$125", affiliate3:"$25", profitPlus: "$75", profitPlus2:"$225", profitPlus3:"$75", setupAffiliate:"$50", setupProfit:"$100",link: "/merchant-services/program-details" },
+    { program: "Established Office a la carte(per enrolment application)",programdescription:"", programsubdetail:"a la carte Additional Doctors(added at the same time)", programsetup:"Annual Maintenance Fee (one time, per office)", affiliate: "$150",affiliate2:"$50", setupAffiliate:"$50", profitPlus: "$75", profitPlus2:"$100", setupProfit:"$100",link: "/merchant-services/program-details" },
   ];
 
   const annualData = [
-    { program: "Cold Start Office", programdescription:"(includes group contract & 1 owner doctor)", programsubdetail:"Cold Start: Additional Doctors (added at the same time)", affiliate: "$2000",affiliate2:"$90", profitPlus: "$1500",profitPlus2:"$130" },
-    { program: "Established Office", programdescription:"", programsubdetail:"Established Office: Additional Doctors(added at the same time)", programsetup:"Setup Fee (one time, per office)", affiliate: "$2500", affiliate2:"$70", profitPlus: "$1800", profitPlus2:"$130", setupAffiliate:"$100", setupProfit:"$200" },
-    { program: "Established Office - Credentialing Maintenance", programdescription:"", programsubdetail:"a la carte adding a NEW plan", programsubdetail1:"a la carte additional doctors(added at the same time)", programsetup:"Annual Maintenance Fee (one time, per office)", affiliate: "$2000",affiliate2:"$125", affiliate3:"$25", profitPlus: "$1500",profitPlus2:"$225", profitPlus3:"$75",setupAffiliate:"$50", setupProfit:"$100" },
-    { program: "Established Office a la carte(per enrolment application)", programdescription:"", programsubdetail:"a la carte Additional Doctors(added at the same time)", programsetup:"Annual Maintenance Fee (one time, per office)", affiliate: "$2000",affiliate2:"$50", setupAffiliate:"$50", profitPlus: "$1500",profitPlus2:"$100", setupProfit:"$100" },
+    { program: "Cold Start Office", programdescription:"(includes group contract & 1 owner doctor)", programsubdetail:"Cold Start: Additional Doctors (added at the same time)", affiliate: "$2000",affiliate2:"$90", profitPlus: "$1500",profitPlus2:"$130",link: "/merchant-services/program-details" },
+    { program: "Established Office", programdescription:"", programsubdetail:"Established Office: Additional Doctors(added at the same time)", programsetup:"Setup Fee (one time, per office)", affiliate: "$2500", affiliate2:"$70", profitPlus: "$1800", profitPlus2:"$130", setupAffiliate:"$100", setupProfit:"$200",link: "/merchant-services/program-details" },
+    { program: "Established Office - Credentialing Maintenance", programdescription:"", programsubdetail:"a la carte adding a NEW plan", programsubdetail1:"a la carte additional doctors(added at the same time)", programsetup:"Annual Maintenance Fee (one time, per office)", affiliate: "$2000",affiliate2:"$125", affiliate3:"$25", profitPlus: "$1500",profitPlus2:"$225", profitPlus3:"$75",setupAffiliate:"$50", setupProfit:"$100",link: "/merchant-services/program-details" },
+    { program: "Established Office a la carte(per enrolment application)", programdescription:"", programsubdetail:"a la carte Additional Doctors(added at the same time)", programsetup:"Annual Maintenance Fee (one time, per office)", affiliate: "$2000",affiliate2:"$50", setupAffiliate:"$50", profitPlus: "$1500",profitPlus2:"$100", setupProfit:"$100",link: "/merchant-services/program-details" },
   ];
 
   const renderTable = (data) => (
@@ -60,15 +61,16 @@ export default function MerchantPage() {
           </TableHead>
         </TableRow>
       </TableHeader>
-      <TableBody>
+      <TableBody>  
         {data.map((row, index) => (
           <TableRow key={index} className="">
+            <Link to={row?.link}>
             <TableCell>
               <div className="space-y-1">
                 <h1 className="font-avenirRegular font-semibold text-[#1F3E7C] lg:text-[14px]">
                   {row.program}
                 </h1>
-                <p className="font-avenirRegular text-[#1C1C1C] lg:text-[14px]">
+                <p className="font-avenirRegular text-[#0a0a0a] lg:text-[14px]">
                   {row?.programdescription}
                 </p>
                 <p className="font-avenirRegular text-[#989898] lg:text-[14px]">
@@ -82,6 +84,7 @@ export default function MerchantPage() {
                 </p>
               </div>
             </TableCell>
+            </Link>
             <TableCell>
               <div className="lg:space-y-2">
                 <h1 className="font-avenirRegular font-semibold text-[#1F3E7C] lg:text-[14px] text-center">
