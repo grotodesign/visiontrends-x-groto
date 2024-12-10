@@ -32,17 +32,17 @@ export default function MerchantPage() {
   const [activeTab, setActiveTab] = useState("monthly");
 
   const monthlyData = [
-    { program: "Cold Start Office", affiliate: "$220", profitPlus: "$90" },
-    { program: "Established Office", affiliate: "$150", profitPlus: "$75" },
-    { program: "Established Office - Credentialing Maintenance", affiliate: "$150", profitPlus: "$75" },
-    { program: "Established Office a la carte(per enrolment application)", affiliate: "$150", profitPlus: "$75" },
+    { program: "Cold Start Office", programdescription:"(includes group contract & 1 owner doctor)", programsubdetail:"Cold Start: Additional Doctors (added at the same time)", affiliate: "$220", affiliate2:"$90", profitPlus: "$90", profitPlus2:"$130" },
+    { program: "Established Office", programdescription:"", programsubdetail:"Established Office: Additional Doctors(added at the same time)", programsetup:"Setup Fee (one time, per office)", affiliate: "$150", affiliate2:"$70", profitPlus: "$75", profitPlus2:"$130", setupAffiliate:"$100", setupProfit:"$200" },
+    { program: "Established Office - Credentialing Maintenance", programdescription:"", programsubdetail:"a la carte adding a NEW plan", programsubdetail1:"a la carte additional doctors (added at the same time)", programsetup:"Annual Maintenance Fee (one time, per office)", affiliate: "$150", affiliate2:"$125", affiliate3:"$25", profitPlus: "$75", profitPlus2:"$225", profitPlus3:"$75", setupAffiliate:"$50", setupProfit:"$100" },
+    { program: "Established Office a la carte(per enrolment application)",programdescription:"", programsubdetail:"a la carte Additional Doctors(added at the same time)", programsetup:"Annual Maintenance Fee (one time, per office)", affiliate: "$150",affiliate2:"$50", setupAffiliate:"$50", profitPlus: "$75", profitPlus2:"$100", setupProfit:"$100" },
   ];
 
   const annualData = [
-    { program: "Cold Start Office", affiliate: "$2000", profitPlus: "$1500" },
-    { program: "Established Office", affiliate: "$2500", profitPlus: "$1800" },
-    { program: "Established Office - Credentialing Maintenance", affiliate: "$2000", profitPlus: "$1500" },
-    { program: "Established Office a la carte(per enrolment application)", affiliate: "$2000", profitPlus: "$1500" },
+    { program: "Cold Start Office", programdescription:"(includes group contract & 1 owner doctor)", programsubdetail:"Cold Start: Additional Doctors (added at the same time)", affiliate: "$2000",affiliate2:"$90", profitPlus: "$1500",profitPlus2:"$130" },
+    { program: "Established Office", programdescription:"", programsubdetail:"Established Office: Additional Doctors(added at the same time)", programsetup:"Setup Fee (one time, per office)", affiliate: "$2500", affiliate2:"$70", profitPlus: "$1800", profitPlus2:"$130", setupAffiliate:"$100", setupProfit:"$200" },
+    { program: "Established Office - Credentialing Maintenance", programdescription:"", programsubdetail:"a la carte adding a NEW plan", programsubdetail1:"a la carte additional doctors(added at the same time)", programsetup:"Annual Maintenance Fee (one time, per office)", affiliate: "$2000",affiliate2:"$125", affiliate3:"$25", profitPlus: "$1500",profitPlus2:"$225", profitPlus3:"$75",setupAffiliate:"$50", setupProfit:"$100" },
+    { program: "Established Office a la carte(per enrolment application)", programdescription:"", programsubdetail:"a la carte Additional Doctors(added at the same time)", programsetup:"Annual Maintenance Fee (one time, per office)", affiliate: "$2000",affiliate2:"$50", setupAffiliate:"$50", profitPlus: "$1500",profitPlus2:"$100", setupProfit:"$100" },
   ];
 
   const renderTable = (data) => (
@@ -62,26 +62,56 @@ export default function MerchantPage() {
       </TableHeader>
       <TableBody>
         {data.map((row, index) => (
-          <TableRow key={index}>
+          <TableRow key={index} className="">
             <TableCell>
               <div className="space-y-1">
-                <h1 className="font-avenirRegular font-semibold text-[#1F3E7C] lg:w-[200px] lg:text-[14px]">
+                <h1 className="font-avenirRegular font-semibold text-[#1F3E7C] lg:text-[14px]">
                   {row.program}
                 </h1>
+                <p className="font-avenirRegular text-[#1C1C1C] lg:text-[14px]">
+                  {row?.programdescription}
+                </p>
+                <p className="font-avenirRegular text-[#989898] lg:text-[14px]">
+                  {row?.programsubdetail}
+                </p>
+                <p className="font-avenirRegular text-[#989898] lg:text-[14px]">
+                  {row?.programsubdetail1}
+                </p>
+                <p className="font-avenirRegular font-medium text-[#1F3E7C] lg:text-[14px]">
+                  {row?.programsetup}
+                </p>
               </div>
             </TableCell>
             <TableCell>
-              <div className="lg:space-y-6">
-                <h1 className="font-avenirRegular text-[#222222] lg:text-[14px]">
-                  {row.affiliate}
+              <div className="lg:space-y-2">
+                <h1 className="font-avenirRegular font-semibold text-[#1F3E7C] lg:text-[14px] text-center">
+                  {row?.affiliate}
                 </h1>
+                <p className="font-avenirRegular text-center text-[#222222] lg:text-[14px]">
+                  {row?.affiliate2}
+                </p>
+                <p className="font-avenirRegular text-center text-[#222222] lg:text-[14px]">
+                  {row?.affiliate3}
+                </p>
+                <p className="font-avenirRegular text-center text-[#1F3E7C] lg:text-[14px]">
+                  {row?.setupAffiliate}
+                </p>
               </div>
             </TableCell>
             <TableCell>
-              <div className="lg:space-y-6">
-                <h1 className="font-avenirRegular text-[#222222] lg:text-[14px]">
-                  {row.profitPlus}
+              <div className="lg:space-y-2">
+                <h1 className="font-avenirRegular font-semibold text-[#1F3E7C] lg:text-[14px] text-center">
+                  {row?.profitPlus}
                 </h1>
+                <p className="font-avenirRegular text-center text-[#222222] lg:text-[14px]">
+                  {row?.profitPlus2}
+                </p>
+                <p className="font-avenirRegular text-center text-[#222222] lg:text-[14px]">
+                  {row?.profitPlus3}
+                </p>
+                <p className="font-avenirRegular text-center text-[#1F3E7C] lg:text-[14px]">
+                  {row?.setupProfit}
+                </p>
               </div>
             </TableCell>
           </TableRow>
