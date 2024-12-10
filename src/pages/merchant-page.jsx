@@ -90,6 +90,13 @@ export default function MerchantPage() {
                 <h1 className="font-avenirRegular font-semibold text-[#1F3E7C] lg:text-[14px] text-center">
                   {row?.affiliate}
                 </h1>
+                {row.program == "Cold Start Office" ? (
+                  <div className="h-4"></div>
+                ) : (
+                  <p className="font-avenirRegular text-[#0a0a0a] lg:text-[14px]">
+                  
+                  </p>
+                )}
                 <p className="font-avenirRegular text-center text-[#222222] lg:text-[14px]">
                   {row?.affiliate2}
                 </p>
@@ -106,6 +113,13 @@ export default function MerchantPage() {
                 <h1 className="font-avenirRegular font-semibold text-[#1F3E7C] lg:text-[14px] text-center">
                   {row?.profitPlus}
                 </h1>
+                {row.program == "Cold Start Office" ? (
+                  <div className="h-4"></div>
+                ) : (
+                  <p className="font-avenirRegular text-[#0a0a0a] lg:text-[14px]">
+                  
+                  </p>
+                )}
                 <p className="font-avenirRegular text-center text-[#222222] lg:text-[14px]">
                   {row?.profitPlus2}
                 </p>
