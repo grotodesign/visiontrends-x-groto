@@ -66,7 +66,7 @@ export default function MerchantPage() {
           <TableRow key={index} className="">
             <Link to={row?.link}>
             <TableCell>
-              <div className="space-y-1">
+              <div className="space-y-2">
                 <h1 className="font-avenirRegular font-semibold text-[#1F3E7C] lg:text-[14px]">
                   {row.program}
                 </h1>
