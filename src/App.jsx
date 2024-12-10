@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import ProtectedLayout from "./components/ProtectedLayout";
 import HomePage from "./pages/home";
 import VendorPartnersPage from "./pages/vendor-page/vendor-partners";
@@ -37,6 +37,7 @@ import KattoufPage from "./pages/featured-vendors-pages/kattouf-page";
 import AbbContactLensPage from "./pages/featured-vendors-pages/abb-contact-lens-page";
 import NorwoodPage from "./pages/featured-vendors-pages/norwood-page";
 import PractiseBuilderPage from "./pages/practise-builder-page/practise-builder";
+import MerchantProgramDetailsPage from "./pages/merchant-program-details-page";
 // import PractiseBuilderPage from "./pages/practise-builder"; // Duplicate import removed
 
 function App() {
@@ -106,6 +107,10 @@ function App() {
         {/* Other service routes */}
         <Route path="/lab-solutions" element={<LabsSolutionPage />} />
         <Route path="/merchant-services" element={<MerchantPage />} />
+        <Route
+          path="/merchant-services/program-details"
+          element={<MerchantProgramDetailsPage />}
+        />
         <Route path="/vsp-iof" element={<IofPage />} />
 
         {/* Learning solutions routes */}

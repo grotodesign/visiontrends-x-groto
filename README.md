@@ -75,7 +75,7 @@ visiontrends-x-groto/
 ├── README.md                       # Project documentation
 ```
 
-## Reference Links 
+## Reference Links
 
 - For Sales Submission Table :- https://ui.shadcn.com/docs/components/data-table
 - UI Library :- https://ui.shadcn.com/
@@ -95,6 +95,7 @@ React is a JavaScript library used for building user interfaces, particularly si
 - CSS Integration: React supports various ways to style components, including traditional CSS, CSS-in-JS libraries, and CSS Modules. This flexibility allows developers to choose the best styling approach for their needs.
 
 ##### Example of React Component with HTML and CSS
+
 ```
 import React from 'react';
 import './App.css'; // Importing CSS file
@@ -111,7 +112,9 @@ function App() {
 export default App;
 
 ```
+
 #### CSS (App.css)
+
 ```
 .app-container {
   text-align: center;

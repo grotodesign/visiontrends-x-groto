@@ -8,20 +8,88 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card } from "@/components/ui/card";
 import CardKnoxImg from "@/assets/cardknox.png";
 import EmailIcon from "@/assets/email.png";
 import { Separator } from "@/components/ui/separator";
-import InsuranceCard from "@/components/shared/InsuranceCard";
-import { MerchantRateData } from "@/lib/data";
-import RateCard from "@/components/shared/RateCard";
-import { Button } from "@/components/ui/button";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
 import { CircleAlert } from "lucide-react";
+import { useState } from "react";
 
 export default function MerchantPage() {
   const handleEmailClick = () => {
     window.location.href = `mailto:memberservices@vtrends.us`;
   };
+
+  const [activeTab, setActiveTab] = useState("monthly");
+
+  const monthlyData = [
+    { program: "Cold Start Office", affiliate: "$220", profitPlus: "$90" },
+    { program: "Established Office", affiliate: "$150", profitPlus: "$75" },
+    { program: "Established Office - Credentialing Maintenance", affiliate: "$150", profitPlus: "$75" },
+    { program: "Established Office a la carte(per enrolment application)", affiliate: "$150", profitPlus: "$75" },
+  ];
+
+  const annualData = [
+    { program: "Cold Start Office", affiliate: "$2000", profitPlus: "$1500" },
+    { program: "Established Office", affiliate: "$2500", profitPlus: "$1800" },
+    { program: "Established Office - Credentialing Maintenance", affiliate: "$2000", profitPlus: "$1500" },
+    { program: "Established Office a la carte(per enrolment application)", affiliate: "$2000", profitPlus: "$1500" },
+  ];
+
+  const renderTable = (data) => (
+    <Table className="bg-[#FFFFFF]">
+      <TableHeader className="bg-[#F4F4F4]">
+        <TableRow>
+          <TableHead className="font-avenirRegular font-medium text-[#1C1C1C] lg:text-[16px]">
+            Program
+          </TableHead>
+          <TableHead className="font-avenirRegular font-medium text-[#1C1C1C] lg:text-[16px]">
+            Affiliate
+          </TableHead>
+          <TableHead className="font-avenirRegular font-medium text-[#1C1C1C] lg:text-[16px]">
+            Profit+
+          </TableHead>
+        </TableRow>
+      </TableHeader>
+      <TableBody>
+        {data.map((row, index) => (
+          <TableRow key={index}>
+            <TableCell>
+              <div className="space-y-1">
+                <h1 className="font-avenirRegular font-semibold text-[#1F3E7C] lg:w-[200px] lg:text-[14px]">
+                  {row.program}
+                </h1>
+              </div>
+            </TableCell>
+            <TableCell>
+              <div className="lg:space-y-6">
+                <h1 className="font-avenirRegular text-[#222222] lg:text-[14px]">
+                  {row.affiliate}
+                </h1>
+              </div>
+            </TableCell>
+            <TableCell>
+              <div className="lg:space-y-6">
+                <h1 className="font-avenirRegular text-[#222222] lg:text-[14px]">
+                  {row.profitPlus}
+                </h1>
+              </div>
+            </TableCell>
+          </TableRow>
+        ))}
+      </TableBody>
+    </Table>
+  );
+
   return (
     <div>
       <div className="hidden lg:block">
@@ -80,37 +148,24 @@ export default function MerchantPage() {
               </div>
               <Separator />
               <div className="">
-                <h1 className="font-avenirRegular text-[16px] font-medium text-[#646464]">
-                  Program Highlights -
-                </h1>
-                <div className="p-5">
-                  <ul className="list-disc space-y-3 font-avenirRegular text-[14px] text-[#989898] lg:text-[16px]">
-                    <li>Support for a Wide Range of Payment Methods </li>
-                    <li>Virtual Terminal With Customer Database </li>
-                    <li>Annual PCI Compliance Fees Waived </li>
-                    <li>
-                      No Financial Credit Checks or Waiting Period for Approval{" "}
-                    </li>
-                    <li>
-                      One Competitive Rate and No Transaction or Service Fees
-                    </li>
-                  </ul>
+                <div className="flex items-center justify-between">
+                  <h1 className="font-avenirRegular text-[16px] font-medium text-[#646464]">
+                    Programs we offer:
+                  </h1>
+                  <Tabs defaultValue="monthly" onValueChange={setActiveTab}>
+                    <TabsList>
+                      <TabsTrigger value="monthly">Monthly</TabsTrigger>
+                      <TabsTrigger value="annually">Annually</TabsTrigger>
+                    </TabsList>
+                  </Tabs>
                 </div>
+              </div>
+              <div className="">
+                {activeTab === "monthly" && renderTable(monthlyData)}
+                {activeTab === "annually" && renderTable(annualData)}
               </div>
             </div>
           </Card>
-          <div className="">
-            <h1 className="font-avenirHeavy text-[18px] text-[#1C1C1C]">
-              Two rate option available -
-            </h1>
-            <div className="flex flex-col justify-between space-x-6 space-y-6 py-8 lg:flex-row lg:space-y-0 lg:p-5">
-              <div className="card-merchant-area grid justify-center gap-5 lg:grid-cols-2 lg:gap-6 xl:px-0">
-                {MerchantRateData.map((offering) => (
-                  <RateCard key={offering.id} offering={offering} />
-                ))}
-              </div>
-            </div>
-          </div>
         </div>
         <div className="space-y-4">
           <div className="space-y-4">
