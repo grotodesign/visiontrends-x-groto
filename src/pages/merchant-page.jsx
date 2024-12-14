@@ -67,7 +67,7 @@ export default function MerchantPage() {
             <Link to={row?.link}>
             <TableCell>
               <div className="space-y-2">
-                <h1 className="font-avenirRegular font-semibold text-[#1F3E7C] lg:text-[14px]">
+                <h1 className="font-avenirHeavy text-[#1F3E7C] lg:text-[14px]">
                   {row.program}
                 </h1>
                 <p className="font-avenirRegular text-[#0a0a0a] lg:text-[14px]">
@@ -79,7 +79,7 @@ export default function MerchantPage() {
                 <p className="font-avenirRegular text-[#989898] lg:text-[14px]">
                   {row?.programsubdetail1}
                 </p>
-                <p className="font-avenirRegular font-medium text-[#1F3E7C] lg:text-[14px]">
+                <p className="font-avenirMedium text-[#1F3E7C] lg:text-[14px]">
                   {row?.programsetup}
                 </p>
               </div>
@@ -87,7 +87,7 @@ export default function MerchantPage() {
             </Link>
             <TableCell>
               <div className="lg:space-y-2">
-                <h1 className="font-avenirRegular font-semibold text-[#1F3E7C] lg:text-[14px] text-center">
+                <h1 className="font-avenirHeavy text-[#1F3E7C] lg:text-[14px] text-center">
                   {row?.affiliate}
                 </h1>
                 {row.program == "Cold Start Office" ? (
@@ -97,20 +97,20 @@ export default function MerchantPage() {
                   
                   </p>
                 )}
-                <p className="font-avenirRegular text-center text-[#222222] lg:text-[14px]">
+                <p className="font-avenirMedium text-center text-[#222222] lg:text-[14px]">
                   {row?.affiliate2}
                 </p>
-                <p className="font-avenirRegular text-center text-[#222222] lg:text-[14px]">
+                <p className="font-avenirMedium text-center text-[#222222] lg:text-[14px]">
                   {row?.affiliate3}
                 </p>
-                <p className="font-avenirRegular text-center text-[#1F3E7C] lg:text-[14px]">
+                <p className="font-avenirMedium text-center text-[#1F3E7C] lg:text-[14px]">
                   {row?.setupAffiliate}
                 </p>
               </div>
             </TableCell>
             <TableCell>
               <div className="lg:space-y-2">
-                <h1 className="font-avenirRegular font-semibold text-[#1F3E7C] lg:text-[14px] text-center">
+                <h1 className="font-avenirHeavy text-[#1F3E7C] lg:text-[14px] text-center">
                   {row?.profitPlus}
                 </h1>
                 {row.program == "Cold Start Office" ? (
@@ -120,13 +120,13 @@ export default function MerchantPage() {
                   
                   </p>
                 )}
-                <p className="font-avenirRegular text-center text-[#222222] lg:text-[14px]">
+                <p className="font-avenirMedium text-center text-[#222222] lg:text-[14px]">
                   {row?.profitPlus2}
                 </p>
-                <p className="font-avenirRegular text-center text-[#222222] lg:text-[14px]">
+                <p className="font-avenirMedium text-center text-[#222222] lg:text-[14px]">
                   {row?.profitPlus3}
                 </p>
-                <p className="font-avenirRegular text-center text-[#1F3E7C] lg:text-[14px]">
+                <p className="font-avenirMedium text-center text-[#1F3E7C] lg:text-[14px]">
                   {row?.setupProfit}
                 </p>
               </div>

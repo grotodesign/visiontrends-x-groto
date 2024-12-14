@@ -70,6 +70,19 @@
 @font-face {
   font-family: "AvenirRegular";
   src: url("./assets/fonts/Avenir_Regular/Avenir-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "AvenirMedium";
+  src: url("./assets/fonts/Avenir_Regular/Avenir-Regular.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "AvenirBold";
+  src: url("./assets/fonts/Avenir_Regular/Avenir-Regular.ttf");
+  font-weight: 800;
 }
 
 @media screen and (min-width: 360px) {
