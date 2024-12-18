@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
@@ -15,6 +16,7 @@ module.exports = {
       avenirHeavy: ["AvenirHeavy", "sans-serif"],
       avenirLight: ["AvenirLight", "sans-serif"],
       avenirRegular: ["AvenirRegular", "sans-serif"],
+      avenirMedium: ["AvenirMedium", "sans-serif"]
     },
     container: {
       center: true,

@@ -75,7 +75,8 @@
 
 @font-face {
   font-family: "AvenirMedium";
-  src: url("./assets/fonts/Avenir_Regular/Avenir-Regular.ttf");
+  src: url("./assets/fonts/Avenir_Medium/AvenirLTStd-Medium.otf")
+    format("opentype");
   font-weight: 500;
 }
 
