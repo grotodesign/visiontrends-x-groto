@@ -194,8 +194,8 @@ export default function MerchantPage() {
 
         case "Established Office - Credentialing Maintenance":
         return (
-          <div className="lg:space-y-[17px]">
-            <h1 className="font-avenirHeavy text-[#1F3E7C] lg:text-[14px] text-center lg:-mt-7">
+          <div className="lg:space-y-[19px]">
+            <h1 className="font-avenirHeavy text-[#1F3E7C] lg:text-[14px] text-center lg:-mt-5">
               {row?.affiliate}
             </h1>
             {row?.affiliate2 && (
@@ -325,8 +325,8 @@ export default function MerchantPage() {
 
         case "Established Office - Credentialing Maintenance":
         return (
-          <div className="lg:space-y-[17px]">
-            <h1 className="font-avenirHeavy text-[#1F3E7C] lg:text-[14px] text-center lg:-mt-7">
+          <div className="lg:space-y-[19px]">
+            <h1 className="font-avenirHeavy text-[#1F3E7C] lg:text-[14px] text-center lg:-mt-5">
               {row?.profitPlus}
             </h1>
             {row?.affiliate2 && (
