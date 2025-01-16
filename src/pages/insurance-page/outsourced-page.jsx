@@ -234,7 +234,7 @@ export default function OutsourcedPage() {
                         </div>
                       </TableCell>
                     </TableRow>
-                    <TableRow>
+                    <TableRow className="">
                       <TableCell>
                         <div className="">
                           <h1 className="font-avenirHeavy font-semibold text-[#1F3E7C] lg:text-[14px]">
@@ -261,8 +261,8 @@ export default function OutsourcedPage() {
                     </TableRow>
                   </TableBody>
                 </Table>
+                <Separator />
               </div>
-              <Separator />
               <div className="space-y-4">
                 <h1 className="font-avenirRegular text-[16px] font-medium text-[#646464]">
                   Our Service includes -
