@@ -42,7 +42,7 @@ export default function MerchantPage() {
       affiliate2: "$90",
       profitPlus: "$90",
       profitPlus2: "$130",
-      link: "/merchant-services/program-details",
+      // link: "/merchant-services/program-details",
     },
     {
       program: "Established Office",
@@ -56,7 +56,7 @@ export default function MerchantPage() {
       profitPlus2: "$130",
       setupAffiliate: "$100",
       setupProfit: "$200",
-      link: "/merchant-services/program-details",
+      // link: "/merchant-services/program-details",
     },
     {
       program: "Established Office - Credentialing Maintenance",
@@ -73,7 +73,7 @@ export default function MerchantPage() {
       profitPlus3: "$75",
       setupAffiliate: "$50",
       setupProfit: "$100",
-      link: "/merchant-services/program-details",
+      // link: "/merchant-services/program-details",
     },
     {
       program: "Established Office a la carte (per enrolment application)",
@@ -87,7 +87,7 @@ export default function MerchantPage() {
       profitPlus: "$75",
       profitPlus2: "$100",
       setupProfit: "$100",
-      link: "/merchant-services/program-details",
+      // link: "/merchant-services/program-details",
     },
   ];
 
@@ -101,7 +101,7 @@ export default function MerchantPage() {
       affiliate2: "$90",
       profitPlus: "$1500",
       profitPlus2: "$130",
-      link: "/merchant-services/program-details",
+      // link: "/merchant-services/program-details",
     },
     {
       program: "Established Office",
@@ -115,7 +115,7 @@ export default function MerchantPage() {
       profitPlus2: "$130",
       setupAffiliate: "$100",
       setupProfit: "$200",
-      link: "/merchant-services/program-details",
+      // link: "/merchant-services/program-details",
     },
     {
       program: "Established Office - Credentialing Maintenance",
@@ -132,7 +132,7 @@ export default function MerchantPage() {
       profitPlus3: "$75",
       setupAffiliate: "$50",
       setupProfit: "$100",
-      link: "/merchant-services/program-details",
+      // link: "/merchant-services/program-details",
     },
     {
       program: "Established Office a la carte (per enrolment application)",
@@ -146,7 +146,7 @@ export default function MerchantPage() {
       profitPlus: "$1500",
       profitPlus2: "$100",
       setupProfit: "$100",
-      link: "/merchant-services/program-details",
+      // link: "/merchant-services/program-details",
     },
   ];
 
