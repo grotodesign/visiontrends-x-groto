@@ -16,7 +16,7 @@ module.exports = {
       avenirHeavy: ["AvenirHeavy", "sans-serif"],
       avenirLight: ["AvenirLight", "sans-serif"],
       avenirRegular: ["AvenirRegular", "sans-serif"],
-      avenirMedium: ["AvenirMedium", "sans-serif"]
+      avenirMedium: ["AvenirMedium", "sans-serif"],
     },
     container: {
       center: true,

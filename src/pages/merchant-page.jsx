@@ -33,17 +33,121 @@ export default function MerchantPage() {
   const [activeTab, setActiveTab] = useState("monthly");
 
   const monthlyData = [
-    { program: "Cold Start Office", programdescription:"(includes group contract & 1 owner doctor)", programsubdetail:"Cold Start: Additional Doctors (added at the same time)", affiliate: "$220", affiliate2:"$90", profitPlus: "$90", profitPlus2:"$130" ,link: "/merchant-services/program-details" },
-    { program: "Established Office", programdescription:"", programsubdetail:"Established Office: Additional Doctors (added at the same time)", programsetup:"Setup Fee (one time, per office)", affiliate: "$150", affiliate2:"$70", profitPlus: "$75", profitPlus2:"$130", setupAffiliate:"$100", setupProfit:"$200",link: "/merchant-services/program-details" },
-    { program: "Established Office - Credentialing Maintenance", programdescription:"", programsubdetail:"a la carte adding a NEW plan", programsubdetail1:"a la carte additional doctors (added at the same time)", programsetup:"Annual Maintenance Fee (one time, per office)", affiliate: "$150", affiliate2:"$125", affiliate3:"$25", profitPlus: "$75", profitPlus2:"$225", profitPlus3:"$75", setupAffiliate:"$50", setupProfit:"$100",link: "/merchant-services/program-details" },
-    { program: "Established Office a la carte (per enrolment application)",programdescription:"", programsubdetail:"a la carte Additional Doctors (added at the same time)", programsetup:"Annual Maintenance Fee (one time, per office)", affiliate: "$150",affiliate2:"$50", setupAffiliate:"$50", profitPlus: "$75", profitPlus2:"$100", setupProfit:"$100",link: "/merchant-services/program-details" },
+    {
+      program: "Cold Start Office",
+      programdescription: "(includes group contract & 1 owner doctor)",
+      programsubdetail:
+        "Cold Start: Additional Doctors (added at the same time)",
+      affiliate: "$220",
+      affiliate2: "$90",
+      profitPlus: "$90",
+      profitPlus2: "$130",
+      link: "/merchant-services/program-details",
+    },
+    {
+      program: "Established Office",
+      programdescription: "",
+      programsubdetail:
+        "Established Office: Additional Doctors (added at the same time)",
+      programsetup: "Setup Fee (one time, per office)",
+      affiliate: "$150",
+      affiliate2: "$70",
+      profitPlus: "$75",
+      profitPlus2: "$130",
+      setupAffiliate: "$100",
+      setupProfit: "$200",
+      link: "/merchant-services/program-details",
+    },
+    {
+      program: "Established Office - Credentialing Maintenance",
+      programdescription: "",
+      programsubdetail: "a la carte adding a NEW plan",
+      programsubdetail1:
+        "a la carte additional doctors (added at the same time)",
+      programsetup: "Annual Maintenance Fee (one time, per office)",
+      affiliate: "$150",
+      affiliate2: "$125",
+      affiliate3: "$25",
+      profitPlus: "$75",
+      profitPlus2: "$225",
+      profitPlus3: "$75",
+      setupAffiliate: "$50",
+      setupProfit: "$100",
+      link: "/merchant-services/program-details",
+    },
+    {
+      program: "Established Office a la carte (per enrolment application)",
+      programdescription: "",
+      programsubdetail:
+        "a la carte Additional Doctors (added at the same time)",
+      programsetup: "Annual Maintenance Fee (one time, per office)",
+      affiliate: "$150",
+      affiliate2: "$50",
+      setupAffiliate: "$50",
+      profitPlus: "$75",
+      profitPlus2: "$100",
+      setupProfit: "$100",
+      link: "/merchant-services/program-details",
+    },
   ];
 
   const annualData = [
-    { program: "Cold Start Office", programdescription:"(includes group contract & 1 owner doctor)", programsubdetail:"Cold Start: Additional Doctors (added at the same time)", affiliate: "$2000",affiliate2:"$90", profitPlus: "$1500",profitPlus2:"$130",link: "/merchant-services/program-details" },
-    { program: "Established Office", programdescription:"", programsubdetail:"Established Office: Additional Doctors (added at the same time)", programsetup:"Setup Fee (one time, per office)", affiliate: "$2500", affiliate2:"$70", profitPlus: "$1800", profitPlus2:"$130", setupAffiliate:"$100", setupProfit:"$200",link: "/merchant-services/program-details" },
-    { program: "Established Office - Credentialing Maintenance", programdescription:"", programsubdetail:"a la carte adding a NEW plan", programsubdetail1:"a la carte additional doctors (added at the same time)", programsetup:"Annual Maintenance Fee (one time, per office)", affiliate: "$2000",affiliate2:"$125", affiliate3:"$25", profitPlus: "$1500",profitPlus2:"$225", profitPlus3:"$75",setupAffiliate:"$50", setupProfit:"$100",link: "/merchant-services/program-details" },
-    { program: "Established Office a la carte (per enrolment application)", programdescription:"", programsubdetail:"a la carte Additional Doctors (added at the same time)", programsetup:"Annual Maintenance Fee (one time, per office)", affiliate: "$2000",affiliate2:"$50", setupAffiliate:"$50", profitPlus: "$1500",profitPlus2:"$100", setupProfit:"$100",link: "/merchant-services/program-details" },
+    {
+      program: "Cold Start Office",
+      programdescription: "(includes group contract & 1 owner doctor)",
+      programsubdetail:
+        "Cold Start: Additional Doctors (added at the same time)",
+      affiliate: "$2000",
+      affiliate2: "$90",
+      profitPlus: "$1500",
+      profitPlus2: "$130",
+      link: "/merchant-services/program-details",
+    },
+    {
+      program: "Established Office",
+      programdescription: "",
+      programsubdetail:
+        "Established Office: Additional Doctors (added at the same time)",
+      programsetup: "Setup Fee (one time, per office)",
+      affiliate: "$2500",
+      affiliate2: "$70",
+      profitPlus: "$1800",
+      profitPlus2: "$130",
+      setupAffiliate: "$100",
+      setupProfit: "$200",
+      link: "/merchant-services/program-details",
+    },
+    {
+      program: "Established Office - Credentialing Maintenance",
+      programdescription: "",
+      programsubdetail: "a la carte adding a NEW plan",
+      programsubdetail1:
+        "a la carte additional doctors (added at the same time)",
+      programsetup: "Annual Maintenance Fee (one time, per office)",
+      affiliate: "$2000",
+      affiliate2: "$125",
+      affiliate3: "$25",
+      profitPlus: "$1500",
+      profitPlus2: "$225",
+      profitPlus3: "$75",
+      setupAffiliate: "$50",
+      setupProfit: "$100",
+      link: "/merchant-services/program-details",
+    },
+    {
+      program: "Established Office a la carte (per enrolment application)",
+      programdescription: "",
+      programsubdetail:
+        "a la carte Additional Doctors (added at the same time)",
+      programsetup: "Annual Maintenance Fee (one time, per office)",
+      affiliate: "$2000",
+      affiliate2: "$50",
+      setupAffiliate: "$50",
+      profitPlus: "$1500",
+      profitPlus2: "$100",
+      setupProfit: "$100",
+      link: "/merchant-services/program-details",
+    },
   ];
 
   const renderProgramDetails = (row) => {
@@ -54,10 +158,10 @@ export default function MerchantPage() {
             <h1 className="font-avenirHeavy text-[#1F3E7C] lg:text-[14px]">
               {row.program}
             </h1>
-            <p className="font-avenirRegular text-[#0a0a0a] lg:text-[14px] lg:w-[230px]">
+            <p className="font-avenirRegular text-[#0a0a0a] lg:w-[230px] lg:text-[14px]">
               {row?.programdescription}
             </p>
-            <p className="font-avenirRegular text-[#989898] lg:text-[14px] lg:w-[230px]">
+            <p className="font-avenirRegular text-[#989898] lg:w-[230px] lg:text-[14px]">
               {row?.programsubdetail}
             </p>
             <p className="font-avenirRegular text-[#989898] lg:text-[14px]">
@@ -68,201 +172,198 @@ export default function MerchantPage() {
             </p>
           </div>
         );
-  
+
       case "Established Office":
         return (
           <div className="space-y-[6px]">
-          <h1 className="font-avenirHeavy text-[#1F3E7C] lg:text-[14px]">
-            {row.program}
-          </h1>
-          <p className="font-avenirRegular text-[#0a0a0a] lg:text-[14px] lg:w-[230px]">
-            {row?.programdescription}
-          </p>
-          <p className="font-avenirRegular text-[#989898] lg:text-[14px] lg:w-[286px]">
-            {row?.programsubdetail}
-          </p>
-          <p className="font-avenirRegular text-[#989898] lg:text-[14px]">
-            {row?.programsubdetail1}
-          </p>
-          <p className="font-avenirMedium font-medium text-[#1F3E7C] lg:text-[14px]">
-            {row?.programsetup}
-          </p>
-        </div>
+            <h1 className="font-avenirHeavy text-[#1F3E7C] lg:text-[14px]">
+              {row.program}
+            </h1>
+            <p className="font-avenirRegular text-[#0a0a0a] lg:w-[230px] lg:text-[14px]">
+              {row?.programdescription}
+            </p>
+            <p className="font-avenirRegular text-[#989898] lg:w-[286px] lg:text-[14px]">
+              {row?.programsubdetail}
+            </p>
+            <p className="font-avenirRegular text-[#989898] lg:text-[14px]">
+              {row?.programsubdetail1}
+            </p>
+            <p className="font-avenirMedium font-medium text-[#1F3E7C] lg:text-[14px]">
+              {row?.programsetup}
+            </p>
+          </div>
         );
-  
+
       case "Established Office - Credentialing Maintenance":
         return (
           <div className="space-y-[6px]">
-          <h1 className="font-avenirHeavy text-[#1F3E7C] lg:text-[14px] lg:w-[280px]">
-            {row.program}
-          </h1>
-          <p className="font-avenirRegular text-[#0a0a0a] lg:text-[14px]">
-            {row?.programdescription}
-          </p>
-          <p className="font-avenirRegular text-[#989898] lg:text-[14px]">
-            {row?.programsubdetail}
-          </p>
-          <p className="font-avenirRegular text-[#989898] lg:text-[14px] lg:w-[200px]">
-            {row?.programsubdetail1}
-          </p>
-          <p className="font-avenirMedium font-medium text-[#1F3E7C] lg:text-[14px] lg:w-[230px]">
-            {row?.programsetup}
-          </p>
-        </div>
+            <h1 className="font-avenirHeavy text-[#1F3E7C] lg:w-[280px] lg:text-[14px]">
+              {row.program}
+            </h1>
+            <p className="font-avenirRegular text-[#0a0a0a] lg:text-[14px]">
+              {row?.programdescription}
+            </p>
+            <p className="font-avenirRegular text-[#989898] lg:text-[14px]">
+              {row?.programsubdetail}
+            </p>
+            <p className="font-avenirRegular text-[#989898] lg:w-[200px] lg:text-[14px]">
+              {row?.programsubdetail1}
+            </p>
+            <p className="font-avenirMedium font-medium text-[#1F3E7C] lg:w-[230px] lg:text-[14px]">
+              {row?.programsetup}
+            </p>
+          </div>
         );
-  
+
       default:
         return (
           <div className="space-y-[6px]">
-          <h1 className="font-avenirHeavy text-[#1F3E7C] lg:text-[14px] lg:w-[200px]">
-            {row.program}
-          </h1>
-          <p className="font-avenirRegular text-[#0a0a0a] lg:text-[14px]">
-            {row?.programdescription}
-          </p>
-          <p className="font-avenirRegular text-[#989898] lg:text-[14px] lg:w-[200px]">
-            {row?.programsubdetail}
-          </p>
-          <p className="font-avenirRegular text-[#989898] lg:text-[14px]">
-            {row?.programsubdetail1}
-          </p>
-          <p className="font-avenirMedium font-medium text-[#1F3E7C] lg:text-[14px] lg:w-[230px]">
-            {row?.programsetup}
-          </p>
-        </div>
+            <h1 className="font-avenirHeavy text-[#1F3E7C] lg:w-[200px] lg:text-[14px]">
+              {row.program}
+            </h1>
+            <p className="font-avenirRegular text-[#0a0a0a] lg:text-[14px]">
+              {row?.programdescription}
+            </p>
+            <p className="font-avenirRegular text-[#989898] lg:w-[200px] lg:text-[14px]">
+              {row?.programsubdetail}
+            </p>
+            <p className="font-avenirRegular text-[#989898] lg:text-[14px]">
+              {row?.programsubdetail1}
+            </p>
+            <p className="font-avenirMedium font-medium text-[#1F3E7C] lg:w-[230px] lg:text-[14px]">
+              {row?.programsetup}
+            </p>
+          </div>
         );
     }
   };
-
 
   const renderAffiliateDetails = (row) => {
     switch (row.program) {
       case "Cold Start Office":
         return (
           <div className="lg:space-y-[18px]">
-            <h1 className="font-avenirHeavy text-[#1F3E7C] lg:text-[14px] text-center lg:-mt-5">
+            <h1 className="text-center font-avenirHeavy text-[#1F3E7C] lg:-mt-5 lg:text-[14px]">
               {row?.affiliate}
             </h1>
             {row.program == "Cold Start Office" ? (
-                  <div className="h-4"></div>
-                ) : (
-                  <p className="font-avenirRegular text-[#0a0a0a] lg:text-[14px]">
-                  
-                  </p>
-                )}
+              <div className="h-4"></div>
+            ) : (
+              <p className="font-avenirRegular text-[#0a0a0a] lg:text-[14px]"></p>
+            )}
             {row?.affiliate2 && (
-              <p className="font-avenirMedium text-center text-[#222222] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#222222] lg:text-[14px]">
                 {row?.affiliate2}
               </p>
             )}
             {row?.affiliate3 && (
-              <p className="font-avenirMedium text-center text-[#222222] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#222222] lg:text-[14px]">
                 {row?.affiliate3}
               </p>
             )}
             {row?.setupAffiliate && (
-              <p className="font-avenirMedium text-center text-[#1F3E7C] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#1F3E7C] lg:text-[14px]">
                 {row?.setupAffiliate}
               </p>
             )}
           </div>
         );
-      
+
       case "Established Office":
         return (
           <div className="lg:space-y-[15px]">
-            <h1 className="font-avenirHeavy text-[#1F3E7C] lg:text-[14px] text-center lg:-mt-2">
+            <h1 className="text-center font-avenirHeavy text-[#1F3E7C] lg:-mt-2 lg:text-[14px]">
               {row?.affiliate}
             </h1>
             {row?.affiliate2 && (
-              <p className="font-avenirMedium text-center text-[#222222] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#222222] lg:text-[14px]">
                 {row?.affiliate2}
               </p>
             )}
             {row?.affiliate3 && (
-              <p className="font-avenirMedium text-center text-[#222222] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#222222] lg:text-[14px]">
                 {row?.affiliate3}
               </p>
             )}
             {row?.setupAffiliate && (
-              <p className="font-avenirMedium text-center text-[#1F3E7C] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#1F3E7C] lg:text-[14px]">
                 {row?.setupAffiliate}
               </p>
             )}
           </div>
-        )
+        );
 
-        case "Established Office - Credentialing Maintenance":
+      case "Established Office - Credentialing Maintenance":
         return (
           <div className="lg:space-y-[19px]">
-            <h1 className="font-avenirHeavy text-[#1F3E7C] lg:text-[14px] text-center lg:-mt-5">
+            <h1 className="text-center font-avenirHeavy text-[#1F3E7C] lg:-mt-5 lg:text-[14px]">
               {row?.affiliate}
             </h1>
             {row?.affiliate2 && (
-              <p className="font-avenirMedium text-center text-[#222222] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#222222] lg:text-[14px]">
                 {row?.affiliate2}
               </p>
             )}
             {row?.affiliate3 && (
-              <p className="font-avenirMedium text-center text-[#222222] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#222222] lg:text-[14px]">
                 {row?.affiliate3}
               </p>
             )}
             {row?.setupAffiliate && (
-              <p className="font-avenirMedium text-center text-[#1F3E7C] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#1F3E7C] lg:text-[14px]">
                 {row?.setupAffiliate}
               </p>
             )}
           </div>
-        )
+        );
 
-        case "Established Office a la carte (per enrolment application)":
+      case "Established Office a la carte (per enrolment application)":
         return (
           <div className="lg:space-y-[23px]">
-            <h1 className="font-avenirHeavy text-[#1F3E7C] lg:text-[14px] text-center lg:-mt-5">
+            <h1 className="text-center font-avenirHeavy text-[#1F3E7C] lg:-mt-5 lg:text-[14px]">
               {row?.affiliate}
             </h1>
             {row?.affiliate2 && (
-              <p className="font-avenirMedium text-center text-[#222222] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#222222] lg:text-[14px]">
                 {row?.affiliate2}
               </p>
             )}
             {row?.affiliate3 && (
-              <p className="font-avenirMedium text-center text-[#222222] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#222222] lg:text-[14px]">
                 {row?.affiliate3}
               </p>
             )}
             {row?.setupAffiliate && (
-              <p className="font-avenirMedium text-center text-[#1F3E7C] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#1F3E7C] lg:text-[14px]">
                 {row?.setupAffiliate}
               </p>
             )}
           </div>
-        )
+        );
 
-        default:
-          return (
-            <div className="lg:space-y-[15px]">
-            <h1 className="font-avenirHeavy text-[#1F3E7C] lg:text-[14px] text-center lg:-mt-3">
+      default:
+        return (
+          <div className="lg:space-y-[15px]">
+            <h1 className="text-center font-avenirHeavy text-[#1F3E7C] lg:-mt-3 lg:text-[14px]">
               {row?.affiliate}
             </h1>
             {row?.affiliate2 && (
-              <p className="font-avenirMedium text-center text-[#222222] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#222222] lg:text-[14px]">
                 {row?.affiliate2}
               </p>
             )}
             {row?.affiliate3 && (
-              <p className="font-avenirMedium text-center text-[#222222] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#222222] lg:text-[14px]">
                 {row?.affiliate3}
               </p>
             )}
             {row?.setupAffiliate && (
-              <p className="font-avenirMedium text-center text-[#1F3E7C] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#1F3E7C] lg:text-[14px]">
                 {row?.setupAffiliate}
               </p>
             )}
           </div>
-          )
+        );
     }
   };
 
@@ -271,132 +372,129 @@ export default function MerchantPage() {
       case "Cold Start Office":
         return (
           <div className="lg:space-y-[18px]">
-            <h1 className="font-avenirHeavy text-[#1F3E7C] lg:text-[14px] text-center lg:-mt-5">
+            <h1 className="text-center font-avenirHeavy text-[#1F3E7C] lg:-mt-5 lg:text-[14px]">
               {row?.profitPlus}
             </h1>
             {row.program == "Cold Start Office" ? (
-                  <div className="h-4"></div>
-                ) : (
-                  <p className="font-avenirRegular text-[#0a0a0a] lg:text-[14px]">
-                  
-                  </p>
-                )}
+              <div className="h-4"></div>
+            ) : (
+              <p className="font-avenirRegular text-[#0a0a0a] lg:text-[14px]"></p>
+            )}
             {row?.affiliate2 && (
-              <p className="font-avenirMedium text-center text-[#222222] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#222222] lg:text-[14px]">
                 {row?.profitPlus2}
               </p>
             )}
             {row?.affiliate3 && (
-              <p className="font-avenirMedium text-center text-[#222222] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#222222] lg:text-[14px]">
                 {row?.profitPlus3}
               </p>
             )}
             {row?.setupAffiliate && (
-              <p className="font-avenirMedium text-center text-[#1F3E7C] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#1F3E7C] lg:text-[14px]">
                 {row?.setupProfit}
               </p>
             )}
           </div>
         );
-      
+
       case "Established Office":
         return (
           <div className="lg:space-y-[15px]">
-            <h1 className="font-avenirHeavy text-[#1F3E7C] lg:text-[14px] text-center lg:-mt-2">
+            <h1 className="text-center font-avenirHeavy text-[#1F3E7C] lg:-mt-2 lg:text-[14px]">
               {row?.profitPlus}
             </h1>
             {row?.affiliate2 && (
-              <p className="font-avenirMedium text-center text-[#222222] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#222222] lg:text-[14px]">
                 {row?.profitPlus2}
               </p>
             )}
             {row?.affiliate3 && (
-              <p className="font-avenirMedium text-center text-[#222222] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#222222] lg:text-[14px]">
                 {row?.profitPlus3}
               </p>
             )}
             {row?.setupAffiliate && (
-              <p className="font-avenirMedium text-center text-[#1F3E7C] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#1F3E7C] lg:text-[14px]">
                 {row?.setupProfit}
               </p>
             )}
           </div>
-        )
+        );
 
-        case "Established Office - Credentialing Maintenance":
+      case "Established Office - Credentialing Maintenance":
         return (
           <div className="lg:space-y-[19px]">
-            <h1 className="font-avenirHeavy text-[#1F3E7C] lg:text-[14px] text-center lg:-mt-5">
+            <h1 className="text-center font-avenirHeavy text-[#1F3E7C] lg:-mt-5 lg:text-[14px]">
               {row?.profitPlus}
             </h1>
             {row?.affiliate2 && (
-              <p className="font-avenirMedium text-center text-[#222222] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#222222] lg:text-[14px]">
                 {row?.profitPlus2}
               </p>
             )}
             {row?.affiliate3 && (
-              <p className="font-avenirMedium text-center text-[#222222] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#222222] lg:text-[14px]">
                 {row?.profitPlus3}
               </p>
             )}
             {row?.setupAffiliate && (
-              <p className="font-avenirMedium text-center text-[#1F3E7C] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#1F3E7C] lg:text-[14px]">
                 {row?.setupProfit}
               </p>
             )}
           </div>
-        )
+        );
 
-        case "Established Office a la carte (per enrolment application)":
+      case "Established Office a la carte (per enrolment application)":
         return (
           <div className="lg:space-y-[23px]">
-            <h1 className="font-avenirHeavy text-[#1F3E7C] lg:text-[14px] text-center lg:-mt-5">
+            <h1 className="text-center font-avenirHeavy text-[#1F3E7C] lg:-mt-5 lg:text-[14px]">
               {row?.profitPlus}
             </h1>
             {row?.affiliate2 && (
-              <p className="font-avenirMedium text-center text-[#222222] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#222222] lg:text-[14px]">
                 {row?.profitPlus2}
               </p>
             )}
             {row?.affiliate3 && (
-              <p className="font-avenirMedium text-center text-[#222222] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#222222] lg:text-[14px]">
                 {row?.profitPlus3}
               </p>
             )}
             {row?.setupAffiliate && (
-              <p className="font-avenirMedium text-center text-[#1F3E7C] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#1F3E7C] lg:text-[14px]">
                 {row?.setupProfit}
               </p>
             )}
           </div>
-        )
+        );
 
-        default:
-          return (
-            <div className="lg:space-y-[15px]">
-            <h1 className="font-avenirHeavy text-[#1F3E7C] lg:text-[14px] text-center lg:-mt-3">
+      default:
+        return (
+          <div className="lg:space-y-[15px]">
+            <h1 className="text-center font-avenirHeavy text-[#1F3E7C] lg:-mt-3 lg:text-[14px]">
               {row?.profitPlus}
             </h1>
             {row?.affiliate2 && (
-              <p className="font-avenirMedium text-center text-[#222222] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#222222] lg:text-[14px]">
                 {row?.profitPlus2}
               </p>
             )}
             {row?.affiliate3 && (
-              <p className="font-avenirMedium text-center text-[#222222] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#222222] lg:text-[14px]">
                 {row?.profitPlus3}
               </p>
             )}
             {row?.setupAffiliate && (
-              <p className="font-avenirMedium text-center text-[#1F3E7C] lg:text-[14px]">
+              <p className="text-center font-avenirMedium text-[#1F3E7C] lg:text-[14px]">
                 {row?.setupProfit}
               </p>
             )}
           </div>
-          )
+        );
     }
   };
-  
 
   const renderTable = (data) => (
     <Table className="bg-[#FFFFFF]">
@@ -405,21 +503,19 @@ export default function MerchantPage() {
           <TableHead className="font-avenirRegular font-medium text-[#1C1C1C] lg:text-[16px]">
             Program
           </TableHead>
-          <TableHead className="font-avenirRegular font-medium text-center text-[#1C1C1C] lg:text-[16px]">
+          <TableHead className="text-center font-avenirRegular font-medium text-[#1C1C1C] lg:text-[16px]">
             Affiliate
           </TableHead>
-          <TableHead className="font-avenirRegular font-medium text-center text-[#1C1C1C] lg:text-[16px]">
+          <TableHead className="text-center font-avenirRegular font-medium text-[#1C1C1C] lg:text-[16px]">
             Profit+
           </TableHead>
         </TableRow>
       </TableHeader>
-      <TableBody>  
+      <TableBody>
         {data.map((row, index) => (
           <TableRow key={index} className="">
             <Link to={row?.link}>
-            <TableCell>
-              {renderProgramDetails(row)}
-            </TableCell>
+              <TableCell>{renderProgramDetails(row)}</TableCell>
             </Link>
             <TableCell>{renderAffiliateDetails(row)}</TableCell>
             <TableCell>{renderProfitDetails(row)}</TableCell>

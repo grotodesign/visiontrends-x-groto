@@ -82,10 +82,10 @@ export default function MerchantProgramDetailsPage() {
                       <TableHead className="font-avenirRegular font-medium text-[#1C1C1C] lg:text-[16px]">
                         Services
                       </TableHead>
-                      <TableHead className="font-avenirRegular font-medium text-[#1C1C1C] text-right lg:text-[16px]">
+                      <TableHead className="text-right font-avenirRegular font-medium text-[#1C1C1C] lg:text-[16px]">
                         Affiliate
                       </TableHead>
-                      <TableHead className="font-avenirRegular font-medium text-[#1C1C1C] text-right lg:text-[16px]">
+                      <TableHead className="text-right font-avenirRegular font-medium text-[#1C1C1C] lg:text-[16px]">
                         Profit+
                       </TableHead>
                     </TableRow>
@@ -94,27 +94,29 @@ export default function MerchantProgramDetailsPage() {
                     <TableRow>
                       <TableCell>
                         <div className="">
-                          <h1 className="font-avenirBold font-semibold text-[#1F3E7C] lg:text-[14px] lg:w-[220px]">
+                          <h1 className="font-avenirBold font-semibold text-[#1F3E7C] lg:w-[220px] lg:text-[14px]">
                             Vision & Medical Claims Billing (12 month ag.)
                           </h1>
                         </div>
                       </TableCell>
                       <TableCell>
                         <div>
-                          <h1 className="font-avenirBold text-[#222222] lg:text-[14px] text-right">
+                          <h1 className="font-avenirBold text-right text-[#222222] lg:text-[14px]">
                             <span className="font-semibold text-[#1c1c1c]">
                               6.5%
-                            </span> <br/>
+                            </span>{" "}
+                            <br />
                             of sales
                           </h1>
                         </div>
                       </TableCell>
                       <TableCell>
                         <div>
-                          <h1 className="font-avenirBold text-[#222222] lg:text-[14px] text-right">
+                          <h1 className="font-avenirBold text-right text-[#222222] lg:text-[14px]">
                             <span className="font-semibold text-[#1c1c1c]">
                               7.5%
-                            </span> <br/>
+                            </span>{" "}
+                            <br />
                             of sales
                           </h1>
                         </div>
@@ -123,27 +125,29 @@ export default function MerchantProgramDetailsPage() {
                     <TableRow>
                       <TableCell>
                         <div className="">
-                          <h1 className="font-avenirBold font-semibold text-[#1F3E7C] lg:text-[14px] lg:w-[200px]">
+                          <h1 className="font-avenirBold font-semibold text-[#1F3E7C] lg:w-[200px] lg:text-[14px]">
                             Medical Claims Billing Only (12 month ag.)
                           </h1>
                         </div>
                       </TableCell>
                       <TableCell>
                         <div>
-                          <h1 className="font-avenirBold text-[#222222] lg:text-[14px] text-right">
+                          <h1 className="font-avenirBold text-right text-[#222222] lg:text-[14px]">
                             <span className="font-semibold text-[#1c1c1c]">
                               6.5%
-                            </span> <br/>
+                            </span>{" "}
+                            <br />
                             of sales
                           </h1>
                         </div>
                       </TableCell>
                       <TableCell>
                         <div>
-                          <h1 className="font-avenirBold text-[#222222] lg:text-[14px] text-right">
+                          <h1 className="font-avenirBold text-right text-[#222222] lg:text-[14px]">
                             <span className="font-semibold text-[#1c1c1c]">
                               7.5%
-                            </span> <br/>
+                            </span>{" "}
+                            <br />
                             of sales
                           </h1>
                         </div>
@@ -152,27 +156,29 @@ export default function MerchantProgramDetailsPage() {
                     <TableRow>
                       <TableCell>
                         <div className="">
-                          <h1 className="font-avenirBold font-semibold text-[#1F3E7C] lg:text-[14px] lg:w-[220px]">
+                          <h1 className="font-avenirBold font-semibold text-[#1F3E7C] lg:w-[220px] lg:text-[14px]">
                             Medical Claims Billing & Reconcilliation
                           </h1>
                         </div>
                       </TableCell>
                       <TableCell>
                         <div>
-                          <h1 className="font-avenirBold text-[#222222] lg:text-[14px] text-right">
+                          <h1 className="font-avenirBold text-right text-[#222222] lg:text-[14px]">
                             <span className="font-semibold text-[#1c1c1c]">
                               4.5%
-                            </span> <br/>
+                            </span>{" "}
+                            <br />
                             of sales
                           </h1>
                         </div>
                       </TableCell>
                       <TableCell>
                         <div>
-                          <h1 className="font-avenirBold text-[#222222] lg:text-[14px] text-right">
+                          <h1 className="font-avenirBold text-right text-[#222222] lg:text-[14px]">
                             <span className="font-semibold text-[#1c1c1c]">
                               7.5%
-                            </span> <br/>
+                            </span>{" "}
+                            <br />
                             of sales
                           </h1>
                         </div>
@@ -188,20 +194,22 @@ export default function MerchantProgramDetailsPage() {
                       </TableCell>
                       <TableCell className="">
                         <div>
-                          <h1 className="font-avenirBold text-[#222222] lg:text-[14px] text-right">
+                          <h1 className="font-avenirBold text-right text-[#222222] lg:text-[14px]">
                             <span className="font-semibold text-[#1c1c1c]">
                               $300
-                            </span> <br/>
+                            </span>{" "}
+                            <br />
                             per month
                           </h1>
                         </div>
                       </TableCell>
                       <TableCell>
                         <div>
-                          <h1 className="font-avenirBold text-[#222222] lg:text-[14px] text-right">
+                          <h1 className="font-avenirBold text-right text-[#222222] lg:text-[14px]">
                             <span className="font-semibold text-[#1c1c1c]">
                               $300
-                            </span><br/>
+                            </span>
+                            <br />
                             per month
                           </h1>
                         </div>
@@ -217,7 +225,7 @@ export default function MerchantProgramDetailsPage() {
                       </TableCell>
                       <TableCell>
                         <div>
-                          <h1 className="font-avenirBold text-[#222222] lg:text-[14px] text-right">
+                          <h1 className="font-avenirBold text-right text-[#222222] lg:text-[14px]">
                             <span className="font-semibold text-[#1c1c1c]">
                               Yes
                             </span>
@@ -226,7 +234,7 @@ export default function MerchantProgramDetailsPage() {
                       </TableCell>
                       <TableCell>
                         <div>
-                          <h1 className="font-avenirBold text-[#222222] lg:text-[14px] text-right">
+                          <h1 className="font-avenirBold text-right text-[#222222] lg:text-[14px]">
                             No
                           </h1>
                         </div>

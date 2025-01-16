@@ -14,6 +14,14 @@ import { Card } from "@/components/ui/card";
 import CallIcon from "@/assets/call.png";
 import EmailIcon from "@/assets/email.png";
 import { Separator } from "@/components/ui/separator";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
 import { CircleAlert } from "lucide-react";
 
 export default function OutsourcedPage() {
@@ -77,7 +85,7 @@ export default function OutsourcedPage() {
                 <p className="font-avenirRegular text-[14px] font-thin text-[#989898] lg:text-[16px] ">
                   Vision Trends will administer vision and / or medical
                   insurance claims billing for members interested in outsourcing
-                  these services. 
+                  these services.
                 </p>
               </div>
               <div>
@@ -85,6 +93,174 @@ export default function OutsourcedPage() {
                   Your practice will be assigned a dedicated Vision Trends
                   claims billing specialist.
                 </p>
+              </div>
+              <div>
+                <Table className="bg-[#FFFFFF]">
+                  <TableHeader className="bg-[#F4F4F4]">
+                    <TableRow>
+                      <TableHead className="font-avenirRegular font-medium text-[#1C1C1C] lg:text-[16px]">
+                        Services
+                      </TableHead>
+                      <TableHead className="text-right font-avenirRegular font-medium text-[#1C1C1C] lg:text-[16px]">
+                        Affiliate
+                      </TableHead>
+                      <TableHead className="text-right font-avenirRegular font-medium text-[#1C1C1C] lg:text-[16px]">
+                        Profit+
+                      </TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    <TableRow>
+                      <TableCell>
+                        <div className="">
+                          <h1 className="font-avenirBold font-semibold text-[#1F3E7C] lg:w-[220px] lg:text-[14px]">
+                            Vision & Medical Claims Billing (12 month ag.)
+                          </h1>
+                        </div>
+                      </TableCell>
+                      <TableCell>
+                        <div>
+                          <h1 className="font-avenirBold text-right text-[#222222] lg:text-[14px]">
+                            <span className="font-semibold text-[#1c1c1c]">
+                              6.5%
+                            </span>{" "}
+                            <br />
+                            of sales
+                          </h1>
+                        </div>
+                      </TableCell>
+                      <TableCell>
+                        <div>
+                          <h1 className="font-avenirBold text-right text-[#222222] lg:text-[14px]">
+                            <span className="font-semibold text-[#1c1c1c]">
+                              7.5%
+                            </span>{" "}
+                            <br />
+                            of sales
+                          </h1>
+                        </div>
+                      </TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>
+                        <div className="">
+                          <h1 className="font-avenirBold font-semibold text-[#1F3E7C] lg:w-[200px] lg:text-[14px]">
+                            Medical Claims Billing Only (12 month ag.)
+                          </h1>
+                        </div>
+                      </TableCell>
+                      <TableCell>
+                        <div>
+                          <h1 className="font-avenirBold text-right text-[#222222] lg:text-[14px]">
+                            <span className="font-semibold text-[#1c1c1c]">
+                              6.5%
+                            </span>{" "}
+                            <br />
+                            of sales
+                          </h1>
+                        </div>
+                      </TableCell>
+                      <TableCell>
+                        <div>
+                          <h1 className="font-avenirBold text-right text-[#222222] lg:text-[14px]">
+                            <span className="font-semibold text-[#1c1c1c]">
+                              7.5%
+                            </span>{" "}
+                            <br />
+                            of sales
+                          </h1>
+                        </div>
+                      </TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>
+                        <div className="">
+                          <h1 className="font-avenirBold font-semibold text-[#1F3E7C] lg:w-[220px] lg:text-[14px]">
+                            Medical Claims Billing & Reconcilliation
+                          </h1>
+                        </div>
+                      </TableCell>
+                      <TableCell>
+                        <div>
+                          <h1 className="font-avenirBold text-right text-[#222222] lg:text-[14px]">
+                            <span className="font-semibold text-[#1c1c1c]">
+                              4.5%
+                            </span>{" "}
+                            <br />
+                            of sales
+                          </h1>
+                        </div>
+                      </TableCell>
+                      <TableCell>
+                        <div>
+                          <h1 className="font-avenirBold text-right text-[#222222] lg:text-[14px]">
+                            <span className="font-semibold text-[#1c1c1c]">
+                              7.5%
+                            </span>{" "}
+                            <br />
+                            of sales
+                          </h1>
+                        </div>
+                      </TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>
+                        <div className="">
+                          <h1 className="font-avenirBold font-semibold text-[#1F3E7C] lg:text-[14px]">
+                            Claims Billing Minimum
+                          </h1>
+                        </div>
+                      </TableCell>
+                      <TableCell className="">
+                        <div>
+                          <h1 className="font-avenirBold text-right text-[#222222] lg:text-[14px]">
+                            <span className="font-semibold text-[#1c1c1c]">
+                              $300
+                            </span>{" "}
+                            <br />
+                            per month
+                          </h1>
+                        </div>
+                      </TableCell>
+                      <TableCell>
+                        <div>
+                          <h1 className="font-avenirBold text-right text-[#222222] lg:text-[14px]">
+                            <span className="font-semibold text-[#1c1c1c]">
+                              $300
+                            </span>
+                            <br />
+                            per month
+                          </h1>
+                        </div>
+                      </TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>
+                        <div className="">
+                          <h1 className="font-avenirBold font-semibold text-[#1F3E7C] lg:text-[14px]">
+                            Claims Administrative Training
+                          </h1>
+                        </div>
+                      </TableCell>
+                      <TableCell>
+                        <div>
+                          <h1 className="font-avenirBold text-right text-[#222222] lg:text-[14px]">
+                            <span className="font-semibold text-[#1c1c1c]">
+                              Yes
+                            </span>
+                          </h1>
+                        </div>
+                      </TableCell>
+                      <TableCell>
+                        <div>
+                          <h1 className="font-avenirBold text-right text-[#222222] lg:text-[14px]">
+                            No
+                          </h1>
+                        </div>
+                      </TableCell>
+                    </TableRow>
+                  </TableBody>
+                </Table>
               </div>
               <Separator />
               <div className="space-y-4">
