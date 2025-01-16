@@ -264,10 +264,10 @@ export default function OutsourcedPage() {
                 <Separator />
               </div>
               <div className="space-y-4">
-                <h1 className="font-avenirRegular text-[16px] font-medium text-[#646464]">
+                <h1 className="font-avenirRegular text-[16px] font-medium text-[#646464] mt-[44px]">
                   Our Service includes -
                 </h1>
-                <div className="p-5">
+                <div className="px-5 md:px-5">
                   <ul className="list-disc space-y-3 font-avenirRegular text-[14px]  font-thin text-[#989898] lg:text-[16px]">
                     <li>
                       Assess current billing practices and outstanding insurance
