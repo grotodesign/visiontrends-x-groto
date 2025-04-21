@@ -1,14 +1,44 @@
+/* eslint-disable no-unused-vars */
 import { Bell, SearchIcon } from "lucide-react";
 import React, { useState } from "react";
 import { Button } from "../ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import LogoutDialog from "./LogoutDialog";
 import { Link, useNavigate } from "react-router-dom";
+import { Dialog,
+  DialogPortal,
+  DialogOverlay,
+  DialogClose,
+  DialogTrigger,
+  DialogContent,
+  DialogHeader,
+  DialogFooter,
+  DialogTitle,
+  DialogDescription, } from "../ui/dialog"
+import Nudge from "./Nudge";
+import { NudgeTitle, NudgeInfo, NudgeButtonText, NudgeButtonText2, NudgeImage, NudgePositionCss } from './NudgeContent';
 
-export default function Navbar() {
+export default function Navbar({dialogTrigger}) {
   const [searchValue, setSearchValue] = useState("");
   const [showSuggestions, setShowSuggestions] = useState(false);
   const navigate = useNavigate();
+
+  //dialog states
+  const [dialogOpen, setDialogOpen] = useState(false)
+  const [nudgeTitle, setNudgeTitle] = useState(NudgeTitle?.one)
+  const [nudgeInfo, setNudgeInfo] = useState(NudgeInfo?.one)
+  const [nudgeButtonText, setNudgeButtonText] = useState(NudgeButtonText?.start)
+  const [nudgeButtonText2, setNudgeButtonText2] = useState(NudgeButtonText2?.later)
+  const [nudgeImage, setNudgeImage] = useState(NudgeImage?.one)
+  const [currentStep, setCurrentStep] = useState(1)
+  const [totalSteps, setTotalSteps] = useState(4)
+  const [nudgeCss, setNudgeCss] = useState(NudgePositionCss?.one)
+
+  const handleNudgeButtonClick = () => {
+    
+  }
+
+  const handleNudgeButton2Click = () => {}
 
   const handleSearchKeyPress = (event) => {
     if (event.key === "Enter") {
@@ -61,14 +91,17 @@ export default function Navbar() {
             </div>
           </div>
           <div className="flex items-center justify-between space-x-5">
-            <div className="border-r-2">
-              <Bell className="w-12 text-[#646464]" />
-            </div>
-            <Link to="/sales-submission" className="">
-              <Button className="font-avenirRegular font-medium">
+            <Link to="/sales-submission" className="border-r-2">
+              <Button className="font-avenirRegular font-medium mr-5">
                 Sales Submission
               </Button>
             </Link>
+            <div className="border-r-2">
+              <Bell className="w-12 text-[#646464]" />
+            </div>
+            <div onClick={()=>{setDialogOpen(true)}}>
+              <img src="../../../public/landing-popup.svg" className="text-[#646464]" />
+            </div>
             <div className="border-l-2">
               <div className="ml-5 flex items-center space-x-4">
                 <Avatar className="h-8 w-8">
@@ -87,6 +120,8 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+      <Nudge dialogOpen={dialogOpen} setDialogOpen={setDialogOpen} title={nudgeTitle} info={nudgeInfo} buttonText={nudgeButtonText} buttonText2={nudgeButtonText2} img={nudgeImage} steps={false} currentStep={currentStep} totalSteps={totalSteps} positionCss={nudgeCss} primaryAction={handleNudgeButtonClick} secondaryAction={handleNudgeButton2Click} />
     </div>
+    
   );
 }

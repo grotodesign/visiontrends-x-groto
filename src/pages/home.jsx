@@ -11,10 +11,21 @@ import Navbar from "@/components/shared/Navbar";
 import OfferingCard from "@/components/shared/OfferingCard";
 import { OfferingsData } from "@/lib/data";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import { Dialog,
+  DialogPortal,
+  DialogOverlay,
+  DialogClose,
+  DialogTrigger,
+  DialogContent,
+  DialogHeader,
+  DialogFooter,
+  DialogTitle,
+  DialogDescription, } from "../components/ui/dialog"
 
 export default function HomePage() {
   const [showAllOfferings, setShowAllOfferings] = useState(false);
   const [showVendor, setShowVendor] = useState(false);
+  const [dialogOpen, setDialogOpen] = useState(false)
 
   const handleToggle = () => {
     setShowVendor(!showVendor);
@@ -24,11 +35,34 @@ export default function HomePage() {
     setShowAllOfferings(!showAllOfferings);
   };
 
+  const openDialog = (val) => {
+    setDialogOpen(val);
+  }
+
   return (
     <div className="">
+      {/* <div className="absolute top-[40%] left-[40%] flex flex-col rounded-sm bg-[#ffffff] z-[1000] px-[51.5px] py-[25px] text-center">
+        <div className="flex flex-col gap-[20px] items-center">
+          <div className="text-[#344054] text-[18px] font-bold text-[#344054] font-AvenirHeavy">Welcome to Vision Trends!</div>
+          <div style={{wordSpacing:'5px'}} className="text-[#344054] text-[18px] font-normal w-[240px] leading-[24.92px] text-[#667085] font-AvenirRegular">Ready to explore? Take a quick tour or follow our full guide to get the most out of your experience.</div>
+          <button className="text-[#344054] text-[12px] font-extrabold bg-[#1F3E7C] text-[#ffffff] py-[8px] px-[20px] max-w-[240px] w-[240px] rounded-lg">Start Quick Tour</button>
+          <div className="text-[#646464] text-[12px]">Maybe, Later</div>
+        </div>
+      </div> */}
+      {/* <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Are you absolutely sure?</DialogTitle>
+            <DialogDescription>
+              This action cannot be undone. This will permanently delete your account
+              and remove your data from our servers.
+            </DialogDescription>
+          </DialogHeader>
+        </DialogContent>
+      </Dialog> */}
       {/* Desktop Navbar and SubNavbar */}
       <div className="hidden lg:block">
-        <Navbar />
+        <Navbar dialogTrigger={(val)=>{setDialogOpen(val)}} />
         <SubNavbar />
         <div className="space-y-2">
           <Hero />
