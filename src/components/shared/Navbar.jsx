@@ -17,6 +17,7 @@ import { Dialog,
   DialogDescription, } from "../ui/dialog"
 import Nudge from "./Nudge";
 import { NudgeTitle, NudgeInfo, NudgeButtonText, NudgeButtonText2, NudgeImage, NudgePositionCss } from './NudgeContent';
+import Image from '../../assets/landing-popup.svg'
 
 export default function Navbar({dialogTrigger}) {
   const [searchValue, setSearchValue] = useState("");
@@ -35,7 +36,7 @@ export default function Navbar({dialogTrigger}) {
   const [nudgeCss, setNudgeCss] = useState(NudgePositionCss?.one)
 
   const handleNudgeButtonClick = () => {
-    
+
   }
 
   const handleNudgeButton2Click = () => {}
@@ -100,7 +101,7 @@ export default function Navbar({dialogTrigger}) {
               <Bell className="w-12 text-[#646464]" />
             </div>
             <div onClick={()=>{setDialogOpen(true)}}>
-              <img src="../../../public/landing-popup.svg" className="text-[#646464]" />
+              <img src={Image} className="text-[#646464]" />
             </div>
             <div className="border-l-2">
               <div className="ml-5 flex items-center space-x-4">
