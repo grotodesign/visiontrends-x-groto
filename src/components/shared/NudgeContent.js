@@ -48,22 +48,22 @@ export const NudgeButtonText2 = {
 }
 
 export const NudgeImage = {
-    one: `url('../../../public/Welcome.svg')`,
-    new2: `url('../../../public/Track Sales.svg')`,
-    new3: `url('../../../public/Event Calendar.svg')`,
-    new4: `url('../../../public/Learning Solutions.svg')`,
-    new5: `url('../../../public/Profile.svg')`,
-    old2: `url('../../../public/Track Sales.svg')`,
-    old3: `url('../../../public/Vendor Partners.svg')`,
-    old4: `url('../../../public/Event Calendar.svg')`,
-    old5: `url('../../../public/Programs.svg')`,
-    old6: `url('../../../public/Insurance Profit Pathway.svg')`,
-    old7: `url('../../../public/Insurance Solutions.svg')`,
-    old8: `url('../../../public/Lab Solutions.svg')`,
-    old9: `url('../../../public/Merchant Services.svg')`,
-    old10: `url('../../../public/Learning Solutions.svg')`,
-    old11: `url('../../../public/Explore.svg')`,
-    old12: `url('../../../public/Donate Now.svg')`,
+    one: `url('../../assets/Welcome.svg')`,
+    new2: `url('../../assets/Track Sales.svg')`,
+    new3: `url('../../assets/Event Calendar.svg')`,
+    new4: `url('../../assets/Learning Solutions.svg')`,
+    new5: `url('../../assets/Profile.svg')`,
+    old2: `url('../../assets/Track Sales.svg')`,
+    old3: `url('../../assets/Vendor Partners.svg')`,
+    old4: `url('../../assets/Event Calendar.svg')`,
+    old5: `url('../../assets/Programs.svg')`,
+    old6: `url('../../assets/Insurance Profit Pathway.svg')`,
+    old7: `url('../../assets/Insurance Solutions.svg')`,
+    old8: `url('../../assets/Lab Solutions.svg')`,
+    old9: `url('../../assets/Merchant Services.svg')`,
+    old10: `url('../../assets/Learning Solutions.svg')`,
+    old11: `url('../../assets/Explore.svg')`,
+    old12: `url('../../assets/Donate Now.svg')`,
 }
 
 export const NudgePositionCss = {
