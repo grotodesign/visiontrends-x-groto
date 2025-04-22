@@ -1,3 +1,17 @@
+import Welcome from '../../assets/Welcome.svg'
+import TrackSales from '../../assets/Track Sales.svg'
+import EventCalendar from '../../assets/Event Calendar.svg'
+import LearningSolutions from '../../assets/Learning Solutions.svg'
+import Profile from '../../assets/Profile.svg'
+import VendorPartners from '../../assets/Vendor Partners.svg'
+import Programs from '../../assets/Programs.svg'
+import InsuranceProfitPathway from '../../assets/Insurance Profit Pathway.svg'
+import InsuranceSolutions from '../../assets/Insurance Solutions.svg'
+import LabSolutions from '../../assets/Lab Solutions.svg'
+import MerchantServices from '../../assets/Merchant Services.svg'
+import Explore from '../../assets/Explore.svg'
+import DonateNow from '../../assets/Donate Now.svg'
+
 export const NudgeTitle = {
     one: 'Welcome to Vision Trends!',
     new2: 'Track Sales',
@@ -48,22 +62,22 @@ export const NudgeButtonText2 = {
 }
 
 export const NudgeImage = {
-    one: `url('../../assets/Welcome.svg')`,
-    new2: `url('../../assets/Track Sales.svg')`,
-    new3: `url('../../assets/Event Calendar.svg')`,
-    new4: `url('../../assets/Learning Solutions.svg')`,
-    new5: `url('../../assets/Profile.svg')`,
-    old2: `url('../../assets/Track Sales.svg')`,
-    old3: `url('../../assets/Vendor Partners.svg')`,
-    old4: `url('../../assets/Event Calendar.svg')`,
-    old5: `url('../../assets/Programs.svg')`,
-    old6: `url('../../assets/Insurance Profit Pathway.svg')`,
-    old7: `url('../../assets/Insurance Solutions.svg')`,
-    old8: `url('../../assets/Lab Solutions.svg')`,
-    old9: `url('../../assets/Merchant Services.svg')`,
-    old10: `url('../../assets/Learning Solutions.svg')`,
-    old11: `url('../../assets/Explore.svg')`,
-    old12: `url('../../assets/Donate Now.svg')`,
+    one: Welcome,
+    new2: TrackSales,
+    new3: EventCalendar,
+    new4: LearningSolutions,
+    new5: Profile,
+    old2: TrackSales,
+    old3: VendorPartners,
+    old4: EventCalendar,
+    old5: Programs,
+    old6: InsuranceProfitPathway,
+    old7: InsuranceSolutions,
+    old8: LabSolutions,
+    old9: MerchantServices,
+    old10: LearningSolutions,
+    old11: Explore,
+    old12: DonateNow,
 }
 
 export const NudgePositionCss = {
