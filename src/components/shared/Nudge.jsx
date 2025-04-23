@@ -2,32 +2,30 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
 import { Dialog,
-    DialogPortal,
-    DialogOverlay,
-    DialogClose,
-    DialogTrigger,
+    // DialogPortal,
+    // DialogOverlay,
+    // DialogClose,
+    // DialogTrigger,
     DialogContent,
     DialogHeader,
-    DialogFooter,
-    DialogTitle,
+    // DialogFooter,
+    // DialogTitle,
     DialogDescription
 } from "../ui/dialog"
 
 import pointerSvg from "../../assets/circles.svg"
 
-const Nudge = ({dialogOpen, setDialogOpen, positionCss='', title, info, buttonText, buttonText2, img, steps, currentStep, totalSteps, primaryAction, secondaryAction}) => {
+const Nudge = ({dialogOpen, setDialogOpen, positionCss='', pointerCss='', title, info, buttonText, buttonText2, img, steps, currentStep, totalSteps, primaryAction, secondaryAction}) => {
   return (
-    <Dialog open={dialogOpen} onOpenChange={setDialogOpen} className="w-[200px] p-[0px] relative">
+    <Dialog open={dialogOpen} onOpenChange={setDialogOpen} className="w-[200px] p-[0px]">
         <DialogContent
-          className={`p-[0px] max-w-[346px] ${
-            title !== "Welcome to Vision Trends!" ? 'dialog-pointer' : ''
-          } ${positionCss}`}
+          className={`p-[0px] max-w-[346px] z-[1000] ${positionCss}`}
         >
           {title !== "Welcome to Vision Trends!" && (
             <img
               src={pointerSvg}
               alt="pointer"
-              className="absolute -top-[34px] left-1/2 transform -translate-x-1/2 w-[55px] h-auto -z-[100]"
+              className={`absolute ${pointerCss} transform -translate-x-1/2 w-[55px] h-auto -z-[100] animate-pulse`}
             />
           )}
           <DialogHeader>

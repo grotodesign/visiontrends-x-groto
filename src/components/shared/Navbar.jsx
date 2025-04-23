@@ -7,7 +7,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import LogoutDialog from "./LogoutDialog";
 import { Link, useNavigate } from "react-router-dom";
 import Nudge from "./Nudge";
-import { NudgeTitle, NudgeInfo, NudgeButtonText, NudgeButtonText2, NudgeImage, NudgePositionCss } from './NudgeContent';
+import { NudgeTitle, NudgeInfo, NudgeButtonText, NudgeButtonText2, NudgeImage, NudgePositionCss, NudgePointerCss } from './NudgeContent';
 import Image from '../../assets/landing-popup.svg'
 
 export default function Navbar({dialogTrigger, userType='old'}) {
@@ -25,12 +25,14 @@ export default function Navbar({dialogTrigger, userType='old'}) {
   const [currentStep, setCurrentStep] = useState(0)
   const totalSteps = userType == 'new' ? 4 : 11;
   const [nudgeCss, setNudgeCss] = useState(NudgePositionCss?.one)
+  const [pointerCss, setPointerCss] = useState(NudgePointerCss?.one)
 
   const handleNudgeButtonClick = () => {
     setNudgeTitle(NudgeTitle?.[`${userType}${currentStep+2}`]);
     setNudgeInfo(NudgeInfo?.[`${userType}${currentStep+2}`]);
     setNudgeImage(NudgeImage?.[`${userType}${currentStep+2}`]);
     setNudgeCss(NudgePositionCss?.[`${userType}${currentStep+2}`] ?? NudgePositionCss.one);
+    setPointerCss(NudgePointerCss?.[`${userType}${currentStep+2}`]);
     setCurrentStep(prev => prev+1);
     if(nudgeButtonText == NudgeButtonText?.start){
       setNudgeButtonText(NudgeButtonText?.next);
@@ -65,12 +67,14 @@ export default function Navbar({dialogTrigger, userType='old'}) {
         setNudgeInfo(NudgeInfo?.[`one`]);
         setNudgeImage(NudgeImage?.[`one`]);
         setNudgeCss(NudgePositionCss?.one);
+        setPointerCss(NudgePointerCss?.[`one`]);
       }
       else{
         setNudgeTitle(NudgeTitle?.[`${userType}${currentStep}`]);
         setNudgeInfo(NudgeInfo?.[`${userType}${currentStep}`]);
         setNudgeImage(NudgeImage?.[`${userType}${currentStep}`]);
-        setNudgeCss(NudgePositionCss?.[`${userType}${currentStep+1}`] ?? NudgePositionCss.one);
+        setNudgeCss(NudgePositionCss?.[`${userType}${currentStep}`] ?? NudgePositionCss.one);
+        setPointerCss(NudgePointerCss?.[`${userType}${currentStep}`]);
       }
       if(currentStep == totalSteps){
         setNudgeButtonText(NudgeButtonText?.next);
@@ -158,7 +162,7 @@ export default function Navbar({dialogTrigger, userType='old'}) {
           </div>
         </div>
       </div>
-      <Nudge dialogOpen={dialogOpen} setDialogOpen={setDialogOpen} title={nudgeTitle} info={nudgeInfo} buttonText={nudgeButtonText} buttonText2={nudgeButtonText2} img={nudgeImage} steps={nudgeButtonText != NudgeButtonText?.start || currentStep != 0} currentStep={currentStep} totalSteps={totalSteps} positionCss={nudgeCss} primaryAction={handleNudgeButtonClick} secondaryAction={handleNudgeButton2Click} />
+      <Nudge dialogOpen={dialogOpen} setDialogOpen={setDialogOpen} title={nudgeTitle} info={nudgeInfo} buttonText={nudgeButtonText} buttonText2={nudgeButtonText2} img={nudgeImage} steps={nudgeButtonText != NudgeButtonText?.start || currentStep != 0} currentStep={currentStep} totalSteps={totalSteps} positionCss={nudgeCss} pointerCss={pointerCss} primaryAction={handleNudgeButtonClick} secondaryAction={handleNudgeButton2Click} />
     </div>
     
   );
