@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import { Bell, SearchIcon } from "lucide-react";
 import React, { useState } from "react";
@@ -5,21 +6,11 @@ import { Button } from "../ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import LogoutDialog from "./LogoutDialog";
 import { Link, useNavigate } from "react-router-dom";
-import { Dialog,
-  DialogPortal,
-  DialogOverlay,
-  DialogClose,
-  DialogTrigger,
-  DialogContent,
-  DialogHeader,
-  DialogFooter,
-  DialogTitle,
-  DialogDescription, } from "../ui/dialog"
 import Nudge from "./Nudge";
 import { NudgeTitle, NudgeInfo, NudgeButtonText, NudgeButtonText2, NudgeImage, NudgePositionCss } from './NudgeContent';
 import Image from '../../assets/landing-popup.svg'
 
-export default function Navbar({dialogTrigger}) {
+export default function Navbar({dialogTrigger, userType='old'}) {
   const [searchValue, setSearchValue] = useState("");
   const [showSuggestions, setShowSuggestions] = useState(false);
   const navigate = useNavigate();
@@ -31,15 +22,61 @@ export default function Navbar({dialogTrigger}) {
   const [nudgeButtonText, setNudgeButtonText] = useState(NudgeButtonText?.start)
   const [nudgeButtonText2, setNudgeButtonText2] = useState(NudgeButtonText2?.later)
   const [nudgeImage, setNudgeImage] = useState(NudgeImage?.one)
-  const [currentStep, setCurrentStep] = useState(1)
-  const [totalSteps, setTotalSteps] = useState(4)
+  const [currentStep, setCurrentStep] = useState(0)
+  const totalSteps = userType == 'new' ? 4 : 11;
   const [nudgeCss, setNudgeCss] = useState(NudgePositionCss?.one)
 
   const handleNudgeButtonClick = () => {
-
+    setNudgeTitle(NudgeTitle?.[`${userType}${currentStep+2}`]);
+    setNudgeInfo(NudgeInfo?.[`${userType}${currentStep+2}`]);
+    setNudgeImage(NudgeImage?.[`${userType}${currentStep+2}`]);
+    setNudgeCss(NudgePositionCss?.[`${userType}${currentStep+2}`] ?? NudgePositionCss.one);
+    setCurrentStep(prev => prev+1);
+    if(nudgeButtonText == NudgeButtonText?.start){
+      setNudgeButtonText(NudgeButtonText?.next);
+      setNudgeButtonText2(NudgeButtonText2?.previous);
+    }
+    else if(nudgeButtonText == NudgeButtonText?.next){
+      if(currentStep == totalSteps-1){
+        setNudgeButtonText(NudgeButtonText?.finish);
+      }
+    }
+    else{
+      setDialogOpen(false)
+      setNudgeButtonText(NudgeButtonText?.start);
+      setNudgeButtonText2(NudgeButtonText2?.later);
+      setNudgeTitle(NudgeTitle?.[`one`]);
+      setNudgeInfo(NudgeInfo?.[`one`]);
+      setNudgeImage(NudgeImage?.[`one`]);
+      setCurrentStep(0);
+    }
   }
 
-  const handleNudgeButton2Click = () => {}
+  const handleNudgeButton2Click = () => {
+    if(nudgeButtonText2 == NudgeButtonText2?.later){
+      setDialogOpen(false)
+    }
+    else{
+      setCurrentStep(prev => prev-1);
+      if(currentStep == 1){
+        setNudgeButtonText(NudgeButtonText?.start);
+        setNudgeButtonText2(NudgeButtonText2?.later);
+        setNudgeTitle(NudgeTitle?.[`one`]);
+        setNudgeInfo(NudgeInfo?.[`one`]);
+        setNudgeImage(NudgeImage?.[`one`]);
+        setNudgeCss(NudgePositionCss?.one);
+      }
+      else{
+        setNudgeTitle(NudgeTitle?.[`${userType}${currentStep}`]);
+        setNudgeInfo(NudgeInfo?.[`${userType}${currentStep}`]);
+        setNudgeImage(NudgeImage?.[`${userType}${currentStep}`]);
+        setNudgeCss(NudgePositionCss?.[`${userType}${currentStep+1}`] ?? NudgePositionCss.one);
+      }
+      if(currentStep == totalSteps){
+        setNudgeButtonText(NudgeButtonText?.next);
+      }
+    }
+  }
 
   const handleSearchKeyPress = (event) => {
     if (event.key === "Enter") {
@@ -121,7 +158,7 @@ export default function Navbar({dialogTrigger}) {
           </div>
         </div>
       </div>
-      <Nudge dialogOpen={dialogOpen} setDialogOpen={setDialogOpen} title={nudgeTitle} info={nudgeInfo} buttonText={nudgeButtonText} buttonText2={nudgeButtonText2} img={nudgeImage} steps={false} currentStep={currentStep} totalSteps={totalSteps} positionCss={nudgeCss} primaryAction={handleNudgeButtonClick} secondaryAction={handleNudgeButton2Click} />
+      <Nudge dialogOpen={dialogOpen} setDialogOpen={setDialogOpen} title={nudgeTitle} info={nudgeInfo} buttonText={nudgeButtonText} buttonText2={nudgeButtonText2} img={nudgeImage} steps={nudgeButtonText != NudgeButtonText?.start || currentStep != 0} currentStep={currentStep} totalSteps={totalSteps} positionCss={nudgeCss} primaryAction={handleNudgeButtonClick} secondaryAction={handleNudgeButton2Click} />
     </div>
     
   );
