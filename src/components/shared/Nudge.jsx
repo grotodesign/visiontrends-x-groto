@@ -22,7 +22,13 @@ const Nudge = ({dialogOpen, setDialogOpen, positionCss='', title, info, buttonTe
                   <img src={img} alt="nudge image" className="" />
                 </div>
                 <div className="flex flex-col gap-[15px] items-center pb-[20px] text-center">
-                    <div className="text-[#344054] text-[18px] font-bold font-avenirHeavy">{title}</div>
+                    <div
+                      className={`text-[#344054] text-[18px] font-bold font-avenirHeavy ${
+                        title === "What’s Happening with Vision Trends?" ? 'w-[198px]' : ''
+                      }`}
+                    >
+                      {title}
+                    </div>
                     <div style={{wordSpacing:'2px'}} className="text-[14px] w-[250px] font-light leading-[20.92px] text-[#667085] font-avenirBook">{info}</div>
                     {steps && <div>{currentStep}/{totalSteps}</div>}
                     <button onClick={primaryAction} className="text-[12px] font-extrabold bg-[#1F3E7C] text-[#ffffff] py-[8px] px-[20px] max-w-[240px] font-avenirHeavy w-[240px] rounded-lg">{buttonText}</button>
