@@ -57,7 +57,7 @@ export const NudgeButtonText = {
 }
 
 export const NudgeButtonText2 = {
-    later: 'Maybe, Later',
+    later: 'Maybe Later',
     previous: 'Previous',
 }
 

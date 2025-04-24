@@ -142,7 +142,7 @@ export default function Navbar({dialogTrigger, userType='old'}) {
               <Bell className="w-12 text-[#646464]" />
             </div>
             <div onClick={()=>{setDialogOpen(true)}}>
-              <img src={Image} className="text-[#646464]" />
+              <img src={Image} className="text-[#646464] cursor-pointer" />
             </div>
             <div className="border-l-2">
               <div className="ml-5 flex items-center space-x-4">
