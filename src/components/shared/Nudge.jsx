@@ -45,7 +45,7 @@ const Nudge = ({dialogOpen, setDialogOpen, positionCss='', pointerCss='', title,
                     <div style={{wordSpacing:'2px'}} className="text-[14px] w-[250px] font-light leading-[20.92px] text-[#667085] font-avenirBook">{info}</div>
                     {steps && <div>{currentStep}/{totalSteps}</div>}
                     <button onClick={primaryAction} className="text-[12px] font-extrabold bg-[#1F3E7C] text-[#ffffff] py-[8px] px-[20px] max-w-[240px] font-avenirHeavy w-[240px] rounded-lg">{buttonText}</button>
-                    <div onClick={secondaryAction} className="text-[#646464] text-[12px] font-avenirRegular cursor-pointer">{buttonText2}</div>
+                    {title !== "Need a Quick Tour?" && (<div onClick={secondaryAction} className="text-[#646464] text-[12px] font-avenirRegular cursor-pointer">{buttonText2}</div>)}
                 </div>
               </div>
             </DialogDescription>

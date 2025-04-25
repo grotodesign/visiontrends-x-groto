@@ -17,26 +17,26 @@ export default function Navbar({dialogTrigger, userType='old'}) {
 
   //dialog states
   const [dialogOpen, setDialogOpen] = useState(false)
-  const [nudgeTitle, setNudgeTitle] = useState(NudgeTitle?.one)
-  const [nudgeInfo, setNudgeInfo] = useState(NudgeInfo?.one)
+  const [nudgeTitle, setNudgeTitle] = useState(NudgeTitle?.[`${userType}1`])
+  const [nudgeInfo, setNudgeInfo] = useState(NudgeInfo?.[`${userType}1`])
   const [nudgeButtonText, setNudgeButtonText] = useState(NudgeButtonText?.start)
   const [nudgeButtonText2, setNudgeButtonText2] = useState(NudgeButtonText2?.later)
-  const [nudgeImage, setNudgeImage] = useState(NudgeImage?.one)
+  const [nudgeImage, setNudgeImage] = useState(NudgeImage?.[`${userType}1`])
   const [currentStep, setCurrentStep] = useState(0)
   const totalSteps = userType == 'new' ? 4 : 11;
-  const [nudgeCss, setNudgeCss] = useState(NudgePositionCss?.one)
-  const [pointerCss, setPointerCss] = useState(NudgePointerCss?.one)
+  const [nudgeCss, setNudgeCss] = useState(NudgePositionCss?.[`${userType}1`])
+  const [pointerCss, setPointerCss] = useState(NudgePointerCss?.[`${userType}1`])
 
   useEffect(()=>{
     if(!dialogOpen){
-      setNudgeTitle(NudgeTitle?.one)
-      setNudgeInfo(NudgeInfo?.one)
+      setNudgeTitle(NudgeTitle?.[`${userType}1`])
+      setNudgeInfo(NudgeInfo?.[`${userType}1`])
       setNudgeButtonText(NudgeButtonText?.start)
       setNudgeButtonText2(NudgeButtonText2?.later)
-      setNudgeImage(NudgeImage?.one)
+      setNudgeImage(NudgeImage?.[`${userType}1`])
       setCurrentStep(0)
-      setNudgeCss(NudgePositionCss?.one)
-      setPointerCss(NudgePointerCss?.one)
+      setNudgeCss(NudgePositionCss?.[`${userType}1`])
+      setPointerCss(NudgePointerCss?.[`${userType}1`])
     }
   }, [dialogOpen])
 
@@ -60,9 +60,9 @@ export default function Navbar({dialogTrigger, userType='old'}) {
       setDialogOpen(false)
       setNudgeButtonText(NudgeButtonText?.start);
       setNudgeButtonText2(NudgeButtonText2?.later);
-      setNudgeTitle(NudgeTitle?.[`one`]);
-      setNudgeInfo(NudgeInfo?.[`one`]);
-      setNudgeImage(NudgeImage?.[`one`]);
+      setNudgeTitle(NudgeTitle?.[`${userType}1`]);
+      setNudgeInfo(NudgeInfo?.[`${userType}1`]);
+      setNudgeImage(NudgeImage?.[`${userType}1`]);
       setCurrentStep(0);
     }
   }
@@ -76,11 +76,11 @@ export default function Navbar({dialogTrigger, userType='old'}) {
       if(currentStep == 1){
         setNudgeButtonText(NudgeButtonText?.start);
         setNudgeButtonText2(NudgeButtonText2?.later);
-        setNudgeTitle(NudgeTitle?.[`one`]);
-        setNudgeInfo(NudgeInfo?.[`one`]);
-        setNudgeImage(NudgeImage?.[`one`]);
-        setNudgeCss(NudgePositionCss?.one);
-        setPointerCss(NudgePointerCss?.[`one`]);
+        setNudgeTitle(NudgeTitle?.[`${userType}1`]);
+        setNudgeInfo(NudgeInfo?.[`${userType}1`]);
+        setNudgeImage(NudgeImage?.[`${userType}1`]);
+        setNudgeCss(NudgePositionCss?.[`${userType}1`]);
+        setPointerCss(NudgePointerCss?.[`${userType}1`]);
       }
       else{
         setNudgeTitle(NudgeTitle?.[`${userType}${currentStep}`]);

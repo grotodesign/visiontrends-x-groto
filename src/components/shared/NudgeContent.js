@@ -13,7 +13,8 @@ import Explore from '../../assets/Explore.svg'
 import DonateNow from '../../assets/Donate Now.svg'
 
 export const NudgeTitle = {
-    one: 'Welcome to Vision Trends!',
+    old1: 'Need a Quick Tour?',
+    new1: 'Welcome to Vision Trends!',
     new2: 'Track Sales',
     new3: 'What’s Happening with Vision Trends?',
     new4: 'Boost Your Team’s Skills',
@@ -32,7 +33,8 @@ export const NudgeTitle = {
 }
 
 export const NudgeInfo = {
-    one: 'Ready to explore? Take a quick tour or follow our full guide to get the most out of your experience.',
+    old1: 'Discover key features, tools, and exclusive offers.',
+    new1: 'Ready to explore? Take a quick tour or follow our full guide to get the most out of your experience.',
     new2: 'Submit sales to earn rebates and track your monthly gross sales.',
     new3: 'Register for events, vendor sponsored dinners in your area, plus see where the VT team will be for state meetings throughout the year!',
     new4: 'Access a variety of tailored training programs and learning paths. Equip your team with essential skills & certifications. ',
@@ -52,6 +54,7 @@ export const NudgeInfo = {
 
 export const NudgeButtonText = {
     start: 'Start Quick Tour',
+    start1: 'Start Guide',
     next: 'Next tip',
     finish: 'Finish Tour'
 }
@@ -62,7 +65,8 @@ export const NudgeButtonText2 = {
 }
 
 export const NudgeImage = {
-    one: Welcome,
+    old1: Welcome,
+    new1: Welcome,
     new2: TrackSales,
     new3: EventCalendar,
     new4: LearningSolutions,
@@ -81,7 +85,8 @@ export const NudgeImage = {
 }
 
 export const NudgePositionCss = {
-    one: ``,
+    old1: `absolute top-[280px] left-[83%]`,
+    new1: ``,
     new2: `absolute top-80 left-[70%]`,
     new3: `absolute top-[300px] left-[25%]`,
     new4: `absolute top-[600px] left-[25%]`,
@@ -94,17 +99,18 @@ export const NudgePositionCss = {
     old7: `absolute top-[500px] left-[30%]`,
     old8: `absolute top-[510px] left-[30%]`,
     old9: `absolute top-[520px] left-[30%]`,
-    old10: `absolute top-[600px] left-[30%]`,
+    old10: `absolute top-[540px] left-[30%]`,
     old11: `absolute top-[500px] left-[60%]`,
     old12: `absolute top-[600px] left-[28%]`,
 }
 
 export const NudgePointerCss = {
-    one: ``,
+    old1: `-top-[34px] left-1/2`,
+    new1: ``,
     new2: `-top-[34px] left-1/2`,
-    new3: `left-[-10px] top-1/3`,
-    new4: `top-[50%] left-[-10px]`,
-    new5: `-top-[44px] left-1/2`,
+    new3: `left-[-10px] top-[125px]`,
+    new4: `top-[55%] left-[-10px]`,
+    new5: `-top-[24px] left-[185px]`,
     old2: `-top-[34px] left-1/2`,
     old3: `top-[25%] left-[-10px]`,
     old4: `top-[30%] left-[-10px]`,
@@ -113,7 +119,7 @@ export const NudgePointerCss = {
     old7: `top-[48%] left-[-10px]`,
     old8: `top-[57%] left-[-10px]`,
     old9: `top-[65%] left-[-10px]`,
-    old10: `top-[57%] left-[-10px]`,
+    old10: `top-[67%] left-[-10px]`,
     old11: `top-[80%] left-[100%]`,
     old12: `top-[85%] left-[-10px]`,
 }
