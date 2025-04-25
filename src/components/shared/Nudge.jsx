@@ -30,6 +30,7 @@ const Nudge = ({dialogOpen, setDialogOpen, positionCss='', pointerCss='', title,
           )}
           <DialogHeader>
             <DialogDescription>
+              <div className='h-fit w-fit bg-[#ffffff] rounded-md z-[10000000]'>
                 <div className="h-[200px] w-full">
                   <img src={img} alt="nudge image" className="" />
                 </div>
@@ -46,6 +47,7 @@ const Nudge = ({dialogOpen, setDialogOpen, positionCss='', pointerCss='', title,
                     <button onClick={primaryAction} className="text-[12px] font-extrabold bg-[#1F3E7C] text-[#ffffff] py-[8px] px-[20px] max-w-[240px] font-avenirHeavy w-[240px] rounded-lg">{buttonText}</button>
                     <div onClick={secondaryAction} className="text-[#646464] text-[12px] font-avenirRegular cursor-pointer">{buttonText2}</div>
                 </div>
+              </div>
             </DialogDescription>
           </DialogHeader>
         </DialogContent>

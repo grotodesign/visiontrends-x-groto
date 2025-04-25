@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import { Bell, SearchIcon } from "lucide-react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import LogoutDialog from "./LogoutDialog";
@@ -26,6 +26,19 @@ export default function Navbar({dialogTrigger, userType='old'}) {
   const totalSteps = userType == 'new' ? 4 : 11;
   const [nudgeCss, setNudgeCss] = useState(NudgePositionCss?.one)
   const [pointerCss, setPointerCss] = useState(NudgePointerCss?.one)
+
+  useEffect(()=>{
+    if(!dialogOpen){
+      setNudgeTitle(NudgeTitle?.one)
+      setNudgeInfo(NudgeInfo?.one)
+      setNudgeButtonText(NudgeButtonText?.start)
+      setNudgeButtonText2(NudgeButtonText2?.later)
+      setNudgeImage(NudgeImage?.one)
+      setCurrentStep(0)
+      setNudgeCss(NudgePositionCss?.one)
+      setPointerCss(NudgePointerCss?.one)
+    }
+  }, [dialogOpen])
 
   const handleNudgeButtonClick = () => {
     setNudgeTitle(NudgeTitle?.[`${userType}${currentStep+2}`]);
